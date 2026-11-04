@@ -1,0 +1,8 @@
+read_rtlil baseline.source.il
+hierarchy -check -top pmux_case05_nested
+techmap -autoproc -map dffeas_formal.v
+prep -top pmux_case05_nested -flatten
+check -assert
+delete =A:blackbox =A:whitebox
+write_rtlil baseline.normalized.il
+write_json baseline.normalized.json

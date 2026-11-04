@@ -1,0 +1,243 @@
+
+ /----------------------------------------------------------------------------\
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |  Copyright (C) 2012 - 2026  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |  Distributed under an ISC-like license, type "license" to see terms        |
+ \----------------------------------------------------------------------------/
+ Yosys 0.69+154 (git sha1 30d62572e-dirty, Release, GNU /usr/bin/x86_64-w64-mingw32-g++ 15.2.1)
+
+-- Executing script file `baseline.normalize.ys' --
+
+1. Executing RTLIL frontend.
+Input filename: baseline.source.il
+
+2. Executing HIERARCHY pass (managing design hierarchy).
+
+2.1. Analyzing design hierarchy..
+Top module:  \pmux_case05_nested
+
+2.2. Analyzing design hierarchy..
+Top module:  \pmux_case05_nested
+Removed 0 unused modules.
+
+3. Executing TECHMAP pass (map to technology primitives).
+
+3.1. Executing Verilog-2005 frontend: dffeas_formal.v
+Parsing Verilog input from `dffeas_formal.v' to AST representation.
+Generating RTLIL representation for module `\dffeas'.
+Successfully finished Verilog frontend.
+
+3.2. Continuing TECHMAP pass.
+Using template $paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas for cells of type dffeas.
+Technology map yielded processes: $proc$dffeas_formal.v:11$6565 $proc$dffeas_formal.v:12$6563
+
+3.5. Executing PROC pass (convert processes to netlists).
+
+3.5.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+<suppressed ~15 debug messages>
+
+3.5.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Marked 1 switch rules as full_case in process $proc$dffeas_formal.v:12$6563 in module $paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas.
+Removed a total of 0 dead cases.
+
+3.5.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 0 redundant assignments.
+Promoted 1 assignment to connection.
+
+3.5.4. Executing PROC_INIT pass (extract init attributes).
+Found init rule in `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas.$proc$dffeas_formal.v:11$6565'.
+  Set init value: \q = 1'0
+
+3.5.5. Executing PROC_ARST pass (detect async resets in processes).
+Found async reset \clrn in `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas.$proc$dffeas_formal.v:12$6563'.
+
+3.5.6. Executing PROC_ROM pass (convert switches to ROMs).
+Converted 0 switches.
+<suppressed ~1 debug messages>
+
+3.5.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
+Creating decoders for process `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas.$proc$dffeas_formal.v:11$6565'.
+Creating decoders for process `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas.$proc$dffeas_formal.v:12$6563'.
+     1/1: $0\q[0:0]
+
+3.5.8. Executing PROC_DLATCH pass (convert process syncs to latches).
+
+3.5.9. Executing PROC_DFF pass (convert process syncs to FFs).
+Creating register for signal `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas.\q' using process `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas.$proc$dffeas_formal.v:12$6563'.
+  created $adff cell `$procdff$6572' with positive edge clock and positive level reset.
+
+3.5.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
+
+3.5.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Removing empty process `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas.$proc$dffeas_formal.v:11$6565'.
+Found and cleaned up 1 empty switch in `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas.$proc$dffeas_formal.v:12$6563'.
+Removing empty process `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas.$proc$dffeas_formal.v:12$6563'.
+Cleaned up 1 empty switch.
+
+3.5.12. Executing OPT_EXPR pass (perform const folding).
+Optimizing module $paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas.
+<suppressed ~2 debug messages>
+No more expansions possible.
+<suppressed ~11 debug messages>
+
+4. Executing PREP pass.
+
+4.1. Executing HIERARCHY pass (managing design hierarchy).
+
+4.1.1. Analyzing design hierarchy..
+Top module:  \pmux_case05_nested
+
+4.1.2. Analyzing design hierarchy..
+Top module:  \pmux_case05_nested
+Removed 0 unused modules.
+
+4.2. Executing PROC pass (convert processes to netlists).
+
+4.2.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+4.2.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Removed a total of 0 dead cases.
+
+4.2.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 0 redundant assignments.
+Promoted 0 assignments to connections.
+
+4.2.4. Executing PROC_INIT pass (extract init attributes).
+
+4.2.5. Executing PROC_ARST pass (detect async resets in processes).
+
+4.2.6. Executing PROC_ROM pass (convert switches to ROMs).
+Converted 0 switches.
+
+4.2.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
+
+4.2.8. Executing PROC_DLATCH pass (convert process syncs to latches).
+
+4.2.9. Executing PROC_DFF pass (convert process syncs to FFs).
+
+4.2.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
+
+4.2.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+4.2.12. Executing OPT_EXPR pass (perform const folding).
+Optimizing module pmux_case05_nested.
+<suppressed ~36 debug messages>
+
+4.3. Executing CHECK pass (checking for obvious problems).
+Checking module pmux_case05_nested...
+Found and reported 0 problems.
+
+4.4. Executing FLATTEN pass (flatten design).
+
+4.5. Executing FUTURE pass.
+
+4.6. Executing OPT_EXPR pass (perform const folding).
+Optimizing module pmux_case05_nested.
+
+4.7. Executing CHECK pass (checking for obvious problems).
+Checking module pmux_case05_nested...
+Found and reported 0 problems.
+
+4.8. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \pmux_case05_nested..
+Removed 0 unused cells and 204 unused wires.
+<suppressed ~109 debug messages>
+
+4.9. Executing OPT pass (performing simple optimizations).
+
+4.9.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module pmux_case05_nested.
+
+4.9.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\pmux_case05_nested'.
+Computing hashes of 269 cells of `\pmux_case05_nested'.
+Finding duplicate cells in `\pmux_case05_nested'.
+Removed a total of 0 cells.
+
+4.9.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \pmux_case05_nested..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~36 debug messages>
+
+4.9.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \pmux_case05_nested.
+Performed a total of 0 changes.
+
+4.9.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\pmux_case05_nested'.
+Computing hashes of 269 cells of `\pmux_case05_nested'.
+Finding duplicate cells in `\pmux_case05_nested'.
+Removed a total of 0 cells.
+
+4.9.6. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \pmux_case05_nested..
+
+4.9.7. Executing OPT_EXPR pass (perform const folding).
+Optimizing module pmux_case05_nested.
+
+4.9.8. Finished fast OPT passes. (There is nothing left to do.)
+
+4.10. Executing WREDUCE pass (reducing word size of cells).
+
+4.11. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \pmux_case05_nested..
+
+4.12. Executing MEMORY_COLLECT pass (generating $mem cells).
+
+4.13. Executing OPT pass (performing simple optimizations).
+
+4.13.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module pmux_case05_nested.
+
+4.13.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\pmux_case05_nested'.
+Computing hashes of 269 cells of `\pmux_case05_nested'.
+Finding duplicate cells in `\pmux_case05_nested'.
+Removed a total of 0 cells.
+
+4.13.3. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \pmux_case05_nested..
+
+4.13.4. Finished fast OPT passes.
+
+4.14. Executing SORT pass.
+
+4.15. Printing statistics.
+
+=== pmux_case05_nested ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      264 wires
+      348 wire bits
+      252 public wires
+      336 public wire bits
+        6 ports
+       79 port bits
+      269 cells
+       12   $adff
+      233   $lut
+       24   $mux
+
+4.16. Executing CHECK pass (checking for obvious problems).
+Checking module pmux_case05_nested...
+Found and reported 0 problems.
+
+5. Executing CHECK pass (checking for obvious problems).
+Checking module pmux_case05_nested...
+Found and reported 0 problems.
+
+6. Executing RTLIL backend.
+Output filename: baseline.normalized.il
+
+7. Executing JSON backend.
+
+End of script. Logfile hash: 848aa4b9c4
+Yosys 0.69+154 (git sha1 30d62572e-dirty, Release, GNU /usr/bin/x86_64-w64-mingw32-g++ 15.2.1)
+Time spent: 3% 6x opt_expr (0 sec), 3% 4x proc_clean (0 sec), ...
