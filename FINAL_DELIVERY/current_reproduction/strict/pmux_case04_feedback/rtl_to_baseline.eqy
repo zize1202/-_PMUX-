@@ -1,0 +1,22 @@
+[gold]
+read_rtlil rtl.normalized.il
+[gate]
+read_rtlil baseline.normalized.il
+[script]
+hierarchy -check -top pmux_case04_feedback
+clk2fflogic
+check -assert
+[match pmux_case04_feedback]
+nodefault
+gold-match clk
+gold-match rst
+gold-match en
+gold-match data_in
+gold-match ctrl_in
+gold-match data_out
+[collect pmux_case04_feedback]
+group *
+[strategy induction]
+use sat
+depth 20
+timeout 180

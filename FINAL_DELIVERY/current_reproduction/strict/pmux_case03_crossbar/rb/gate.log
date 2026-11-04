@@ -1,0 +1,57 @@
+
+ /----------------------------------------------------------------------------\
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |  Copyright (C) 2012 - 2026  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |  Distributed under an ISC-like license, type "license" to see terms        |
+ \----------------------------------------------------------------------------/
+ Yosys 0.69+154 (git sha1 30d62572e-dirty, Release, GNU /usr/bin/x86_64-w64-mingw32-g++ 15.2.1)
+
+-- Executing script file `rb/gate.ys' --
+
+1. Executing RTLIL frontend.
+Input filename: baseline.normalized.il
+
+2. Executing HIERARCHY pass (managing design hierarchy).
+
+2.1. Analyzing design hierarchy..
+Top module:  \pmux_case03_crossbar
+
+2.2. Analyzing design hierarchy..
+Top module:  \pmux_case03_crossbar
+Removed 0 unused modules.
+
+3. Executing CLK2FFLOGIC pass (convert clocked FFs to generic $ff cells).
+
+3.1. Executing PEEPOPT pass (run peephole optimizers).
+Replacing pmux_case03_crossbar.$techmap\data_out_dffeas_q.$procdff$6719 ($adff): CLK=\clk, D=$techmap\data_out_dffeas_q.$0\q[0:0], Q=\data_out [8]
+Replacing pmux_case03_crossbar.$techmap\data_out_dffeas_q_1.$procdff$6719 ($adff): CLK=\clk, D=$techmap\data_out_dffeas_q_1.$0\q[0:0], Q=\data_out [0]
+Replacing pmux_case03_crossbar.$techmap\data_out_dffeas_q_2.$procdff$6719 ($adff): CLK=\clk, D=$techmap\data_out_dffeas_q_2.$0\q[0:0], Q=\data_out [4]
+Replacing pmux_case03_crossbar.$techmap\data_out_dffeas_q_3.$procdff$6719 ($adff): CLK=\clk, D=$techmap\data_out_dffeas_q_3.$0\q[0:0], Q=\data_out [9]
+Replacing pmux_case03_crossbar.$techmap\data_out_dffeas_q_4.$procdff$6719 ($adff): CLK=\clk, D=$techmap\data_out_dffeas_q_4.$0\q[0:0], Q=\data_out [1]
+Replacing pmux_case03_crossbar.$techmap\data_out_dffeas_q_5.$procdff$6719 ($adff): CLK=\clk, D=$techmap\data_out_dffeas_q_5.$0\q[0:0], Q=\data_out [2]
+Replacing pmux_case03_crossbar.$techmap\data_out_dffeas_q_6.$procdff$6719 ($adff): CLK=\clk, D=$techmap\data_out_dffeas_q_6.$0\q[0:0], Q=\data_out [3]
+Replacing pmux_case03_crossbar.$techmap\data_out_dffeas_q_7.$procdff$6719 ($adff): CLK=\clk, D=$techmap\data_out_dffeas_q_7.$0\q[0:0], Q=\data_out [5]
+Replacing pmux_case03_crossbar.$techmap\data_out_dffeas_q_8.$procdff$6719 ($adff): CLK=\clk, D=$techmap\data_out_dffeas_q_8.$0\q[0:0], Q=\data_out [6]
+Replacing pmux_case03_crossbar.$techmap\data_out_dffeas_q_9.$procdff$6719 ($adff): CLK=\clk, D=$techmap\data_out_dffeas_q_9.$0\q[0:0], Q=\data_out [7]
+
+4. Executing CHECK pass (checking for obvious problems).
+Checking module pmux_case03_crossbar...
+Found and reported 0 problems.
+
+5. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \pmux_case03_crossbar..
+Removed 0 unused cells and 10 unused wires.
+<suppressed ~1 debug messages>
+
+6. Executing CHECK pass (checking for obvious problems).
+Checking module pmux_case03_crossbar...
+Found and reported 0 problems.
+
+7. Executing SETUNDEF pass (replace undef values with defined constants).
+
+8. Executing RTLIL backend.
+Output filename: rb/gate.il
+
+End of script. Logfile hash: 306215c1b8
+Yosys 0.69+154 (git sha1 30d62572e-dirty, Release, GNU /usr/bin/x86_64-w64-mingw32-g++ 15.2.1)
+Time spent: 11% 2x write_rtlil (0 sec), 11% 2x read_rtlil (0 sec), ...

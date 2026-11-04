@@ -1,0 +1,22 @@
+EQY  7:25:10 [rb] read_gold: starting process "yosys -ql rb/gold.log rb/gold.ys"
+EQY  7:25:10 [rb] read_gold: finished (returncode=0)
+EQY  7:25:10 [rb] read_gate: starting process "yosys -ql rb/gate.log rb/gate.ys"
+EQY  7:25:11 [rb] read_gate: finished (returncode=0)
+EQY  7:25:11 [rb] combine: starting process "yosys -ql rb/combine.log rb/combine.ys"
+EQY  7:25:11 [rb] combine: finished (returncode=0)
+EQY  7:25:11 [rb] partition: starting process "cd rb& yosys -ql partition.log partition.ys"
+EQY  7:25:11 [rb] partition: finished (returncode=0)
+EQY  7:25:11 [rb] run: starting process "make -j1 -C rb -f strategies.mk"
+EQY  7:25:11 [rb] run: make: Entering directory 'D:/PMUX_20261102_delivery/proof_tmp/q73753efee40d/p/pmux_case03_crossbar/rb'
+EQY  7:25:11 [rb] run: Running strategy 'induction' on 'pmux_case03_crossbar.data_out'..
+EQY  7:25:11 [rb] run: Proved equivalence of partition 'pmux_case03_crossbar.data_out' using strategy 'induction'
+EQY  7:25:11 [rb] run: make -f strategies.mk summary
+EQY  7:25:12 [rb] run: make[1]: Entering directory 'D:/PMUX_20261102_delivery/proof_tmp/q73753efee40d/p/pmux_case03_crossbar/rb'
+EQY  7:25:12 [rb] run: make[1]: Leaving directory 'D:/PMUX_20261102_delivery/proof_tmp/q73753efee40d/p/pmux_case03_crossbar/rb'
+EQY  7:25:12 [rb] run: make: Leaving directory 'D:/PMUX_20261102_delivery/proof_tmp/q73753efee40d/p/pmux_case03_crossbar/rb'
+EQY  7:25:12 [rb] run: finished (returncode=0)
+EQY  7:25:12 [rb] Successfully proved equivalence of partition pmux_case03_crossbar.data_out
+EQY  7:25:12 [rb] Successfully proved designs equivalent
+EQY  7:25:12 [rb] summary: Elapsed clock time [H:MM:SS (secs)]: 0:00:01 (1)
+EQY  7:25:12 [rb] summary: Elapsed process time unvailable on Windows
+EQY  7:25:12 [rb] DONE (PASS, rc=0)
