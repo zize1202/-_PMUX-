@@ -1,0 +1,1240 @@
+{
+  "schema": 1,
+  "audited_utc": "2026-11-01T23:25:50.117130+00:00",
+  "run": "D:\\PMUX_20261102_delivery\\relocation r30 all\\results\\r20261102_072425_992b5bb8",
+  "batch_scope": "One new full-nine r30 delivery All reproduction; supplementary to r30_run01, not a replacement",
+  "prior_r30_main_report_replaced": false,
+  "process_returncode_observed": 0,
+  "all_entrypoint_success": true,
+  "all_local_objective_checks_pass": true,
+  "all_local_objective_field_present": true,
+  "overall_delivery_reproduction_status": "PASS",
+  "original_error": null,
+  "package_indexed_bytes_unchanged": true,
+  "indexed_file_count": 5157,
+  "package_archive_mapping_count": 5154,
+  "proof_archive_file_count": 443,
+  "generated_cache_files": [
+    "verification/__pycache__/fair_measure.cpython-312.pyc"
+  ],
+  "package_snapshot_identity": {
+    "package_index_sha256": "ee5826f867040189be497d0302871351ea13a87025e2051e3861b5ec74dccccd",
+    "archive_index_sha256": "ae1690f7b8e54b392c3f5945233cfd2c65711cde3cd8e3713ddaec77a15a0ddd",
+    "release_sha256": "704e85430f3393a3ee1c052e3849e111035e316fd382c89d0accfd6e61a47fae",
+    "indexed_files": 5157,
+    "total_files": 5158,
+    "archive_mappings": 5154,
+    "candidate": "r30_native_sload",
+    "candidate_sha256": "efebff04cac47ccdfefc3317d4de14b7f727123a7499243ab9da35ba79f596d9",
+    "baseline_sha256": "42ae7772e6669815fa25dcdfb8efb06c1c0f0d9a0fb81bdcb9ce4eae4af48858",
+    "abc_sha256": "3d8b4f2e5802682bd74d57acd3b0de292189e983c845880eb3c97b2c94dbe0e4",
+    "entrypoint_hashes_equal_verified_fixed2": {
+      "verification/portable_v3.py": "57e346ff7e5098b27c246d434c6ac4edb6db95db15852d2c818260ed339feaef",
+      "Run-OfficialTests.ps1": "53d79887390ab304ab26159ffb62d057ddf7995e81a7fc116400c0df4277dc9f"
+    },
+    "restricted_model_runtime_sha256": {
+      "endpoint_nozinit_runner.py": "ded68afdcc57d833dea104d424ee6285a65fb91b63141d427252deaa44361ad1",
+      "dffeas_formal.v": "bd0345b835ed076a79e81f1c85b3db4ce83f04879f45fcc6b1edfe151cff332a",
+      "dffeas_sload_sim.v": "6fa77e1742974535b87781b39efd9d806f473b0185a0b4d68856d2da0a0328db",
+      "legacy_endpoint_runner.py": "95fa50c972e8c26c7c61646846392ebca0324bf2152619da819c8f96a6be5a17",
+      "legacy_dffeas_formal.v": "412cc8d76fc5691c05db8139965e99e6814f20c65de903cec3aaccc06f4dc0c7"
+    },
+    "wave_checkpoint_sha256": "1a33e2fecca43b16eebc7ff496f385a76280c3ea4c9f021bb8a4fdca87eec7e3",
+    "wave_checkpoint_entries": 365,
+    "wave_extra_simulator_cache_files": [
+      "pmux_case01_balanced/transcript",
+      "pmux_case01_balanced/work/@_opt/_lib.qdb",
+      "pmux_case01_balanced/work/@_opt/_lib1_0.qdb",
+      "pmux_case01_balanced/work/@_opt/_lib1_0.qpg",
+      "pmux_case01_balanced/work/@_opt/_lib1_0.qtl",
+      "pmux_case01_balanced/work/@_opt/_lib2_0.qdb",
+      "pmux_case01_balanced/work/@_opt/_lib2_0.qpg",
+      "pmux_case01_balanced/work/@_opt/_lib2_0.qtl",
+      "pmux_case01_balanced/work/@_opt/_lib3_0.qdb",
+      "pmux_case01_balanced/work/@_opt/_lib3_0.qpg",
+      "pmux_case01_balanced/work/@_opt/_lib3_0.qtl",
+      "pmux_case01_balanced/work/@_opt/_lib4_0.qdb",
+      "pmux_case01_balanced/work/@_opt/_lib4_0.qpg",
+      "pmux_case01_balanced/work/@_opt/_lib4_0.qtl",
+      "pmux_case01_balanced/work/_info",
+      "pmux_case01_balanced/work/_lib.qdb",
+      "pmux_case01_balanced/work/_lib1_0.qdb",
+      "pmux_case01_balanced/work/_lib1_0.qpg",
+      "pmux_case01_balanced/work/_lib1_0.qtl",
+      "pmux_case01_balanced/work/_vmake",
+      "pmux_case02_pipeline/transcript",
+      "pmux_case02_pipeline/work/@_opt/_lib.qdb",
+      "pmux_case02_pipeline/work/@_opt/_lib1_0.qdb",
+      "pmux_case02_pipeline/work/@_opt/_lib1_0.qpg",
+      "pmux_case02_pipeline/work/@_opt/_lib1_0.qtl",
+      "pmux_case02_pipeline/work/@_opt/_lib2_0.qdb",
+      "pmux_case02_pipeline/work/@_opt/_lib2_0.qpg",
+      "pmux_case02_pipeline/work/@_opt/_lib2_0.qtl",
+      "pmux_case02_pipeline/work/@_opt/_lib3_0.qdb",
+      "pmux_case02_pipeline/work/@_opt/_lib3_0.qpg",
+      "pmux_case02_pipeline/work/@_opt/_lib3_0.qtl",
+      "pmux_case02_pipeline/work/@_opt/_lib4_0.qdb",
+      "pmux_case02_pipeline/work/@_opt/_lib4_0.qpg",
+      "pmux_case02_pipeline/work/@_opt/_lib4_0.qtl",
+      "pmux_case02_pipeline/work/_info",
+      "pmux_case02_pipeline/work/_lib.qdb",
+      "pmux_case02_pipeline/work/_lib1_0.qdb",
+      "pmux_case02_pipeline/work/_lib1_0.qpg",
+      "pmux_case02_pipeline/work/_lib1_0.qtl",
+      "pmux_case02_pipeline/work/_vmake",
+      "pmux_case03_crossbar/transcript",
+      "pmux_case03_crossbar/work/@_opt/_lib.qdb",
+      "pmux_case03_crossbar/work/@_opt/_lib1_0.qdb",
+      "pmux_case03_crossbar/work/@_opt/_lib1_0.qpg",
+      "pmux_case03_crossbar/work/@_opt/_lib1_0.qtl",
+      "pmux_case03_crossbar/work/@_opt/_lib2_0.qdb",
+      "pmux_case03_crossbar/work/@_opt/_lib2_0.qpg",
+      "pmux_case03_crossbar/work/@_opt/_lib2_0.qtl",
+      "pmux_case03_crossbar/work/@_opt/_lib3_0.qdb",
+      "pmux_case03_crossbar/work/@_opt/_lib3_0.qpg",
+      "pmux_case03_crossbar/work/@_opt/_lib3_0.qtl",
+      "pmux_case03_crossbar/work/@_opt/_lib4_0.qdb",
+      "pmux_case03_crossbar/work/@_opt/_lib4_0.qpg",
+      "pmux_case03_crossbar/work/@_opt/_lib4_0.qtl",
+      "pmux_case03_crossbar/work/_info",
+      "pmux_case03_crossbar/work/_lib.qdb",
+      "pmux_case03_crossbar/work/_lib1_0.qdb",
+      "pmux_case03_crossbar/work/_lib1_0.qpg",
+      "pmux_case03_crossbar/work/_lib1_0.qtl",
+      "pmux_case03_crossbar/work/_vmake",
+      "pmux_case04_feedback/transcript",
+      "pmux_case04_feedback/work/@_opt/_lib.qdb",
+      "pmux_case04_feedback/work/@_opt/_lib1_0.qdb",
+      "pmux_case04_feedback/work/@_opt/_lib1_0.qpg",
+      "pmux_case04_feedback/work/@_opt/_lib1_0.qtl",
+      "pmux_case04_feedback/work/@_opt/_lib2_0.qdb",
+      "pmux_case04_feedback/work/@_opt/_lib2_0.qpg",
+      "pmux_case04_feedback/work/@_opt/_lib2_0.qtl",
+      "pmux_case04_feedback/work/@_opt/_lib3_0.qdb",
+      "pmux_case04_feedback/work/@_opt/_lib3_0.qpg",
+      "pmux_case04_feedback/work/@_opt/_lib3_0.qtl",
+      "pmux_case04_feedback/work/@_opt/_lib4_0.qdb",
+      "pmux_case04_feedback/work/@_opt/_lib4_0.qpg",
+      "pmux_case04_feedback/work/@_opt/_lib4_0.qtl",
+      "pmux_case04_feedback/work/_info",
+      "pmux_case04_feedback/work/_lib.qdb",
+      "pmux_case04_feedback/work/_lib1_0.qdb",
+      "pmux_case04_feedback/work/_lib1_0.qpg",
+      "pmux_case04_feedback/work/_lib1_0.qtl",
+      "pmux_case04_feedback/work/_vmake",
+      "pmux_case05_nested/transcript",
+      "pmux_case05_nested/work/@_opt/_lib.qdb",
+      "pmux_case05_nested/work/@_opt/_lib1_0.qdb",
+      "pmux_case05_nested/work/@_opt/_lib1_0.qpg",
+      "pmux_case05_nested/work/@_opt/_lib1_0.qtl",
+      "pmux_case05_nested/work/@_opt/_lib2_0.qdb",
+      "pmux_case05_nested/work/@_opt/_lib2_0.qpg",
+      "pmux_case05_nested/work/@_opt/_lib2_0.qtl",
+      "pmux_case05_nested/work/@_opt/_lib3_0.qdb",
+      "pmux_case05_nested/work/@_opt/_lib3_0.qpg",
+      "pmux_case05_nested/work/@_opt/_lib3_0.qtl",
+      "pmux_case05_nested/work/@_opt/_lib4_0.qdb",
+      "pmux_case05_nested/work/@_opt/_lib4_0.qpg",
+      "pmux_case05_nested/work/@_opt/_lib4_0.qtl",
+      "pmux_case05_nested/work/_info",
+      "pmux_case05_nested/work/_lib.qdb",
+      "pmux_case05_nested/work/_lib1_0.qdb",
+      "pmux_case05_nested/work/_lib1_0.qpg",
+      "pmux_case05_nested/work/_lib1_0.qtl",
+      "pmux_case05_nested/work/_vmake",
+      "replay_test4/test4/transcript",
+      "replay_test4/test4/work/@_opt/_lib.qdb",
+      "replay_test4/test4/work/@_opt/_lib1_0.qdb",
+      "replay_test4/test4/work/@_opt/_lib1_0.qpg",
+      "replay_test4/test4/work/@_opt/_lib1_0.qtl",
+      "replay_test4/test4/work/@_opt/_lib2_0.qdb",
+      "replay_test4/test4/work/@_opt/_lib2_0.qpg",
+      "replay_test4/test4/work/@_opt/_lib2_0.qtl",
+      "replay_test4/test4/work/@_opt/_lib3_0.qdb",
+      "replay_test4/test4/work/@_opt/_lib3_0.qpg",
+      "replay_test4/test4/work/@_opt/_lib3_0.qtl",
+      "replay_test4/test4/work/@_opt/_lib4_0.qdb",
+      "replay_test4/test4/work/@_opt/_lib4_0.qpg",
+      "replay_test4/test4/work/@_opt/_lib4_0.qtl",
+      "replay_test4/test4/work/_info",
+      "replay_test4/test4/work/_lib.qdb",
+      "replay_test4/test4/work/_lib1_0.qdb",
+      "replay_test4/test4/work/_lib1_0.qpg",
+      "replay_test4/test4/work/_lib1_0.qtl",
+      "replay_test4/test4/work/_vmake",
+      "test1/transcript",
+      "test1/work/@_opt/_lib.qdb",
+      "test1/work/@_opt/_lib1_0.qdb",
+      "test1/work/@_opt/_lib1_0.qpg",
+      "test1/work/@_opt/_lib1_0.qtl",
+      "test1/work/@_opt/_lib2_0.qdb",
+      "test1/work/@_opt/_lib2_0.qpg",
+      "test1/work/@_opt/_lib2_0.qtl",
+      "test1/work/@_opt/_lib3_0.qdb",
+      "test1/work/@_opt/_lib3_0.qpg",
+      "test1/work/@_opt/_lib3_0.qtl",
+      "test1/work/@_opt/_lib4_0.qdb",
+      "test1/work/@_opt/_lib4_0.qpg",
+      "test1/work/@_opt/_lib4_0.qtl",
+      "test1/work/_info",
+      "test1/work/_lib.qdb",
+      "test1/work/_lib1_0.qdb",
+      "test1/work/_lib1_0.qpg",
+      "test1/work/_lib1_0.qtl",
+      "test1/work/_vmake",
+      "test2/transcript",
+      "test2/work/@_opt/_lib.qdb",
+      "test2/work/@_opt/_lib1_0.qdb",
+      "test2/work/@_opt/_lib1_0.qpg",
+      "test2/work/@_opt/_lib1_0.qtl",
+      "test2/work/@_opt/_lib2_0.qdb",
+      "test2/work/@_opt/_lib2_0.qpg",
+      "test2/work/@_opt/_lib2_0.qtl",
+      "test2/work/@_opt/_lib3_0.qdb",
+      "test2/work/@_opt/_lib3_0.qpg",
+      "test2/work/@_opt/_lib3_0.qtl",
+      "test2/work/@_opt/_lib4_0.qdb",
+      "test2/work/@_opt/_lib4_0.qpg",
+      "test2/work/@_opt/_lib4_0.qtl",
+      "test2/work/_info",
+      "test2/work/_lib.qdb",
+      "test2/work/_lib1_0.qdb",
+      "test2/work/_lib1_0.qpg",
+      "test2/work/_lib1_0.qtl",
+      "test2/work/_vmake",
+      "test3/transcript",
+      "test3/work/@_opt/_lib.qdb",
+      "test3/work/@_opt/_lib1_0.qdb",
+      "test3/work/@_opt/_lib1_0.qpg",
+      "test3/work/@_opt/_lib1_0.qtl",
+      "test3/work/@_opt/_lib2_0.qdb",
+      "test3/work/@_opt/_lib2_0.qpg",
+      "test3/work/@_opt/_lib2_0.qtl",
+      "test3/work/@_opt/_lib3_0.qdb",
+      "test3/work/@_opt/_lib3_0.qpg",
+      "test3/work/@_opt/_lib3_0.qtl",
+      "test3/work/@_opt/_lib4_0.qdb",
+      "test3/work/@_opt/_lib4_0.qpg",
+      "test3/work/@_opt/_lib4_0.qtl",
+      "test3/work/_info",
+      "test3/work/_lib.qdb",
+      "test3/work/_lib1_0.qdb",
+      "test3/work/_lib1_0.qpg",
+      "test3/work/_lib1_0.qtl",
+      "test3/work/_vmake",
+      "test4/transcript",
+      "test4/work/@_opt/_lib.qdb",
+      "test4/work/@_opt/_lib1_0.qdb",
+      "test4/work/@_opt/_lib1_0.qpg",
+      "test4/work/@_opt/_lib1_0.qtl",
+      "test4/work/@_opt/_lib2_0.qdb",
+      "test4/work/@_opt/_lib2_0.qpg",
+      "test4/work/@_opt/_lib2_0.qtl",
+      "test4/work/@_opt/_lib3_0.qdb",
+      "test4/work/@_opt/_lib3_0.qpg",
+      "test4/work/@_opt/_lib3_0.qtl",
+      "test4/work/@_opt/_lib4_0.qdb",
+      "test4/work/@_opt/_lib4_0.qpg",
+      "test4/work/@_opt/_lib4_0.qtl",
+      "test4/work/_info",
+      "test4/work/_lib.qdb",
+      "test4/work/_lib1_0.qdb",
+      "test4/work/_lib1_0.qpg",
+      "test4/work/_lib1_0.qtl",
+      "test4/work/_vmake"
+    ],
+    "wave_extra_cache_bytes_indexed_and_preserved": true,
+    "seven_wave_figure_hashes_checked": true,
+    "overlay_file_count": 20,
+    "overlay_sha256": {
+      "CMakeLists.txt": "c2e92a04a93931a7587897994297bd21a4a2e7c69de661def75800285ff0f865",
+      "opt_pmux.cc": "125cffdcaa5dd541f69bdbd425ea83024498c33223abba3913489063ab6b3afc",
+      "pmux_branch_constants.h": "f60e2e252606ca38ba2545f543f7757218b79e356db080c88bc9d5a95efdc59e",
+      "pmux_cycloneiv_sclr.h": "73dd2949985177b59292be9b41cfd9517844a5fbabae9e42a3d4c79f843cc12d",
+      "pmux_cycloneiv_sload.h": "f8706c1daf9de4694ae329adcfc6e92472266c53b5aa8ae651832151778f4fd6",
+      "pmux_guard_truth.h": "1785ca61444157084c39028a752af9bb74e55e19e565db94b2f5dcc8506bc28f",
+      "pmux_init_zero.h": "f9f2ecba8acbd75fa2c51db7f1c41272a673d908d70f715f11ef709f112bf512",
+      "pmux_observable_decode.h": "a9188ae56ce866373dd4f3c669f66d89d677c8fc468b19eaf0652a75e38335e2",
+      "pmux_preserve_zero_state.h": "f605cc1af2f01d3f6722c59fcb5c2d352635f0c25ff5f389cc73a81409f73e52",
+      "pmux_priority_grouping.h": "5cf537efe474744550d393c78dca3b5b0b6d0d7f85a53037ca5fd0c68031fde2",
+      "pmux_resource_share.h": "8523e7bc523a8a7bf8af7c96f4d98e5552a968474d00a04f9d68fe924ce48bf3",
+      "pmux_rom_residual.h": "d1235807609ee9bb3cf5fdbc57ad3ad5bf611140064290e614413d98a0c2a341",
+      "pmux_sdffe_boundary.h": "fa63e79a455b436004dc0b8d21d30ff4ad6b0c73720ce0fcc6e358e8008697a4",
+      "pmux_share_banks.h": "d4266e6e746801e59a63fe0eef9beac4f590cd6264f705f0154902c56ce69363",
+      "pmux_share_banks_v2.h": "64cb5d9b2ee49299d669077f1944de5a935e72338fb79a331f9e731ad870c5d3",
+      "pmux_share_carry3.h": "74dcd10a2901c681a047ed8aaa72041bced5c30f70fe4b35ba5fba7091036efa",
+      "pmux_share_cone.h": "c783e67a54d97b1829b29fc8e6ccd70469e5ee479a41f095819fadbf559a5399",
+      "pmux_share_dag.h": "9f6d8d7ee55d6ead65d71cdcdc07d32004b870fb08f1ef75083f3f552ad637d3",
+      "pmux_small_rom.h": "163cbf159c503749653bf2bdfd6ca467d59da001330ea04c63bdd448fa5213ac",
+      "synth_intel.cc": "0dd7527a59b4d876ec5339e48c2d5137db0bf42e1fc4846f0d1259f6cb69a805"
+    },
+    "native_source_after_files_verified": 38,
+    "native_build_manifest_sha256": "d50f5d55b6a748f42adf4a8d6c21ffea80b456b9de4c922e95f532a0386d8764",
+    "native_build_and_install_exit_zero": true,
+    "current_official_binding_sha256": "f68580fcb67e1ecdb0b8d373fe9623c4068e06453073de4890ddac02e58aa40c",
+    "historical_r20_persistent_proof_files_verified": 443,
+    "historical_temp_not_used_or_required": true,
+    "pending_deliverables_at_copy": [
+      "books"
+    ],
+    "fresh_rebuild_by_this_preparation": false
+  },
+  "measurement_and_capture_binding_pass": true,
+  "formal_endpoint_binding_all_nine_pass": true,
+  "formal_proof_all_nine_pass": true,
+  "formal_pass_count": 9,
+  "timed_process_count": 28,
+  "restricted_model_runtime_sha256": {
+    "endpoint_nozinit_runner.py": "ded68afdcc57d833dea104d424ee6285a65fb91b63141d427252deaa44361ad1",
+    "dffeas_formal.v": "bd0345b835ed076a79e81f1c85b3db4ce83f04879f45fcc6b1edfe151cff332a",
+    "dffeas_sload_sim.v": "6fa77e1742974535b87781b39efd9d806f473b0185a0b4d68856d2da0a0328db",
+    "legacy_endpoint_runner.py": "95fa50c972e8c26c7c61646846392ebca0324bf2152619da819c8f96a6be5a17",
+    "legacy_dffeas_formal.v": "412cc8d76fc5691c05db8139965e99e6814f20c65de903cec3aaccc06f4dc0c7"
+  },
+  "all_copied_models_and_sidecars_bound": true,
+  "primitive_model_domains": {
+    "test1": {
+      "legacy_sclr_zero": 222
+    },
+    "test2": {},
+    "test3": {
+      "legacy_sclr_zero": 14
+    },
+    "test4": {
+      "legacy_sclr_zero": 10
+    },
+    "pmux_case01_balanced": {
+      "sclr_with_async_controls_inactive": 12
+    },
+    "pmux_case02_pipeline": {
+      "sclr_sload_asdata_with_async_controls_inactive": 24
+    },
+    "pmux_case03_crossbar": {
+      "sclr_with_async_controls_inactive": 10
+    },
+    "pmux_case04_feedback": {
+      "legacy_sclr_zero": 16
+    },
+    "pmux_case05_nested": {
+      "sclr_with_async_controls_inactive": 12
+    }
+  },
+  "all_split_full_json_byte_identical": true,
+  "prior_r23_failed_and_successful_material_preserved": true,
+  "prior_r29_material_preserved": true,
+  "proof_work_root": "D:\\PMUX_20261102_delivery\\proof_tmp",
+  "child_only_environment_overrides": {
+    "TEMP": "D:\\PMUX_20261102_delivery\\temp",
+    "TMP": "D:\\PMUX_20261102_delivery\\temp"
+  },
+  "system_environment_modified": false,
+  "storage_failure_history_sha256": "86f6fc6ef93c84388841bb98d5396ab1a4796720eeda6da71b39c764a6195882",
+  "timed_finished_sequence": 56,
+  "first_untimed_capture_sequence": 57,
+  "area_and_efficiency_pass": true,
+  "mean_area_reduction": 0.3625224711365656,
+  "diagnosis": "Frozen r30 source/binary delivery validated by one actual full All batch through the unchanged pathfix2 entrypoint in a new space-containing directory. All nine proofs pass and every proof file is identically archived. Historical r23 shell/preparation records and earlier r20 results remain preserved; no prior run is relabelled. This does not replace r30_run01.",
+  "proof_archive_validation": {
+    "file_count": 443,
+    "all_actual_file_hashes_and_file_sets_identical": true,
+    "execution_directory": "D:\\PMUX_20261102_delivery\\proof_tmp\\q73753efee40d\\p",
+    "archive_directory": "D:\\PMUX_20261102_delivery\\relocation r30 all\\results\\r20261102_072425_992b5bb8\\strict",
+    "archive_index_sha256": "490dd04aed92522149a62f0b3a397ad34569285c0a966ea4101247d541b5b216",
+    "raw_report_paths_preserved": true,
+    "path_preflight_max_units_with_reserve": 205
+  },
+  "prior_failed_run_preserved": true,
+  "reference_contract": "Yosys read_verilog/proc synthesis semantics; source unspecified FF logical zero; explicit values preserved; no candidate proof repair; no original RTL event-list simulation claim.",
+  "historical_r23_preparation_error_preserved": "C:\\Users\\local\\Documents\\Build\\2026-09-27\\workspace3\\work\\20261102_delivery_v3\\RELOCATION_R23_PREPARATION_ALIAS_ERROR.json",
+  "historical_r23_windows_powershell_launch_error_preserved": "C:\\Users\\local\\Documents\\Build\\2026-09-27\\workspace3\\work\\20261102_delivery_v3\\RELOCATION_R23_ALL_EXECUTION.json",
+  "actual_pwsh7_execution_record_sha256": "364e5012ccd6895d0c1286fb61792f57c1c6cc1bd1181d4c58082b6fd524f49b",
+  "actual_single_all_results_directory_count": 1,
+  "source_overlay_count_unchanged": 20,
+  "native_full_source_count_unchanged": 38,
+  "prior_successful_r20_run_preserved": true,
+  "limitations": [
+    "This audits the prepared snapshot listed in package_snapshot_identity; final book archive QA is separately required when books were pending at copy.",
+    "External OSS CAD suite and shell tools are explicit supplied prerequisites, not included portable package tools.",
+    "Timed inventory and untimed JSON agree; no bit-for-bit identity is claimed for an unexported timed netlist."
+  ],
+  "report_hashes": {
+    "report.json": "d180430a80392fc3350572d57fc79ad23cd04928579a97165f0732b1a572c56a",
+    "measure/report.json": "fc7afc21cce25ac9c18dbc6b3f36d5e3e1fb5dd38ba4c2ec5b8d90a1e65ded0c",
+    "capture/report.json": "926f16638108685b8914342e723820a3b93fc327e13430a383ea36c0c59ab03c",
+    "strict/report.json": "c2bb33e4a53cf90137b525dc68706d6001db48266d7f1232fb34736bf9648274",
+    "strict.archive.json": "490dd04aed92522149a62f0b3a397ad34569285c0a966ea4101247d541b5b216"
+  },
+  "cases": [
+    {
+      "id": "test1",
+      "source_sha256": {
+        "D:\\PMUX_20261102_delivery\\relocation r30 all\\cases\\original4\\competition_case\\test1\\test1.v": "2d2dba011b0e8799d0de3790b69b7f01c6eb6ac665c4321b57b0378a4972fd13"
+      },
+      "timed_process_count_including_warmups": 12,
+      "recheck_triggered": false,
+      "aggregate": {
+        "valid": true,
+        "basis": "initial_pair",
+        "pairs_in_aggregate": 1,
+        "baseline_mean_wall_seconds": 0.3469582,
+        "optimized_mean_wall_seconds": 0.3398859,
+        "baseline_mean_peak_ws_bytes": 21069824,
+        "optimized_mean_peak_ws_bytes": 20422656,
+        "time_ratio": 0.9796162765428228,
+        "memory_ratio": 0.9692846034214619,
+        "time_within_5_percent": true,
+        "memory_within_5_percent": true,
+        "time_above_15_percent": false,
+        "memory_above_15_percent": false,
+        "optimized_within_60_seconds": true,
+        "optimized_peak_ws_within_2_decimal_GB": true,
+        "area_valid": true,
+        "area_basis": "separate_untimed_JSON_matched_to_all_timed_top_inventories",
+        "baseline_cells": {
+          "lut": 286,
+          "inverter": 2,
+          "dff": 222,
+          "io": 0,
+          "other": 0,
+          "unknown": 0,
+          "total_leaf_cells": 510,
+          "logic_units": 288,
+          "cell_types": {
+            "$not": 2,
+            "cycloneiv_lcell_comb": 286,
+            "dffeas": 222
+          },
+          "unknown_types": {},
+          "top_parameter_defaults_raw": {
+            "CYCLE1": "0001",
+            "CYCLE10": "1010",
+            "CYCLE11": "1011",
+            "CYCLE12": "1100",
+            "CYCLE13": "1101",
+            "CYCLE14": "1110",
+            "CYCLE15": "1111",
+            "CYCLE2": "0010",
+            "CYCLE3": "0011",
+            "CYCLE4": "0100",
+            "CYCLE5": "0101",
+            "CYCLE6": "0110",
+            "CYCLE7": "0111",
+            "CYCLE8": "1000",
+            "CYCLE9": "1001",
+            "START": "0000"
+          },
+          "classification_complete": true,
+          "netlist_sha256": "3719ad0a2ed6e9ece30ff69d32c9e0cff5903df3923263488ed446491cb728b8"
+        },
+        "optimized_cells": {
+          "lut": 202,
+          "inverter": 2,
+          "dff": 222,
+          "io": 0,
+          "other": 0,
+          "unknown": 0,
+          "total_leaf_cells": 426,
+          "logic_units": 204,
+          "cell_types": {
+            "$not": 2,
+            "cycloneiv_lcell_comb": 202,
+            "dffeas": 222
+          },
+          "unknown_types": {},
+          "top_parameter_defaults_raw": {
+            "CYCLE1": "0001",
+            "CYCLE10": "1010",
+            "CYCLE11": "1011",
+            "CYCLE12": "1100",
+            "CYCLE13": "1101",
+            "CYCLE14": "1110",
+            "CYCLE15": "1111",
+            "CYCLE2": "0010",
+            "CYCLE3": "0011",
+            "CYCLE4": "0100",
+            "CYCLE5": "0101",
+            "CYCLE6": "0110",
+            "CYCLE7": "0111",
+            "CYCLE8": "1000",
+            "CYCLE9": "1001",
+            "START": "0000"
+          },
+          "classification_complete": true,
+          "netlist_sha256": "5aaf071cc5d1a49462ecef01ce2544f6b4c54debd17cb176915293c63ef1f011"
+        },
+        "area_reduction": 0.2916666666666667,
+        "logic_not_increased": true,
+        "io_increase_needs_review": false,
+        "eqy_status": "NOT_RUN_BY_THIS_TOOL"
+      },
+      "split_full_json_matches_area_capture": true,
+      "actual_endpoint_sha256": "15ce113d94640d04bef30619457bd10f0e419f28d45a2a3905a852bbb05163d4",
+      "proof_endpoint_binding": true,
+      "formal_status": "PASS",
+      "formal_pass": true,
+      "formal_execution": {
+        "returncode": 0,
+        "timed_out": false,
+        "diagnostic_seconds_not_contest_time": 3.280999999959022
+      },
+      "proof_outcome": "PASS",
+      "path_diagnostics": [
+        {
+          "raw_path": "D:\\PMUX_20261102_delivery\\proof_tmp\\q73753efee40d\\p\\test1\\rb\\strategies\\test1.i0\\induction\\..\\..\\..\\partitions\\test1.i0.sv",
+          "raw_path_length": 122,
+          "raw_exists": true,
+          "resolved_path": "D:\\PMUX_20261102_delivery\\proof_tmp\\q73753efee40d\\p\\test1\\rb\\partitions\\test1.i0.sv",
+          "resolved_path_length": 83,
+          "resolved_exists": true,
+          "resolved_sha256": "3dc81f78867f87a89f94e031e92602f040731977ba0f567b122b1418a5ec352a"
+        }
+      ]
+    },
+    {
+      "id": "test2",
+      "source_sha256": {
+        "D:\\PMUX_20261102_delivery\\relocation r30 all\\cases\\original4\\competition_case\\test2\\test2.v": "e43c9b437071488551caf3121e227e86f4fe3190751f245beac3b7ecc3fdb146"
+      },
+      "timed_process_count_including_warmups": 2,
+      "recheck_triggered": false,
+      "aggregate": {
+        "valid": true,
+        "basis": "initial_pair",
+        "pairs_in_aggregate": 1,
+        "baseline_mean_wall_seconds": 0.1889807,
+        "optimized_mean_wall_seconds": 0.1842284,
+        "baseline_mean_peak_ws_bytes": 14569472,
+        "optimized_mean_peak_ws_bytes": 14721024,
+        "time_ratio": 0.9748529876331286,
+        "memory_ratio": 1.0104020241776779,
+        "time_within_5_percent": true,
+        "memory_within_5_percent": true,
+        "time_above_15_percent": false,
+        "memory_above_15_percent": false,
+        "optimized_within_60_seconds": true,
+        "optimized_peak_ws_within_2_decimal_GB": true,
+        "area_valid": true,
+        "area_basis": "separate_untimed_JSON_matched_to_all_timed_top_inventories",
+        "baseline_cells": {
+          "lut": 25,
+          "inverter": 0,
+          "dff": 0,
+          "io": 0,
+          "other": 0,
+          "unknown": 0,
+          "total_leaf_cells": 25,
+          "logic_units": 25,
+          "cell_types": {
+            "cycloneiv_lcell_comb": 25
+          },
+          "unknown_types": {},
+          "top_parameter_defaults_raw": {},
+          "classification_complete": true,
+          "netlist_sha256": "bbe92976c65bb4587a12cd2bca356c80cc2691005edc2929bb6755551f5411ef"
+        },
+        "optimized_cells": {
+          "lut": 15,
+          "inverter": 0,
+          "dff": 0,
+          "io": 0,
+          "other": 0,
+          "unknown": 0,
+          "total_leaf_cells": 15,
+          "logic_units": 15,
+          "cell_types": {
+            "cycloneiv_lcell_comb": 15
+          },
+          "unknown_types": {},
+          "top_parameter_defaults_raw": {},
+          "classification_complete": true,
+          "netlist_sha256": "5a0581d1c63ed666ea6ae16f9f6dae6cba4372262632b1ae8bfdab1fdc04003a"
+        },
+        "area_reduction": 0.4,
+        "logic_not_increased": true,
+        "io_increase_needs_review": false,
+        "eqy_status": "NOT_RUN_BY_THIS_TOOL"
+      },
+      "split_full_json_matches_area_capture": true,
+      "actual_endpoint_sha256": "8f669a1fe3146f08fe77f405926e620806ee2ffeefb9f2d9d96f4f3f6b703828",
+      "proof_endpoint_binding": true,
+      "formal_status": "PASS",
+      "formal_pass": true,
+      "formal_execution": {
+        "returncode": 0,
+        "timed_out": false,
+        "diagnostic_seconds_not_contest_time": 1.4059999999590218
+      },
+      "proof_outcome": "PASS",
+      "path_diagnostics": [
+        {
+          "raw_path": "D:\\PMUX_20261102_delivery\\proof_tmp\\q73753efee40d\\p\\test2\\rb\\strategies\\test2.out\\induction\\..\\..\\..\\partitions\\test2.out.sv",
+          "raw_path_length": 124,
+          "raw_exists": true,
+          "resolved_path": "D:\\PMUX_20261102_delivery\\proof_tmp\\q73753efee40d\\p\\test2\\rb\\partitions\\test2.out.sv",
+          "resolved_path_length": 84,
+          "resolved_exists": true,
+          "resolved_sha256": "e15b5f04b9d8e6e68a8803984a8e83d25bd5c9bf4c175b1325c0aaca630d03be"
+        }
+      ]
+    },
+    {
+      "id": "test3",
+      "source_sha256": {
+        "D:\\PMUX_20261102_delivery\\relocation r30 all\\cases\\original4\\competition_case\\test3\\test3.v": "1551b9212622ccef6019d6e77de2c43dc8c80d267957b55a42121f34a08780e9"
+      },
+      "timed_process_count_including_warmups": 2,
+      "recheck_triggered": false,
+      "aggregate": {
+        "valid": true,
+        "basis": "initial_pair",
+        "pairs_in_aggregate": 1,
+        "baseline_mean_wall_seconds": 0.204525,
+        "optimized_mean_wall_seconds": 0.2015924,
+        "baseline_mean_peak_ws_bytes": 15396864,
+        "optimized_mean_peak_ws_bytes": 15446016,
+        "time_ratio": 0.9856614105855029,
+        "memory_ratio": 1.0031923383878691,
+        "time_within_5_percent": true,
+        "memory_within_5_percent": true,
+        "time_above_15_percent": false,
+        "memory_above_15_percent": false,
+        "optimized_within_60_seconds": true,
+        "optimized_peak_ws_within_2_decimal_GB": true,
+        "area_valid": true,
+        "area_basis": "separate_untimed_JSON_matched_to_all_timed_top_inventories",
+        "baseline_cells": {
+          "lut": 12,
+          "inverter": 1,
+          "dff": 17,
+          "io": 0,
+          "other": 0,
+          "unknown": 0,
+          "total_leaf_cells": 30,
+          "logic_units": 13,
+          "cell_types": {
+            "$not": 1,
+            "cycloneiv_lcell_comb": 12,
+            "dffeas": 17
+          },
+          "unknown_types": {},
+          "top_parameter_defaults_raw": {},
+          "classification_complete": true,
+          "netlist_sha256": "04d36cd191f0daeb1942939568f673af9e907aa33e1c27591ffc6147d846aad7"
+        },
+        "optimized_cells": {
+          "lut": 8,
+          "inverter": 1,
+          "dff": 14,
+          "io": 0,
+          "other": 0,
+          "unknown": 0,
+          "total_leaf_cells": 23,
+          "logic_units": 9,
+          "cell_types": {
+            "$not": 1,
+            "cycloneiv_lcell_comb": 8,
+            "dffeas": 14
+          },
+          "unknown_types": {},
+          "top_parameter_defaults_raw": {},
+          "classification_complete": true,
+          "netlist_sha256": "10a80a7ac0f4bc2be232191b9de2cb4363967a2187287ef6fab5611231f9f67f"
+        },
+        "area_reduction": 0.3076923076923077,
+        "logic_not_increased": true,
+        "io_increase_needs_review": false,
+        "eqy_status": "NOT_RUN_BY_THIS_TOOL"
+      },
+      "split_full_json_matches_area_capture": true,
+      "actual_endpoint_sha256": "3517570995a24ee4ecee9efda253b5d58d4c1314581bd4af9d90ebe30eb445ad",
+      "proof_endpoint_binding": true,
+      "formal_status": "PASS",
+      "formal_pass": true,
+      "formal_execution": {
+        "returncode": 0,
+        "timed_out": false,
+        "diagnostic_seconds_not_contest_time": 1.3589999999967404
+      },
+      "proof_outcome": "PASS",
+      "path_diagnostics": [
+        {
+          "raw_path": "D:\\PMUX_20261102_delivery\\proof_tmp\\q73753efee40d\\p\\test3\\rb\\strategies\\test3.gpioout\\induction\\..\\..\\..\\partitions\\test3.gpioout.sv",
+          "raw_path_length": 132,
+          "raw_exists": true,
+          "resolved_path": "D:\\PMUX_20261102_delivery\\proof_tmp\\q73753efee40d\\p\\test3\\rb\\partitions\\test3.gpioout.sv",
+          "resolved_path_length": 88,
+          "resolved_exists": true,
+          "resolved_sha256": "582aba68614007f27c757b17bed60f2a039620cabe151013cc5399bc7ecc6b44"
+        }
+      ]
+    },
+    {
+      "id": "test4",
+      "source_sha256": {
+        "D:\\PMUX_20261102_delivery\\relocation r30 all\\cases\\original4\\competition_case\\test4\\test4.v": "c0c5042928bd6bf568e2b7fb2193f2b6db9c4193ba3a5378fc50a331d43422d7"
+      },
+      "timed_process_count_including_warmups": 2,
+      "recheck_triggered": false,
+      "aggregate": {
+        "valid": true,
+        "basis": "initial_pair",
+        "pairs_in_aggregate": 1,
+        "baseline_mean_wall_seconds": 0.2279757,
+        "optimized_mean_wall_seconds": 0.2159009,
+        "baseline_mean_peak_ws_bytes": 16510976,
+        "optimized_mean_peak_ws_bytes": 16490496,
+        "time_ratio": 0.9470347058918999,
+        "memory_ratio": 0.9987596129992558,
+        "time_within_5_percent": true,
+        "memory_within_5_percent": true,
+        "time_above_15_percent": false,
+        "memory_above_15_percent": false,
+        "optimized_within_60_seconds": true,
+        "optimized_peak_ws_within_2_decimal_GB": true,
+        "area_valid": true,
+        "area_basis": "separate_untimed_JSON_matched_to_all_timed_top_inventories",
+        "baseline_cells": {
+          "lut": 35,
+          "inverter": 1,
+          "dff": 10,
+          "io": 0,
+          "other": 0,
+          "unknown": 0,
+          "total_leaf_cells": 46,
+          "logic_units": 36,
+          "cell_types": {
+            "$not": 1,
+            "cycloneiv_lcell_comb": 35,
+            "dffeas": 10
+          },
+          "unknown_types": {},
+          "top_parameter_defaults_raw": {},
+          "classification_complete": true,
+          "netlist_sha256": "ccb8f4a48f5b4eb8d91ee325b86af95a165374da76bfb26580314e0996c63cad"
+        },
+        "optimized_cells": {
+          "lut": 27,
+          "inverter": 1,
+          "dff": 10,
+          "io": 0,
+          "other": 0,
+          "unknown": 0,
+          "total_leaf_cells": 38,
+          "logic_units": 28,
+          "cell_types": {
+            "$not": 1,
+            "cycloneiv_lcell_comb": 27,
+            "dffeas": 10
+          },
+          "unknown_types": {},
+          "top_parameter_defaults_raw": {},
+          "classification_complete": true,
+          "netlist_sha256": "553807666a3a392dbc67c3cbfc2c808d8984efa70ca77cbba5b8c78e6ef06083"
+        },
+        "area_reduction": 0.2222222222222222,
+        "logic_not_increased": true,
+        "io_increase_needs_review": false,
+        "eqy_status": "NOT_RUN_BY_THIS_TOOL"
+      },
+      "split_full_json_matches_area_capture": true,
+      "actual_endpoint_sha256": "7cce2d2915973730ab3194382f0696a0e7f369bdb4d8dfdffcbc4d6919096714",
+      "proof_endpoint_binding": true,
+      "formal_status": "PASS",
+      "formal_pass": true,
+      "formal_execution": {
+        "returncode": 0,
+        "timed_out": false,
+        "diagnostic_seconds_not_contest_time": 1.3910000000032596
+      },
+      "proof_outcome": "PASS",
+      "path_diagnostics": [
+        {
+          "raw_path": "D:\\PMUX_20261102_delivery\\proof_tmp\\q73753efee40d\\p\\test4\\rb\\strategies\\test4.data_dn\\induction\\..\\..\\..\\partitions\\test4.data_dn.sv",
+          "raw_path_length": 132,
+          "raw_exists": true,
+          "resolved_path": "D:\\PMUX_20261102_delivery\\proof_tmp\\q73753efee40d\\p\\test4\\rb\\partitions\\test4.data_dn.sv",
+          "resolved_path_length": 88,
+          "resolved_exists": true,
+          "resolved_sha256": "1b560d79c4b406682162a70040010b0acf3f78e97a8ce4bd9fc0edd017deb515"
+        }
+      ]
+    },
+    {
+      "id": "pmux_case01_balanced",
+      "source_sha256": {
+        "D:\\PMUX_20261102_delivery\\relocation r30 all\\cases\\additional5\\pmux_case01_balanced.v": "463263f4b265cbad3b634d69d316cd29e7ea0a62f91ee396dbeeecf7df5c7343"
+      },
+      "timed_process_count_including_warmups": 2,
+      "recheck_triggered": false,
+      "aggregate": {
+        "valid": true,
+        "basis": "initial_pair",
+        "pairs_in_aggregate": 1,
+        "baseline_mean_wall_seconds": 0.395799,
+        "optimized_mean_wall_seconds": 0.3015344,
+        "baseline_mean_peak_ws_bytes": 23592960,
+        "optimized_mean_peak_ws_bytes": 19443712,
+        "time_ratio": 0.7618371951419786,
+        "memory_ratio": 0.8241319444444445,
+        "time_within_5_percent": true,
+        "memory_within_5_percent": true,
+        "time_above_15_percent": false,
+        "memory_above_15_percent": false,
+        "optimized_within_60_seconds": true,
+        "optimized_peak_ws_within_2_decimal_GB": true,
+        "area_valid": true,
+        "area_basis": "separate_untimed_JSON_matched_to_all_timed_top_inventories",
+        "baseline_cells": {
+          "lut": 426,
+          "inverter": 0,
+          "dff": 12,
+          "io": 0,
+          "other": 0,
+          "unknown": 0,
+          "total_leaf_cells": 438,
+          "logic_units": 426,
+          "cell_types": {
+            "cycloneiv_lcell_comb": 426,
+            "dffeas": 12
+          },
+          "unknown_types": {},
+          "top_parameter_defaults_raw": {
+            "LANES": "00000000000000000000000000000001",
+            "WIDTH": "00000000000000000000000000001100"
+          },
+          "classification_complete": true,
+          "netlist_sha256": "87bcede36fca4d92051e5a71842716aee9596f22e41991efc4e3f7b3e7a9e5b1"
+        },
+        "optimized_cells": {
+          "lut": 239,
+          "inverter": 0,
+          "dff": 12,
+          "io": 0,
+          "other": 0,
+          "unknown": 0,
+          "total_leaf_cells": 251,
+          "logic_units": 239,
+          "cell_types": {
+            "cycloneiv_lcell_comb": 239,
+            "dffeas": 12
+          },
+          "unknown_types": {},
+          "top_parameter_defaults_raw": {
+            "LANES": "00000000000000000000000000000001",
+            "WIDTH": "00000000000000000000000000001100"
+          },
+          "classification_complete": true,
+          "netlist_sha256": "c400e57029f95f68b0019b2e81162c65a1717da9ca1619da22310e12d28959b2"
+        },
+        "area_reduction": 0.43896713615023475,
+        "logic_not_increased": true,
+        "io_increase_needs_review": false,
+        "eqy_status": "NOT_RUN_BY_THIS_TOOL"
+      },
+      "split_full_json_matches_area_capture": true,
+      "actual_endpoint_sha256": "fc64d42476707f958db80f3e5a935aed40f22051a2d326937b76247e06087218",
+      "proof_endpoint_binding": true,
+      "formal_status": "PASS",
+      "formal_pass": true,
+      "formal_execution": {
+        "returncode": 0,
+        "timed_out": false,
+        "diagnostic_seconds_not_contest_time": 1.6089999999967404
+      },
+      "proof_outcome": "PASS",
+      "path_diagnostics": [
+        {
+          "raw_path": "D:\\PMUX_20261102_delivery\\proof_tmp\\q73753efee40d\\p\\pmux_case01_balanced\\rb\\strategies\\pmux_case01_balanced.data_out\\induction\\..\\..\\..\\partitions\\pmux_case01_balanced.data_out.sv",
+          "raw_path_length": 179,
+          "raw_exists": true,
+          "resolved_path": "D:\\PMUX_20261102_delivery\\proof_tmp\\q73753efee40d\\p\\pmux_case01_balanced\\rb\\partitions\\pmux_case01_balanced.data_out.sv",
+          "resolved_path_length": 119,
+          "resolved_exists": true,
+          "resolved_sha256": "0ae554f5ef412a20bed394a8b2235af2820b6f42f1500ec38643aa625e57dfb0"
+        }
+      ]
+    },
+    {
+      "id": "pmux_case02_pipeline",
+      "source_sha256": {
+        "D:\\PMUX_20261102_delivery\\relocation r30 all\\cases\\additional5\\pmux_case02_pipeline.v": "8639081b2fb7c446edef52a514d63b49333e444ce21638f03bdee97dc954e0ea"
+      },
+      "timed_process_count_including_warmups": 2,
+      "recheck_triggered": false,
+      "aggregate": {
+        "valid": true,
+        "basis": "initial_pair",
+        "pairs_in_aggregate": 1,
+        "baseline_mean_wall_seconds": 0.4602932,
+        "optimized_mean_wall_seconds": 0.4169186,
+        "baseline_mean_peak_ws_bytes": 23515136,
+        "optimized_mean_peak_ws_bytes": 21815296,
+        "time_ratio": 0.9057674543095574,
+        "memory_ratio": 0.9277129419961679,
+        "time_within_5_percent": true,
+        "memory_within_5_percent": true,
+        "time_above_15_percent": false,
+        "memory_above_15_percent": false,
+        "optimized_within_60_seconds": true,
+        "optimized_peak_ws_within_2_decimal_GB": true,
+        "area_valid": true,
+        "area_basis": "separate_untimed_JSON_matched_to_all_timed_top_inventories",
+        "baseline_cells": {
+          "lut": 450,
+          "inverter": 0,
+          "dff": 24,
+          "io": 0,
+          "other": 0,
+          "unknown": 0,
+          "total_leaf_cells": 474,
+          "logic_units": 450,
+          "cell_types": {
+            "cycloneiv_lcell_comb": 450,
+            "dffeas": 24
+          },
+          "unknown_types": {},
+          "top_parameter_defaults_raw": {
+            "LANES": "00000000000000000000000000000100",
+            "WIDTH": "00000000000000000000000000000011"
+          },
+          "classification_complete": true,
+          "netlist_sha256": "c7a33ddf3830aa18687409d21e73e549b2bdc2f8b24f185d32d6a291ee2316a0"
+        },
+        "optimized_cells": {
+          "lut": 305,
+          "inverter": 0,
+          "dff": 24,
+          "io": 0,
+          "other": 0,
+          "unknown": 0,
+          "total_leaf_cells": 329,
+          "logic_units": 305,
+          "cell_types": {
+            "cycloneiv_lcell_comb": 305,
+            "dffeas": 24
+          },
+          "unknown_types": {},
+          "top_parameter_defaults_raw": {
+            "LANES": "00000000000000000000000000000100",
+            "WIDTH": "00000000000000000000000000000011"
+          },
+          "classification_complete": true,
+          "netlist_sha256": "2083df990bd8daf8ad5d6c6e13ae48458c3ee12da1064813bef6e4799158acee"
+        },
+        "area_reduction": 0.32222222222222224,
+        "logic_not_increased": true,
+        "io_increase_needs_review": false,
+        "eqy_status": "NOT_RUN_BY_THIS_TOOL"
+      },
+      "split_full_json_matches_area_capture": true,
+      "actual_endpoint_sha256": "e42d66ff6f746eb46750fe0cfdfdc6022a724e33efb29d638cc9e6006ca1ebbc",
+      "proof_endpoint_binding": true,
+      "formal_status": "PASS",
+      "formal_pass": true,
+      "formal_execution": {
+        "returncode": 0,
+        "timed_out": false,
+        "diagnostic_seconds_not_contest_time": 2.094000000040978
+      },
+      "proof_outcome": "PASS",
+      "path_diagnostics": [
+        {
+          "raw_path": "D:\\PMUX_20261102_delivery\\proof_tmp\\q73753efee40d\\p\\pmux_case02_pipeline\\rb\\strategies\\pmux_case02_pipeline.data_out\\induction\\..\\..\\..\\partitions\\pmux_case02_pipeline.data_out.sv",
+          "raw_path_length": 179,
+          "raw_exists": true,
+          "resolved_path": "D:\\PMUX_20261102_delivery\\proof_tmp\\q73753efee40d\\p\\pmux_case02_pipeline\\rb\\partitions\\pmux_case02_pipeline.data_out.sv",
+          "resolved_path_length": 119,
+          "resolved_exists": true,
+          "resolved_sha256": "45589793444192acbfb640ede6da52c7988d754b8d8df6bd30e38c5f3379bbdf"
+        }
+      ]
+    },
+    {
+      "id": "pmux_case03_crossbar",
+      "source_sha256": {
+        "D:\\PMUX_20261102_delivery\\relocation r30 all\\cases\\additional5\\pmux_case03_crossbar.v": "bf1fc3bf6383beb007a69587d77a29ea74fb1fbdf7429fb401c0855a31c05932"
+      },
+      "timed_process_count_including_warmups": 2,
+      "recheck_triggered": false,
+      "aggregate": {
+        "valid": true,
+        "basis": "initial_pair",
+        "pairs_in_aggregate": 1,
+        "baseline_mean_wall_seconds": 0.4338571,
+        "optimized_mean_wall_seconds": 0.3423043,
+        "baseline_mean_peak_ws_bytes": 22679552,
+        "optimized_mean_peak_ws_bytes": 20160512,
+        "time_ratio": 0.7889793667085315,
+        "memory_ratio": 0.8889290229366082,
+        "time_within_5_percent": true,
+        "memory_within_5_percent": true,
+        "time_above_15_percent": false,
+        "memory_above_15_percent": false,
+        "optimized_within_60_seconds": true,
+        "optimized_peak_ws_within_2_decimal_GB": true,
+        "area_valid": true,
+        "area_basis": "separate_untimed_JSON_matched_to_all_timed_top_inventories",
+        "baseline_cells": {
+          "lut": 408,
+          "inverter": 0,
+          "dff": 10,
+          "io": 0,
+          "other": 0,
+          "unknown": 0,
+          "total_leaf_cells": 418,
+          "logic_units": 408,
+          "cell_types": {
+            "cycloneiv_lcell_comb": 408,
+            "dffeas": 10
+          },
+          "unknown_types": {},
+          "top_parameter_defaults_raw": {
+            "LANES": "00000000000000000000000000000010",
+            "WIDTH": "00000000000000000000000000000101"
+          },
+          "classification_complete": true,
+          "netlist_sha256": "0e6bd06a37156bc35ad92f3907fd848f20bbde8c40f0e2d36b4bd2fb96ff5e02"
+        },
+        "optimized_cells": {
+          "lut": 241,
+          "inverter": 0,
+          "dff": 10,
+          "io": 0,
+          "other": 0,
+          "unknown": 0,
+          "total_leaf_cells": 251,
+          "logic_units": 241,
+          "cell_types": {
+            "cycloneiv_lcell_comb": 241,
+            "dffeas": 10
+          },
+          "unknown_types": {},
+          "top_parameter_defaults_raw": {
+            "LANES": "00000000000000000000000000000010",
+            "WIDTH": "00000000000000000000000000000101"
+          },
+          "classification_complete": true,
+          "netlist_sha256": "98fdf0d2d4107af34c3099ab240ab21ea259d9eecca4e13b546588f3ffcb9da4"
+        },
+        "area_reduction": 0.40931372549019607,
+        "logic_not_increased": true,
+        "io_increase_needs_review": false,
+        "eqy_status": "NOT_RUN_BY_THIS_TOOL"
+      },
+      "split_full_json_matches_area_capture": true,
+      "actual_endpoint_sha256": "a3c89057c01a748cde5941581599bb075600cff67e245bd86075a82b3c083d18",
+      "proof_endpoint_binding": true,
+      "formal_status": "PASS",
+      "formal_pass": true,
+      "formal_execution": {
+        "returncode": 0,
+        "timed_out": false,
+        "diagnostic_seconds_not_contest_time": 1.6399999999557622
+      },
+      "proof_outcome": "PASS",
+      "path_diagnostics": [
+        {
+          "raw_path": "D:\\PMUX_20261102_delivery\\proof_tmp\\q73753efee40d\\p\\pmux_case03_crossbar\\rb\\strategies\\pmux_case03_crossbar.data_out\\induction\\..\\..\\..\\partitions\\pmux_case03_crossbar.data_out.sv",
+          "raw_path_length": 179,
+          "raw_exists": true,
+          "resolved_path": "D:\\PMUX_20261102_delivery\\proof_tmp\\q73753efee40d\\p\\pmux_case03_crossbar\\rb\\partitions\\pmux_case03_crossbar.data_out.sv",
+          "resolved_path_length": 119,
+          "resolved_exists": true,
+          "resolved_sha256": "e3c913a68016f2ef169e0ce97f953d67c8cfdc5f00c791b113ed939715c5c273"
+        }
+      ]
+    },
+    {
+      "id": "pmux_case04_feedback",
+      "source_sha256": {
+        "D:\\PMUX_20261102_delivery\\relocation r30 all\\cases\\additional5\\pmux_case04_feedback.v": "d668d258d804674dd1412538e7bce04d4630d02928ffe113413b536e6b9ed70f"
+      },
+      "timed_process_count_including_warmups": 2,
+      "recheck_triggered": false,
+      "aggregate": {
+        "valid": true,
+        "basis": "initial_pair",
+        "pairs_in_aggregate": 1,
+        "baseline_mean_wall_seconds": 0.3955775,
+        "optimized_mean_wall_seconds": 0.3663223,
+        "baseline_mean_peak_ws_bytes": 22106112,
+        "optimized_mean_peak_ws_bytes": 19910656,
+        "time_ratio": 0.9260443275969942,
+        "memory_ratio": 0.9006855660552159,
+        "time_within_5_percent": true,
+        "memory_within_5_percent": true,
+        "time_above_15_percent": false,
+        "memory_above_15_percent": false,
+        "optimized_within_60_seconds": true,
+        "optimized_peak_ws_within_2_decimal_GB": true,
+        "area_valid": true,
+        "area_basis": "separate_untimed_JSON_matched_to_all_timed_top_inventories",
+        "baseline_cells": {
+          "lut": 367,
+          "inverter": 1,
+          "dff": 16,
+          "io": 0,
+          "other": 0,
+          "unknown": 0,
+          "total_leaf_cells": 384,
+          "logic_units": 368,
+          "cell_types": {
+            "$not": 1,
+            "cycloneiv_lcell_comb": 367,
+            "dffeas": 16
+          },
+          "unknown_types": {},
+          "top_parameter_defaults_raw": {
+            "LANES": "00000000000000000000000000000010",
+            "WIDTH": "00000000000000000000000000001000"
+          },
+          "classification_complete": true,
+          "netlist_sha256": "c29ffdd6211e5a3469aa06678e754e4609b2c313100c200d94befa92c0de78b9"
+        },
+        "optimized_cells": {
+          "lut": 207,
+          "inverter": 1,
+          "dff": 16,
+          "io": 0,
+          "other": 0,
+          "unknown": 0,
+          "total_leaf_cells": 224,
+          "logic_units": 208,
+          "cell_types": {
+            "$not": 1,
+            "cycloneiv_lcell_comb": 207,
+            "dffeas": 16
+          },
+          "unknown_types": {},
+          "top_parameter_defaults_raw": {
+            "LANES": "00000000000000000000000000000010",
+            "WIDTH": "00000000000000000000000000001000"
+          },
+          "classification_complete": true,
+          "netlist_sha256": "c83e852d1d102fa945621e401a2eb489cf1c27c4daaef8252421e0f834a677da"
+        },
+        "area_reduction": 0.43478260869565216,
+        "logic_not_increased": true,
+        "io_increase_needs_review": false,
+        "eqy_status": "NOT_RUN_BY_THIS_TOOL"
+      },
+      "split_full_json_matches_area_capture": true,
+      "actual_endpoint_sha256": "ad6d7c8cbf566e9f1564f22ba74d95a178a3ed6502d9eaa7664d0966fd7f533a",
+      "proof_endpoint_binding": true,
+      "formal_status": "PASS",
+      "formal_pass": true,
+      "formal_execution": {
+        "returncode": 0,
+        "timed_out": false,
+        "diagnostic_seconds_not_contest_time": 1.625
+      },
+      "proof_outcome": "PASS",
+      "path_diagnostics": [
+        {
+          "raw_path": "D:\\PMUX_20261102_delivery\\proof_tmp\\q73753efee40d\\p\\pmux_case04_feedback\\rb\\strategies\\pmux_case04_feedback.data_out\\induction\\..\\..\\..\\partitions\\pmux_case04_feedback.data_out.sv",
+          "raw_path_length": 179,
+          "raw_exists": true,
+          "resolved_path": "D:\\PMUX_20261102_delivery\\proof_tmp\\q73753efee40d\\p\\pmux_case04_feedback\\rb\\partitions\\pmux_case04_feedback.data_out.sv",
+          "resolved_path_length": 119,
+          "resolved_exists": true,
+          "resolved_sha256": "fd12e08063c6249accd24d73a40251b9e244979fae8d7aab9883113e3c0c388d"
+        }
+      ]
+    },
+    {
+      "id": "pmux_case05_nested",
+      "source_sha256": {
+        "D:\\PMUX_20261102_delivery\\relocation r30 all\\cases\\additional5\\pmux_case05_nested.v": "57d64edd3704d9d74407145080a63d06390e4a598c419a948fdea22fb1147f1d"
+      },
+      "timed_process_count_including_warmups": 2,
+      "recheck_triggered": false,
+      "aggregate": {
+        "valid": true,
+        "basis": "initial_pair",
+        "pairs_in_aggregate": 1,
+        "baseline_mean_wall_seconds": 0.4157351,
+        "optimized_mean_wall_seconds": 0.3430872,
+        "baseline_mean_peak_ws_bytes": 22515712,
+        "optimized_mean_peak_ws_bytes": 20705280,
+        "time_ratio": 0.8252543506670472,
+        "memory_ratio": 0.9195925050027287,
+        "time_within_5_percent": true,
+        "memory_within_5_percent": true,
+        "time_above_15_percent": false,
+        "memory_above_15_percent": false,
+        "optimized_within_60_seconds": true,
+        "optimized_peak_ws_within_2_decimal_GB": true,
+        "area_valid": true,
+        "area_basis": "separate_untimed_JSON_matched_to_all_timed_top_inventories",
+        "baseline_cells": {
+          "lut": 413,
+          "inverter": 0,
+          "dff": 12,
+          "io": 0,
+          "other": 0,
+          "unknown": 0,
+          "total_leaf_cells": 425,
+          "logic_units": 413,
+          "cell_types": {
+            "cycloneiv_lcell_comb": 413,
+            "dffeas": 12
+          },
+          "unknown_types": {},
+          "top_parameter_defaults_raw": {
+            "LANES": "00000000000000000000000000000001",
+            "WIDTH": "00000000000000000000000000001100"
+          },
+          "classification_complete": true,
+          "netlist_sha256": "cb6220fa3570518520ed1c63df3ca87d7b4101bbf38221c3a1636534d7f11de0"
+        },
+        "optimized_cells": {
+          "lut": 233,
+          "inverter": 0,
+          "dff": 12,
+          "io": 0,
+          "other": 0,
+          "unknown": 0,
+          "total_leaf_cells": 245,
+          "logic_units": 233,
+          "cell_types": {
+            "cycloneiv_lcell_comb": 233,
+            "dffeas": 12
+          },
+          "unknown_types": {},
+          "top_parameter_defaults_raw": {
+            "LANES": "00000000000000000000000000000001",
+            "WIDTH": "00000000000000000000000000001100"
+          },
+          "classification_complete": true,
+          "netlist_sha256": "141e1bcec8f08aac69a6641f9041fa92fe9947adbaa6da2bb88a65133f2f6ae9"
+        },
+        "area_reduction": 0.4358353510895884,
+        "logic_not_increased": true,
+        "io_increase_needs_review": false,
+        "eqy_status": "NOT_RUN_BY_THIS_TOOL"
+      },
+      "split_full_json_matches_area_capture": true,
+      "actual_endpoint_sha256": "db3e69ecd831e0538987af81ab1fa13bac08a7cce8c34e188e2ce6bd87036e6b",
+      "proof_endpoint_binding": true,
+      "formal_status": "PASS",
+      "formal_pass": true,
+      "formal_execution": {
+        "returncode": 0,
+        "timed_out": false,
+        "diagnostic_seconds_not_contest_time": 1.6410000000032596
+      },
+      "proof_outcome": "PASS",
+      "path_diagnostics": [
+        {
+          "raw_path": "D:\\PMUX_20261102_delivery\\proof_tmp\\q73753efee40d\\p\\pmux_case05_nested\\rb\\strategies\\pmux_case05_nested.data_out\\induction\\..\\..\\..\\partitions\\pmux_case05_nested.data_out.sv",
+          "raw_path_length": 173,
+          "raw_exists": true,
+          "resolved_path": "D:\\PMUX_20261102_delivery\\proof_tmp\\q73753efee40d\\p\\pmux_case05_nested\\rb\\partitions\\pmux_case05_nested.data_out.sv",
+          "resolved_path_length": 115,
+          "resolved_exists": true,
+          "resolved_sha256": "c45eedfd344ae5e22ca8d8fadab3db1fb5f1f2ddc0c305287e601021063d43ec"
+        }
+      ]
+    }
+  ]
+}

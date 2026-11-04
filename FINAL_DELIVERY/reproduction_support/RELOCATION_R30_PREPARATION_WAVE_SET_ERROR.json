@@ -1,0 +1,16 @@
+{
+  "status": "PREPARATION_SET_ASSUMPTION_ERROR_RETAINED",
+  "actual_error": "ValueError: Wave file set differs from checkpoint",
+  "stage_wave_files": 565,
+  "checkpoint_zip_entries": 365,
+  "checkpoint_files_all_present_and_byte_identical": true,
+  "additional_files": 200,
+  "additional_scope": "Original nine cases plus replay_test4/test4 simulator work caches and transcript; the stage copies the full evidence directory while the frozen checkpoint intentionally excludes these cache files.",
+  "correction": "Keep all original bytes. Require every frozen checkpoint file and hash, allow only actual case-root work caches/transcript as extras, and retain PACKAGE_FILES hash validation for each extra.",
+  "preserved_initial_script": "prepare_relocation_r30_all.initial_wave_exact_set.py",
+  "stage_modified": false,
+  "checkpoint_modified": false,
+  "relocation_copy_started": false,
+  "All_started": false,
+  "synthesis_or_proof_started": false
+}

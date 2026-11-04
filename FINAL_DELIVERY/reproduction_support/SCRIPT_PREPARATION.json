@@ -1,0 +1,36 @@
+{
+  "status": "SCRIPTS_ONLY_NO_STAGE_COPY_OR_ALL_STARTED",
+  "orchestration_sources": {
+    "prepare_relocation_r30_all.py": {
+      "origin": "C:\\Users\\local\\Documents\\Build\\2026-09-27\\workspace3\\work\\20261102_delivery_v3\\prepare_relocation_r29_all.py",
+      "origin_sha256": "56b5922d8d2122bc9326f20e34014bcbef97ceb30b8dc935a8900ce78f6a0ffb",
+      "new_sha256": "0747af7f6a2126ba0873ddaae661c9df21be3f2c987b6d58975ebeba6c02ac09"
+    },
+    "execute_relocation_r30_all_pwsh7.py": {
+      "origin": "C:\\Users\\local\\Documents\\Build\\2026-09-27\\workspace3\\work\\20261102_delivery_v3\\execute_relocation_r29_all_pwsh7.py",
+      "origin_sha256": "4066fa8874280c69c1f919f66934ae1445ee92573225df039f575b512c3f3649",
+      "new_sha256": "6193cfecb27d00eef713ae81ac2fb8ce263f25e3d78b6f63e91ef60a064d1c5b"
+    },
+    "audit_relocation_r30_all.py": {
+      "origin": "C:\\Users\\local\\Documents\\Build\\2026-09-27\\workspace3\\work\\20261102_delivery_v3\\audit_relocation_r29_all.py",
+      "origin_sha256": "5fa21d594e8d09ed85df03743cfb1004a980ee189d63d73f06bb933976317496",
+      "new_sha256": "fd7ee05f22c3e098f2f8d1b191be8d51fc62933cf651092e382ec351a4a61ab5"
+    }
+  },
+  "history_preserved_at": "C:\\Users\\local\\Documents\\Build\\2026-09-27\\workspace3\\work\\20261102_delivery_v3",
+  "candidate": "r30_native_sload",
+  "candidate_exe_sha256": "efebff04cac47ccdfefc3317d4de14b7f727123a7499243ab9da35ba79f596d9",
+  "new_runtime_simulation_sidecar": "dffeas_sload_sim.v",
+  "single_run_policy": "Do not invoke All until root exclusive GO; keep all actual failures without selected reruns.",
+  "final_authoritative_script_sha256": {
+    "prepare_relocation_r30_all.py": "70dd13b78f294c68d72c6e5e3b8ba245c7feb7c7078e92f4aeef51161281cc1e",
+    "execute_relocation_r30_all_pwsh7.py": "6193cfecb27d00eef713ae81ac2fb8ce263f25e3d78b6f63e91ef60a064d1c5b",
+    "audit_relocation_r30_all.py": "885ad8d3d91703296f8d8c476cce6130464d057f81df55306ef3389f2ec6a935"
+  },
+  "initial_scaffold_is_not_final_entry": true,
+  "successful_stage_preparation_sha256": "2d60ff7e39aee4abd1c8ad764fb3725d8359a67cf6578b174b553b95a95e5076",
+  "preparation_failures_retained": [
+    "SCRIPT_PREPARATION_INITIAL_ERROR.json",
+    "RELOCATION_R30_PREPARATION_WAVE_SET_ERROR.json"
+  ]
+}

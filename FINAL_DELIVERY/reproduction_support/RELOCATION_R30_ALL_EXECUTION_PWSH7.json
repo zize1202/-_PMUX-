@@ -1,0 +1,28 @@
+{
+  "schema": 1,
+  "started_utc": "2026-11-01T23:24:21.127561+00:00",
+  "command": [
+    "C:\\Users\\local\\.cache\\build-runtimes\\build-primary-runtime\\dependencies\\native\\powershell\\pwsh.exe",
+    "-NoProfile",
+    "-NonInteractive",
+    "-File",
+    "D:\\PMUX_20261102_delivery\\experiments\\delivery_r30\\Run-Relocation-R30-All.ps1"
+  ],
+  "cwd": "D:\\PMUX_20261102_delivery\\experiments\\delivery_r30",
+  "log": "D:\\PMUX_20261102_delivery\\experiments\\delivery_r30\\RELOCATION_R30_ALL_EXECUTION_PWSH7.log",
+  "preparation_sha256": "2d60ff7e39aee4abd1c8ad764fb3725d8359a67cf6578b174b553b95a95e5076",
+  "scope": "One new full-nine r30 delivery All reproduction; supplementary to r30_run01, not a replacement",
+  "root_exclusive_timing_window_authorized": true,
+  "returncode": 0,
+  "finished": true,
+  "pwsh7_sha256": "362a356ce7f0940ec74f73a8fc2c990a2cc24a38a11c90bbd8eca947110ad139",
+  "execution_policy_changed": false,
+  "actual_python_path": "C:\\Users\\local\\.cache\\build-runtimes\\build-primary-runtime\\dependencies\\python\\python.exe",
+  "child_only_environment_overrides": {
+    "TEMP": "D:\\PMUX_20261102_delivery\\temp",
+    "TMP": "D:\\PMUX_20261102_delivery\\temp"
+  },
+  "system_environment_modified": false,
+  "pid": 38232,
+  "finished_utc": "2026-11-01T23:25:18.852092+00:00"
+}

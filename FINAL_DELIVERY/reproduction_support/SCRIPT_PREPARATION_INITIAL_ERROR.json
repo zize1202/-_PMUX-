@@ -1,0 +1,11 @@
+{
+  "status": "SCRIPT_GENERATION_GUARD_ERROR_RETAINED",
+  "actual_error": "AssertionError: HERE = Path(__file__).resolve().parent",
+  "cause": "Generator searched an unanchored header text that also appears in a runtime-path assertion string.",
+  "correction": "Anchor the exact header line with newline boundaries; no generated execution semantics changed.",
+  "preserved_source": "prepare_scripts.initial_header_guard.py",
+  "stage_copy_started": false,
+  "All_started": false,
+  "synthesis_or_proof_started": false,
+  "not_an_algorithm_or_verification_failure": true
+}
