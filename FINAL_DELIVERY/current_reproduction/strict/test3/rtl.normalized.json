@@ -1,0 +1,572 @@
+{
+  "creator": "Yosys 0.69+154 (git sha1 30d62572e-dirty, Release, GNU /usr/bin/x86_64-w64-mingw32-g++ 15.2.1)",
+  "modules": {
+    "test3": {
+      "attributes": {
+        "top": "00000000000000000000000000000001",
+        "src": "rtl_source_0.v:13.1-53.10"
+      },
+      "ports": {
+        "clk": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "cs": {
+          "direction": "input",
+          "bits": [ 3 ]
+        },
+        "sr_in": {
+          "direction": "input",
+          "bits": [ 4 ]
+        },
+        "gpioout": {
+          "direction": "output",
+          "bits": [ 5, 6, 7, 8, 9, 10, 11, 12 ]
+        },
+        "sr_out": {
+          "direction": "output",
+          "bits": [ 13 ]
+        }
+      },
+      "cells": {
+        "$procdff$37": {
+          "hide_name": 1,
+          "type": "$dff",
+          "parameters": {
+            "CLK_POLARITY": "00000000000000000000000000000001",
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "rtl_source_0.v:28.1-52.4"
+          },
+          "port_directions": {
+            "CLK": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 14 ],
+            "Q": [ 13 ]
+          }
+        },
+        "$procdff$38": {
+          "hide_name": 1,
+          "type": "$dff",
+          "parameters": {
+            "CLK_POLARITY": "00000000000000000000000000000001",
+            "WIDTH": "00000000000000000000000000001000"
+          },
+          "attributes": {
+            "src": "rtl_source_0.v:28.1-52.4"
+          },
+          "port_directions": {
+            "CLK": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 15, 16, 17, 18, 19, 20, 21, 22 ],
+            "Q": [ 5, 6, 7, 8, 9, 10, 11, 12 ]
+          }
+        },
+        "$procdff$39": {
+          "hide_name": 1,
+          "type": "$dff",
+          "parameters": {
+            "CLK_POLARITY": "00000000000000000000000000000001",
+            "WIDTH": "00000000000000000000000000001000"
+          },
+          "attributes": {
+            "src": "rtl_source_0.v:28.1-52.4"
+          },
+          "port_directions": {
+            "CLK": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 23, 24, 25, 26, 27, 28, 29, 30 ],
+            "Q": [ 31, 32, 33, 34, 35, 36, 37, 38 ]
+          }
+        },
+        "$procmux$10": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000011"
+          },
+          "attributes": {
+            "src": "rtl_source_0.v:40.5-40.15|rtl_source_0.v:40.1-50.4"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 6, 7, 8 ],
+            "B": [ 39, 40, 41 ],
+            "S": [ 38 ],
+            "Y": [ 42, 43, 44 ]
+          }
+        },
+        "$procmux$12": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000011"
+          },
+          "attributes": {
+            "src": "rtl_source_0.v:37.5-37.15|rtl_source_0.v:37.1-51.4"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 6, 7, 8 ],
+            "B": [ 42, 43, 44 ],
+            "S": [ 3 ],
+            "Y": [ 16, 17, 18 ]
+          }
+        },
+        "$procmux$15": {
+          "hide_name": 1,
+          "type": "$pmux",
+          "parameters": {
+            "S_WIDTH": "00000000000000000000000000000011",
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "rtl_source_0.v:46.61-46.61|rtl_source_0.v:43.1-49.8"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 31 ],
+            "B": [ 5, 34, "1" ],
+            "S": [ 45, 46, 47 ],
+            "Y": [ 48 ]
+          }
+        },
+        "$procmux$17_CMP0": {
+          "hide_name": 1,
+          "type": "$eq",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000001000",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000001000",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "rtl_source_0.v:45.29-45.29|rtl_source_0.v:43.1-49.8"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 31, 32, 33, 34, 35, 36, 37, 38 ],
+            "B": [ "1", "1", "1", "1", "1", "1", "1", "1" ],
+            "Y": [ 46 ]
+          }
+        },
+        "$procmux$19": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "rtl_source_0.v:40.5-40.15|rtl_source_0.v:40.1-50.4"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 5 ],
+            "B": [ 48 ],
+            "S": [ 38 ],
+            "Y": [ 49 ]
+          }
+        },
+        "$procmux$21": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "rtl_source_0.v:37.5-37.15|rtl_source_0.v:37.1-51.4"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 5 ],
+            "B": [ 49 ],
+            "S": [ 3 ],
+            "Y": [ 15 ]
+          }
+        },
+        "$procmux$24": {
+          "hide_name": 1,
+          "type": "$pmux",
+          "parameters": {
+            "S_WIDTH": "00000000000000000000000000000010",
+            "WIDTH": "00000000000000000000000000000100"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "rtl_source_0.v:46.61-46.61|rtl_source_0.v:43.1-49.8"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 9, 10, 11, 12 ],
+            "B": [ "1", 37, 36, 35, 34, 33, 32, 31 ],
+            "S": [ 45, 47 ],
+            "Y": [ 50, 51, 52, 53 ]
+          }
+        },
+        "$procmux$25_CMP0": {
+          "hide_name": 1,
+          "type": "$eq",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000001000",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000001000",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "rtl_source_0.v:46.61-46.61|rtl_source_0.v:43.1-49.8"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 31, 32, 33, 34, 35, 36, 37, 38 ],
+            "B": [ "0", "1", "1", "1", "1", "1", "1", "1" ],
+            "Y": [ 45 ]
+          }
+        },
+        "$procmux$26_CMP0": {
+          "hide_name": 1,
+          "type": "$eq",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000001000",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000001000",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "rtl_source_0.v:43.10-43.10|rtl_source_0.v:43.1-49.8"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 31, 32, 33, 34, 35, 36, 37, 38 ],
+            "B": [ "0", "1", "0", "1", "0", "1", "0", "1" ],
+            "Y": [ 47 ]
+          }
+        },
+        "$procmux$27": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000100"
+          },
+          "attributes": {
+            "src": "rtl_source_0.v:40.5-40.15|rtl_source_0.v:40.1-50.4"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 9, 10, 11, 12 ],
+            "B": [ 50, 51, 52, 53 ],
+            "S": [ 38 ],
+            "Y": [ 54, 55, 56, 57 ]
+          }
+        },
+        "$procmux$29": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000100"
+          },
+          "attributes": {
+            "src": "rtl_source_0.v:37.5-37.15|rtl_source_0.v:37.1-51.4"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 9, 10, 11, 12 ],
+            "B": [ 54, 55, 56, 57 ],
+            "S": [ 3 ],
+            "Y": [ 19, 20, 21, 22 ]
+          }
+        },
+        "$procmux$31": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "rtl_source_0.v:30.5-30.15|rtl_source_0.v:30.1-35.4"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 4 ],
+            "B": [ 31 ],
+            "S": [ 3 ],
+            "Y": [ 23 ]
+          }
+        },
+        "$procmux$33": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000111"
+          },
+          "attributes": {
+            "src": "rtl_source_0.v:30.5-30.15|rtl_source_0.v:30.1-35.4"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 31, 32, 33, 34, 35, 36, 37 ],
+            "B": [ 32, 33, 34, 35, 36, 37, 38 ],
+            "S": [ 3 ],
+            "Y": [ 24, 25, 26, 27, 28, 29, 30 ]
+          }
+        },
+        "$procmux$35": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "rtl_source_0.v:30.5-30.15|rtl_source_0.v:30.1-35.4"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 38 ],
+            "B": [ 13 ],
+            "S": [ 3 ],
+            "Y": [ 14 ]
+          }
+        },
+        "$procmux$7": {
+          "hide_name": 1,
+          "type": "$pmux",
+          "parameters": {
+            "S_WIDTH": "00000000000000000000000000000010",
+            "WIDTH": "00000000000000000000000000000011"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "rtl_source_0.v:45.29-45.29|rtl_source_0.v:43.1-49.8"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 6, 7, 8 ],
+            "B": [ 33, 32, 31, 37, 36, 35 ],
+            "S": [ 46, 47 ],
+            "Y": [ 39, 40, 41 ]
+          }
+        }
+      },
+      "netnames": {
+        "$0\\gpioout[7:0]": {
+          "hide_name": 1,
+          "bits": [ 15, 16, 17, 18, 19, 20, 21, 22 ],
+          "attributes": {
+            "src": "rtl_source_0.v:28.1-52.4"
+          }
+        },
+        "$0\\sr[7:0]": {
+          "hide_name": 1,
+          "bits": [ 23, 24, 25, 26, 27, 28, 29, 30 ],
+          "attributes": {
+            "src": "rtl_source_0.v:28.1-52.4"
+          }
+        },
+        "$0\\sr_out[0:0]": {
+          "hide_name": 1,
+          "bits": [ 14 ],
+          "attributes": {
+            "src": "rtl_source_0.v:28.1-52.4"
+          }
+        },
+        "$procmux$10_Y": {
+          "hide_name": 1,
+          "bits": [ 42, 43, 44 ],
+          "attributes": {
+          }
+        },
+        "$procmux$15_Y": {
+          "hide_name": 1,
+          "bits": [ 48 ],
+          "attributes": {
+          }
+        },
+        "$procmux$16_CMP": {
+          "hide_name": 1,
+          "bits": [ 45 ],
+          "attributes": {
+          }
+        },
+        "$procmux$17_CMP": {
+          "hide_name": 1,
+          "bits": [ 46 ],
+          "attributes": {
+          }
+        },
+        "$procmux$18_CMP": {
+          "hide_name": 1,
+          "bits": [ 47 ],
+          "attributes": {
+          }
+        },
+        "$procmux$19_Y": {
+          "hide_name": 1,
+          "bits": [ 49 ],
+          "attributes": {
+          }
+        },
+        "$procmux$24_Y": {
+          "hide_name": 1,
+          "bits": [ 50, 51, 52, 53 ],
+          "attributes": {
+          }
+        },
+        "$procmux$27_Y": {
+          "hide_name": 1,
+          "bits": [ 54, 55, 56, 57 ],
+          "attributes": {
+          }
+        },
+        "$procmux$7_Y": {
+          "hide_name": 1,
+          "bits": [ 39, 40, 41 ],
+          "attributes": {
+          }
+        },
+        "clk": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "rtl_source_0.v:15.7-15.10"
+          }
+        },
+        "cs": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "src": "rtl_source_0.v:15.12-15.14"
+          }
+        },
+        "gpioout": {
+          "hide_name": 0,
+          "bits": [ 5, 6, 7, 8, 9, 10, 11, 12 ],
+          "attributes": {
+            "init": "00000000",
+            "src": "rtl_source_0.v:18.14-18.21"
+          }
+        },
+        "rw": {
+          "hide_name": 0,
+          "bits": [ 38 ],
+          "attributes": {
+            "src": "rtl_source_0.v:23.6-23.8"
+          }
+        },
+        "sr": {
+          "hide_name": 0,
+          "bits": [ 31, 32, 33, 34, 35, 36, 37, 38 ],
+          "attributes": {
+            "init": "00000000",
+            "src": "rtl_source_0.v:24.11-24.13"
+          }
+        },
+        "sr_in": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "src": "rtl_source_0.v:16.7-16.12"
+          }
+        },
+        "sr_out": {
+          "hide_name": 0,
+          "bits": [ 13 ],
+          "attributes": {
+            "init": "0",
+            "src": "rtl_source_0.v:17.8-17.14"
+          }
+        }
+      }
+    }
+  }
+}

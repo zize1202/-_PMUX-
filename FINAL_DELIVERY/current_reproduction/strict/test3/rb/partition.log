@@ -1,0 +1,241 @@
+
+ /----------------------------------------------------------------------------\
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |  Copyright (C) 2012 - 2026  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |  Distributed under an ISC-like license, type "license" to see terms        |
+ \----------------------------------------------------------------------------/
+ Yosys 0.69+154 (git sha1 30d62572e-dirty, Release, GNU /usr/bin/x86_64-w64-mingw32-g++ 15.2.1)
+
+-- Executing script file `partition.ys' --
+
+1. Executing RTLIL frontend.
+Input filename: combined.il
+
+2. Executing INSBUF pass (insert buffer cells for connected wires).
+Add gate.test3/$auto$insbuf.cc:97:execute$775: \gpioout [1] -> \gpioout [3]
+Add gate.test3/$auto$insbuf.cc:97:execute$776: \gpioout [4] -> \gpioout [6]
+Add gate.test3/$auto$insbuf.cc:97:execute$777: \gpioout [5] -> \gpioout [7]
+Add gate.test3/$auto$insbuf.cc:97:execute$778: \gpioout [6] -> \gpioout_dffeas_q.q
+Add gate.test3/$auto$insbuf.cc:97:execute$779: 1'1 -> \gpioout_dffeas_q.selected_d
+Add gate.test3/$auto$insbuf.cc:97:execute$780: \gpioout [2] -> \gpioout_dffeas_q_1.q
+Add gate.test3/$auto$insbuf.cc:97:execute$781: 1'1 -> \gpioout_dffeas_q_1.selected_d
+Add gate.test3/$auto$insbuf.cc:97:execute$782: \gpioout [7] -> \gpioout_dffeas_q_2.q
+Add gate.test3/$auto$insbuf.cc:97:execute$783: \sr [2] -> \gpioout_dffeas_q_2.selected_d
+Add gate.test3/$auto$insbuf.cc:97:execute$784: \gpioout [3] -> \gpioout_dffeas_q_3.q
+Add gate.test3/$auto$insbuf.cc:97:execute$785: \sr [0] -> \gpioout_dffeas_q_3.selected_d
+Add gate.test3/$auto$insbuf.cc:97:execute$786: \gpioout [0] -> \gpioout_dffeas_q_4.q
+Add gate.test3/$auto$insbuf.cc:97:execute$787: \gpioout_dffeas_q_4_d -> \gpioout_dffeas_q_4.selected_d
+Add gate.test3/$auto$insbuf.cc:97:execute$788: \rw -> \rw_dffeas_q.q
+Add gate.test3/$auto$insbuf.cc:97:execute$789: \sr [6] -> \rw_dffeas_q.selected_d
+Add gate.test3/$auto$insbuf.cc:97:execute$790: \rw_dffeas_q.q -> \sr [7]
+Add gate.test3/$auto$insbuf.cc:97:execute$791: \sr [3] -> \sr_dffeas_q.q
+Add gate.test3/$auto$insbuf.cc:97:execute$792: \gpioout_dffeas_q_2.selected_d -> \sr_dffeas_q.selected_d
+Add gate.test3/$auto$insbuf.cc:97:execute$793: \sr [4] -> \sr_dffeas_q_1.q
+Add gate.test3/$auto$insbuf.cc:97:execute$794: \sr_dffeas_q.q -> \sr_dffeas_q_1.selected_d
+Add gate.test3/$auto$insbuf.cc:97:execute$795: \sr_dffeas_q.selected_d -> \sr_dffeas_q_2.q
+Add gate.test3/$auto$insbuf.cc:97:execute$796: \sr [1] -> \sr_dffeas_q_2.selected_d
+Add gate.test3/$auto$insbuf.cc:97:execute$797: \sr [5] -> \sr_dffeas_q_3.q
+Add gate.test3/$auto$insbuf.cc:97:execute$798: \sr_dffeas_q_1.q -> \sr_dffeas_q_3.selected_d
+Add gate.test3/$auto$insbuf.cc:97:execute$799: \sr_dffeas_q_2.selected_d -> \sr_dffeas_q_4.q
+Add gate.test3/$auto$insbuf.cc:97:execute$800: \gpioout_dffeas_q_3.selected_d -> \sr_dffeas_q_4.selected_d
+Add gate.test3/$auto$insbuf.cc:97:execute$801: \sr_dffeas_q_4.selected_d -> \sr_dffeas_q_5.q
+Add gate.test3/$auto$insbuf.cc:97:execute$802: \sr_in -> \sr_dffeas_q_5.selected_d
+Add gate.test3/$auto$insbuf.cc:97:execute$803: \rw_dffeas_q.selected_d -> \sr_dffeas_q_6.q
+Add gate.test3/$auto$insbuf.cc:97:execute$804: \sr_dffeas_q_3.q -> \sr_dffeas_q_6.selected_d
+Add gate.test3/$auto$insbuf.cc:97:execute$805: \sr_out -> \sr_out_dffeas_q.q
+Add gate.test3/$auto$insbuf.cc:97:execute$806: \sr [7] -> \sr_out_dffeas_q.selected_d
+Rewrite gate.test3/$auto$clk2fflogic.cc:108:sample_data$731/D: \sr_out -> \sr_out_dffeas_q.q
+Rewrite gate.test3/$auto$clk2fflogic.cc:108:sample_data$713/D: \sr [6] -> \sr_dffeas_q_6.q
+Rewrite gate.test3/$auto$clk2fflogic.cc:108:sample_data$695/D: \sr [0] -> \sr_dffeas_q_5.q
+Rewrite gate.test3/$auto$clk2fflogic.cc:108:sample_data$677/D: \sr [1] -> \sr_dffeas_q_4.q
+Rewrite gate.test3/$auto$clk2fflogic.cc:108:sample_data$659/D: \sr [5] -> \sr_dffeas_q_6.selected_d
+Rewrite gate.test3/$auto$clk2fflogic.cc:108:sample_data$641/D: \sr [2] -> \sr_dffeas_q_2.q
+Rewrite gate.test3/$auto$clk2fflogic.cc:108:sample_data$623/D: \sr [4] -> \sr_dffeas_q_3.selected_d
+Rewrite gate.test3/$auto$clk2fflogic.cc:108:sample_data$605/D: \sr [3] -> \sr_dffeas_q_1.selected_d
+Rewrite gate.test3/$auto$clk2fflogic.cc:108:sample_data$587/D: \rw -> \sr_out_dffeas_q.selected_d
+Rewrite gate.test3/$auto$clk2fflogic.cc:108:sample_data$569/D: \gpioout [0] -> \gpioout_dffeas_q_4.q
+Rewrite gate.test3/$auto$clk2fflogic.cc:108:sample_data$551/D: \gpioout [1] -> \gpioout_dffeas_q_3.q
+Rewrite gate.test3/$auto$clk2fflogic.cc:108:sample_data$533/D: \gpioout [5] -> \gpioout_dffeas_q_2.q
+Rewrite gate.test3/$auto$clk2fflogic.cc:108:sample_data$515/D: \gpioout [2] -> \gpioout_dffeas_q_1.q
+Rewrite gate.test3/$auto$clk2fflogic.cc:108:sample_data$497/D: \gpioout [4] -> \gpioout_dffeas_q.q
+Rewrite gate.test3/$techmap\gpioout_dffeas_q.$procmux$489/A: \gpioout [4] -> \gpioout_dffeas_q.q
+Rewrite gate.test3/$techmap\gpioout_dffeas_q_1.$procmux$489/A: \gpioout [2] -> \gpioout_dffeas_q_1.q
+Rewrite gate.test3/$techmap\gpioout_dffeas_q_2.$procmux$489/A: \gpioout [5] -> \gpioout_dffeas_q_2.q
+Rewrite gate.test3/$techmap\gpioout_dffeas_q_2.$procmux$489/B: \sr [2] -> \sr_dffeas_q_2.q
+Rewrite gate.test3/$techmap\gpioout_dffeas_q_3.$procmux$489/A: \gpioout [1] -> \gpioout_dffeas_q_3.q
+Rewrite gate.test3/$techmap\gpioout_dffeas_q_3.$procmux$489/B: \sr [0] -> \sr_dffeas_q_5.q
+Rewrite gate.test3/$techmap\gpioout_dffeas_q_4.$procmux$489/A: \gpioout [0] -> \gpioout_dffeas_q_4.q
+Rewrite gate.test3/$techmap\gpioout_dffeas_q_4.$procmux$489/B: \gpioout_dffeas_q_4_d -> \gpioout_dffeas_q_4.selected_d
+Rewrite gate.test3/$techmap\rw_dffeas_q.$procmux$489/A: \rw -> \sr_out_dffeas_q.selected_d
+Rewrite gate.test3/$techmap\rw_dffeas_q.$procmux$489/B: \sr [6] -> \sr_dffeas_q_6.q
+Rewrite gate.test3/$techmap\sr_dffeas_q.$procmux$489/A: \sr [3] -> \sr_dffeas_q_1.selected_d
+Rewrite gate.test3/$techmap\sr_dffeas_q.$procmux$489/B: \sr [2] -> \sr_dffeas_q_2.q
+Rewrite gate.test3/$techmap\sr_dffeas_q_1.$procmux$489/A: \sr [4] -> \sr_dffeas_q_3.selected_d
+Rewrite gate.test3/$techmap\sr_dffeas_q_1.$procmux$489/B: \sr [3] -> \sr_dffeas_q_1.selected_d
+Rewrite gate.test3/$techmap\sr_dffeas_q_2.$procmux$489/A: \sr [2] -> \sr_dffeas_q_2.q
+Rewrite gate.test3/$techmap\sr_dffeas_q_2.$procmux$489/B: \sr [1] -> \sr_dffeas_q_4.q
+Rewrite gate.test3/$techmap\sr_dffeas_q_3.$procmux$489/A: \sr [5] -> \sr_dffeas_q_6.selected_d
+Rewrite gate.test3/$techmap\sr_dffeas_q_3.$procmux$489/B: \sr [4] -> \sr_dffeas_q_3.selected_d
+Rewrite gate.test3/$techmap\sr_dffeas_q_4.$procmux$489/A: \sr [1] -> \sr_dffeas_q_4.q
+Rewrite gate.test3/$techmap\sr_dffeas_q_4.$procmux$489/B: \sr [0] -> \sr_dffeas_q_5.q
+Rewrite gate.test3/$techmap\sr_dffeas_q_5.$procmux$489/A: \sr [0] -> \sr_dffeas_q_5.q
+Rewrite gate.test3/$techmap\sr_dffeas_q_5.$procmux$489/B: \sr_in -> \sr_dffeas_q_5.selected_d
+Rewrite gate.test3/$techmap\sr_dffeas_q_6.$procmux$489/A: \sr [6] -> \sr_dffeas_q_6.q
+Rewrite gate.test3/$techmap\sr_dffeas_q_6.$procmux$489/B: \sr [5] -> \sr_dffeas_q_6.selected_d
+Rewrite gate.test3/$techmap\sr_out_dffeas_q.$procmux$489/A: \sr_out -> \sr_out_dffeas_q.q
+Rewrite gate.test3/$techmap\sr_out_dffeas_q.$procmux$489/B: \rw -> \sr_out_dffeas_q.selected_d
+Rewrite gate.test3/gpioout_dffeas_q_4_d_$lut_Y/A: { \rw_$lut_A_Y \gpioout_dffeas_q_4_d_$lut_Y_A \sr [0] } -> { \rw_$lut_A_Y \gpioout_dffeas_q_4_d_$lut_Y_A \sr_dffeas_q_5.q }
+Rewrite gate.test3/gpioout_dffeas_q_4_d_$lut_Y_A_$lut_Y/A: { \sr [0] \sr [2] \sr [4] \sr [6] } -> { \sr_dffeas_q_5.q \sr_dffeas_q_2.q \sr_dffeas_q_3.selected_d \sr_dffeas_q_6.q }
+Rewrite gate.test3/gpioout_dffeas_q_4_ena_$lut_Y/A: { \rw_$lut_A_Y \gpioout_dffeas_q_4_ena_$lut_Y_A \rw \cs } -> { \rw_$lut_A_Y \gpioout_dffeas_q_4_ena_$lut_Y_A \sr_out_dffeas_q.selected_d \cs }
+Rewrite gate.test3/gpioout_dffeas_q_4_ena_$lut_Y_A_$lut_Y/A: { \sr [0] \sr [2] \sr [4] \sr [6] } -> { \sr_dffeas_q_5.q \sr_dffeas_q_2.q \sr_dffeas_q_3.selected_d \sr_dffeas_q_6.q }
+Rewrite gate.test3/gpioout_dffeas_q_ena_$lut_Y_A_$lut_Y/A: { \sr [0] \sr [2] \sr [4] \sr [6] } -> { \sr_dffeas_q_5.q \sr_dffeas_q_2.q \sr_dffeas_q_3.selected_d \sr_dffeas_q_6.q }
+Rewrite gate.test3/rw_$lut_A/A: { \rw \sr [1] \sr [3] \sr [5] } -> { \sr_out_dffeas_q.selected_d \sr_dffeas_q_4.q \sr_dffeas_q_1.selected_d \sr_dffeas_q_6.selected_d }
+Add gold.test3/$auto$insbuf.cc:97:execute$807: \sr [7] -> \rw
+Rewrite gold.test3/$auto$clk2fflogic.cc:108:sample_data$41/D: \sr -> { \rw \sr [6:0] }
+Rewrite gold.test3/$procmux$10/S: \sr [7] -> \rw
+Rewrite gold.test3/$procmux$17_CMP0/A: \sr -> { \rw \sr [6:0] }
+Rewrite gold.test3/$procmux$19/S: \sr [7] -> \rw
+Rewrite gold.test3/$procmux$25_CMP0/A: \sr -> { \rw \sr [6:0] }
+Rewrite gold.test3/$procmux$26_CMP0/A: \sr -> { \rw \sr [6:0] }
+Rewrite gold.test3/$procmux$27/S: \sr [7] -> \rw
+Rewrite gold.test3/$procmux$33/B: \sr [7:1] -> { \rw \sr [6:1] }
+Rewrite gold.test3/$procmux$35/A: \sr [7] -> \rw
+
+3. Executing EQY PARTITION task.
+
+3.1. Processing module pair gold.test3 / gate.test3.
+
+3.1.1. Processing matched IDs for module test3.
+
+3.1.2. Create fragment partitions for module test3.
+Adding output bit \sr [7] to partition 0.
+Adding output bit \gpioout [0] to partition 0.
+Adding output bit \sr [0] to partition 0.
+Adding output bit \sr [1] to partition 0.
+Adding output bit \sr [2] to partition 0.
+Adding output bit \sr [3] to partition 0.
+Adding output bit \sr [4] to partition 0.
+Adding output bit \sr [5] to partition 0.
+Adding output bit \sr [6] to partition 0.
+Adding output bit \sr_out to partition 0.
+Adding output bit \gpioout [7] to partition 0.
+Adding output bit \gpioout [6] to partition 0.
+Adding output bit \gpioout [5] to partition 0.
+Adding output bit \gpioout [4] to partition 0.
+Adding output bit \gpioout [3] to partition 0.
+Adding output bit \gpioout [2] to partition 0.
+Adding output bit \gpioout [1] to partition 0.
+
+Final list of fragment partitions:
+  0 \gpioout [1] \gpioout [2] \gpioout [3] \gpioout [4] \gpioout [5] \gpioout [6] \gpioout [7] \sr_out \sr [6] \sr [5] \sr [4] \sr [3] \sr [2] \sr [1] \sr [0] \gpioout [0] \sr [7] <= \cs \sr_in \clk
+
+3.1.3. Execute partitioning commands for module test3.
+
+Amending partitions:
+Execute queued amend rules.
+Find automatic amend rules.
+  Checking partition 0:
+    Found 0 po matches and 0 auto/pi matches.
+
+Assigning partition names:
+Automatically naming partition 0 'gpioout' using a PO name: gpioout
+
+Partition Summary:
+  Fragments:
+       0: \sr, \gpioout, \sr_out
+  Partitions:
+       0: gpioout
+  Fragment-Partition-Matrix:
+           0          
+           0
+       0   #  gpioout
+  Legend for Fragment-Partition-Matrix:
+      #  .... partition is this single fragment
+      *  .... fragments merged into single partition
+      +  .... fragments amended to the partition
+      =  .... fragment is driving a partition input
+      -  .... fragment is driving an amended fragment
+      .  .... no relationship between fragment and partition
+      ,  .... unused fragment index (as result of grouping)
+
+3.1.4. Write partitions for module test3.
+Adding output bit \sr_out to partition 1.
+Adding non-output bit \sr_in to partition 1.
+Adding non-output bit \sr [7] to partition 1.
+Adding non-output bit \sr [6] to partition 1.
+Adding non-output bit \sr [5] to partition 1.
+Adding non-output bit \sr [4] to partition 1.
+Adding non-output bit \sr [3] to partition 1.
+Adding non-output bit \sr [2] to partition 1.
+Adding non-output bit \sr [1] to partition 1.
+Adding non-output bit \sr [0] to partition 1.
+Adding output bit \gpioout [7] to partition 1.
+Adding output bit \gpioout [6] to partition 1.
+Adding output bit \gpioout [5] to partition 1.
+Adding output bit \gpioout [4] to partition 1.
+Adding output bit \gpioout [3] to partition 1.
+Adding output bit \gpioout [2] to partition 1.
+Adding output bit \gpioout [1] to partition 1.
+Adding output bit \gpioout [0] to partition 1.
+Adding non-output bit \cs to partition 1.
+Adding non-output bit \clk to partition 1.
+Writing partition 0 as test3.gpioout.
+  partition pi bit 0: \cs <-> \cs
+  partition pi bit 1: \sr_in <-> \sr_in
+  partition pi bit 2: \clk <-> \clk
+  partition po bit 0: \gpioout [1] <-> \gpioout [1]
+  partition po bit 1: \gpioout [2] <-> \gpioout [2]
+  partition po bit 2: \gpioout [3] <-> \gpioout [3]
+  partition po bit 3: \gpioout [4] <-> \gpioout [4]
+  partition po bit 4: \gpioout [5] <-> \gpioout [5]
+  partition po bit 5: \gpioout [6] <-> \gpioout [6]
+  partition po bit 6: \gpioout [7] <-> \gpioout [7]
+  partition po bit 7: \sr_out <-> \sr_out
+  partition po bit 8: \sr [6] <-> \sr [6]
+  partition po bit 9: \sr [5] <-> \sr [5]
+  partition po bit 10: \sr [4] <-> \sr [4]
+  partition po bit 11: \sr [3] <-> \sr [3]
+  partition po bit 12: \sr [2] <-> \sr [2]
+  partition po bit 13: \sr [1] <-> \sr [1]
+  partition po bit 14: \sr [0] <-> \sr [0]
+  partition po bit 15: \gpioout [0] <-> \gpioout [0]
+  partition po bit 16: \sr [7] <-> \sr [7]
+
+3.1.5. Executing RTLIL backend.
+Output filename: partitions/test3.gpioout.il
+<suppressed ~2924 debug messages>
+
+3.1.6. Executing CHECK pass (checking for obvious problems).
+Checking module gate.test3.gpioout...
+Checking module gold.test3.gpioout...
+Found and reported 0 problems.
+
+Writing partition 1 as test3.
+  partition pi bit 0: \cs <-> \cs
+  partition pi bit 1: \sr_in <-> \sr_in
+  partition pi bit 2: \clk <-> \clk
+  partition mp bit 0: \sr [6] <-> \sr [6]
+  partition mp bit 1: \sr [5] <-> \sr [5]
+  partition mp bit 2: \sr [4] <-> \sr [4]
+  partition mp bit 3: \sr [3] <-> \sr [3]
+  partition mp bit 4: \sr [2] <-> \sr [2]
+  partition mp bit 5: \sr [1] <-> \sr [1]
+  partition mp bit 6: \sr [0] <-> \sr [0]
+  partition mp bit 7: \sr [7] <-> \sr [7]
+  partition po bit 0: \gpioout [0] <-> \gpioout [0]
+  partition po bit 1: \gpioout [1] <-> \gpioout [1]
+  partition po bit 2: \gpioout [2] <-> \gpioout [2]
+  partition po bit 3: \gpioout [3] <-> \gpioout [3]
+  partition po bit 4: \gpioout [4] <-> \gpioout [4]
+  partition po bit 5: \gpioout [5] <-> \gpioout [5]
+  partition po bit 6: \gpioout [6] <-> \gpioout [6]
+  partition po bit 7: \gpioout [7] <-> \gpioout [7]
+  partition po bit 8: \sr_out <-> \sr_out
+
+3.1.7. Executing RTLIL backend.
+Output filename: modules/test3.il
+<suppressed ~1270 debug messages>
+
+End of script. Logfile hash: d270d31602
+Yosys 0.69+154 (git sha1 30d62572e-dirty, Release, GNU /usr/bin/x86_64-w64-mingw32-g++ 15.2.1)
+Time spent: 14% 2x write_rtlil (0 sec), 14% 2x read_rtlil (0 sec), ...

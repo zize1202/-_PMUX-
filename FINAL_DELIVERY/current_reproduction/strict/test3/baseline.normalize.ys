@@ -1,0 +1,8 @@
+read_rtlil baseline.source.il
+hierarchy -check -top test3
+techmap -autoproc -map dffeas_formal.v
+prep -top test3 -flatten
+check -assert
+delete =A:blackbox =A:whitebox
+write_rtlil baseline.normalized.il
+write_json baseline.normalized.json

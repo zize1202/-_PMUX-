@@ -1,0 +1,1210 @@
+{
+  "creator": "Yosys 0.69+154 (git sha1 30d62572e-dirty, Release, GNU /usr/bin/x86_64-w64-mingw32-g++ 15.2.1)",
+  "modules": {
+    "test4": {
+      "attributes": {
+        "top": "00000000000000000000000000000001",
+        "src": "rtl_source_0.v:1.1-85.10"
+      },
+      "ports": {
+        "clk": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "reset_n": {
+          "direction": "input",
+          "bits": [ 3 ]
+        },
+        "ena": {
+          "direction": "input",
+          "bits": [ 4 ]
+        },
+        "datain": {
+          "direction": "input",
+          "bits": [ 5, 6, 7, 8, 9 ]
+        },
+        "dataout": {
+          "direction": "output",
+          "bits": [ 10, 11, 12, 13, 14, 15 ]
+        },
+        "only_5b": {
+          "direction": "output",
+          "bits": [ 16 ]
+        },
+        "datain_5bis7": {
+          "direction": "output",
+          "bits": [ 17 ]
+        },
+        "data_dp": {
+          "direction": "output",
+          "bits": [ 18 ]
+        },
+        "data_dn": {
+          "direction": "output",
+          "bits": [ 19 ]
+        }
+      },
+      "cells": {
+        "$auto$proc_dff.cc:242:proc_dff$34": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 17 ],
+            "B": [ 20 ],
+            "S": [ 3 ],
+            "Y": [ 21 ]
+          }
+        },
+        "$memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][0][0]$47": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000001010"
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 22, 23, 24, 25, 26, 27, 28, 29, 30, 31 ],
+            "B": [ 32, 33, 34, 35, 36, 37, 38, 39, 40, 41 ],
+            "S": [ 9 ],
+            "Y": [ 42, 43, 44, 45, 46, 47, 48, 49, 50, 51 ]
+          }
+        },
+        "$memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][1][0]$50": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000001010"
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 52, 53, 54, 55, 56, 57, 58, 59, 60, 61 ],
+            "B": [ 62, 63, 64, 65, 66, 67, 68, 69, 70, 71 ],
+            "S": [ 8 ],
+            "Y": [ 22, 23, 24, 25, 26, 27, 28, 29, 30, 31 ]
+          }
+        },
+        "$memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][1][1]$53": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000001010"
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 72, 73, 74, 75, 76, 77, 78, 79, 80, 81 ],
+            "B": [ 82, 83, 84, 85, 86, 87, 88, 89, 90, 91 ],
+            "S": [ 8 ],
+            "Y": [ 32, 33, 34, 35, 36, 37, 38, 39, 40, 41 ]
+          }
+        },
+        "$memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][2][0]$56": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000001010"
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 92, 93, 94, 95, 96, 97, 98, 99, 100, 101 ],
+            "B": [ 102, 103, 104, 105, 106, 107, 108, 109, 110, 111 ],
+            "S": [ 7 ],
+            "Y": [ 52, 53, 54, 55, 56, 57, 58, 59, 60, 61 ]
+          }
+        },
+        "$memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][2][1]$59": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000001010"
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 112, 113, 114, 115, 116, 117, 118, 119, 120, 121 ],
+            "B": [ 122, 123, 124, 125, 126, 127, 128, 129, 130, 131 ],
+            "S": [ 7 ],
+            "Y": [ 62, 63, 64, 65, 66, 67, 68, 69, 70, 71 ]
+          }
+        },
+        "$memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][2][2]$62": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000001010"
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 132, 133, 134, 135, 136, 137, 138, 139, 140, 141 ],
+            "B": [ 142, 143, 144, 145, 146, 147, 148, 149, 150, 151 ],
+            "S": [ 7 ],
+            "Y": [ 72, 73, 74, 75, 76, 77, 78, 79, 80, 81 ]
+          }
+        },
+        "$memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][2][3]$65": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000001010"
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 152, 153, 154, 155, 156, 157, 158, 159, 160, 161 ],
+            "B": [ 162, 163, 164, 165, 166, 167, 168, 169, 170, 171 ],
+            "S": [ 7 ],
+            "Y": [ 82, 83, 84, 85, 86, 87, 88, 89, 90, 91 ]
+          }
+        },
+        "$memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][0]$68": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000001010"
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 172, 173, 174, 175, 176, 177, 178, 179, 180, 181 ],
+            "B": [ 182, 183, 184, 185, 186, 187, 188, 189, 190, 191 ],
+            "S": [ 6 ],
+            "Y": [ 92, 93, 94, 95, 96, 97, 98, 99, 100, 101 ]
+          }
+        },
+        "$memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][1]$71": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000001010"
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 192, 193, 194, 195, 196, 197, 198, 199, 200, 201 ],
+            "B": [ 202, 203, 204, 205, 206, 207, 208, 209, 210, 211 ],
+            "S": [ 6 ],
+            "Y": [ 102, 103, 104, 105, 106, 107, 108, 109, 110, 111 ]
+          }
+        },
+        "$memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][2]$74": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000001010"
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 212, 213, 214, 215, 216, 217, 218, 219, 220, 221 ],
+            "B": [ 222, 223, 224, 225, 226, 227, 228, 229, 230, 231 ],
+            "S": [ 6 ],
+            "Y": [ 112, 113, 114, 115, 116, 117, 118, 119, 120, 121 ]
+          }
+        },
+        "$memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][3]$77": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000001010"
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 232, 233, 234, 235, 236, 237, 238, 239, 240, 241 ],
+            "B": [ 242, 243, 244, 245, 246, 247, 248, 249, 250, 251 ],
+            "S": [ 6 ],
+            "Y": [ 122, 123, 124, 125, 126, 127, 128, 129, 130, 131 ]
+          }
+        },
+        "$memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][4]$80": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000001010"
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 252, 253, 254, 255, 256, 257, 258, 259, 260, 261 ],
+            "B": [ 262, 263, 264, 265, 266, 267, 268, 269, 270, 271 ],
+            "S": [ 6 ],
+            "Y": [ 132, 133, 134, 135, 136, 137, 138, 139, 140, 141 ]
+          }
+        },
+        "$memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][5]$83": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000001010"
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 272, 273, 274, 275, 276, 277, 278, 279, 280, 281 ],
+            "B": [ 282, 283, 284, 285, 286, 287, 288, 289, 290, 291 ],
+            "S": [ 6 ],
+            "Y": [ 142, 143, 144, 145, 146, 147, 148, 149, 150, 151 ]
+          }
+        },
+        "$memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][6]$86": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000001010"
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 292, 293, 294, 295, 296, 297, 298, 299, 300, 301 ],
+            "B": [ 302, 303, 304, 305, 306, 307, 308, 309, 310, 311 ],
+            "S": [ 6 ],
+            "Y": [ 152, 153, 154, 155, 156, 157, 158, 159, 160, 161 ]
+          }
+        },
+        "$memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][7]$89": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000001010"
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 312, 313, 314, 315, 316, 317, 318, 319, 320, 321 ],
+            "B": [ 322, 323, 324, 325, 326, 327, 328, 329, 330, 331 ],
+            "S": [ 6 ],
+            "Y": [ 162, 163, 164, 165, 166, 167, 168, 169, 170, 171 ]
+          }
+        },
+        "$memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][4][0]$92": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000001010"
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ "0", "0", "0", "0", "1", "1", "1", "0", "0", "1" ],
+            "B": [ "0", "0", "0", "0", "1", "0", "1", "1", "1", "0" ],
+            "S": [ 5 ],
+            "Y": [ 172, 173, 174, 175, 176, 177, 178, 179, 180, 181 ]
+          }
+        },
+        "$memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][4][10]$122": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000001010"
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ "0", "1", "0", "1", "1", "1", "0", "1", "0", "0" ],
+            "B": [ "0", "0", "0", "1", "0", "1", "0", "1", "0", "1" ],
+            "S": [ 5 ],
+            "Y": [ 272, 273, 274, 275, 276, 277, 278, 279, 280, 281 ]
+          }
+        },
+        "$memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][4][11]$125": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000001010"
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ "0", "0", "0", "1", "0", "1", "0", "1", "1", "0" ],
+            "B": [ "0", "0", "0", "0", "0", "1", "0", "1", "1", "1" ],
+            "S": [ 5 ],
+            "Y": [ 282, 283, 284, 285, 286, 287, 288, 289, 290, 291 ]
+          }
+        },
+        "$memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][4][12]$128": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000001010"
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ "0", "0", "0", "0", "1", "1", "0", "0", "1", "1" ],
+            "B": [ "0", "0", "0", "1", "0", "1", "1", "0", "0", "1" ],
+            "S": [ 5 ],
+            "Y": [ 292, 293, 294, 295, 296, 297, 298, 299, 300, 301 ]
+          }
+        },
+        "$memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][4][13]$131": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000001010"
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ "0", "0", "0", "1", "0", "1", "1", "0", "1", "0" ],
+            "B": [ "0", "0", "0", "0", "0", "1", "1", "0", "1", "1" ],
+            "S": [ 5 ],
+            "Y": [ 302, 303, 304, 305, 306, 307, 308, 309, 310, 311 ]
+          }
+        },
+        "$memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][4][14]$134": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000001010"
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ "0", "0", "0", "1", "0", "1", "1", "1", "0", "0" ],
+            "B": [ "0", "0", "0", "0", "0", "1", "1", "1", "0", "1" ],
+            "S": [ 5 ],
+            "Y": [ 312, 313, 314, 315, 316, 317, 318, 319, 320, 321 ]
+          }
+        },
+        "$memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][4][15]$137": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000001010"
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ "0", "0", "0", "0", "0", "1", "1", "1", "1", "0" ],
+            "B": [ "0", "0", "0", "0", "1", "1", "0", "1", "0", "1" ],
+            "S": [ 5 ],
+            "Y": [ 322, 323, 324, 325, 326, 327, 328, 329, 330, 331 ]
+          }
+        },
+        "$memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][4][1]$95": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000001010"
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ "0", "0", "0", "0", "1", "0", "1", "1", "0", "1" ],
+            "B": [ "0", "0", "0", "1", "1", "0", "0", "0", "1", "1" ],
+            "S": [ 5 ],
+            "Y": [ 182, 183, 184, 185, 186, 187, 188, 189, 190, 191 ]
+          }
+        },
+        "$memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][4][2]$98": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000001010"
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ "0", "0", "0", "0", "1", "0", "1", "0", "1", "1" ],
+            "B": [ "0", "0", "0", "1", "1", "0", "0", "1", "0", "1" ],
+            "S": [ 5 ],
+            "Y": [ 192, 193, 194, 195, 196, 197, 198, 199, 200, 201 ]
+          }
+        },
+        "$memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][4][3]$101": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000001010"
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ "0", "0", "0", "1", "1", "0", "0", "1", "1", "0" ],
+            "B": [ "0", "0", "1", "0", "0", "0", "0", "1", "1", "1" ],
+            "S": [ 5 ],
+            "Y": [ 202, 203, 204, 205, 206, 207, 208, 209, 210, 211 ]
+          }
+        },
+        "$memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][4][4]$104": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000001010"
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ "0", "0", "0", "0", "1", "0", "0", "1", "1", "1" ],
+            "B": [ "0", "0", "0", "1", "1", "0", "1", "0", "0", "1" ],
+            "S": [ 5 ],
+            "Y": [ 212, 213, 214, 215, 216, 217, 218, 219, 220, 221 ]
+          }
+        },
+        "$memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][4][5]$107": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000001010"
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ "0", "0", "0", "1", "1", "0", "1", "0", "1", "0" ],
+            "B": [ "1", "0", "0", "1", "0", "0", "1", "0", "1", "1" ],
+            "S": [ 5 ],
+            "Y": [ 222, 223, 224, 225, 226, 227, 228, 229, 230, 231 ]
+          }
+        },
+        "$memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][4][6]$110": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000001010"
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ "0", "0", "0", "1", "1", "0", "1", "1", "0", "0" ],
+            "B": [ "1", "0", "0", "1", "0", "0", "1", "1", "0", "1" ],
+            "S": [ 5 ],
+            "Y": [ 232, 233, 234, 235, 236, 237, 238, 239, 240, 241 ]
+          }
+        },
+        "$memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][4][7]$113": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000001010"
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ "1", "0", "0", "1", "0", "0", "1", "1", "1", "0" ],
+            "B": [ "0", "0", "0", "0", "1", "1", "1", "0", "1", "0" ],
+            "S": [ 5 ],
+            "Y": [ 242, 243, 244, 245, 246, 247, 248, 249, 250, 251 ]
+          }
+        },
+        "$memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][4][8]$116": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000001010"
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ "0", "0", "0", "0", "1", "1", "0", "1", "1", "0" ],
+            "B": [ "0", "1", "0", "1", "1", "1", "0", "0", "0", "1" ],
+            "S": [ 5 ],
+            "Y": [ 252, 253, 254, 255, 256, 257, 258, 259, 260, 261 ]
+          }
+        },
+        "$memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][4][9]$119": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000001010"
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ "0", "1", "0", "1", "1", "1", "0", "0", "1", "0" ],
+            "B": [ "0", "0", "0", "1", "0", "1", "0", "0", "1", "1" ],
+            "S": [ 5 ],
+            "Y": [ 262, 263, 264, 265, 266, 267, 268, 269, 270, 271 ]
+          }
+        },
+        "$procdff$24": {
+          "hide_name": 1,
+          "type": "$adff",
+          "parameters": {
+            "ARST_POLARITY": "00000000000000000000000000000000",
+            "ARST_VALUE": "000000",
+            "CLK_POLARITY": "00000000000000000000000000000001",
+            "WIDTH": "00000000000000000000000000000110"
+          },
+          "attributes": {
+            "src": "rtl_source_0.v:30.1-83.4"
+          },
+          "port_directions": {
+            "ARST": "input",
+            "CLK": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "ARST": [ 3 ],
+            "CLK": [ 2 ],
+            "D": [ 332, 333, 334, 335, 336, 337 ],
+            "Q": [ 10, 11, 12, 13, 14, 15 ]
+          }
+        },
+        "$procdff$29": {
+          "hide_name": 1,
+          "type": "$adff",
+          "parameters": {
+            "ARST_POLARITY": "00000000000000000000000000000000",
+            "ARST_VALUE": "1",
+            "CLK_POLARITY": "00000000000000000000000000000001",
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "rtl_source_0.v:30.1-83.4"
+          },
+          "port_directions": {
+            "ARST": "input",
+            "CLK": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "ARST": [ 3 ],
+            "CLK": [ 2 ],
+            "D": [ 338 ],
+            "Q": [ 16 ]
+          }
+        },
+        "$procdff$36": {
+          "hide_name": 1,
+          "type": "$dff",
+          "parameters": {
+            "CLK_POLARITY": "00000000000000000000000000000001",
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "rtl_source_0.v:30.1-83.4"
+          },
+          "port_directions": {
+            "CLK": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 21 ],
+            "Q": [ 17 ]
+          }
+        },
+        "$procdff$41": {
+          "hide_name": 1,
+          "type": "$adff",
+          "parameters": {
+            "ARST_POLARITY": "00000000000000000000000000000000",
+            "ARST_VALUE": "0",
+            "CLK_POLARITY": "00000000000000000000000000000001",
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "rtl_source_0.v:30.1-83.4"
+          },
+          "port_directions": {
+            "ARST": "input",
+            "CLK": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "ARST": [ 3 ],
+            "CLK": [ 2 ],
+            "D": [ 339 ],
+            "Q": [ 18 ]
+          }
+        },
+        "$procdff$46": {
+          "hide_name": 1,
+          "type": "$adff",
+          "parameters": {
+            "ARST_POLARITY": "00000000000000000000000000000000",
+            "ARST_VALUE": "0",
+            "CLK_POLARITY": "00000000000000000000000000000001",
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "rtl_source_0.v:30.1-83.4"
+          },
+          "port_directions": {
+            "ARST": "input",
+            "CLK": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "ARST": [ 3 ],
+            "CLK": [ 2 ],
+            "D": [ 340 ],
+            "Q": [ 19 ]
+          }
+        },
+        "$procmux$10": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000111"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "rtl_source_0.v:41.6-41.10|rtl_source_0.v:41.3-81.6"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ "0", "0", "0", "0", "0", "0", "0" ],
+            "B": [ 45, 46, 47, 48, 49, 50, 51 ],
+            "S": [ 4 ],
+            "Y": [ 338, 332, 333, 334, 335, 336, 337 ]
+          }
+        },
+        "$procmux$14": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000010"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "rtl_source_0.v:41.6-41.10|rtl_source_0.v:41.3-81.6"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ "0", "0" ],
+            "B": [ 42, 43 ],
+            "S": [ 4 ],
+            "Y": [ 340, 339 ]
+          }
+        },
+        "$procmux$18": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "rtl_source_0.v:41.6-41.10|rtl_source_0.v:41.3-81.6"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ "0" ],
+            "B": [ 44 ],
+            "S": [ 4 ],
+            "Y": [ 20 ]
+          }
+        }
+      },
+      "netnames": {
+        "$0\\data_dn[0:0]": {
+          "hide_name": 1,
+          "bits": [ 340 ],
+          "attributes": {
+            "src": "rtl_source_0.v:30.1-83.4"
+          }
+        },
+        "$0\\data_dp[0:0]": {
+          "hide_name": 1,
+          "bits": [ 339 ],
+          "attributes": {
+            "src": "rtl_source_0.v:30.1-83.4"
+          }
+        },
+        "$0\\datain_5bis7[0:0]": {
+          "hide_name": 1,
+          "bits": [ 20 ],
+          "attributes": {
+            "src": "rtl_source_0.v:30.1-83.4"
+          }
+        },
+        "$0\\dataout[5:0]": {
+          "hide_name": 1,
+          "bits": [ 332, 333, 334, 335, 336, 337 ],
+          "attributes": {
+            "src": "rtl_source_0.v:30.1-83.4"
+          }
+        },
+        "$0\\only_5b[0:0]": {
+          "hide_name": 1,
+          "bits": [ 338 ],
+          "attributes": {
+            "src": "rtl_source_0.v:30.1-83.4"
+          }
+        },
+        "$auto$proc_rom.cc:154:do_switch$4": {
+          "hide_name": 1,
+          "bits": [ 42, 43, 44, 45, 46, 47, 48, 49, 50, 51 ],
+          "attributes": {
+          }
+        },
+        "$auto$rtlil.cc:3369:Mux$35": {
+          "hide_name": 1,
+          "bits": [ 21 ],
+          "attributes": {
+          }
+        },
+        "$memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][0][0]$a$48": {
+          "hide_name": 1,
+          "bits": [ 22, 23, 24, 25, 26, 27, 28, 29, 30, 31 ],
+          "attributes": {
+          }
+        },
+        "$memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][0][0]$b$49": {
+          "hide_name": 1,
+          "bits": [ 32, 33, 34, 35, 36, 37, 38, 39, 40, 41 ],
+          "attributes": {
+          }
+        },
+        "$memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][1][0]$a$51": {
+          "hide_name": 1,
+          "bits": [ 52, 53, 54, 55, 56, 57, 58, 59, 60, 61 ],
+          "attributes": {
+          }
+        },
+        "$memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][1][0]$b$52": {
+          "hide_name": 1,
+          "bits": [ 62, 63, 64, 65, 66, 67, 68, 69, 70, 71 ],
+          "attributes": {
+          }
+        },
+        "$memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][1][1]$a$54": {
+          "hide_name": 1,
+          "bits": [ 72, 73, 74, 75, 76, 77, 78, 79, 80, 81 ],
+          "attributes": {
+          }
+        },
+        "$memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][1][1]$b$55": {
+          "hide_name": 1,
+          "bits": [ 82, 83, 84, 85, 86, 87, 88, 89, 90, 91 ],
+          "attributes": {
+          }
+        },
+        "$memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][2][0]$a$57": {
+          "hide_name": 1,
+          "bits": [ 92, 93, 94, 95, 96, 97, 98, 99, 100, 101 ],
+          "attributes": {
+          }
+        },
+        "$memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][2][0]$b$58": {
+          "hide_name": 1,
+          "bits": [ 102, 103, 104, 105, 106, 107, 108, 109, 110, 111 ],
+          "attributes": {
+          }
+        },
+        "$memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][2][1]$a$60": {
+          "hide_name": 1,
+          "bits": [ 112, 113, 114, 115, 116, 117, 118, 119, 120, 121 ],
+          "attributes": {
+          }
+        },
+        "$memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][2][1]$b$61": {
+          "hide_name": 1,
+          "bits": [ 122, 123, 124, 125, 126, 127, 128, 129, 130, 131 ],
+          "attributes": {
+          }
+        },
+        "$memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][2][2]$a$63": {
+          "hide_name": 1,
+          "bits": [ 132, 133, 134, 135, 136, 137, 138, 139, 140, 141 ],
+          "attributes": {
+          }
+        },
+        "$memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][2][2]$b$64": {
+          "hide_name": 1,
+          "bits": [ 142, 143, 144, 145, 146, 147, 148, 149, 150, 151 ],
+          "attributes": {
+          }
+        },
+        "$memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][2][3]$a$66": {
+          "hide_name": 1,
+          "bits": [ 152, 153, 154, 155, 156, 157, 158, 159, 160, 161 ],
+          "attributes": {
+          }
+        },
+        "$memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][2][3]$b$67": {
+          "hide_name": 1,
+          "bits": [ 162, 163, 164, 165, 166, 167, 168, 169, 170, 171 ],
+          "attributes": {
+          }
+        },
+        "$memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][0]$a$69": {
+          "hide_name": 1,
+          "bits": [ 172, 173, 174, 175, 176, 177, 178, 179, 180, 181 ],
+          "attributes": {
+          }
+        },
+        "$memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][0]$b$70": {
+          "hide_name": 1,
+          "bits": [ 182, 183, 184, 185, 186, 187, 188, 189, 190, 191 ],
+          "attributes": {
+          }
+        },
+        "$memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][1]$a$72": {
+          "hide_name": 1,
+          "bits": [ 192, 193, 194, 195, 196, 197, 198, 199, 200, 201 ],
+          "attributes": {
+          }
+        },
+        "$memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][1]$b$73": {
+          "hide_name": 1,
+          "bits": [ 202, 203, 204, 205, 206, 207, 208, 209, 210, 211 ],
+          "attributes": {
+          }
+        },
+        "$memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][2]$a$75": {
+          "hide_name": 1,
+          "bits": [ 212, 213, 214, 215, 216, 217, 218, 219, 220, 221 ],
+          "attributes": {
+          }
+        },
+        "$memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][2]$b$76": {
+          "hide_name": 1,
+          "bits": [ 222, 223, 224, 225, 226, 227, 228, 229, 230, 231 ],
+          "attributes": {
+          }
+        },
+        "$memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][3]$a$78": {
+          "hide_name": 1,
+          "bits": [ 232, 233, 234, 235, 236, 237, 238, 239, 240, 241 ],
+          "attributes": {
+          }
+        },
+        "$memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][3]$b$79": {
+          "hide_name": 1,
+          "bits": [ 242, 243, 244, 245, 246, 247, 248, 249, 250, 251 ],
+          "attributes": {
+          }
+        },
+        "$memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][4]$a$81": {
+          "hide_name": 1,
+          "bits": [ 252, 253, 254, 255, 256, 257, 258, 259, 260, 261 ],
+          "attributes": {
+          }
+        },
+        "$memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][4]$b$82": {
+          "hide_name": 1,
+          "bits": [ 262, 263, 264, 265, 266, 267, 268, 269, 270, 271 ],
+          "attributes": {
+          }
+        },
+        "$memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][5]$a$84": {
+          "hide_name": 1,
+          "bits": [ 272, 273, 274, 275, 276, 277, 278, 279, 280, 281 ],
+          "attributes": {
+          }
+        },
+        "$memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][5]$b$85": {
+          "hide_name": 1,
+          "bits": [ 282, 283, 284, 285, 286, 287, 288, 289, 290, 291 ],
+          "attributes": {
+          }
+        },
+        "$memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][6]$a$87": {
+          "hide_name": 1,
+          "bits": [ 292, 293, 294, 295, 296, 297, 298, 299, 300, 301 ],
+          "attributes": {
+          }
+        },
+        "$memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][6]$b$88": {
+          "hide_name": 1,
+          "bits": [ 302, 303, 304, 305, 306, 307, 308, 309, 310, 311 ],
+          "attributes": {
+          }
+        },
+        "$memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][7]$a$90": {
+          "hide_name": 1,
+          "bits": [ 312, 313, 314, 315, 316, 317, 318, 319, 320, 321 ],
+          "attributes": {
+          }
+        },
+        "$memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][7]$b$91": {
+          "hide_name": 1,
+          "bits": [ 322, 323, 324, 325, 326, 327, 328, 329, 330, 331 ],
+          "attributes": {
+          }
+        },
+        "clk": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "rtl_source_0.v:14.8-14.11"
+          }
+        },
+        "data_dn": {
+          "hide_name": 0,
+          "bits": [ 19 ],
+          "attributes": {
+            "init": "0",
+            "src": "rtl_source_0.v:22.9-22.16"
+          }
+        },
+        "data_dp": {
+          "hide_name": 0,
+          "bits": [ 18 ],
+          "attributes": {
+            "init": "0",
+            "src": "rtl_source_0.v:21.9-21.16"
+          }
+        },
+        "datain": {
+          "hide_name": 0,
+          "bits": [ 5, 6, 7, 8, 9 ],
+          "attributes": {
+            "src": "rtl_source_0.v:17.12-17.18"
+          }
+        },
+        "datain_5bis7": {
+          "hide_name": 0,
+          "bits": [ 17 ],
+          "attributes": {
+            "init": "0",
+            "src": "rtl_source_0.v:20.9-20.21"
+          }
+        },
+        "dataout": {
+          "hide_name": 0,
+          "bits": [ 10, 11, 12, 13, 14, 15 ],
+          "attributes": {
+            "init": "000000",
+            "src": "rtl_source_0.v:18.13-18.20"
+          }
+        },
+        "ena": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "src": "rtl_source_0.v:16.8-16.11"
+          }
+        },
+        "only_5b": {
+          "hide_name": 0,
+          "bits": [ 16 ],
+          "attributes": {
+            "init": "0",
+            "src": "rtl_source_0.v:19.9-19.16"
+          }
+        },
+        "reset_n": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "src": "rtl_source_0.v:15.8-15.15"
+          }
+        }
+      }
+    }
+  }
+}

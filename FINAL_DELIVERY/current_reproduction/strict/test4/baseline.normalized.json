@@ -1,0 +1,1185 @@
+{
+  "creator": "Yosys 0.69+154 (git sha1 30d62572e-dirty, Release, GNU /usr/bin/x86_64-w64-mingw32-g++ 15.2.1)",
+  "modules": {
+    "test4": {
+      "attributes": {
+        "top": "00000000000000000000000000000001",
+        "src": "D:/PMUX_20261102_delivery/relocation r30 all/cases/original4/competition_case/test4/test4.v:1.1-85.10"
+      },
+      "ports": {
+        "clk": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "reset_n": {
+          "direction": "input",
+          "bits": [ 3 ]
+        },
+        "ena": {
+          "direction": "input",
+          "bits": [ 4 ]
+        },
+        "datain": {
+          "direction": "input",
+          "bits": [ 5, 6, 7, 8, 9 ]
+        },
+        "dataout": {
+          "direction": "output",
+          "bits": [ 10, 11, 12, 13, 14, 15 ]
+        },
+        "only_5b": {
+          "direction": "output",
+          "bits": [ 16 ]
+        },
+        "datain_5bis7": {
+          "direction": "output",
+          "bits": [ 17 ]
+        },
+        "data_dp": {
+          "direction": "output",
+          "bits": [ 18 ]
+        },
+        "data_dn": {
+          "direction": "output",
+          "bits": [ 19 ]
+        }
+      },
+      "cells": {
+        "$techmap\\data_dn_dffeas_q.$procdff$1501": {
+          "hide_name": 1,
+          "type": "$adff",
+          "parameters": {
+            "ARST_POLARITY": "00000000000000000000000000000000",
+            "ARST_VALUE": "0",
+            "CLK_POLARITY": "1",
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "D:/PMUX_20261102_delivery/relocation r30 all/cases/original4/competition_case/test4/test4.v:30.1-83.4|D:\\PMUX_20261102_delivery\\relocation r30 all\\optimized\\bin\\../share/yosys/intel/common/ff_map.v:7.54-7.182|dffeas_formal.v:12.3-14.35"
+          },
+          "port_directions": {
+            "ARST": "input",
+            "CLK": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "ARST": [ 3 ],
+            "CLK": [ 2 ],
+            "D": [ 20 ],
+            "Q": [ 19 ]
+          }
+        },
+        "$techmap\\data_dp_dffeas_q.$procdff$1501": {
+          "hide_name": 1,
+          "type": "$adff",
+          "parameters": {
+            "ARST_POLARITY": "00000000000000000000000000000000",
+            "ARST_VALUE": "0",
+            "CLK_POLARITY": "1",
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "D:/PMUX_20261102_delivery/relocation r30 all/cases/original4/competition_case/test4/test4.v:30.1-83.4|D:\\PMUX_20261102_delivery\\relocation r30 all\\optimized\\bin\\../share/yosys/intel/common/ff_map.v:7.54-7.182|dffeas_formal.v:12.3-14.35"
+          },
+          "port_directions": {
+            "ARST": "input",
+            "CLK": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "ARST": [ 3 ],
+            "CLK": [ 2 ],
+            "D": [ 21 ],
+            "Q": [ 18 ]
+          }
+        },
+        "$techmap\\datain_5bis7_dffeas_q.$procdff$1501": {
+          "hide_name": 1,
+          "type": "$adff",
+          "parameters": {
+            "ARST_POLARITY": "00000000000000000000000000000000",
+            "ARST_VALUE": "0",
+            "CLK_POLARITY": "1",
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "D:/PMUX_20261102_delivery/relocation r30 all/cases/original4/competition_case/test4/test4.v:30.1-83.4|D:\\PMUX_20261102_delivery\\relocation r30 all\\optimized\\bin\\../share/yosys/intel/common/ff_map.v:7.54-7.182|dffeas_formal.v:12.3-14.35"
+          },
+          "port_directions": {
+            "ARST": "input",
+            "CLK": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "ARST": [ "1" ],
+            "CLK": [ 2 ],
+            "D": [ 22 ],
+            "Q": [ 17 ]
+          }
+        },
+        "$techmap\\datain_5bis7_dffeas_q.$procmux$1495": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "D:/PMUX_20261102_delivery/relocation r30 all/cases/original4/competition_case/test4/test4.v:30.1-83.4|D:\\PMUX_20261102_delivery\\relocation r30 all\\optimized\\bin\\../share/yosys/intel/common/ff_map.v:7.54-7.182|dffeas_formal.v:14.10-14.35|dffeas_formal.v:14.14-14.17"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 17 ],
+            "B": [ 23 ],
+            "S": [ 3 ],
+            "Y": [ 22 ]
+          }
+        },
+        "$techmap\\dataout_dffeas_q.$procdff$1501": {
+          "hide_name": 1,
+          "type": "$adff",
+          "parameters": {
+            "ARST_POLARITY": "00000000000000000000000000000000",
+            "ARST_VALUE": "0",
+            "CLK_POLARITY": "1",
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "D:/PMUX_20261102_delivery/relocation r30 all/cases/original4/competition_case/test4/test4.v:30.1-83.4|D:\\PMUX_20261102_delivery\\relocation r30 all\\optimized\\bin\\../share/yosys/intel/common/ff_map.v:7.54-7.182|dffeas_formal.v:12.3-14.35"
+          },
+          "port_directions": {
+            "ARST": "input",
+            "CLK": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "ARST": [ 3 ],
+            "CLK": [ 2 ],
+            "D": [ 24 ],
+            "Q": [ 12 ]
+          }
+        },
+        "$techmap\\dataout_dffeas_q_1.$procdff$1501": {
+          "hide_name": 1,
+          "type": "$adff",
+          "parameters": {
+            "ARST_POLARITY": "00000000000000000000000000000000",
+            "ARST_VALUE": "0",
+            "CLK_POLARITY": "1",
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "D:/PMUX_20261102_delivery/relocation r30 all/cases/original4/competition_case/test4/test4.v:30.1-83.4|D:\\PMUX_20261102_delivery\\relocation r30 all\\optimized\\bin\\../share/yosys/intel/common/ff_map.v:7.54-7.182|dffeas_formal.v:12.3-14.35"
+          },
+          "port_directions": {
+            "ARST": "input",
+            "CLK": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "ARST": [ 3 ],
+            "CLK": [ 2 ],
+            "D": [ 25 ],
+            "Q": [ 15 ]
+          }
+        },
+        "$techmap\\dataout_dffeas_q_2.$procdff$1501": {
+          "hide_name": 1,
+          "type": "$adff",
+          "parameters": {
+            "ARST_POLARITY": "00000000000000000000000000000000",
+            "ARST_VALUE": "0",
+            "CLK_POLARITY": "1",
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "D:/PMUX_20261102_delivery/relocation r30 all/cases/original4/competition_case/test4/test4.v:30.1-83.4|D:\\PMUX_20261102_delivery\\relocation r30 all\\optimized\\bin\\../share/yosys/intel/common/ff_map.v:7.54-7.182|dffeas_formal.v:12.3-14.35"
+          },
+          "port_directions": {
+            "ARST": "input",
+            "CLK": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "ARST": [ 3 ],
+            "CLK": [ 2 ],
+            "D": [ 26 ],
+            "Q": [ 14 ]
+          }
+        },
+        "$techmap\\dataout_dffeas_q_3.$procdff$1501": {
+          "hide_name": 1,
+          "type": "$adff",
+          "parameters": {
+            "ARST_POLARITY": "00000000000000000000000000000000",
+            "ARST_VALUE": "0",
+            "CLK_POLARITY": "1",
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "D:/PMUX_20261102_delivery/relocation r30 all/cases/original4/competition_case/test4/test4.v:30.1-83.4|D:\\PMUX_20261102_delivery\\relocation r30 all\\optimized\\bin\\../share/yosys/intel/common/ff_map.v:7.54-7.182|dffeas_formal.v:12.3-14.35"
+          },
+          "port_directions": {
+            "ARST": "input",
+            "CLK": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "ARST": [ 3 ],
+            "CLK": [ 2 ],
+            "D": [ 27 ],
+            "Q": [ 11 ]
+          }
+        },
+        "$techmap\\dataout_dffeas_q_4.$procdff$1501": {
+          "hide_name": 1,
+          "type": "$adff",
+          "parameters": {
+            "ARST_POLARITY": "00000000000000000000000000000000",
+            "ARST_VALUE": "0",
+            "CLK_POLARITY": "1",
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "D:/PMUX_20261102_delivery/relocation r30 all/cases/original4/competition_case/test4/test4.v:30.1-83.4|D:\\PMUX_20261102_delivery\\relocation r30 all\\optimized\\bin\\../share/yosys/intel/common/ff_map.v:7.54-7.182|dffeas_formal.v:12.3-14.35"
+          },
+          "port_directions": {
+            "ARST": "input",
+            "CLK": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "ARST": [ 3 ],
+            "CLK": [ 2 ],
+            "D": [ 28 ],
+            "Q": [ 10 ]
+          }
+        },
+        "$techmap\\dataout_dffeas_q_5.$procdff$1501": {
+          "hide_name": 1,
+          "type": "$adff",
+          "parameters": {
+            "ARST_POLARITY": "00000000000000000000000000000000",
+            "ARST_VALUE": "0",
+            "CLK_POLARITY": "1",
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "D:/PMUX_20261102_delivery/relocation r30 all/cases/original4/competition_case/test4/test4.v:30.1-83.4|D:\\PMUX_20261102_delivery\\relocation r30 all\\optimized\\bin\\../share/yosys/intel/common/ff_map.v:7.54-7.182|dffeas_formal.v:12.3-14.35"
+          },
+          "port_directions": {
+            "ARST": "input",
+            "CLK": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "ARST": [ 3 ],
+            "CLK": [ 2 ],
+            "D": [ 29 ],
+            "Q": [ 13 ]
+          }
+        },
+        "$techmap\\only_5b_$lut_Y_A_dffeas_q.$procdff$1513": {
+          "hide_name": 1,
+          "type": "$adff",
+          "parameters": {
+            "ARST_POLARITY": "00000000000000000000000000000000",
+            "ARST_VALUE": "0",
+            "CLK_POLARITY": "1",
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "D:/PMUX_20261102_delivery/relocation r30 all/cases/original4/competition_case/test4/test4.v:30.1-83.4|D:\\PMUX_20261102_delivery\\relocation r30 all\\optimized\\bin\\../share/yosys/intel/common/ff_map.v:5.55-5.183|dffeas_formal.v:12.3-14.35"
+          },
+          "port_directions": {
+            "ARST": "input",
+            "CLK": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "ARST": [ 3 ],
+            "CLK": [ 2 ],
+            "D": [ 30 ],
+            "Q": [ 31 ]
+          }
+        },
+        "data_dn_dffeas_q_d_$lut_Y": {
+          "hide_name": 0,
+          "type": "$lut",
+          "parameters": {
+            "LUT": "00000100",
+            "WIDTH": "00000000000000000000000000000011"
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 9, 4, 32 ],
+            "Y": [ 20 ]
+          }
+        },
+        "data_dn_dffeas_q_d_$lut_Y_A_$lut_Y": {
+          "hide_name": 0,
+          "type": "$lut",
+          "parameters": {
+            "LUT": "1101011101111111",
+            "WIDTH": "00000000000000000000000000000100"
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 8, 7, 6, 5 ],
+            "Y": [ 32 ]
+          }
+        },
+        "data_dp_dffeas_q_d_$lut_Y": {
+          "hide_name": 0,
+          "type": "$lut",
+          "parameters": {
+            "LUT": "00001000",
+            "WIDTH": "00000000000000000000000000000011"
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 9, 4, 33 ],
+            "Y": [ 21 ]
+          }
+        },
+        "data_dp_dffeas_q_d_$lut_Y_A_$lut_A": {
+          "hide_name": 0,
+          "type": "$lut",
+          "parameters": {
+            "LUT": "00110010",
+            "WIDTH": "00000000000000000000000000000011"
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 9, 34, 33 ],
+            "Y": [ 35 ]
+          }
+        },
+        "data_dp_dffeas_q_d_$lut_Y_A_$lut_A_1": {
+          "hide_name": 0,
+          "type": "$lut",
+          "parameters": {
+            "LUT": "11011000",
+            "WIDTH": "00000000000000000000000000000011"
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 9, 33, 32 ],
+            "Y": [ 36 ]
+          }
+        },
+        "data_dp_dffeas_q_d_$lut_Y_A_$lut_A_1_Y_$lut_A": {
+          "hide_name": 0,
+          "type": "$lut",
+          "parameters": {
+            "LUT": "0100100010001000",
+            "WIDTH": "00000000000000000000000000000100"
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 9, 4, 36, 37 ],
+            "Y": [ 28 ]
+          }
+        },
+        "data_dp_dffeas_q_d_$lut_Y_A_$lut_A_1_Y_$lut_A_A_$lut_Y": {
+          "hide_name": 0,
+          "type": "$lut",
+          "parameters": {
+            "LUT": "0010000001110101",
+            "WIDTH": "00000000000000000000000000000100"
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 9, 38, 39, 40 ],
+            "Y": [ 37 ]
+          }
+        },
+        "data_dp_dffeas_q_d_$lut_Y_A_$lut_A_1_Y_$lut_A_A_$lut_Y_A_$lut_Y": {
+          "hide_name": 0,
+          "type": "$lut",
+          "parameters": {
+            "LUT": "0111111111111101",
+            "WIDTH": "00000000000000000000000000000100"
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 8, 7, 6, 5 ],
+            "Y": [ 39 ]
+          }
+        },
+        "data_dp_dffeas_q_d_$lut_Y_A_$lut_A_1_Y_$lut_A_Y_$lut_Y": {
+          "hide_name": 0,
+          "type": "$lut",
+          "parameters": {
+            "LUT": "10000100",
+            "WIDTH": "00000000000000000000000000000011"
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 7, 4, 41 ],
+            "Y": [ 29 ]
+          }
+        },
+        "data_dp_dffeas_q_d_$lut_Y_A_$lut_A_1_Y_$lut_A_Y_$lut_Y_1": {
+          "hide_name": 0,
+          "type": "$lut",
+          "parameters": {
+            "LUT": "10001100",
+            "WIDTH": "00000000000000000000000000000011"
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 9, 4, 42 ],
+            "Y": [ 27 ]
+          }
+        },
+        "data_dp_dffeas_q_d_$lut_Y_A_$lut_A_1_Y_$lut_A_Y_$lut_Y_1_A_$lut_Y": {
+          "hide_name": 0,
+          "type": "$lut",
+          "parameters": {
+            "LUT": "10101011",
+            "WIDTH": "00000000000000000000000000000011"
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 9, 38, 43 ],
+            "Y": [ 42 ]
+          }
+        },
+        "data_dp_dffeas_q_d_$lut_Y_A_$lut_A_1_Y_$lut_A_Y_$lut_Y_2": {
+          "hide_name": 0,
+          "type": "$lut",
+          "parameters": {
+            "LUT": "1000010001000100",
+            "WIDTH": "00000000000000000000000000000100"
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 8, 4, 44, 35 ],
+            "Y": [ 24 ]
+          }
+        },
+        "data_dp_dffeas_q_d_$lut_Y_A_$lut_A_1_Y_$lut_A_Y_$lut_Y_2_A_$lut_Y": {
+          "hide_name": 0,
+          "type": "$lut",
+          "parameters": {
+            "LUT": "00011011",
+            "WIDTH": "00000000000000000000000000000011"
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 9, 38, 43 ],
+            "Y": [ 44 ]
+          }
+        },
+        "data_dp_dffeas_q_d_$lut_Y_A_$lut_A_1_Y_$lut_A_Y_$lut_Y_3": {
+          "hide_name": 0,
+          "type": "$lut",
+          "parameters": {
+            "LUT": "1000010001000100",
+            "WIDTH": "00000000000000000000000000000100"
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 5, 4, 42, 35 ],
+            "Y": [ 25 ]
+          }
+        },
+        "data_dp_dffeas_q_d_$lut_Y_A_$lut_A_1_Y_$lut_A_Y_$lut_Y_4": {
+          "hide_name": 0,
+          "type": "$lut",
+          "parameters": {
+            "LUT": "0100100001000100",
+            "WIDTH": "00000000000000000000000000000100"
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 6, 4, 45, 46 ],
+            "Y": [ 26 ]
+          }
+        },
+        "data_dp_dffeas_q_d_$lut_Y_A_$lut_A_1_Y_$lut_A_Y_$lut_Y_4_A_$lut_Y": {
+          "hide_name": 0,
+          "type": "$lut",
+          "parameters": {
+            "LUT": "01110101",
+            "WIDTH": "00000000000000000000000000000011"
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 9, 38, 39 ],
+            "Y": [ 46 ]
+          }
+        },
+        "data_dp_dffeas_q_d_$lut_Y_A_$lut_A_1_Y_$lut_A_Y_$lut_Y_4_A_1_$lut_Y": {
+          "hide_name": 0,
+          "type": "$lut",
+          "parameters": {
+            "LUT": "0001",
+            "WIDTH": "00000000000000000000000000000010"
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 9, 47 ],
+            "Y": [ 45 ]
+          }
+        },
+        "data_dp_dffeas_q_d_$lut_Y_A_$lut_A_1_Y_$lut_A_Y_$lut_Y_A_$lut_Y": {
+          "hide_name": 0,
+          "type": "$lut",
+          "parameters": {
+            "LUT": "0000101001001110",
+            "WIDTH": "00000000000000000000000000000100"
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 9, 47, 38, 43 ],
+            "Y": [ 41 ]
+          }
+        },
+        "data_dp_dffeas_q_d_$lut_Y_A_$lut_A_1_Y_$lut_A_Y_$lut_Y_A_$lut_Y_A_$lut_Y": {
+          "hide_name": 0,
+          "type": "$lut",
+          "parameters": {
+            "LUT": "1111111011101001",
+            "WIDTH": "00000000000000000000000000000100"
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 8, 7, 6, 5 ],
+            "Y": [ 47 ]
+          }
+        },
+        "data_dp_dffeas_q_d_$lut_Y_A_$lut_A_A_$lut_Y": {
+          "hide_name": 0,
+          "type": "$lut",
+          "parameters": {
+            "LUT": "0000000000000010",
+            "WIDTH": "00000000000000000000000000000100"
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 8, 7, 6, 5 ],
+            "Y": [ 34 ]
+          }
+        },
+        "data_dp_dffeas_q_d_$lut_Y_A_$lut_Y": {
+          "hide_name": 0,
+          "type": "$lut",
+          "parameters": {
+            "LUT": "1111111011101011",
+            "WIDTH": "00000000000000000000000000000100"
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 8, 7, 6, 5 ],
+            "Y": [ 33 ]
+          }
+        },
+        "datain_5bis7_dffeas_q_d_$lut_Y": {
+          "hide_name": 0,
+          "type": "$lut",
+          "parameters": {
+            "LUT": "01000000",
+            "WIDTH": "00000000000000000000000000000011"
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 9, 4, 40 ],
+            "Y": [ 23 ]
+          }
+        },
+        "datain_5bis7_dffeas_q_d_$lut_Y_A_$lut_Y": {
+          "hide_name": 0,
+          "type": "$lut",
+          "parameters": {
+            "LUT": "0100000000000000",
+            "WIDTH": "00000000000000000000000000000100"
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 8, 7, 6, 5 ],
+            "Y": [ 40 ]
+          }
+        },
+        "only_5b_$lut_Y": {
+          "hide_name": 0,
+          "type": "$lut",
+          "parameters": {
+            "LUT": "01",
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 31 ],
+            "Y": [ 16 ]
+          }
+        },
+        "only_5b_$lut_Y_A_dffeas_q_d_$lut_Y": {
+          "hide_name": 0,
+          "type": "$lut",
+          "parameters": {
+            "LUT": "0010111111111111",
+            "WIDTH": "00000000000000000000000000000100"
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 9, 32, 48, 35 ],
+            "Y": [ 30 ]
+          }
+        },
+        "only_5b_$lut_Y_A_dffeas_q_d_$lut_Y_A_$lut_Y": {
+          "hide_name": 0,
+          "type": "$lut",
+          "parameters": {
+            "LUT": "0000000000000010",
+            "WIDTH": "00000000000000000000000000000100"
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 4, 38, 43, 40 ],
+            "Y": [ 48 ]
+          }
+        },
+        "only_5b_$lut_Y_A_dffeas_q_d_$lut_Y_A_$lut_Y_A_$lut_Y": {
+          "hide_name": 0,
+          "type": "$lut",
+          "parameters": {
+            "LUT": "1000000000000000",
+            "WIDTH": "00000000000000000000000000000100"
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 8, 7, 6, 5 ],
+            "Y": [ 43 ]
+          }
+        },
+        "only_5b_$lut_Y_A_dffeas_q_d_$lut_Y_A_$lut_Y_A_1_$lut_Y": {
+          "hide_name": 0,
+          "type": "$lut",
+          "parameters": {
+            "LUT": "0000000000000001",
+            "WIDTH": "00000000000000000000000000000100"
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 8, 7, 6, 5 ],
+            "Y": [ 38 ]
+          }
+        }
+      },
+      "netnames": {
+        "$techmap\\datain_5bis7_dffeas_q.$0\\q[0:0]": {
+          "hide_name": 1,
+          "bits": [ 22 ],
+          "attributes": {
+            "src": "D:/PMUX_20261102_delivery/relocation r30 all/cases/original4/competition_case/test4/test4.v:30.1-83.4|D:\\PMUX_20261102_delivery\\relocation r30 all\\optimized\\bin\\../share/yosys/intel/common/ff_map.v:7.54-7.182|dffeas_formal.v:12.3-14.35"
+          }
+        },
+        "clk": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "D:/PMUX_20261102_delivery/relocation r30 all/cases/original4/competition_case/test4/test4.v:14.8-14.11"
+          }
+        },
+        "data_dn": {
+          "hide_name": 0,
+          "bits": [ 19 ],
+          "attributes": {
+            "init": "0",
+            "src": "D:/PMUX_20261102_delivery/relocation r30 all/cases/original4/competition_case/test4/test4.v:22.9-22.16"
+          }
+        },
+        "data_dn_dffeas_q.q": {
+          "hide_name": 0,
+          "bits": [ 19 ],
+          "attributes": {
+            "src": "D:/PMUX_20261102_delivery/relocation r30 all/cases/original4/competition_case/test4/test4.v:30.1-83.4|D:\\PMUX_20261102_delivery\\relocation r30 all\\optimized\\bin\\../share/yosys/intel/common/ff_map.v:7.54-7.182|dffeas_formal.v:6.26-6.27"
+          }
+        },
+        "data_dn_dffeas_q.selected_d": {
+          "hide_name": 0,
+          "bits": [ 20 ],
+          "attributes": {
+            "src": "D:/PMUX_20261102_delivery/relocation r30 all/cases/original4/competition_case/test4/test4.v:30.1-83.4|D:\\PMUX_20261102_delivery\\relocation r30 all\\optimized\\bin\\../share/yosys/intel/common/ff_map.v:7.54-7.182|dffeas_formal.v:10.8-10.18"
+          }
+        },
+        "data_dn_dffeas_q_d": {
+          "hide_name": 0,
+          "bits": [ 20 ],
+          "attributes": {
+            "src": "D:/PMUX_20261102_delivery/relocation r30 all/cases/original4/competition_case/test4/test4.v:30.1-83.4"
+          }
+        },
+        "data_dn_dffeas_q_d_$lut_Y_A": {
+          "hide_name": 0,
+          "bits": [ 32 ],
+          "attributes": {
+          }
+        },
+        "data_dp": {
+          "hide_name": 0,
+          "bits": [ 18 ],
+          "attributes": {
+            "init": "0",
+            "src": "D:/PMUX_20261102_delivery/relocation r30 all/cases/original4/competition_case/test4/test4.v:21.9-21.16"
+          }
+        },
+        "data_dp_dffeas_q.q": {
+          "hide_name": 0,
+          "bits": [ 18 ],
+          "attributes": {
+            "src": "D:/PMUX_20261102_delivery/relocation r30 all/cases/original4/competition_case/test4/test4.v:30.1-83.4|D:\\PMUX_20261102_delivery\\relocation r30 all\\optimized\\bin\\../share/yosys/intel/common/ff_map.v:7.54-7.182|dffeas_formal.v:6.26-6.27"
+          }
+        },
+        "data_dp_dffeas_q.selected_d": {
+          "hide_name": 0,
+          "bits": [ 21 ],
+          "attributes": {
+            "src": "D:/PMUX_20261102_delivery/relocation r30 all/cases/original4/competition_case/test4/test4.v:30.1-83.4|D:\\PMUX_20261102_delivery\\relocation r30 all\\optimized\\bin\\../share/yosys/intel/common/ff_map.v:7.54-7.182|dffeas_formal.v:10.8-10.18"
+          }
+        },
+        "data_dp_dffeas_q_d": {
+          "hide_name": 0,
+          "bits": [ 21 ],
+          "attributes": {
+            "src": "D:/PMUX_20261102_delivery/relocation r30 all/cases/original4/competition_case/test4/test4.v:30.1-83.4"
+          }
+        },
+        "data_dp_dffeas_q_d_$lut_Y_A": {
+          "hide_name": 0,
+          "bits": [ 33 ],
+          "attributes": {
+          }
+        },
+        "data_dp_dffeas_q_d_$lut_Y_A_$lut_A_1_Y": {
+          "hide_name": 0,
+          "bits": [ 36 ],
+          "attributes": {
+          }
+        },
+        "data_dp_dffeas_q_d_$lut_Y_A_$lut_A_1_Y_$lut_A_A": {
+          "hide_name": 0,
+          "bits": [ 37 ],
+          "attributes": {
+          }
+        },
+        "data_dp_dffeas_q_d_$lut_Y_A_$lut_A_1_Y_$lut_A_A_$lut_Y_A": {
+          "hide_name": 0,
+          "bits": [ 39 ],
+          "attributes": {
+          }
+        },
+        "data_dp_dffeas_q_d_$lut_Y_A_$lut_A_1_Y_$lut_A_Y": {
+          "hide_name": 0,
+          "bits": [ 28, 27, 24, 29, 26, 25 ],
+          "attributes": {
+            "src": "D:/PMUX_20261102_delivery/relocation r30 all/cases/original4/competition_case/test4/test4.v:30.1-83.4"
+          }
+        },
+        "data_dp_dffeas_q_d_$lut_Y_A_$lut_A_1_Y_$lut_A_Y_$lut_Y_1_A": {
+          "hide_name": 0,
+          "bits": [ 42 ],
+          "attributes": {
+          }
+        },
+        "data_dp_dffeas_q_d_$lut_Y_A_$lut_A_1_Y_$lut_A_Y_$lut_Y_2_A": {
+          "hide_name": 0,
+          "bits": [ 44 ],
+          "attributes": {
+          }
+        },
+        "data_dp_dffeas_q_d_$lut_Y_A_$lut_A_1_Y_$lut_A_Y_$lut_Y_4_A": {
+          "hide_name": 0,
+          "bits": [ 46 ],
+          "attributes": {
+          }
+        },
+        "data_dp_dffeas_q_d_$lut_Y_A_$lut_A_1_Y_$lut_A_Y_$lut_Y_4_A_1": {
+          "hide_name": 0,
+          "bits": [ 45 ],
+          "attributes": {
+          }
+        },
+        "data_dp_dffeas_q_d_$lut_Y_A_$lut_A_1_Y_$lut_A_Y_$lut_Y_A": {
+          "hide_name": 0,
+          "bits": [ 41 ],
+          "attributes": {
+          }
+        },
+        "data_dp_dffeas_q_d_$lut_Y_A_$lut_A_1_Y_$lut_A_Y_$lut_Y_A_$lut_Y_A": {
+          "hide_name": 0,
+          "bits": [ 47 ],
+          "attributes": {
+          }
+        },
+        "data_dp_dffeas_q_d_$lut_Y_A_$lut_A_A": {
+          "hide_name": 0,
+          "bits": [ 34 ],
+          "attributes": {
+          }
+        },
+        "data_dp_dffeas_q_d_$lut_Y_A_$lut_A_Y": {
+          "hide_name": 0,
+          "bits": [ 35 ],
+          "attributes": {
+          }
+        },
+        "datain": {
+          "hide_name": 0,
+          "bits": [ 5, 6, 7, 8, 9 ],
+          "attributes": {
+            "src": "D:/PMUX_20261102_delivery/relocation r30 all/cases/original4/competition_case/test4/test4.v:17.12-17.18"
+          }
+        },
+        "datain_5bis7": {
+          "hide_name": 0,
+          "bits": [ 17 ],
+          "attributes": {
+            "init": "0",
+            "src": "D:/PMUX_20261102_delivery/relocation r30 all/cases/original4/competition_case/test4/test4.v:20.9-20.21"
+          }
+        },
+        "datain_5bis7_dffeas_q.q": {
+          "hide_name": 0,
+          "bits": [ 17 ],
+          "attributes": {
+            "src": "D:/PMUX_20261102_delivery/relocation r30 all/cases/original4/competition_case/test4/test4.v:30.1-83.4|D:\\PMUX_20261102_delivery\\relocation r30 all\\optimized\\bin\\../share/yosys/intel/common/ff_map.v:7.54-7.182|dffeas_formal.v:6.26-6.27"
+          }
+        },
+        "datain_5bis7_dffeas_q.selected_d": {
+          "hide_name": 0,
+          "bits": [ 23 ],
+          "attributes": {
+            "src": "D:/PMUX_20261102_delivery/relocation r30 all/cases/original4/competition_case/test4/test4.v:30.1-83.4|D:\\PMUX_20261102_delivery\\relocation r30 all\\optimized\\bin\\../share/yosys/intel/common/ff_map.v:7.54-7.182|dffeas_formal.v:10.8-10.18"
+          }
+        },
+        "datain_5bis7_dffeas_q_d": {
+          "hide_name": 0,
+          "bits": [ 23 ],
+          "attributes": {
+          }
+        },
+        "datain_5bis7_dffeas_q_d_$lut_Y_A": {
+          "hide_name": 0,
+          "bits": [ 40 ],
+          "attributes": {
+          }
+        },
+        "dataout": {
+          "hide_name": 0,
+          "bits": [ 10, 11, 12, 13, 14, 15 ],
+          "attributes": {
+            "init": "000000",
+            "src": "D:/PMUX_20261102_delivery/relocation r30 all/cases/original4/competition_case/test4/test4.v:18.13-18.20"
+          }
+        },
+        "dataout_dffeas_q.q": {
+          "hide_name": 0,
+          "bits": [ 12 ],
+          "attributes": {
+            "src": "D:/PMUX_20261102_delivery/relocation r30 all/cases/original4/competition_case/test4/test4.v:30.1-83.4|D:\\PMUX_20261102_delivery\\relocation r30 all\\optimized\\bin\\../share/yosys/intel/common/ff_map.v:7.54-7.182|dffeas_formal.v:6.26-6.27"
+          }
+        },
+        "dataout_dffeas_q.selected_d": {
+          "hide_name": 0,
+          "bits": [ 24 ],
+          "attributes": {
+            "src": "D:/PMUX_20261102_delivery/relocation r30 all/cases/original4/competition_case/test4/test4.v:30.1-83.4|D:\\PMUX_20261102_delivery\\relocation r30 all\\optimized\\bin\\../share/yosys/intel/common/ff_map.v:7.54-7.182|dffeas_formal.v:10.8-10.18"
+          }
+        },
+        "dataout_dffeas_q_1.q": {
+          "hide_name": 0,
+          "bits": [ 15 ],
+          "attributes": {
+            "src": "D:/PMUX_20261102_delivery/relocation r30 all/cases/original4/competition_case/test4/test4.v:30.1-83.4|D:\\PMUX_20261102_delivery\\relocation r30 all\\optimized\\bin\\../share/yosys/intel/common/ff_map.v:7.54-7.182|dffeas_formal.v:6.26-6.27"
+          }
+        },
+        "dataout_dffeas_q_1.selected_d": {
+          "hide_name": 0,
+          "bits": [ 25 ],
+          "attributes": {
+            "src": "D:/PMUX_20261102_delivery/relocation r30 all/cases/original4/competition_case/test4/test4.v:30.1-83.4|D:\\PMUX_20261102_delivery\\relocation r30 all\\optimized\\bin\\../share/yosys/intel/common/ff_map.v:7.54-7.182|dffeas_formal.v:10.8-10.18"
+          }
+        },
+        "dataout_dffeas_q_2.q": {
+          "hide_name": 0,
+          "bits": [ 14 ],
+          "attributes": {
+            "src": "D:/PMUX_20261102_delivery/relocation r30 all/cases/original4/competition_case/test4/test4.v:30.1-83.4|D:\\PMUX_20261102_delivery\\relocation r30 all\\optimized\\bin\\../share/yosys/intel/common/ff_map.v:7.54-7.182|dffeas_formal.v:6.26-6.27"
+          }
+        },
+        "dataout_dffeas_q_2.selected_d": {
+          "hide_name": 0,
+          "bits": [ 26 ],
+          "attributes": {
+            "src": "D:/PMUX_20261102_delivery/relocation r30 all/cases/original4/competition_case/test4/test4.v:30.1-83.4|D:\\PMUX_20261102_delivery\\relocation r30 all\\optimized\\bin\\../share/yosys/intel/common/ff_map.v:7.54-7.182|dffeas_formal.v:10.8-10.18"
+          }
+        },
+        "dataout_dffeas_q_3.q": {
+          "hide_name": 0,
+          "bits": [ 11 ],
+          "attributes": {
+            "src": "D:/PMUX_20261102_delivery/relocation r30 all/cases/original4/competition_case/test4/test4.v:30.1-83.4|D:\\PMUX_20261102_delivery\\relocation r30 all\\optimized\\bin\\../share/yosys/intel/common/ff_map.v:7.54-7.182|dffeas_formal.v:6.26-6.27"
+          }
+        },
+        "dataout_dffeas_q_3.selected_d": {
+          "hide_name": 0,
+          "bits": [ 27 ],
+          "attributes": {
+            "src": "D:/PMUX_20261102_delivery/relocation r30 all/cases/original4/competition_case/test4/test4.v:30.1-83.4|D:\\PMUX_20261102_delivery\\relocation r30 all\\optimized\\bin\\../share/yosys/intel/common/ff_map.v:7.54-7.182|dffeas_formal.v:10.8-10.18"
+          }
+        },
+        "dataout_dffeas_q_4.q": {
+          "hide_name": 0,
+          "bits": [ 10 ],
+          "attributes": {
+            "src": "D:/PMUX_20261102_delivery/relocation r30 all/cases/original4/competition_case/test4/test4.v:30.1-83.4|D:\\PMUX_20261102_delivery\\relocation r30 all\\optimized\\bin\\../share/yosys/intel/common/ff_map.v:7.54-7.182|dffeas_formal.v:6.26-6.27"
+          }
+        },
+        "dataout_dffeas_q_4.selected_d": {
+          "hide_name": 0,
+          "bits": [ 28 ],
+          "attributes": {
+            "src": "D:/PMUX_20261102_delivery/relocation r30 all/cases/original4/competition_case/test4/test4.v:30.1-83.4|D:\\PMUX_20261102_delivery\\relocation r30 all\\optimized\\bin\\../share/yosys/intel/common/ff_map.v:7.54-7.182|dffeas_formal.v:10.8-10.18"
+          }
+        },
+        "dataout_dffeas_q_5.q": {
+          "hide_name": 0,
+          "bits": [ 13 ],
+          "attributes": {
+            "src": "D:/PMUX_20261102_delivery/relocation r30 all/cases/original4/competition_case/test4/test4.v:30.1-83.4|D:\\PMUX_20261102_delivery\\relocation r30 all\\optimized\\bin\\../share/yosys/intel/common/ff_map.v:7.54-7.182|dffeas_formal.v:6.26-6.27"
+          }
+        },
+        "dataout_dffeas_q_5.selected_d": {
+          "hide_name": 0,
+          "bits": [ 29 ],
+          "attributes": {
+            "src": "D:/PMUX_20261102_delivery/relocation r30 all/cases/original4/competition_case/test4/test4.v:30.1-83.4|D:\\PMUX_20261102_delivery\\relocation r30 all\\optimized\\bin\\../share/yosys/intel/common/ff_map.v:7.54-7.182|dffeas_formal.v:10.8-10.18"
+          }
+        },
+        "ena": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "src": "D:/PMUX_20261102_delivery/relocation r30 all/cases/original4/competition_case/test4/test4.v:16.8-16.11"
+          }
+        },
+        "only_5b": {
+          "hide_name": 0,
+          "bits": [ 16 ],
+          "attributes": {
+            "src": "D:/PMUX_20261102_delivery/relocation r30 all/cases/original4/competition_case/test4/test4.v:19.9-19.16"
+          }
+        },
+        "only_5b_$lut_Y_A": {
+          "hide_name": 0,
+          "bits": [ 31 ],
+          "attributes": {
+            "init": "1"
+          }
+        },
+        "only_5b_$lut_Y_A_dffeas_q.q": {
+          "hide_name": 0,
+          "bits": [ 31 ],
+          "attributes": {
+            "src": "D:/PMUX_20261102_delivery/relocation r30 all/cases/original4/competition_case/test4/test4.v:30.1-83.4|D:\\PMUX_20261102_delivery\\relocation r30 all\\optimized\\bin\\../share/yosys/intel/common/ff_map.v:5.55-5.183|dffeas_formal.v:6.26-6.27"
+          }
+        },
+        "only_5b_$lut_Y_A_dffeas_q.selected_d": {
+          "hide_name": 0,
+          "bits": [ 30 ],
+          "attributes": {
+            "src": "D:/PMUX_20261102_delivery/relocation r30 all/cases/original4/competition_case/test4/test4.v:30.1-83.4|D:\\PMUX_20261102_delivery\\relocation r30 all\\optimized\\bin\\../share/yosys/intel/common/ff_map.v:5.55-5.183|dffeas_formal.v:10.8-10.18"
+          }
+        },
+        "only_5b_$lut_Y_A_dffeas_q_d": {
+          "hide_name": 0,
+          "bits": [ 30 ],
+          "attributes": {
+          }
+        },
+        "only_5b_$lut_Y_A_dffeas_q_d_$lut_Y_A": {
+          "hide_name": 0,
+          "bits": [ 48 ],
+          "attributes": {
+          }
+        },
+        "only_5b_$lut_Y_A_dffeas_q_d_$lut_Y_A_$lut_Y_A": {
+          "hide_name": 0,
+          "bits": [ 43 ],
+          "attributes": {
+          }
+        },
+        "only_5b_$lut_Y_A_dffeas_q_d_$lut_Y_A_$lut_Y_A_1": {
+          "hide_name": 0,
+          "bits": [ 38 ],
+          "attributes": {
+          }
+        },
+        "reset_n": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "src": "D:/PMUX_20261102_delivery/relocation r30 all/cases/original4/competition_case/test4/test4.v:15.8-15.15"
+          }
+        }
+      }
+    }
+  }
+}

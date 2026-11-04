@@ -1,0 +1,61 @@
+
+ /----------------------------------------------------------------------------\
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |  Copyright (C) 2012 - 2026  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |  Distributed under an ISC-like license, type "license" to see terms        |
+ \----------------------------------------------------------------------------/
+ Yosys 0.69+154 (git sha1 30d62572e-dirty, Release, GNU /usr/bin/x86_64-w64-mingw32-g++ 15.2.1)
+
+-- Executing script file `rb/gate.ys' --
+
+1. Executing RTLIL frontend.
+Input filename: baseline.normalized.il
+
+2. Executing HIERARCHY pass (managing design hierarchy).
+
+2.1. Analyzing design hierarchy..
+Top module:  \test3
+
+2.2. Analyzing design hierarchy..
+Top module:  \test3
+Removed 0 unused modules.
+
+3. Executing CLK2FFLOGIC pass (convert clocked FFs to generic $ff cells).
+
+3.1. Executing PEEPOPT pass (run peephole optimizers).
+Replacing test3.$techmap\gpioout_dffeas_q.$procdff$495 ($adff): CLK=\clk, D=$techmap\gpioout_dffeas_q.$0\q[0:0], Q=\gpioout [4]
+Replacing test3.$techmap\gpioout_dffeas_q_1.$procdff$495 ($adff): CLK=\clk, D=$techmap\gpioout_dffeas_q_1.$0\q[0:0], Q=\gpioout [2]
+Replacing test3.$techmap\gpioout_dffeas_q_2.$procdff$495 ($adff): CLK=\clk, D=$techmap\gpioout_dffeas_q_2.$0\q[0:0], Q=\gpioout [5]
+Replacing test3.$techmap\gpioout_dffeas_q_3.$procdff$495 ($adff): CLK=\clk, D=$techmap\gpioout_dffeas_q_3.$0\q[0:0], Q=\gpioout [1]
+Replacing test3.$techmap\gpioout_dffeas_q_4.$procdff$495 ($adff): CLK=\clk, D=$techmap\gpioout_dffeas_q_4.$0\q[0:0], Q=\gpioout [0]
+Replacing test3.$techmap\rw_dffeas_q.$procdff$495 ($adff): CLK=\clk, D=$techmap\rw_dffeas_q.$0\q[0:0], Q=\rw
+Replacing test3.$techmap\sr_dffeas_q.$procdff$495 ($adff): CLK=\clk, D=$techmap\sr_dffeas_q.$0\q[0:0], Q=\sr [3]
+Replacing test3.$techmap\sr_dffeas_q_1.$procdff$495 ($adff): CLK=\clk, D=$techmap\sr_dffeas_q_1.$0\q[0:0], Q=\sr [4]
+Replacing test3.$techmap\sr_dffeas_q_2.$procdff$495 ($adff): CLK=\clk, D=$techmap\sr_dffeas_q_2.$0\q[0:0], Q=\sr [2]
+Replacing test3.$techmap\sr_dffeas_q_3.$procdff$495 ($adff): CLK=\clk, D=$techmap\sr_dffeas_q_3.$0\q[0:0], Q=\sr [5]
+Replacing test3.$techmap\sr_dffeas_q_4.$procdff$495 ($adff): CLK=\clk, D=$techmap\sr_dffeas_q_4.$0\q[0:0], Q=\sr [1]
+Replacing test3.$techmap\sr_dffeas_q_5.$procdff$495 ($adff): CLK=\clk, D=$techmap\sr_dffeas_q_5.$0\q[0:0], Q=\sr [0]
+Replacing test3.$techmap\sr_dffeas_q_6.$procdff$495 ($adff): CLK=\clk, D=$techmap\sr_dffeas_q_6.$0\q[0:0], Q=\sr [6]
+Replacing test3.$techmap\sr_out_dffeas_q.$procdff$495 ($adff): CLK=\clk, D=$techmap\sr_out_dffeas_q.$0\q[0:0], Q=\sr_out
+
+4. Executing CHECK pass (checking for obvious problems).
+Checking module test3...
+Found and reported 0 problems.
+
+5. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \test3..
+Removed 0 unused cells and 14 unused wires.
+<suppressed ~1 debug messages>
+
+6. Executing CHECK pass (checking for obvious problems).
+Checking module test3...
+Found and reported 0 problems.
+
+7. Executing SETUNDEF pass (replace undef values with defined constants).
+
+8. Executing RTLIL backend.
+Output filename: rb/gate.il
+
+End of script. Logfile hash: 5f419a7f1b
+Yosys 0.69+154 (git sha1 30d62572e-dirty, Release, GNU /usr/bin/x86_64-w64-mingw32-g++ 15.2.1)
+Time spent: 11% 2x write_rtlil (0 sec), 11% 2x read_rtlil (0 sec), ...

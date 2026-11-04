@@ -1,0 +1,506 @@
+
+ /----------------------------------------------------------------------------\
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |  Copyright (C) 2012 - 2026  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |  Distributed under an ISC-like license, type "license" to see terms        |
+ \----------------------------------------------------------------------------/
+ Yosys 0.69+154 (git sha1 30d62572e-dirty, Release, GNU /usr/bin/x86_64-w64-mingw32-g++ 15.2.1)
+
+-- Executing script file `run.ys' --
+
+1. Executing Verilog-2005 frontend: ../../../partitions/test4.data_dn.sv
+Parsing SystemVerilog input from `../../../partitions/test4.data_dn.sv' to AST representation.
+Generating RTLIL representation for module `\miter'.
+Generating RTLIL representation for module `\miter_cmp_prop'.
+Generating RTLIL representation for module `\miter_def_prop'.
+Generating RTLIL representation for module `\gold.test4.data_dn'.
+Generating RTLIL representation for module `\gate.test4.data_dn'.
+Successfully finished Verilog frontend.
+
+2. Executing RTLIL frontend.
+Input filename: ../../../partitions/test4.data_dn.il
+Replacing existing blackbox module \gold.test4.data_dn.
+Replacing existing blackbox module \gate.test4.data_dn.
+
+3. Executing HIERARCHY pass (managing design hierarchy).
+
+3.1. Analyzing design hierarchy..
+Top module:  \miter
+Used module:     \miter_cmp_prop
+Used module:     \gate.test4.data_dn
+Used module:     \gold.test4.data_dn
+Parameter 1 (\WIDTH) = 1
+Parameter 2 (\TYPE) = 48'011000010111001101110011011001010111001001110100
+
+3.2. Executing AST frontend in derive mode using pre-parsed AST for module `\miter_cmp_prop'.
+Parameter 1 (\WIDTH) = 1
+Parameter 2 (\TYPE) = 48'011000010111001101110011011001010111001001110100
+Generating RTLIL representation for module `$paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop'.
+Parameter 1 (\WIDTH) = 6
+Parameter 2 (\TYPE) = 48'011000010111001101110011011001010111001001110100
+
+3.3. Executing AST frontend in derive mode using pre-parsed AST for module `\miter_cmp_prop'.
+Parameter 1 (\WIDTH) = 6
+Parameter 2 (\TYPE) = 48'011000010111001101110011011001010111001001110100
+Generating RTLIL representation for module `$paramod$312fef812432430f5e3037abb171e2fc7c1eb252\miter_cmp_prop'.
+Parameter 1 (\WIDTH) = 1
+Parameter 2 (\TYPE) = 48'011000010111001101110011011001010111001001110100
+Found cached RTLIL representation for module `$paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop'.
+Parameter 1 (\WIDTH) = 1
+Parameter 2 (\TYPE) = 48'011000010111001101110011011001010111001001110100
+Found cached RTLIL representation for module `$paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop'.
+Parameter 1 (\WIDTH) = 1
+Parameter 2 (\TYPE) = 48'011000010111001101110011011001010111001001110100
+Found cached RTLIL representation for module `$paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop'.
+
+3.4. Analyzing design hierarchy..
+Top module:  \miter
+Used module:     $paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop
+Used module:     $paramod$312fef812432430f5e3037abb171e2fc7c1eb252\miter_cmp_prop
+Used module:     \gate.test4.data_dn
+Used module:     \gold.test4.data_dn
+
+3.5. Analyzing design hierarchy..
+Top module:  \miter
+Used module:     $paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop
+Used module:     $paramod$312fef812432430f5e3037abb171e2fc7c1eb252\miter_cmp_prop
+Used module:     \gate.test4.data_dn
+Used module:     \gold.test4.data_dn
+Removing unused module `\miter_def_prop'.
+Removing unused module `\miter_cmp_prop'.
+Removed 2 unused modules.
+Module $paramod$312fef812432430f5e3037abb171e2fc7c1eb252\miter_cmp_prop directly or indirectly contains formal properties -> setting "keep" attribute.
+Module $paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop directly or indirectly contains formal properties -> setting "keep" attribute.
+Module miter directly or indirectly contains formal properties -> setting "keep" attribute.
+Mapping positional arguments of cell miter.__po_only_5b__assert ($paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop).
+Mapping positional arguments of cell miter.__po_dataout__assert ($paramod$312fef812432430f5e3037abb171e2fc7c1eb252\miter_cmp_prop).
+Mapping positional arguments of cell miter.__po_datain_5bis7__assert ($paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop).
+Mapping positional arguments of cell miter.__po_data_dp__assert ($paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop).
+Mapping positional arguments of cell miter.__po_data_dn__assert ($paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop).
+
+4. Executing PROC pass (convert processes to netlists).
+
+4.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+4.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Removed a total of 0 dead cases.
+
+4.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 2 redundant assignments.
+Promoted 6 assignments to connections.
+
+4.4. Executing PROC_INIT pass (extract init attributes).
+
+4.5. Executing PROC_ARST pass (detect async resets in processes).
+
+4.6. Executing PROC_ROM pass (convert switches to ROMs).
+Converted 0 switches.
+
+4.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
+Creating decoders for process `$paramod$312fef812432430f5e3037abb171e2fc7c1eb252\miter_cmp_prop.$proc$../../../partitions/test4.data_dn.sv:98$1795'.
+Creating decoders for process `$paramod$312fef812432430f5e3037abb171e2fc7c1eb252\miter_cmp_prop.$proc$../../../partitions/test4.data_dn.sv:92$1770'.
+Creating decoders for process `$paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop.$proc$../../../partitions/test4.data_dn.sv:98$1768'.
+Creating decoders for process `$paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop.$proc$../../../partitions/test4.data_dn.sv:92$1763'.
+
+4.8. Executing PROC_DLATCH pass (convert process syncs to latches).
+No latch inferred for signal `$paramod$312fef812432430f5e3037abb171e2fc7c1eb252\miter_cmp_prop.\i' from process `$paramod$312fef812432430f5e3037abb171e2fc7c1eb252\miter_cmp_prop.$proc$../../../partitions/test4.data_dn.sv:92$1770'.
+No latch inferred for signal `$paramod$312fef812432430f5e3037abb171e2fc7c1eb252\miter_cmp_prop.\okay' from process `$paramod$312fef812432430f5e3037abb171e2fc7c1eb252\miter_cmp_prop.$proc$../../../partitions/test4.data_dn.sv:92$1770'.
+No latch inferred for signal `$paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop.\i' from process `$paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop.$proc$../../../partitions/test4.data_dn.sv:92$1763'.
+No latch inferred for signal `$paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop.\okay' from process `$paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop.$proc$../../../partitions/test4.data_dn.sv:92$1763'.
+
+4.9. Executing PROC_DFF pass (convert process syncs to FFs).
+
+4.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
+
+4.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Removing empty process `$paramod$312fef812432430f5e3037abb171e2fc7c1eb252\miter_cmp_prop.$proc$../../../partitions/test4.data_dn.sv:98$1795'.
+Removing empty process `$paramod$312fef812432430f5e3037abb171e2fc7c1eb252\miter_cmp_prop.$proc$../../../partitions/test4.data_dn.sv:92$1770'.
+Removing empty process `$paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop.$proc$../../../partitions/test4.data_dn.sv:98$1768'.
+Removing empty process `$paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop.$proc$../../../partitions/test4.data_dn.sv:92$1763'.
+Cleaned up 0 empty switches.
+
+4.12. Executing OPT_EXPR pass (perform const folding).
+Optimizing module gate.test4.data_dn.
+<suppressed ~11 debug messages>
+Optimizing module gold.test4.data_dn.
+<suppressed ~4 debug messages>
+Optimizing module $paramod$312fef812432430f5e3037abb171e2fc7c1eb252\miter_cmp_prop.
+<suppressed ~1 debug messages>
+Optimizing module $paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop.
+<suppressed ~1 debug messages>
+Optimizing module miter.
+
+5. Executing ASYNC2SYNC pass.
+
+6. Executing FORMALFF pass.
+
+7. Executing SETUNDEF pass (replace undef values with defined constants).
+
+8. Executing FLATTEN pass (flatten design).
+Deleting now unused module gate.test4.data_dn.
+Deleting now unused module gold.test4.data_dn.
+Deleting now unused module $paramod$312fef812432430f5e3037abb171e2fc7c1eb252\miter_cmp_prop.
+Deleting now unused module $paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop.
+<suppressed ~7 debug messages>
+
+9. Executing DFFUNMAP pass (unmap clock enable and synchronous reset from FFs).
+
+10. Executing OPT_EXPR pass (perform const folding).
+Optimizing module miter.
+<suppressed ~5 debug messages>
+
+11. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \miter..
+Removed 5 unused cells and 37 unused wires.
+<suppressed ~26 debug messages>
+
+12. Executing SAT pass (solving SAT problems in the circuit).
+Using SAT solver `minisat`.
+
+Setting up time step 1:
+Final constraint equation: { } = { }
+Import def constraint for this timestep: \__pi_clk
+Import def constraint for this timestep: \__pi_ena
+Import def constraint for this timestep: \__pi_reset_n
+Import def constraint for this timestep: \__pi_datain
+Imported 240 cells to SAT database.
+Import proof for assert: \__po_dataout__assert.okay when 1'1.
+Import proof for assert: \__po_datain_5bis7__assert.okay when 1'1.
+Import proof for assert: \__po_data_dp__assert.okay when 1'1.
+Import proof for assert: \__po_data_dn__assert.okay when 1'1.
+Import proof for assert: \__po_only_5b__assert.okay when 1'1.
+
+** Trying induction with length 1 **
+
+Setting up time step 1:
+Final constraint equation: { } = { }
+Import def constraint for this timestep: \__pi_clk
+Import def constraint for this timestep: \__pi_ena
+Import def constraint for this timestep: \__pi_reset_n
+Import def constraint for this timestep: \__pi_datain
+Imported 240 cells to SAT database.
+Import set-constraint from init attribute: $flatten\gate.$auto$clk2fflogic.cc:101:sample_data$\only_5b_$lut_Y_A#sampled$1676 = 1'1
+Import set-constraint from init attribute: $flatten\gate.$auto$clk2fflogic.cc:101:sample_data$\only_5b_$lut_Y_A_dffeas_q_d#sampled$1678 = 1'0
+Import set-constraint from init attribute: $flatten\gate.$auto$clk2fflogic.cc:87:sample_control_edge$\clk#sampled$1680 = 1'1
+Import set-constraint from init attribute: $flatten\gate.$auto$clk2fflogic.cc:75:sample_control$$auto$rtlil.cc:3234:Not$1687#sampled$1688 = 1'0
+Import set-constraint from init attribute: $flatten\gate.$auto$clk2fflogic.cc:101:sample_data$\dataout[1]#sampled$1622 = 1'0
+Import set-constraint from init attribute: $flatten\gate.$auto$clk2fflogic.cc:101:sample_data$\dataout_dffeas_q_3.selected_d#sampled$1624 = 1'0
+Import set-constraint from init attribute: $flatten\gate.$auto$clk2fflogic.cc:87:sample_control_edge$\clk#sampled$1626 = 1'1
+Import set-constraint from init attribute: $flatten\gate.$auto$clk2fflogic.cc:75:sample_control$$auto$rtlil.cc:3234:Not$1633#sampled$1634 = 1'0
+Import set-constraint from init attribute: $flatten\gate.$auto$clk2fflogic.cc:101:sample_data$\dataout[2]#sampled$1568 = 1'0
+Import set-constraint from init attribute: $flatten\gate.$auto$clk2fflogic.cc:101:sample_data$\dataout_dffeas_q.selected_d#sampled$1570 = 1'0
+Import set-constraint from init attribute: $flatten\gate.$auto$clk2fflogic.cc:87:sample_control_edge$\clk#sampled$1572 = 1'1
+Import set-constraint from init attribute: $flatten\gate.$auto$clk2fflogic.cc:75:sample_control$$auto$rtlil.cc:3234:Not$1579#sampled$1580 = 1'0
+Import set-constraint from init attribute: $flatten\gate.$auto$clk2fflogic.cc:101:sample_data$\dataout[3]#sampled$1658 = 1'0
+Import set-constraint from init attribute: $flatten\gate.$auto$clk2fflogic.cc:101:sample_data$\dataout_dffeas_q_5.selected_d#sampled$1660 = 1'0
+Import set-constraint from init attribute: $flatten\gate.$auto$clk2fflogic.cc:87:sample_control_edge$\clk#sampled$1662 = 1'1
+Import set-constraint from init attribute: $flatten\gate.$auto$clk2fflogic.cc:75:sample_control$$auto$rtlil.cc:3234:Not$1669#sampled$1670 = 1'0
+Import set-constraint from init attribute: $flatten\gate.$auto$clk2fflogic.cc:101:sample_data$\dataout[4]#sampled$1604 = 1'0
+Import set-constraint from init attribute: $flatten\gate.$auto$clk2fflogic.cc:101:sample_data$\dataout_dffeas_q_2.selected_d#sampled$1606 = 1'0
+Import set-constraint from init attribute: $flatten\gate.$auto$clk2fflogic.cc:87:sample_control_edge$\clk#sampled$1608 = 1'1
+Import set-constraint from init attribute: $flatten\gate.$auto$clk2fflogic.cc:75:sample_control$$auto$rtlil.cc:3234:Not$1615#sampled$1616 = 1'0
+Import set-constraint from init attribute: $flatten\gate.$auto$clk2fflogic.cc:101:sample_data$\dataout[5]#sampled$1586 = 1'0
+Import set-constraint from init attribute: $flatten\gate.$auto$clk2fflogic.cc:101:sample_data$\dataout_dffeas_q_1.selected_d#sampled$1588 = 1'0
+Import set-constraint from init attribute: $flatten\gate.$auto$clk2fflogic.cc:87:sample_control_edge$\clk#sampled$1590 = 1'1
+Import set-constraint from init attribute: $flatten\gate.$auto$clk2fflogic.cc:75:sample_control$$auto$rtlil.cc:3234:Not$1597#sampled$1598 = 1'0
+Import set-constraint from init attribute: $flatten\gate.$auto$clk2fflogic.cc:101:sample_data$\dataout[0]#sampled$1640 = 1'0
+Import set-constraint from init attribute: $flatten\gate.$auto$clk2fflogic.cc:101:sample_data$\dataout_dffeas_q_4.selected_d#sampled$1642 = 1'0
+Import set-constraint from init attribute: $flatten\gate.$auto$clk2fflogic.cc:87:sample_control_edge$\clk#sampled$1644 = 1'1
+Import set-constraint from init attribute: $flatten\gate.$auto$clk2fflogic.cc:75:sample_control$$auto$rtlil.cc:3234:Not$1651#sampled$1652 = 1'0
+Import set-constraint from init attribute: $flatten\gate.$auto$clk2fflogic.cc:101:sample_data$\datain_5bis7#sampled$1550 = 1'0
+Import set-constraint from init attribute: $flatten\gate.$auto$clk2fflogic.cc:101:sample_data$$techmap\datain_5bis7_dffeas_q.$0\q[0:0]#sampled$1552 = 1'0
+Import set-constraint from init attribute: $flatten\gate.$auto$clk2fflogic.cc:87:sample_control_edge$\clk#sampled$1554 = 1'1
+Import set-constraint from init attribute: $flatten\gate.$auto$clk2fflogic.cc:75:sample_control$$auto$rtlil.cc:3234:Not$1561#sampled$1562 = 1'0
+Import set-constraint from init attribute: $flatten\gate.$auto$clk2fflogic.cc:101:sample_data$\data_dp#sampled$1532 = 1'0
+Import set-constraint from init attribute: $flatten\gate.$auto$clk2fflogic.cc:101:sample_data$\data_dp_dffeas_q_d#sampled$1534 = 1'0
+Import set-constraint from init attribute: $flatten\gate.$auto$clk2fflogic.cc:87:sample_control_edge$\clk#sampled$1536 = 1'1
+Import set-constraint from init attribute: $flatten\gate.$auto$clk2fflogic.cc:75:sample_control$$auto$rtlil.cc:3234:Not$1543#sampled$1544 = 1'0
+Import set-constraint from init attribute: $flatten\gate.$auto$clk2fflogic.cc:101:sample_data$\data_dn#sampled$1514 = 1'0
+Import set-constraint from init attribute: $flatten\gate.$auto$clk2fflogic.cc:101:sample_data$\data_dn_dffeas_q_d#sampled$1516 = 1'0
+Import set-constraint from init attribute: $flatten\gate.$auto$clk2fflogic.cc:87:sample_control_edge$\clk#sampled$1518 = 1'1
+Import set-constraint from init attribute: $flatten\gate.$auto$clk2fflogic.cc:75:sample_control$$auto$rtlil.cc:3234:Not$1525#sampled$1526 = 1'0
+Import set-constraint from init attribute: $flatten\gold.$auto$clk2fflogic.cc:101:sample_data$\only_5b#sampled$176 = 1'0
+Import set-constraint from init attribute: $flatten\gold.$auto$clk2fflogic.cc:101:sample_data$$0\only_5b[0:0]#sampled$178 = 1'0
+Import set-constraint from init attribute: $flatten\gold.$auto$clk2fflogic.cc:87:sample_control_edge$\clk#sampled$180 = 1'1
+Import set-constraint from init attribute: $flatten\gold.$auto$clk2fflogic.cc:75:sample_control$$auto$rtlil.cc:3234:Not$187#sampled$188 = 1'0
+Import set-constraint from init attribute: $flatten\gold.$auto$clk2fflogic.cc:101:sample_data$\dataout#sampled$158 = 6'000000
+Import set-constraint from init attribute: $flatten\gold.$auto$clk2fflogic.cc:101:sample_data$$0\dataout[5:0]#sampled$160 = 6'000000
+Import set-constraint from init attribute: $flatten\gold.$auto$clk2fflogic.cc:87:sample_control_edge$\clk#sampled$162 = 1'1
+Import set-constraint from init attribute: $flatten\gold.$auto$clk2fflogic.cc:75:sample_control$$auto$rtlil.cc:3234:Not$169#sampled$170 = 1'0
+Import set-constraint from init attribute: $flatten\gold.$auto$clk2fflogic.cc:101:sample_data$\datain_5bis7#sampled$194 = 1'0
+Import set-constraint from init attribute: $flatten\gold.$auto$clk2fflogic.cc:101:sample_data$$auto$rtlil.cc:3369:Mux$35#sampled$196 = 1'0
+Import set-constraint from init attribute: $flatten\gold.$auto$clk2fflogic.cc:87:sample_control_edge$\clk#sampled$198 = 1'1
+Import set-constraint from init attribute: $flatten\gold.$auto$clk2fflogic.cc:101:sample_data$\data_dp#sampled$204 = 1'0
+Import set-constraint from init attribute: $flatten\gold.$auto$clk2fflogic.cc:101:sample_data$$0\data_dp[0:0]#sampled$206 = 1'0
+Import set-constraint from init attribute: $flatten\gold.$auto$clk2fflogic.cc:87:sample_control_edge$\clk#sampled$208 = 1'1
+Import set-constraint from init attribute: $flatten\gold.$auto$clk2fflogic.cc:75:sample_control$$auto$rtlil.cc:3234:Not$215#sampled$216 = 1'0
+Import set-constraint from init attribute: $flatten\gold.$auto$clk2fflogic.cc:101:sample_data$\data_dn#sampled$140 = 1'0
+Import set-constraint from init attribute: $flatten\gold.$auto$clk2fflogic.cc:101:sample_data$$0\data_dn[0:0]#sampled$142 = 1'0
+Import set-constraint from init attribute: $flatten\gold.$auto$clk2fflogic.cc:87:sample_control_edge$\clk#sampled$144 = 1'1
+Import set-constraint from init attribute: $flatten\gold.$auto$clk2fflogic.cc:75:sample_control$$auto$rtlil.cc:3234:Not$151#sampled$152 = 1'0
+Final init constraint equation: { $flatten\gold.$auto$clk2fflogic.cc:75:sample_control$$auto$rtlil.cc:3234:Not$151#sampled$152 $flatten\gold.$auto$clk2fflogic.cc:87:sample_control_edge$\clk#sampled$144 $flatten\gold.$auto$clk2fflogic.cc:101:sample_data$$0\data_dn[0:0]#sampled$142 $flatten\gold.$auto$clk2fflogic.cc:101:sample_data$\data_dn#sampled$140 $flatten\gold.$auto$clk2fflogic.cc:75:sample_control$$auto$rtlil.cc:3234:Not$215#sampled$216 $flatten\gold.$auto$clk2fflogic.cc:87:sample_control_edge$\clk#sampled$208 $flatten\gold.$auto$clk2fflogic.cc:101:sample_data$$0\data_dp[0:0]#sampled$206 $flatten\gold.$auto$clk2fflogic.cc:101:sample_data$\data_dp#sampled$204 $flatten\gold.$auto$clk2fflogic.cc:87:sample_control_edge$\clk#sampled$198 $flatten\gold.$auto$clk2fflogic.cc:101:sample_data$$auto$rtlil.cc:3369:Mux$35#sampled$196 $flatten\gold.$auto$clk2fflogic.cc:101:sample_data$\datain_5bis7#sampled$194 $flatten\gold.$auto$clk2fflogic.cc:75:sample_control$$auto$rtlil.cc:3234:Not$169#sampled$170 $flatten\gold.$auto$clk2fflogic.cc:87:sample_control_edge$\clk#sampled$162 $flatten\gold.$auto$clk2fflogic.cc:101:sample_data$$0\dataout[5:0]#sampled$160 $flatten\gold.$auto$clk2fflogic.cc:101:sample_data$\dataout#sampled$158 $flatten\gold.$auto$clk2fflogic.cc:75:sample_control$$auto$rtlil.cc:3234:Not$187#sampled$188 $flatten\gold.$auto$clk2fflogic.cc:87:sample_control_edge$\clk#sampled$180 $flatten\gold.$auto$clk2fflogic.cc:101:sample_data$$0\only_5b[0:0]#sampled$178 $flatten\gold.$auto$clk2fflogic.cc:101:sample_data$\only_5b#sampled$176 $flatten\gate.$auto$clk2fflogic.cc:75:sample_control$$auto$rtlil.cc:3234:Not$1525#sampled$1526 $flatten\gate.$auto$clk2fflogic.cc:87:sample_control_edge$\clk#sampled$1518 $flatten\gate.$auto$clk2fflogic.cc:101:sample_data$\data_dn_dffeas_q_d#sampled$1516 $flatten\gate.$auto$clk2fflogic.cc:101:sample_data$\data_dn#sampled$1514 $flatten\gate.$auto$clk2fflogic.cc:75:sample_control$$auto$rtlil.cc:3234:Not$1543#sampled$1544 $flatten\gate.$auto$clk2fflogic.cc:87:sample_control_edge$\clk#sampled$1536 $flatten\gate.$auto$clk2fflogic.cc:101:sample_data$\data_dp_dffeas_q_d#sampled$1534 $flatten\gate.$auto$clk2fflogic.cc:101:sample_data$\data_dp#sampled$1532 $flatten\gate.$auto$clk2fflogic.cc:75:sample_control$$auto$rtlil.cc:3234:Not$1561#sampled$1562 $flatten\gate.$auto$clk2fflogic.cc:87:sample_control_edge$\clk#sampled$1554 $flatten\gate.$auto$clk2fflogic.cc:101:sample_data$$techmap\datain_5bis7_dffeas_q.$0\q[0:0]#sampled$1552 $flatten\gate.$auto$clk2fflogic.cc:101:sample_data$\datain_5bis7#sampled$1550 $flatten\gate.$auto$clk2fflogic.cc:75:sample_control$$auto$rtlil.cc:3234:Not$1651#sampled$1652 $flatten\gate.$auto$clk2fflogic.cc:87:sample_control_edge$\clk#sampled$1644 $flatten\gate.$auto$clk2fflogic.cc:101:sample_data$\dataout_dffeas_q_4.selected_d#sampled$1642 $flatten\gate.$auto$clk2fflogic.cc:101:sample_data$\dataout[0]#sampled$1640 $flatten\gate.$auto$clk2fflogic.cc:75:sample_control$$auto$rtlil.cc:3234:Not$1597#sampled$1598 $flatten\gate.$auto$clk2fflogic.cc:87:sample_control_edge$\clk#sampled$1590 $flatten\gate.$auto$clk2fflogic.cc:101:sample_data$\dataout_dffeas_q_1.selected_d#sampled$1588 $flatten\gate.$auto$clk2fflogic.cc:101:sample_data$\dataout[5]#sampled$1586 $flatten\gate.$auto$clk2fflogic.cc:75:sample_control$$auto$rtlil.cc:3234:Not$1615#sampled$1616 $flatten\gate.$auto$clk2fflogic.cc:87:sample_control_edge$\clk#sampled$1608 $flatten\gate.$auto$clk2fflogic.cc:101:sample_data$\dataout_dffeas_q_2.selected_d#sampled$1606 $flatten\gate.$auto$clk2fflogic.cc:101:sample_data$\dataout[4]#sampled$1604 $flatten\gate.$auto$clk2fflogic.cc:75:sample_control$$auto$rtlil.cc:3234:Not$1669#sampled$1670 $flatten\gate.$auto$clk2fflogic.cc:87:sample_control_edge$\clk#sampled$1662 $flatten\gate.$auto$clk2fflogic.cc:101:sample_data$\dataout_dffeas_q_5.selected_d#sampled$1660 $flatten\gate.$auto$clk2fflogic.cc:101:sample_data$\dataout[3]#sampled$1658 $flatten\gate.$auto$clk2fflogic.cc:75:sample_control$$auto$rtlil.cc:3234:Not$1579#sampled$1580 $flatten\gate.$auto$clk2fflogic.cc:87:sample_control_edge$\clk#sampled$1572 $flatten\gate.$auto$clk2fflogic.cc:101:sample_data$\dataout_dffeas_q.selected_d#sampled$1570 $flatten\gate.$auto$clk2fflogic.cc:101:sample_data$\dataout[2]#sampled$1568 $flatten\gate.$auto$clk2fflogic.cc:75:sample_control$$auto$rtlil.cc:3234:Not$1633#sampled$1634 $flatten\gate.$auto$clk2fflogic.cc:87:sample_control_edge$\clk#sampled$1626 $flatten\gate.$auto$clk2fflogic.cc:101:sample_data$\dataout_dffeas_q_3.selected_d#sampled$1624 $flatten\gate.$auto$clk2fflogic.cc:101:sample_data$\dataout[1]#sampled$1622 $flatten\gate.$auto$clk2fflogic.cc:75:sample_control$$auto$rtlil.cc:3234:Not$1687#sampled$1688 $flatten\gate.$auto$clk2fflogic.cc:87:sample_control_edge$\clk#sampled$1680 $flatten\gate.$auto$clk2fflogic.cc:101:sample_data$\only_5b_$lut_Y_A_dffeas_q_d#sampled$1678 $flatten\gate.$auto$clk2fflogic.cc:101:sample_data$\only_5b_$lut_Y_A#sampled$1676 } = 69'010001001000100000000000001000100010001000100010001000100010001000101
+Import proof for assert: \__po_dataout__assert.okay when 1'1.
+Import proof for assert: \__po_datain_5bis7__assert.okay when 1'1.
+Import proof for assert: \__po_data_dp__assert.okay when 1'1.
+Import proof for assert: \__po_data_dn__assert.okay when 1'1.
+Import proof for assert: \__po_only_5b__assert.okay when 1'1.
+Import show expression: \__po_datain_5bis7__assert.in_gold
+Import show expression: \__po_datain_5bis7__assert.in_gate
+Import show expression: \__po_datain_5bis7__assert.okay
+Import show expression: \__po_datain_5bis7__assert.i
+Import show expression: \__po_dataout__assert.i
+Import show expression: \__po_data_dp__assert.in_gold
+Import show expression: \__po_data_dp__assert.in_gate
+Import show expression: \__po_data_dp__assert.okay
+Import show expression: \__po_data_dp__assert.i
+Import show expression: \__po_dataout__assert.okay
+Import show expression: \__po_dataout__assert.in_gate
+Import show expression: \__po_dataout__assert.in_gold
+Import show expression: \__po_data_dn__assert.in_gold
+Import show expression: \__po_data_dn__assert.in_gate
+Import show expression: \__po_data_dn__assert.okay
+Import show expression: \__po_data_dn__assert.i
+Import show expression: \__po_only_5b__assert.i
+Import show expression: \__po_only_5b__assert.okay
+Import show expression: \gate.only_5b_$lut_Y_A_dffeas_q_d_$lut_Y_A
+Import show expression: \gate.only_5b_$lut_Y_A_dffeas_q_d
+Import show expression: \gate.only_5b_$lut_Y_A_dffeas_q.selected_d
+Import show expression: \gate.only_5b_$lut_Y_A
+Import show expression: \gate.only_5b_$lut_Y_A_dffeas_q.q
+Import show expression: \gate.only_5b
+Import show expression: \gate.dataout_dffeas_q_3.q
+Import show expression: \gate.dataout_dffeas_q_3.selected_d
+Import show expression: \gate.data_dp_dffeas_q_d_$lut_Y_A_$lut_A_1_Y_$lut_A_Y
+Import show expression: \gate.dataout_dffeas_q.q
+Import show expression: \gate.data_dp_dffeas_q_d_$lut_Y_A_$lut_A_1_Y_$lut_A_Y_$lut_Y_2_A
+Import show expression: \gate.dataout_dffeas_q.selected_d
+Import show expression: \gate.dataout_dffeas_q_5.q
+Import show expression: \gate.data_dp_dffeas_q_d_$lut_Y_A_$lut_A_1_Y_$lut_A_Y_$lut_Y_A
+Import show expression: \gate.dataout_dffeas_q_5.selected_d
+Import show expression: \gate.dataout_dffeas_q_2.q
+Import show expression: \gate.data_dp_dffeas_q_d_$lut_Y_A_$lut_A_1_Y_$lut_A_Y_$lut_Y_4_A
+Import show expression: \gate.data_dp_dffeas_q_d_$lut_Y_A_$lut_A_1_Y_$lut_A_Y_$lut_Y_A_$lut_Y_A
+Import show expression: \gate.data_dp_dffeas_q_d_$lut_Y_A_$lut_A_1_Y_$lut_A_Y_$lut_Y_4_A_1
+Import show expression: \gate.dataout_dffeas_q_2.selected_d
+Import show expression: \gate.dataout_dffeas_q_1.q
+Import show expression: \gate.data_dp_dffeas_q_d_$lut_Y_A_$lut_A_A
+Import show expression: \gate.data_dp_dffeas_q_d_$lut_Y_A_$lut_A_Y
+Import show expression: \gate.only_5b_$lut_Y_A_dffeas_q_d_$lut_Y_A_$lut_Y_A
+Import show expression: \gate.data_dp_dffeas_q_d_$lut_Y_A_$lut_A_1_Y_$lut_A_Y_$lut_Y_1_A
+Import show expression: \gate.dataout_dffeas_q_1.selected_d
+Import show expression: \gate.dataout
+Import show expression: \gate.dataout_dffeas_q_4.q
+Import show expression: \gate.data_dp_dffeas_q_d_$lut_Y_A_$lut_A_1_Y_$lut_A_A_$lut_Y_A
+Import show expression: \gate.only_5b_$lut_Y_A_dffeas_q_d_$lut_Y_A_$lut_Y_A_1
+Import show expression: \gate.data_dp_dffeas_q_d_$lut_Y_A_$lut_A_1_Y_$lut_A_A
+Import show expression: \gate.data_dp_dffeas_q_d_$lut_Y_A_$lut_A_1_Y
+Import show expression: \gate.dataout_dffeas_q_4.selected_d
+Import show expression: \gate.datain_5bis7_dffeas_q_d_$lut_Y_A
+Import show expression: \gate.datain_5bis7_dffeas_q_d
+Import show expression: \gate.datain_5bis7_dffeas_q.selected_d
+Import show expression: \gate.datain_5bis7_dffeas_q.q
+Import show expression: \__po_only_5b__assert.in_gate
+Import show expression: \__po_only_5b__assert.in_gold
+Import show expression: \gate.datain_5bis7
+Import show expression: \gate.data_dp_dffeas_q.q
+Import show expression: \gate.data_dp_dffeas_q_d_$lut_Y_A
+Import show expression: \gate.data_dp_dffeas_q_d
+Import show expression: \gate.data_dp_dffeas_q.selected_d
+Import show expression: \gate.data_dp
+Import show expression: \gate.data_dn_dffeas_q.q
+Import show expression: \gate.datain
+Import show expression: \gate.data_dn_dffeas_q_d_$lut_Y_A
+Import show expression: \gate.ena
+Import show expression: \gate.data_dn_dffeas_q_d
+Import show expression: \gate.data_dn_dffeas_q.selected_d
+Import show expression: \gate.clk
+Import show expression: \gate.reset_n
+Import show expression: \gate.data_dn
+Import show expression: \gate.__pi_clk
+Import show expression: \gate.__pi_datain
+Import show expression: \gate.__pi_ena
+Import show expression: \gate.__pi_reset_n
+Import show expression: \gate.__po_data_dn
+Import show expression: \gate.__po_data_dp
+Import show expression: \gate.__po_datain_5bis7
+Import show expression: \gate.__po_dataout
+Import show expression: \gate.__po_only_5b
+Import show expression: \gold.only_5b
+Import show expression: \gold.dataout
+Import show expression: \gold.datain_5bis7
+Import show expression: \gold.data_dp
+Import show expression: \gold.datain
+Import show expression: \gold.ena
+Import show expression: \gold.clk
+Import show expression: \gold.reset_n
+Import show expression: \gold.data_dn
+Import show expression: \gold.__pi_clk
+Import show expression: \gold.__pi_datain
+Import show expression: \gold.__pi_ena
+Import show expression: \gold.__pi_reset_n
+Import show expression: \gold.__po_data_dn
+Import show expression: \gold.__po_data_dp
+Import show expression: \gold.__po_datain_5bis7
+Import show expression: \gold.__po_dataout
+Import show expression: \gold.__po_only_5b
+Import show expression: \__po_only_5b__gate
+Import show expression: \__po_dataout__gate
+Import show expression: \__po_datain_5bis7__gate
+Import show expression: \__po_data_dp__gate
+Import show expression: \__po_data_dn__gate
+Import show expression: \__po_only_5b__gold
+Import show expression: \__po_dataout__gold
+Import show expression: \__po_datain_5bis7__gold
+Import show expression: \__po_data_dp__gold
+Import show expression: \__po_data_dn__gold
+Import show expression: \__pi_reset_n
+Import show expression: \__pi_ena
+Import show expression: \__pi_datain
+Import show expression: \__pi_clk
+
+[base case 1] Solving problem with 10874 variables and 29537 clauses..
+Base case for induction length 1 proven.
+
+Setting up time step 2:
+Final constraint equation: { } = { }
+Import def constraint for this timestep: \__pi_clk
+Import def constraint for this timestep: \__pi_ena
+Import def constraint for this timestep: \__pi_reset_n
+Import def constraint for this timestep: \__pi_datain
+Imported 240 cells to SAT database.
+Import proof for assert: \__po_dataout__assert.okay when 1'1.
+Import proof for assert: \__po_datain_5bis7__assert.okay when 1'1.
+Import proof for assert: \__po_data_dp__assert.okay when 1'1.
+Import proof for assert: \__po_data_dn__assert.okay when 1'1.
+Import proof for assert: \__po_only_5b__assert.okay when 1'1.
+Import show expression: \__po_datain_5bis7__assert.in_gold
+Import show expression: \__po_datain_5bis7__assert.in_gate
+Import show expression: \__po_datain_5bis7__assert.okay
+Import show expression: \__po_datain_5bis7__assert.i
+Import show expression: \__po_dataout__assert.i
+Import show expression: \__po_data_dp__assert.in_gold
+Import show expression: \__po_data_dp__assert.in_gate
+Import show expression: \__po_data_dp__assert.okay
+Import show expression: \__po_data_dp__assert.i
+Import show expression: \__po_dataout__assert.okay
+Import show expression: \__po_dataout__assert.in_gate
+Import show expression: \__po_dataout__assert.in_gold
+Import show expression: \__po_data_dn__assert.in_gold
+Import show expression: \__po_data_dn__assert.in_gate
+Import show expression: \__po_data_dn__assert.okay
+Import show expression: \__po_data_dn__assert.i
+Import show expression: \__po_only_5b__assert.i
+Import show expression: \__po_only_5b__assert.okay
+Import show expression: \gate.only_5b_$lut_Y_A_dffeas_q_d_$lut_Y_A
+Import show expression: \gate.only_5b_$lut_Y_A_dffeas_q_d
+Import show expression: \gate.only_5b_$lut_Y_A_dffeas_q.selected_d
+Import show expression: \gate.only_5b_$lut_Y_A
+Import show expression: \gate.only_5b_$lut_Y_A_dffeas_q.q
+Import show expression: \gate.only_5b
+Import show expression: \gate.dataout_dffeas_q_3.q
+Import show expression: \gate.dataout_dffeas_q_3.selected_d
+Import show expression: \gate.data_dp_dffeas_q_d_$lut_Y_A_$lut_A_1_Y_$lut_A_Y
+Import show expression: \gate.dataout_dffeas_q.q
+Import show expression: \gate.data_dp_dffeas_q_d_$lut_Y_A_$lut_A_1_Y_$lut_A_Y_$lut_Y_2_A
+Import show expression: \gate.dataout_dffeas_q.selected_d
+Import show expression: \gate.dataout_dffeas_q_5.q
+Import show expression: \gate.data_dp_dffeas_q_d_$lut_Y_A_$lut_A_1_Y_$lut_A_Y_$lut_Y_A
+Import show expression: \gate.dataout_dffeas_q_5.selected_d
+Import show expression: \gate.dataout_dffeas_q_2.q
+Import show expression: \gate.data_dp_dffeas_q_d_$lut_Y_A_$lut_A_1_Y_$lut_A_Y_$lut_Y_4_A
+Import show expression: \gate.data_dp_dffeas_q_d_$lut_Y_A_$lut_A_1_Y_$lut_A_Y_$lut_Y_A_$lut_Y_A
+Import show expression: \gate.data_dp_dffeas_q_d_$lut_Y_A_$lut_A_1_Y_$lut_A_Y_$lut_Y_4_A_1
+Import show expression: \gate.dataout_dffeas_q_2.selected_d
+Import show expression: \gate.dataout_dffeas_q_1.q
+Import show expression: \gate.data_dp_dffeas_q_d_$lut_Y_A_$lut_A_A
+Import show expression: \gate.data_dp_dffeas_q_d_$lut_Y_A_$lut_A_Y
+Import show expression: \gate.only_5b_$lut_Y_A_dffeas_q_d_$lut_Y_A_$lut_Y_A
+Import show expression: \gate.data_dp_dffeas_q_d_$lut_Y_A_$lut_A_1_Y_$lut_A_Y_$lut_Y_1_A
+Import show expression: \gate.dataout_dffeas_q_1.selected_d
+Import show expression: \gate.dataout
+Import show expression: \gate.dataout_dffeas_q_4.q
+Import show expression: \gate.data_dp_dffeas_q_d_$lut_Y_A_$lut_A_1_Y_$lut_A_A_$lut_Y_A
+Import show expression: \gate.only_5b_$lut_Y_A_dffeas_q_d_$lut_Y_A_$lut_Y_A_1
+Import show expression: \gate.data_dp_dffeas_q_d_$lut_Y_A_$lut_A_1_Y_$lut_A_A
+Import show expression: \gate.data_dp_dffeas_q_d_$lut_Y_A_$lut_A_1_Y
+Import show expression: \gate.dataout_dffeas_q_4.selected_d
+Import show expression: \gate.datain_5bis7_dffeas_q_d_$lut_Y_A
+Import show expression: \gate.datain_5bis7_dffeas_q_d
+Import show expression: \gate.datain_5bis7_dffeas_q.selected_d
+Import show expression: \gate.datain_5bis7_dffeas_q.q
+Import show expression: \__po_only_5b__assert.in_gate
+Import show expression: \__po_only_5b__assert.in_gold
+Import show expression: \gate.datain_5bis7
+Import show expression: \gate.data_dp_dffeas_q.q
+Import show expression: \gate.data_dp_dffeas_q_d_$lut_Y_A
+Import show expression: \gate.data_dp_dffeas_q_d
+Import show expression: \gate.data_dp_dffeas_q.selected_d
+Import show expression: \gate.data_dp
+Import show expression: \gate.data_dn_dffeas_q.q
+Import show expression: \gate.datain
+Import show expression: \gate.data_dn_dffeas_q_d_$lut_Y_A
+Import show expression: \gate.ena
+Import show expression: \gate.data_dn_dffeas_q_d
+Import show expression: \gate.data_dn_dffeas_q.selected_d
+Import show expression: \gate.clk
+Import show expression: \gate.reset_n
+Import show expression: \gate.data_dn
+Import show expression: \gate.__pi_clk
+Import show expression: \gate.__pi_datain
+Import show expression: \gate.__pi_ena
+Import show expression: \gate.__pi_reset_n
+Import show expression: \gate.__po_data_dn
+Import show expression: \gate.__po_data_dp
+Import show expression: \gate.__po_datain_5bis7
+Import show expression: \gate.__po_dataout
+Import show expression: \gate.__po_only_5b
+Import show expression: \gold.only_5b
+Import show expression: \gold.dataout
+Import show expression: \gold.datain_5bis7
+Import show expression: \gold.data_dp
+Import show expression: \gold.datain
+Import show expression: \gold.ena
+Import show expression: \gold.clk
+Import show expression: \gold.reset_n
+Import show expression: \gold.data_dn
+Import show expression: \gold.__pi_clk
+Import show expression: \gold.__pi_datain
+Import show expression: \gold.__pi_ena
+Import show expression: \gold.__pi_reset_n
+Import show expression: \gold.__po_data_dn
+Import show expression: \gold.__po_data_dp
+Import show expression: \gold.__po_datain_5bis7
+Import show expression: \gold.__po_dataout
+Import show expression: \gold.__po_only_5b
+Import show expression: \__po_only_5b__gate
+Import show expression: \__po_dataout__gate
+Import show expression: \__po_datain_5bis7__gate
+Import show expression: \__po_data_dp__gate
+Import show expression: \__po_data_dn__gate
+Import show expression: \__po_only_5b__gold
+Import show expression: \__po_dataout__gold
+Import show expression: \__po_datain_5bis7__gold
+Import show expression: \__po_data_dp__gold
+Import show expression: \__po_data_dn__gold
+Import show expression: \__pi_reset_n
+Import show expression: \__pi_ena
+Import show expression: \__pi_datain
+Import show expression: \__pi_clk
+
+[induction step 1] Solving problem with 21711 variables and 58767 clauses..
+Induction step proven: SUCCESS!
+
+                  /$$$$$$      /$$$$$$$$     /$$$$$$$    
+                 /$$__  $$    | $$_____/    | $$__  $$   
+                | $$  \ $$    | $$          | $$  \ $$   
+                | $$  | $$    | $$$$$       | $$  | $$   
+                | $$  | $$    | $$__/       | $$  | $$   
+                | $$/$$ $$    | $$          | $$  | $$   
+                |  $$$$$$/ /$$| $$$$$$$$ /$$| $$$$$$$//$$
+                 \____ $$$|__/|________/|__/|_______/|__/
+                       \__/                              
+
+End of script. Logfile hash: 37baec3471
+Yosys 0.69+154 (git sha1 30d62572e-dirty, Release, GNU /usr/bin/x86_64-w64-mingw32-g++ 15.2.1)
+Time spent: 4% 2x read_verilog (0 sec), 4% 2x read_rtlil (0 sec), ...

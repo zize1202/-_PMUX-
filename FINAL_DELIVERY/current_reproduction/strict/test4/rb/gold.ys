@@ -1,0 +1,8 @@
+read_rtlil rtl.normalized.il
+hierarchy -check -top test4
+clk2fflogic
+check -assert
+opt_clean
+check -initdrv
+setundef -undriven -undef
+write_rtlil rb/gold.il

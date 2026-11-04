@@ -1,0 +1,12 @@
+# [test3] gold-match clk
+test3 clk clk
+# [test3] gold-match cs
+test3 cs cs
+# [test3] gold-match sr_in
+test3 sr_in sr_in
+# [test3] gold-match gpioout
+test3 gpioout gpioout
+# [test3] gold-match sr_out
+test3 sr_out sr_out
+# [test3] gold-match /sr/
+test3 sr sr

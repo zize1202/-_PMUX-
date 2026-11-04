@@ -1,0 +1,8 @@
+read_verilog -formal rtl_source_0.v
+prep -top test3 -flatten
+memory_map
+opt_clean
+zinit -all
+check -assert
+write_rtlil rtl.normalized.il
+write_json rtl.normalized.json

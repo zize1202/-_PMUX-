@@ -1,0 +1,432 @@
+
+ /----------------------------------------------------------------------------\
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |  Copyright (C) 2012 - 2026  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |  Distributed under an ISC-like license, type "license" to see terms        |
+ \----------------------------------------------------------------------------/
+ Yosys 0.69+154 (git sha1 30d62572e-dirty, Release, GNU /usr/bin/x86_64-w64-mingw32-g++ 15.2.1)
+
+-- Executing script file `run.ys' --
+
+1. Executing Verilog-2005 frontend: ../../../partitions/test3.gpioout.sv
+Parsing SystemVerilog input from `../../../partitions/test3.gpioout.sv' to AST representation.
+Generating RTLIL representation for module `\miter'.
+Generating RTLIL representation for module `\miter_cmp_prop'.
+Generating RTLIL representation for module `\miter_def_prop'.
+Generating RTLIL representation for module `\gold.test3.gpioout'.
+Generating RTLIL representation for module `\gate.test3.gpioout'.
+Successfully finished Verilog frontend.
+
+2. Executing RTLIL frontend.
+Input filename: ../../../partitions/test3.gpioout.il
+Replacing existing blackbox module \gold.test3.gpioout.
+Replacing existing blackbox module \gate.test3.gpioout.
+
+3. Executing HIERARCHY pass (managing design hierarchy).
+
+3.1. Analyzing design hierarchy..
+Top module:  \miter
+Used module:     \miter_cmp_prop
+Used module:     \gate.test3.gpioout
+Used module:     \gold.test3.gpioout
+Parameter 1 (\WIDTH) = 1
+Parameter 2 (\TYPE) = 48'011000010111001101110011011001010111001001110100
+
+3.2. Executing AST frontend in derive mode using pre-parsed AST for module `\miter_cmp_prop'.
+Parameter 1 (\WIDTH) = 1
+Parameter 2 (\TYPE) = 48'011000010111001101110011011001010111001001110100
+Generating RTLIL representation for module `$paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop'.
+Parameter 1 (\WIDTH) = 8
+Parameter 2 (\TYPE) = 48'011000010111001101110011011001010111001001110100
+
+3.3. Executing AST frontend in derive mode using pre-parsed AST for module `\miter_cmp_prop'.
+Parameter 1 (\WIDTH) = 8
+Parameter 2 (\TYPE) = 48'011000010111001101110011011001010111001001110100
+Generating RTLIL representation for module `$paramod$a769009af63a4a765f4b4241ea056b727873f867\miter_cmp_prop'.
+Parameter 1 (\WIDTH) = 8
+Parameter 2 (\TYPE) = 48'011000010111001101110011011001010111001001110100
+Found cached RTLIL representation for module `$paramod$a769009af63a4a765f4b4241ea056b727873f867\miter_cmp_prop'.
+
+3.4. Analyzing design hierarchy..
+Top module:  \miter
+Used module:     $paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop
+Used module:     $paramod$a769009af63a4a765f4b4241ea056b727873f867\miter_cmp_prop
+Used module:     \gate.test3.gpioout
+Used module:     \gold.test3.gpioout
+
+3.5. Analyzing design hierarchy..
+Top module:  \miter
+Used module:     $paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop
+Used module:     $paramod$a769009af63a4a765f4b4241ea056b727873f867\miter_cmp_prop
+Used module:     \gate.test3.gpioout
+Used module:     \gold.test3.gpioout
+Removing unused module `\miter_def_prop'.
+Removing unused module `\miter_cmp_prop'.
+Removed 2 unused modules.
+Module $paramod$a769009af63a4a765f4b4241ea056b727873f867\miter_cmp_prop directly or indirectly contains formal properties -> setting "keep" attribute.
+Module $paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop directly or indirectly contains formal properties -> setting "keep" attribute.
+Module miter directly or indirectly contains formal properties -> setting "keep" attribute.
+Mapping positional arguments of cell miter.__po_sr_out__assert ($paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop).
+Mapping positional arguments of cell miter.__po_sr__assert ($paramod$a769009af63a4a765f4b4241ea056b727873f867\miter_cmp_prop).
+Mapping positional arguments of cell miter.__po_gpioout__assert ($paramod$a769009af63a4a765f4b4241ea056b727873f867\miter_cmp_prop).
+
+4. Executing PROC pass (convert processes to netlists).
+
+4.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+4.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Removed a total of 0 dead cases.
+
+4.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 2 redundant assignments.
+Promoted 6 assignments to connections.
+
+4.4. Executing PROC_INIT pass (extract init attributes).
+
+4.5. Executing PROC_ARST pass (detect async resets in processes).
+
+4.6. Executing PROC_ROM pass (convert switches to ROMs).
+Converted 0 switches.
+
+4.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
+Creating decoders for process `$paramod$a769009af63a4a765f4b4241ea056b727873f867\miter_cmp_prop.$proc$../../../partitions/test3.gpioout.sv:80$848'.
+Creating decoders for process `$paramod$a769009af63a4a765f4b4241ea056b727873f867\miter_cmp_prop.$proc$../../../partitions/test3.gpioout.sv:74$815'.
+Creating decoders for process `$paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop.$proc$../../../partitions/test3.gpioout.sv:80$813'.
+Creating decoders for process `$paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop.$proc$../../../partitions/test3.gpioout.sv:74$808'.
+
+4.8. Executing PROC_DLATCH pass (convert process syncs to latches).
+No latch inferred for signal `$paramod$a769009af63a4a765f4b4241ea056b727873f867\miter_cmp_prop.\i' from process `$paramod$a769009af63a4a765f4b4241ea056b727873f867\miter_cmp_prop.$proc$../../../partitions/test3.gpioout.sv:74$815'.
+No latch inferred for signal `$paramod$a769009af63a4a765f4b4241ea056b727873f867\miter_cmp_prop.\okay' from process `$paramod$a769009af63a4a765f4b4241ea056b727873f867\miter_cmp_prop.$proc$../../../partitions/test3.gpioout.sv:74$815'.
+No latch inferred for signal `$paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop.\i' from process `$paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop.$proc$../../../partitions/test3.gpioout.sv:74$808'.
+No latch inferred for signal `$paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop.\okay' from process `$paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop.$proc$../../../partitions/test3.gpioout.sv:74$808'.
+
+4.9. Executing PROC_DFF pass (convert process syncs to FFs).
+
+4.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
+
+4.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Removing empty process `$paramod$a769009af63a4a765f4b4241ea056b727873f867\miter_cmp_prop.$proc$../../../partitions/test3.gpioout.sv:80$848'.
+Removing empty process `$paramod$a769009af63a4a765f4b4241ea056b727873f867\miter_cmp_prop.$proc$../../../partitions/test3.gpioout.sv:74$815'.
+Removing empty process `$paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop.$proc$../../../partitions/test3.gpioout.sv:80$813'.
+Removing empty process `$paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop.$proc$../../../partitions/test3.gpioout.sv:74$808'.
+Cleaned up 0 empty switches.
+
+4.12. Executing OPT_EXPR pass (perform const folding).
+Optimizing module gate.test3.gpioout.
+<suppressed ~28 debug messages>
+Optimizing module gold.test3.gpioout.
+Optimizing module $paramod$a769009af63a4a765f4b4241ea056b727873f867\miter_cmp_prop.
+<suppressed ~1 debug messages>
+Optimizing module $paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop.
+<suppressed ~1 debug messages>
+Optimizing module miter.
+
+5. Executing ASYNC2SYNC pass.
+
+6. Executing FORMALFF pass.
+
+7. Executing SETUNDEF pass (replace undef values with defined constants).
+
+8. Executing FLATTEN pass (flatten design).
+Deleting now unused module gate.test3.gpioout.
+Deleting now unused module gold.test3.gpioout.
+Deleting now unused module $paramod$a769009af63a4a765f4b4241ea056b727873f867\miter_cmp_prop.
+Deleting now unused module $paramod$7c68cd0f50b67350b96c971f2e7bf39c83376225\miter_cmp_prop.
+<suppressed ~5 debug messages>
+
+9. Executing DFFUNMAP pass (unmap clock enable and synchronous reset from FFs).
+
+10. Executing OPT_EXPR pass (perform const folding).
+Optimizing module miter.
+<suppressed ~3 debug messages>
+
+11. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \miter..
+Removed 3 unused cells and 49 unused wires.
+<suppressed ~35 debug messages>
+
+12. Executing SAT pass (solving SAT problems in the circuit).
+Using SAT solver `minisat`.
+
+Setting up time step 1:
+Final constraint equation: { } = { }
+Import def constraint for this timestep: \__pi_clk
+Import def constraint for this timestep: \__pi_cs
+Import def constraint for this timestep: \__pi_sr_in
+Imported 224 cells to SAT database.
+Import proof for assert: \__po_sr__assert.okay when 1'1.
+Import proof for assert: \__po_gpioout__assert.okay when 1'1.
+Import proof for assert: \__po_sr_out__assert.okay when 1'1.
+
+** Trying induction with length 1 **
+
+Setting up time step 1:
+Final constraint equation: { } = { }
+Import def constraint for this timestep: \__pi_clk
+Import def constraint for this timestep: \__pi_cs
+Import def constraint for this timestep: \__pi_sr_in
+Imported 224 cells to SAT database.
+Import set-constraint from init attribute: $flatten\gate.$auto$clk2fflogic.cc:101:sample_data$\gpioout[1]#sampled$550 = 1'0
+Import set-constraint from init attribute: $flatten\gate.$auto$clk2fflogic.cc:101:sample_data$$techmap\gpioout_dffeas_q_3.$0\q[0:0]#sampled$552 = 1'0
+Import set-constraint from init attribute: $flatten\gate.$auto$clk2fflogic.cc:87:sample_control_edge$\clk#sampled$554 = 1'1
+Import set-constraint from init attribute: $flatten\gate.$auto$clk2fflogic.cc:75:sample_control$$auto$rtlil.cc:3234:Not$561#sampled$562 = 1'0
+Import set-constraint from init attribute: $flatten\gate.$auto$clk2fflogic.cc:101:sample_data$\gpioout[2]#sampled$514 = 1'0
+Import set-constraint from init attribute: $flatten\gate.$auto$clk2fflogic.cc:101:sample_data$$techmap\gpioout_dffeas_q_1.$0\q[0:0]#sampled$516 = 1'0
+Import set-constraint from init attribute: $flatten\gate.$auto$clk2fflogic.cc:87:sample_control_edge$\clk#sampled$518 = 1'1
+Import set-constraint from init attribute: $flatten\gate.$auto$clk2fflogic.cc:75:sample_control$$auto$rtlil.cc:3234:Not$525#sampled$526 = 1'0
+Import set-constraint from init attribute: $flatten\gate.$auto$clk2fflogic.cc:101:sample_data$\gpioout[4]#sampled$496 = 1'0
+Import set-constraint from init attribute: $flatten\gate.$auto$clk2fflogic.cc:101:sample_data$$techmap\gpioout_dffeas_q.$0\q[0:0]#sampled$498 = 1'0
+Import set-constraint from init attribute: $flatten\gate.$auto$clk2fflogic.cc:87:sample_control_edge$\clk#sampled$500 = 1'1
+Import set-constraint from init attribute: $flatten\gate.$auto$clk2fflogic.cc:75:sample_control$$auto$rtlil.cc:3234:Not$507#sampled$508 = 1'0
+Import set-constraint from init attribute: $flatten\gate.$auto$clk2fflogic.cc:101:sample_data$\gpioout[5]#sampled$532 = 1'0
+Import set-constraint from init attribute: $flatten\gate.$auto$clk2fflogic.cc:101:sample_data$$techmap\gpioout_dffeas_q_2.$0\q[0:0]#sampled$534 = 1'0
+Import set-constraint from init attribute: $flatten\gate.$auto$clk2fflogic.cc:87:sample_control_edge$\clk#sampled$536 = 1'1
+Import set-constraint from init attribute: $flatten\gate.$auto$clk2fflogic.cc:75:sample_control$$auto$rtlil.cc:3234:Not$543#sampled$544 = 1'0
+Import set-constraint from init attribute: $flatten\gate.$auto$clk2fflogic.cc:101:sample_data$\sr_out#sampled$730 = 1'0
+Import set-constraint from init attribute: $flatten\gate.$auto$clk2fflogic.cc:101:sample_data$$techmap\sr_out_dffeas_q.$0\q[0:0]#sampled$732 = 1'0
+Import set-constraint from init attribute: $flatten\gate.$auto$clk2fflogic.cc:87:sample_control_edge$\clk#sampled$734 = 1'1
+Import set-constraint from init attribute: $flatten\gate.$auto$clk2fflogic.cc:75:sample_control$$auto$rtlil.cc:3234:Not$741#sampled$742 = 1'0
+Import set-constraint from init attribute: $flatten\gate.$auto$clk2fflogic.cc:101:sample_data$\sr[6]#sampled$712 = 1'0
+Import set-constraint from init attribute: $flatten\gate.$auto$clk2fflogic.cc:101:sample_data$$techmap\sr_dffeas_q_6.$0\q[0:0]#sampled$714 = 1'0
+Import set-constraint from init attribute: $flatten\gate.$auto$clk2fflogic.cc:87:sample_control_edge$\clk#sampled$716 = 1'1
+Import set-constraint from init attribute: $flatten\gate.$auto$clk2fflogic.cc:75:sample_control$$auto$rtlil.cc:3234:Not$723#sampled$724 = 1'0
+Import set-constraint from init attribute: $flatten\gate.$auto$clk2fflogic.cc:101:sample_data$\sr[5]#sampled$658 = 1'0
+Import set-constraint from init attribute: $flatten\gate.$auto$clk2fflogic.cc:101:sample_data$$techmap\sr_dffeas_q_3.$0\q[0:0]#sampled$660 = 1'0
+Import set-constraint from init attribute: $flatten\gate.$auto$clk2fflogic.cc:87:sample_control_edge$\clk#sampled$662 = 1'1
+Import set-constraint from init attribute: $flatten\gate.$auto$clk2fflogic.cc:75:sample_control$$auto$rtlil.cc:3234:Not$669#sampled$670 = 1'0
+Import set-constraint from init attribute: $flatten\gate.$auto$clk2fflogic.cc:101:sample_data$\sr[4]#sampled$622 = 1'0
+Import set-constraint from init attribute: $flatten\gate.$auto$clk2fflogic.cc:101:sample_data$$techmap\sr_dffeas_q_1.$0\q[0:0]#sampled$624 = 1'0
+Import set-constraint from init attribute: $flatten\gate.$auto$clk2fflogic.cc:87:sample_control_edge$\clk#sampled$626 = 1'1
+Import set-constraint from init attribute: $flatten\gate.$auto$clk2fflogic.cc:75:sample_control$$auto$rtlil.cc:3234:Not$633#sampled$634 = 1'0
+Import set-constraint from init attribute: $flatten\gate.$auto$clk2fflogic.cc:101:sample_data$\sr[3]#sampled$604 = 1'0
+Import set-constraint from init attribute: $flatten\gate.$auto$clk2fflogic.cc:101:sample_data$$techmap\sr_dffeas_q.$0\q[0:0]#sampled$606 = 1'0
+Import set-constraint from init attribute: $flatten\gate.$auto$clk2fflogic.cc:87:sample_control_edge$\clk#sampled$608 = 1'1
+Import set-constraint from init attribute: $flatten\gate.$auto$clk2fflogic.cc:75:sample_control$$auto$rtlil.cc:3234:Not$615#sampled$616 = 1'0
+Import set-constraint from init attribute: $flatten\gate.$auto$clk2fflogic.cc:101:sample_data$\sr[2]#sampled$640 = 1'0
+Import set-constraint from init attribute: $flatten\gate.$auto$clk2fflogic.cc:101:sample_data$$techmap\sr_dffeas_q_2.$0\q[0:0]#sampled$642 = 1'0
+Import set-constraint from init attribute: $flatten\gate.$auto$clk2fflogic.cc:87:sample_control_edge$\clk#sampled$644 = 1'1
+Import set-constraint from init attribute: $flatten\gate.$auto$clk2fflogic.cc:75:sample_control$$auto$rtlil.cc:3234:Not$651#sampled$652 = 1'0
+Import set-constraint from init attribute: $flatten\gate.$auto$clk2fflogic.cc:101:sample_data$\sr[1]#sampled$676 = 1'0
+Import set-constraint from init attribute: $flatten\gate.$auto$clk2fflogic.cc:101:sample_data$$techmap\sr_dffeas_q_4.$0\q[0:0]#sampled$678 = 1'0
+Import set-constraint from init attribute: $flatten\gate.$auto$clk2fflogic.cc:87:sample_control_edge$\clk#sampled$680 = 1'1
+Import set-constraint from init attribute: $flatten\gate.$auto$clk2fflogic.cc:75:sample_control$$auto$rtlil.cc:3234:Not$687#sampled$688 = 1'0
+Import set-constraint from init attribute: $flatten\gate.$auto$clk2fflogic.cc:101:sample_data$\sr[0]#sampled$694 = 1'0
+Import set-constraint from init attribute: $flatten\gate.$auto$clk2fflogic.cc:101:sample_data$$techmap\sr_dffeas_q_5.$0\q[0:0]#sampled$696 = 1'0
+Import set-constraint from init attribute: $flatten\gate.$auto$clk2fflogic.cc:87:sample_control_edge$\clk#sampled$698 = 1'1
+Import set-constraint from init attribute: $flatten\gate.$auto$clk2fflogic.cc:75:sample_control$$auto$rtlil.cc:3234:Not$705#sampled$706 = 1'0
+Import set-constraint from init attribute: $flatten\gate.$auto$clk2fflogic.cc:101:sample_data$\gpioout[0]#sampled$568 = 1'0
+Import set-constraint from init attribute: $flatten\gate.$auto$clk2fflogic.cc:101:sample_data$$techmap\gpioout_dffeas_q_4.$0\q[0:0]#sampled$570 = 1'0
+Import set-constraint from init attribute: $flatten\gate.$auto$clk2fflogic.cc:87:sample_control_edge$\clk#sampled$572 = 1'1
+Import set-constraint from init attribute: $flatten\gate.$auto$clk2fflogic.cc:75:sample_control$$auto$rtlil.cc:3234:Not$579#sampled$580 = 1'0
+Import set-constraint from init attribute: $flatten\gate.$auto$clk2fflogic.cc:101:sample_data$\rw#sampled$586 = 1'0
+Import set-constraint from init attribute: $flatten\gate.$auto$clk2fflogic.cc:101:sample_data$$techmap\rw_dffeas_q.$0\q[0:0]#sampled$588 = 1'0
+Import set-constraint from init attribute: $flatten\gate.$auto$clk2fflogic.cc:87:sample_control_edge$\clk#sampled$590 = 1'1
+Import set-constraint from init attribute: $flatten\gate.$auto$clk2fflogic.cc:75:sample_control$$auto$rtlil.cc:3234:Not$597#sampled$598 = 1'0
+Import set-constraint from init attribute: $flatten\gold.$auto$clk2fflogic.cc:101:sample_data$\sr_out#sampled$50 = 1'0
+Import set-constraint from init attribute: $flatten\gold.$auto$clk2fflogic.cc:101:sample_data$$0\sr_out[0:0]#sampled$52 = 1'0
+Import set-constraint from init attribute: $flatten\gold.$auto$clk2fflogic.cc:87:sample_control_edge$\clk#sampled$54 = 1'1
+Import set-constraint from init attribute: $flatten\gold.$auto$clk2fflogic.cc:101:sample_data$\gpioout#sampled$60 = 8'00000000
+Import set-constraint from init attribute: $flatten\gold.$auto$clk2fflogic.cc:101:sample_data$$0\gpioout[7:0]#sampled$62 = 8'00000000
+Import set-constraint from init attribute: $flatten\gold.$auto$clk2fflogic.cc:87:sample_control_edge$\clk#sampled$64 = 1'1
+Import set-constraint from init attribute: $flatten\gold.$auto$clk2fflogic.cc:101:sample_data$\sr#sampled$40 = 8'00000000
+Import set-constraint from init attribute: $flatten\gold.$auto$clk2fflogic.cc:101:sample_data$$0\sr[7:0]#sampled$42 = 8'00000000
+Import set-constraint from init attribute: $flatten\gold.$auto$clk2fflogic.cc:87:sample_control_edge$\clk#sampled$44 = 1'1
+Final init constraint equation: { $flatten\gold.$auto$clk2fflogic.cc:87:sample_control_edge$\clk#sampled$44 $flatten\gold.$auto$clk2fflogic.cc:101:sample_data$$0\sr[7:0]#sampled$42 $flatten\gold.$auto$clk2fflogic.cc:101:sample_data$\sr#sampled$40 $flatten\gold.$auto$clk2fflogic.cc:87:sample_control_edge$\clk#sampled$64 $flatten\gold.$auto$clk2fflogic.cc:101:sample_data$$0\gpioout[7:0]#sampled$62 $flatten\gold.$auto$clk2fflogic.cc:101:sample_data$\gpioout#sampled$60 $flatten\gold.$auto$clk2fflogic.cc:87:sample_control_edge$\clk#sampled$54 $flatten\gold.$auto$clk2fflogic.cc:101:sample_data$$0\sr_out[0:0]#sampled$52 $flatten\gold.$auto$clk2fflogic.cc:101:sample_data$\sr_out#sampled$50 $flatten\gate.$auto$clk2fflogic.cc:75:sample_control$$auto$rtlil.cc:3234:Not$597#sampled$598 $flatten\gate.$auto$clk2fflogic.cc:87:sample_control_edge$\clk#sampled$590 $flatten\gate.$auto$clk2fflogic.cc:101:sample_data$$techmap\rw_dffeas_q.$0\q[0:0]#sampled$588 $flatten\gate.$auto$clk2fflogic.cc:101:sample_data$\rw#sampled$586 $flatten\gate.$auto$clk2fflogic.cc:75:sample_control$$auto$rtlil.cc:3234:Not$579#sampled$580 $flatten\gate.$auto$clk2fflogic.cc:87:sample_control_edge$\clk#sampled$572 $flatten\gate.$auto$clk2fflogic.cc:101:sample_data$$techmap\gpioout_dffeas_q_4.$0\q[0:0]#sampled$570 $flatten\gate.$auto$clk2fflogic.cc:101:sample_data$\gpioout[0]#sampled$568 $flatten\gate.$auto$clk2fflogic.cc:75:sample_control$$auto$rtlil.cc:3234:Not$705#sampled$706 $flatten\gate.$auto$clk2fflogic.cc:87:sample_control_edge$\clk#sampled$698 $flatten\gate.$auto$clk2fflogic.cc:101:sample_data$$techmap\sr_dffeas_q_5.$0\q[0:0]#sampled$696 $flatten\gate.$auto$clk2fflogic.cc:101:sample_data$\sr[0]#sampled$694 $flatten\gate.$auto$clk2fflogic.cc:75:sample_control$$auto$rtlil.cc:3234:Not$687#sampled$688 $flatten\gate.$auto$clk2fflogic.cc:87:sample_control_edge$\clk#sampled$680 $flatten\gate.$auto$clk2fflogic.cc:101:sample_data$$techmap\sr_dffeas_q_4.$0\q[0:0]#sampled$678 $flatten\gate.$auto$clk2fflogic.cc:101:sample_data$\sr[1]#sampled$676 $flatten\gate.$auto$clk2fflogic.cc:75:sample_control$$auto$rtlil.cc:3234:Not$651#sampled$652 $flatten\gate.$auto$clk2fflogic.cc:87:sample_control_edge$\clk#sampled$644 $flatten\gate.$auto$clk2fflogic.cc:101:sample_data$$techmap\sr_dffeas_q_2.$0\q[0:0]#sampled$642 $flatten\gate.$auto$clk2fflogic.cc:101:sample_data$\sr[2]#sampled$640 $flatten\gate.$auto$clk2fflogic.cc:75:sample_control$$auto$rtlil.cc:3234:Not$615#sampled$616 $flatten\gate.$auto$clk2fflogic.cc:87:sample_control_edge$\clk#sampled$608 $flatten\gate.$auto$clk2fflogic.cc:101:sample_data$$techmap\sr_dffeas_q.$0\q[0:0]#sampled$606 $flatten\gate.$auto$clk2fflogic.cc:101:sample_data$\sr[3]#sampled$604 $flatten\gate.$auto$clk2fflogic.cc:75:sample_control$$auto$rtlil.cc:3234:Not$633#sampled$634 $flatten\gate.$auto$clk2fflogic.cc:87:sample_control_edge$\clk#sampled$626 $flatten\gate.$auto$clk2fflogic.cc:101:sample_data$$techmap\sr_dffeas_q_1.$0\q[0:0]#sampled$624 $flatten\gate.$auto$clk2fflogic.cc:101:sample_data$\sr[4]#sampled$622 $flatten\gate.$auto$clk2fflogic.cc:75:sample_control$$auto$rtlil.cc:3234:Not$669#sampled$670 $flatten\gate.$auto$clk2fflogic.cc:87:sample_control_edge$\clk#sampled$662 $flatten\gate.$auto$clk2fflogic.cc:101:sample_data$$techmap\sr_dffeas_q_3.$0\q[0:0]#sampled$660 $flatten\gate.$auto$clk2fflogic.cc:101:sample_data$\sr[5]#sampled$658 $flatten\gate.$auto$clk2fflogic.cc:75:sample_control$$auto$rtlil.cc:3234:Not$723#sampled$724 $flatten\gate.$auto$clk2fflogic.cc:87:sample_control_edge$\clk#sampled$716 $flatten\gate.$auto$clk2fflogic.cc:101:sample_data$$techmap\sr_dffeas_q_6.$0\q[0:0]#sampled$714 $flatten\gate.$auto$clk2fflogic.cc:101:sample_data$\sr[6]#sampled$712 $flatten\gate.$auto$clk2fflogic.cc:75:sample_control$$auto$rtlil.cc:3234:Not$741#sampled$742 $flatten\gate.$auto$clk2fflogic.cc:87:sample_control_edge$\clk#sampled$734 $flatten\gate.$auto$clk2fflogic.cc:101:sample_data$$techmap\sr_out_dffeas_q.$0\q[0:0]#sampled$732 $flatten\gate.$auto$clk2fflogic.cc:101:sample_data$\sr_out#sampled$730 $flatten\gate.$auto$clk2fflogic.cc:75:sample_control$$auto$rtlil.cc:3234:Not$543#sampled$544 $flatten\gate.$auto$clk2fflogic.cc:87:sample_control_edge$\clk#sampled$536 $flatten\gate.$auto$clk2fflogic.cc:101:sample_data$$techmap\gpioout_dffeas_q_2.$0\q[0:0]#sampled$534 $flatten\gate.$auto$clk2fflogic.cc:101:sample_data$\gpioout[5]#sampled$532 $flatten\gate.$auto$clk2fflogic.cc:75:sample_control$$auto$rtlil.cc:3234:Not$507#sampled$508 $flatten\gate.$auto$clk2fflogic.cc:87:sample_control_edge$\clk#sampled$500 $flatten\gate.$auto$clk2fflogic.cc:101:sample_data$$techmap\gpioout_dffeas_q.$0\q[0:0]#sampled$498 $flatten\gate.$auto$clk2fflogic.cc:101:sample_data$\gpioout[4]#sampled$496 $flatten\gate.$auto$clk2fflogic.cc:75:sample_control$$auto$rtlil.cc:3234:Not$525#sampled$526 $flatten\gate.$auto$clk2fflogic.cc:87:sample_control_edge$\clk#sampled$518 $flatten\gate.$auto$clk2fflogic.cc:101:sample_data$$techmap\gpioout_dffeas_q_1.$0\q[0:0]#sampled$516 $flatten\gate.$auto$clk2fflogic.cc:101:sample_data$\gpioout[2]#sampled$514 $flatten\gate.$auto$clk2fflogic.cc:75:sample_control$$auto$rtlil.cc:3234:Not$561#sampled$562 $flatten\gate.$auto$clk2fflogic.cc:87:sample_control_edge$\clk#sampled$554 $flatten\gate.$auto$clk2fflogic.cc:101:sample_data$$techmap\gpioout_dffeas_q_3.$0\q[0:0]#sampled$552 $flatten\gate.$auto$clk2fflogic.cc:101:sample_data$\gpioout[1]#sampled$550 } = 93'100000000000000001000000000000000010001000100010001000100010001000100010001000100010001000100
+Import proof for assert: \__po_sr__assert.okay when 1'1.
+Import proof for assert: \__po_gpioout__assert.okay when 1'1.
+Import proof for assert: \__po_sr_out__assert.okay when 1'1.
+Import show expression: \__po_gpioout__assert.in_gold
+Import show expression: \__po_gpioout__assert.in_gate
+Import show expression: \__po_gpioout__assert.okay
+Import show expression: \__po_gpioout__assert.i
+Import show expression: \gate.gpioout_dffeas_q_3.q
+Import show expression: \gate.gpioout_dffeas_q_1_ena
+Import show expression: \gate.gpioout_dffeas_q_1.q
+Import show expression: \gate.gpioout_dffeas_q.q
+Import show expression: \gate.gpioout_dffeas_q_ena_$lut_Y_A
+Import show expression: \gate.gpioout_dffeas_q_ena
+Import show expression: \gate.gpioout_dffeas_q_2.q
+Import show expression: \gate.sr_out_dffeas_q.q
+Import show expression: \gate.sr_out
+Import show expression: \__po_sr__assert.i
+Import show expression: \__po_sr__assert.okay
+Import show expression: \__po_sr__assert.in_gate
+Import show expression: \__po_sr__assert.in_gold
+Import show expression: \gate.sr_dffeas_q_5.selected_d
+Import show expression: \gate.gpioout
+Import show expression: \gate.gpioout_dffeas_q_4_ena_$lut_Y_A
+Import show expression: \gate.gpioout_dffeas_q_4_ena
+Import show expression: \gate.sr_dffeas_q_2.selected_d
+Import show expression: \gate.sr_dffeas_q_4.q
+Import show expression: \gate.sr_dffeas_q.q
+Import show expression: \gate.sr_dffeas_q_1.selected_d
+Import show expression: \gate.sr_dffeas_q_3.q
+Import show expression: \gate.sr_dffeas_q_6.selected_d
+Import show expression: \gate.rw_$lut_A_Y
+Import show expression: \gate.gpioout_dffeas_q_2.selected_d
+Import show expression: \gate.sr_dffeas_q.selected_d
+Import show expression: \gate.sr_dffeas_q_2.q
+Import show expression: \gate.sr_dffeas_q_1.q
+Import show expression: \gate.sr_dffeas_q_3.selected_d
+Import show expression: \gate.gpioout_dffeas_q_4_d_$lut_Y_A
+Import show expression: \gate.gpioout_dffeas_q_3.selected_d
+Import show expression: \gate.sr_dffeas_q_4.selected_d
+Import show expression: \gate.sr_dffeas_q_5.q
+Import show expression: \gate.gpioout_dffeas_q_4_d
+Import show expression: \gate.gpioout_dffeas_q_4.selected_d
+Import show expression: \gate.gpioout_dffeas_q_4.q
+Import show expression: \__po_sr_out__assert.i
+Import show expression: \__po_sr_out__assert.okay
+Import show expression: \gate.sr
+Import show expression: \gate.sr_in
+Import show expression: \gate.cs
+Import show expression: \gate.cs_$lut_A_Y
+Import show expression: \gate.rw_dffeas_q.selected_d
+Import show expression: \gate.sr_dffeas_q_6.q
+Import show expression: \gate.sr_out_dffeas_q.selected_d
+Import show expression: \gate.clk
+Import show expression: \__po_sr_out__assert.in_gate
+Import show expression: \__po_sr_out__assert.in_gold
+Import show expression: \gate.rw
+Import show expression: \gate.rw_dffeas_q.q
+Import show expression: \gate.__pi_clk
+Import show expression: \gate.__pi_cs
+Import show expression: \gate.__pi_sr_in
+Import show expression: \gate.__po_gpioout
+Import show expression: \gate.__po_sr
+Import show expression: \gate.__po_sr_out
+Import show expression: \gold.sr_out
+Import show expression: \gold.gpioout
+Import show expression: \gold.rw
+Import show expression: \gold.sr
+Import show expression: \gold.sr_in
+Import show expression: \gold.cs
+Import show expression: \gold.clk
+Import show expression: \gold.__pi_clk
+Import show expression: \gold.__pi_cs
+Import show expression: \gold.__pi_sr_in
+Import show expression: \gold.__po_gpioout
+Import show expression: \gold.__po_sr
+Import show expression: \gold.__po_sr_out
+Import show expression: \__po_sr_out__gate
+Import show expression: \__po_sr__gate
+Import show expression: \__po_gpioout__gate
+Import show expression: \__po_sr_out__gold
+Import show expression: \__po_sr__gold
+Import show expression: \__po_gpioout__gold
+Import show expression: \__pi_sr_in
+Import show expression: \__pi_cs
+Import show expression: \__pi_clk
+
+[base case 1] Solving problem with 5270 variables and 14372 clauses..
+Base case for induction length 1 proven.
+
+Setting up time step 2:
+Final constraint equation: { } = { }
+Import def constraint for this timestep: \__pi_clk
+Import def constraint for this timestep: \__pi_cs
+Import def constraint for this timestep: \__pi_sr_in
+Imported 224 cells to SAT database.
+Import proof for assert: \__po_sr__assert.okay when 1'1.
+Import proof for assert: \__po_gpioout__assert.okay when 1'1.
+Import proof for assert: \__po_sr_out__assert.okay when 1'1.
+Import show expression: \__po_gpioout__assert.in_gold
+Import show expression: \__po_gpioout__assert.in_gate
+Import show expression: \__po_gpioout__assert.okay
+Import show expression: \__po_gpioout__assert.i
+Import show expression: \gate.gpioout_dffeas_q_3.q
+Import show expression: \gate.gpioout_dffeas_q_1_ena
+Import show expression: \gate.gpioout_dffeas_q_1.q
+Import show expression: \gate.gpioout_dffeas_q.q
+Import show expression: \gate.gpioout_dffeas_q_ena_$lut_Y_A
+Import show expression: \gate.gpioout_dffeas_q_ena
+Import show expression: \gate.gpioout_dffeas_q_2.q
+Import show expression: \gate.sr_out_dffeas_q.q
+Import show expression: \gate.sr_out
+Import show expression: \__po_sr__assert.i
+Import show expression: \__po_sr__assert.okay
+Import show expression: \__po_sr__assert.in_gate
+Import show expression: \__po_sr__assert.in_gold
+Import show expression: \gate.sr_dffeas_q_5.selected_d
+Import show expression: \gate.gpioout
+Import show expression: \gate.gpioout_dffeas_q_4_ena_$lut_Y_A
+Import show expression: \gate.gpioout_dffeas_q_4_ena
+Import show expression: \gate.sr_dffeas_q_2.selected_d
+Import show expression: \gate.sr_dffeas_q_4.q
+Import show expression: \gate.sr_dffeas_q.q
+Import show expression: \gate.sr_dffeas_q_1.selected_d
+Import show expression: \gate.sr_dffeas_q_3.q
+Import show expression: \gate.sr_dffeas_q_6.selected_d
+Import show expression: \gate.rw_$lut_A_Y
+Import show expression: \gate.gpioout_dffeas_q_2.selected_d
+Import show expression: \gate.sr_dffeas_q.selected_d
+Import show expression: \gate.sr_dffeas_q_2.q
+Import show expression: \gate.sr_dffeas_q_1.q
+Import show expression: \gate.sr_dffeas_q_3.selected_d
+Import show expression: \gate.gpioout_dffeas_q_4_d_$lut_Y_A
+Import show expression: \gate.gpioout_dffeas_q_3.selected_d
+Import show expression: \gate.sr_dffeas_q_4.selected_d
+Import show expression: \gate.sr_dffeas_q_5.q
+Import show expression: \gate.gpioout_dffeas_q_4_d
+Import show expression: \gate.gpioout_dffeas_q_4.selected_d
+Import show expression: \gate.gpioout_dffeas_q_4.q
+Import show expression: \__po_sr_out__assert.i
+Import show expression: \__po_sr_out__assert.okay
+Import show expression: \gate.sr
+Import show expression: \gate.sr_in
+Import show expression: \gate.cs
+Import show expression: \gate.cs_$lut_A_Y
+Import show expression: \gate.rw_dffeas_q.selected_d
+Import show expression: \gate.sr_dffeas_q_6.q
+Import show expression: \gate.sr_out_dffeas_q.selected_d
+Import show expression: \gate.clk
+Import show expression: \__po_sr_out__assert.in_gate
+Import show expression: \__po_sr_out__assert.in_gold
+Import show expression: \gate.rw
+Import show expression: \gate.rw_dffeas_q.q
+Import show expression: \gate.__pi_clk
+Import show expression: \gate.__pi_cs
+Import show expression: \gate.__pi_sr_in
+Import show expression: \gate.__po_gpioout
+Import show expression: \gate.__po_sr
+Import show expression: \gate.__po_sr_out
+Import show expression: \gold.sr_out
+Import show expression: \gold.gpioout
+Import show expression: \gold.rw
+Import show expression: \gold.sr
+Import show expression: \gold.sr_in
+Import show expression: \gold.cs
+Import show expression: \gold.clk
+Import show expression: \gold.__pi_clk
+Import show expression: \gold.__pi_cs
+Import show expression: \gold.__pi_sr_in
+Import show expression: \gold.__po_gpioout
+Import show expression: \gold.__po_sr
+Import show expression: \gold.__po_sr_out
+Import show expression: \__po_sr_out__gate
+Import show expression: \__po_sr__gate
+Import show expression: \__po_gpioout__gate
+Import show expression: \__po_sr_out__gold
+Import show expression: \__po_sr__gold
+Import show expression: \__po_gpioout__gold
+Import show expression: \__pi_sr_in
+Import show expression: \__pi_cs
+Import show expression: \__pi_clk
+
+[induction step 1] Solving problem with 10457 variables and 28227 clauses..
+Induction step proven: SUCCESS!
+
+                  /$$$$$$      /$$$$$$$$     /$$$$$$$    
+                 /$$__  $$    | $$_____/    | $$__  $$   
+                | $$  \ $$    | $$          | $$  \ $$   
+                | $$  | $$    | $$$$$       | $$  | $$   
+                | $$  | $$    | $$__/       | $$  | $$   
+                | $$/$$ $$    | $$          | $$  | $$   
+                |  $$$$$$/ /$$| $$$$$$$$ /$$| $$$$$$$//$$
+                 \____ $$$|__/|________/|__/|_______/|__/
+                       \__/                              
+
+End of script. Logfile hash: abec47dd8e
+Yosys 0.69+154 (git sha1 30d62572e-dirty, Release, GNU /usr/bin/x86_64-w64-mingw32-g++ 15.2.1)
+Time spent: 4% 2x read_verilog (0 sec), 4% 2x read_rtlil (0 sec), ...

@@ -1,0 +1,2577 @@
+{
+  "schema": 1,
+  "mode": "BASELINE_ONLY_FULL_OUTPUT_PROOF",
+  "manifest_sha256": "83c8188e8367a6927ba88f29704481971153b724c5f19fcdf4a485f363d57218",
+  "complete": true,
+  "init_policy": "Original RTL only: zinit -all defines undefined source FF state as logical zero while preserving explicit 0/1 semantics. Mapped endpoints: require explicit dffeas power_up high/low, inverse-map it without zinit or setundef. Free inputs remain free.",
+  "clock_policy": "clk2fflogic: actual input-clock edges retained as explicit transition logic; clock never tied low.",
+  "partition_policy": "All top outputs and optional state equality invariants grouped into one jointly proved partition. Partition inputs must be original top inputs only; no internal cut assumptions.",
+  "proof_endpoint": "ABC9-after/map_cells-before IL; isolated restricted SCLR/SLOAD dffeas model in proof copies only",
+  "restricted_sclr_contract": {
+    "legacy": "sclr=0, prn=1, asdata/aload/sload=0; clrn may be dynamic",
+    "new": "clrn/prn=1, aload=0, normal device globals implicit1; ena > sclr(0) > sload(asdata) > d",
+    "r29_degenerate_domain": "sload/asdata=0 reproduces the independently frozen r29 model",
+    "vendor_probe_scope": "Existing vendor library, 642 finite binary observations, zero behavior mismatches; original probe report ERROR retained for copied-cache refresh. Not manufacturer formal proof.",
+    "semantics": "binary controls; arbitrary source data/current state and actual clock edges; no new external assumptions",
+    "vendor_reference": "https://docs.altera.com/r/docs/683082/25.1/quartus-prime-pro-edition-user-guide/secondary-register-control-signals-such-as-clear-and-clock-enable",
+    "legacy_runner_sha256": "95fa50c972e8c26c7c61646846392ebca0324bf2152619da819c8f96a6be5a17",
+    "legacy_model_sha256": "412cc8d76fc5691c05db8139965e99e6814f20c65de903cec3aaccc06f4dc0c7",
+    "simulation_counterpart_sha256": "6fa77e1742974535b87781b39efd9d806f473b0185a0b4d68856d2da0a0328db"
+  },
+  "toolchain": {
+    "suite": "C:\\Users\\local\\Documents\\Build\\2026-09-27\\workspace3\\work\\toolchain\\oss-cad-suite",
+    "shell_bin": "C:\\Users\\local\\Documents\\Build\\2026-09-27\\workspace3\\work\\v4_native\\compiler_native\\w64devkit\\bin",
+    "yosys_sha256": "9a1513abd0613ade721c0d13d57772d1fe90ac8e952a59b0742a12e2c624fa98",
+    "eqy_script_sha256": "ad027ca0436c8c517e8e7a334721142a0e4d3088eb7f940ff6dd59e019ccb808",
+    "runner_sha256": "ded68afdcc57d833dea104d424ee6285a65fb91b63141d427252deaa44361ad1",
+    "formal_model_sha256": "bd0345b835ed076a79e81f1c85b3db4ce83f04879f45fcc6b1edfe151cff332a"
+  },
+  "cases": [
+    {
+      "id": "test1",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "rtl_to_baseline",
+          "config_sha256": "0a88324f9b03b92dee229b2d281af1862eadaf203ceae5116cad3dc5fb425fae",
+          "status": "PASS",
+          "result_directory": "rb",
+          "additional_jointly_proved_state_relations": {
+            "i0": 12,
+            "i1": 12,
+            "i2": 12,
+            "i3": 12,
+            "i4": 12,
+            "i5": 12,
+            "i6": 12,
+            "i7": 12,
+            "q0": 12,
+            "q1": 12,
+            "q2": 12,
+            "q3": 12,
+            "q4": 12,
+            "q5": 12,
+            "q6": 12,
+            "q7": 12,
+            "state": 4
+          },
+          "execution": {
+            "returncode": 0,
+            "timed_out": false,
+            "diagnostic_seconds_not_contest_time": 3.280999999959022
+          },
+          "eqy_raw_status": "PASS",
+          "strategy_statuses": {
+            "strategies\\test1.i0\\induction\\status": "PASS"
+          },
+          "proof_outcome": "PASS",
+          "partition_count": 1,
+          "proven_output_bit_counts": {
+            "i0": 12,
+            "i1": 12,
+            "i2": 12,
+            "i3": 12,
+            "i4": 12,
+            "i5": 12,
+            "i6": 12,
+            "i7": 12,
+            "inter0007_out": 1,
+            "inter0008_out": 12,
+            "inter0009_out": 12,
+            "por6_out": 1,
+            "q0": 12,
+            "q1": 12,
+            "q2": 12,
+            "q3": 12,
+            "q4": 12,
+            "q5": 12,
+            "q6": 12,
+            "q7": 12,
+            "state": 4
+          },
+          "expected_output_bit_counts": {
+            "por6_out": 1,
+            "inter0007_out": 1,
+            "inter0008_out": 12,
+            "inter0009_out": 12,
+            "i0": 12,
+            "i1": 12,
+            "i2": 12,
+            "i3": 12,
+            "i4": 12,
+            "i5": 12,
+            "i6": 12,
+            "i7": 12,
+            "q0": 12,
+            "q1": 12,
+            "q2": 12,
+            "q3": 12,
+            "q4": 12,
+            "q5": 12,
+            "q6": 12,
+            "q7": 12,
+            "state": 4
+          },
+          "partition_input_names": [
+            "I0",
+            "I1",
+            "I2",
+            "I3",
+            "I4",
+            "I5",
+            "I6",
+            "I7",
+            "Q0",
+            "Q1",
+            "Q2",
+            "Q3",
+            "Q4",
+            "Q5",
+            "Q6",
+            "Q7",
+            "clock",
+            "reset",
+            "valid"
+          ],
+          "only_original_inputs_used_as_partition_inputs": true
+        }
+      ],
+      "baseline": {
+        "source_sha256": "15ce113d94640d04bef30619457bd10f0e419f28d45a2a3905a852bbb05163d4",
+        "raw_cell_types": {
+          "dffeas": 222,
+          "$lut": 204
+        },
+        "normalized_sha256": "2c737a4649cb58e7078a770e9fe5c457b80752cbe0e0a7e4b9b1f21529bd3e03",
+        "normalized_cell_types": {
+          "$adff": 222,
+          "$mux": 217,
+          "$lut": 204
+        },
+        "state_cells": 222,
+        "clock_bits_before_clk2fflogic": [
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ]
+        ],
+        "ports": {
+          "clock": {
+            "direction": "input",
+            "width": 1
+          },
+          "reset": {
+            "direction": "input",
+            "width": 1
+          },
+          "valid": {
+            "direction": "input",
+            "width": 1
+          },
+          "I0": {
+            "direction": "input",
+            "width": 16
+          },
+          "I1": {
+            "direction": "input",
+            "width": 16
+          },
+          "I2": {
+            "direction": "input",
+            "width": 16
+          },
+          "I3": {
+            "direction": "input",
+            "width": 16
+          },
+          "I4": {
+            "direction": "input",
+            "width": 16
+          },
+          "I5": {
+            "direction": "input",
+            "width": 16
+          },
+          "I6": {
+            "direction": "input",
+            "width": 16
+          },
+          "I7": {
+            "direction": "input",
+            "width": 16
+          },
+          "Q0": {
+            "direction": "input",
+            "width": 16
+          },
+          "Q1": {
+            "direction": "input",
+            "width": 16
+          },
+          "Q2": {
+            "direction": "input",
+            "width": 16
+          },
+          "Q3": {
+            "direction": "input",
+            "width": 16
+          },
+          "Q4": {
+            "direction": "input",
+            "width": 16
+          },
+          "Q5": {
+            "direction": "input",
+            "width": 16
+          },
+          "Q6": {
+            "direction": "input",
+            "width": 16
+          },
+          "Q7": {
+            "direction": "input",
+            "width": 16
+          },
+          "por6_out": {
+            "direction": "output",
+            "width": 1
+          },
+          "inter0007_out": {
+            "direction": "output",
+            "width": 1
+          },
+          "inter0008_out": {
+            "direction": "output",
+            "width": 12
+          },
+          "inter0009_out": {
+            "direction": "output",
+            "width": 12
+          }
+        },
+        "restricted_primitive_model_domains": {
+          "legacy_sclr_zero": 222
+        }
+      },
+      "rtl": {
+        "source_sha256": [
+          {
+            "path": "D:\\PMUX_20261102_delivery\\relocation r30 all\\cases\\original4\\competition_case\\test1\\test1.v",
+            "sha256": "2d2dba011b0e8799d0de3790b69b7f01c6eb6ac665c4321b57b0378a4972fd13"
+          }
+        ],
+        "raw_cell_types": {},
+        "normalized_sha256": "d165a76d9d950a69c41eef07a3dfefe25363302c7883a5625996bee53d604477",
+        "normalized_cell_types": {
+          "$xor": 2,
+          "$reduce_or": 3,
+          "$mux": 36,
+          "$adff": 2,
+          "$dff": 19,
+          "$pmux": 5,
+          "$eq": 15,
+          "$logic_not": 1
+        },
+        "state_cells": 21,
+        "clock_bits_before_clk2fflogic": [
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ]
+        ],
+        "ports": {
+          "clock": {
+            "direction": "input",
+            "width": 1
+          },
+          "reset": {
+            "direction": "input",
+            "width": 1
+          },
+          "valid": {
+            "direction": "input",
+            "width": 1
+          },
+          "I0": {
+            "direction": "input",
+            "width": 16
+          },
+          "I1": {
+            "direction": "input",
+            "width": 16
+          },
+          "I2": {
+            "direction": "input",
+            "width": 16
+          },
+          "I3": {
+            "direction": "input",
+            "width": 16
+          },
+          "I4": {
+            "direction": "input",
+            "width": 16
+          },
+          "I5": {
+            "direction": "input",
+            "width": 16
+          },
+          "I6": {
+            "direction": "input",
+            "width": 16
+          },
+          "I7": {
+            "direction": "input",
+            "width": 16
+          },
+          "Q0": {
+            "direction": "input",
+            "width": 16
+          },
+          "Q1": {
+            "direction": "input",
+            "width": 16
+          },
+          "Q2": {
+            "direction": "input",
+            "width": 16
+          },
+          "Q3": {
+            "direction": "input",
+            "width": 16
+          },
+          "Q4": {
+            "direction": "input",
+            "width": 16
+          },
+          "Q5": {
+            "direction": "input",
+            "width": 16
+          },
+          "Q6": {
+            "direction": "input",
+            "width": 16
+          },
+          "Q7": {
+            "direction": "input",
+            "width": 16
+          },
+          "por6_out": {
+            "direction": "output",
+            "width": 1
+          },
+          "inter0007_out": {
+            "direction": "output",
+            "width": 1
+          },
+          "inter0008_out": {
+            "direction": "output",
+            "width": 12
+          },
+          "inter0009_out": {
+            "direction": "output",
+            "width": 12
+          }
+        }
+      }
+    },
+    {
+      "id": "test2",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "rtl_to_baseline",
+          "config_sha256": "d020518c0c09bdd4cd56e77cf5d375320960f83f8330e4949f12988aae5056e3",
+          "status": "PASS",
+          "result_directory": "rb",
+          "additional_jointly_proved_state_relations": {},
+          "execution": {
+            "returncode": 0,
+            "timed_out": false,
+            "diagnostic_seconds_not_contest_time": 1.4059999999590218
+          },
+          "eqy_raw_status": "PASS",
+          "strategy_statuses": {
+            "strategies\\test2.out\\induction\\status": "PASS"
+          },
+          "proof_outcome": "PASS",
+          "partition_count": 1,
+          "proven_output_bit_counts": {
+            "out": 5
+          },
+          "expected_output_bit_counts": {
+            "out": 5
+          },
+          "partition_input_names": [
+            "a",
+            "b",
+            "c",
+            "d",
+            "dataa",
+            "datab",
+            "datac",
+            "datad"
+          ],
+          "only_original_inputs_used_as_partition_inputs": true
+        }
+      ],
+      "baseline": {
+        "source_sha256": "8f669a1fe3146f08fe77f405926e620806ee2ffeefb9f2d9d96f4f3f6b703828",
+        "raw_cell_types": {
+          "$lut": 15
+        },
+        "normalized_sha256": "5820ac60a3a26f4cc928887607dc8e8626801949d278212e191eeb6f1733c4f7",
+        "normalized_cell_types": {
+          "$lut": 15
+        },
+        "state_cells": 0,
+        "clock_bits_before_clk2fflogic": [],
+        "ports": {
+          "clk": {
+            "direction": "input",
+            "width": 1
+          },
+          "a": {
+            "direction": "input",
+            "width": 1
+          },
+          "b": {
+            "direction": "input",
+            "width": 1
+          },
+          "c": {
+            "direction": "input",
+            "width": 1
+          },
+          "d": {
+            "direction": "input",
+            "width": 1
+          },
+          "dataa": {
+            "direction": "input",
+            "width": 5
+          },
+          "datab": {
+            "direction": "input",
+            "width": 5
+          },
+          "datac": {
+            "direction": "input",
+            "width": 5
+          },
+          "datad": {
+            "direction": "input",
+            "width": 5
+          },
+          "out": {
+            "direction": "output",
+            "width": 5
+          }
+        },
+        "restricted_primitive_model_domains": {}
+      },
+      "rtl": {
+        "source_sha256": [
+          {
+            "path": "D:\\PMUX_20261102_delivery\\relocation r30 all\\cases\\original4\\competition_case\\test2\\test2.v",
+            "sha256": "e43c9b437071488551caf3121e227e86f4fe3190751f245beac3b7ecc3fdb146"
+          }
+        ],
+        "raw_cell_types": {},
+        "normalized_sha256": "ac194767751485c5f39a7d364dd7b45e9b931c2c3594c654a0da36c5c774de5e",
+        "normalized_cell_types": {
+          "$mux": 4
+        },
+        "state_cells": 0,
+        "clock_bits_before_clk2fflogic": [],
+        "ports": {
+          "clk": {
+            "direction": "input",
+            "width": 1
+          },
+          "a": {
+            "direction": "input",
+            "width": 1
+          },
+          "b": {
+            "direction": "input",
+            "width": 1
+          },
+          "c": {
+            "direction": "input",
+            "width": 1
+          },
+          "d": {
+            "direction": "input",
+            "width": 1
+          },
+          "dataa": {
+            "direction": "input",
+            "width": 5
+          },
+          "datab": {
+            "direction": "input",
+            "width": 5
+          },
+          "datac": {
+            "direction": "input",
+            "width": 5
+          },
+          "datad": {
+            "direction": "input",
+            "width": 5
+          },
+          "out": {
+            "direction": "output",
+            "width": 5
+          }
+        }
+      }
+    },
+    {
+      "id": "test3",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "rtl_to_baseline",
+          "config_sha256": "bb2b7c8dbb528ba4e92feedfa230031e73f18acc446a3d7d308460f2f5e00cec",
+          "status": "PASS",
+          "result_directory": "rb",
+          "additional_jointly_proved_state_relations": {
+            "sr": 8
+          },
+          "execution": {
+            "returncode": 0,
+            "timed_out": false,
+            "diagnostic_seconds_not_contest_time": 1.3589999999967404
+          },
+          "eqy_raw_status": "PASS",
+          "strategy_statuses": {
+            "strategies\\test3.gpioout\\induction\\status": "PASS"
+          },
+          "proof_outcome": "PASS",
+          "partition_count": 1,
+          "proven_output_bit_counts": {
+            "gpioout": 8,
+            "sr": 8,
+            "sr_out": 1
+          },
+          "expected_output_bit_counts": {
+            "gpioout": 8,
+            "sr_out": 1,
+            "sr": 8
+          },
+          "partition_input_names": [
+            "clk",
+            "cs",
+            "sr_in"
+          ],
+          "only_original_inputs_used_as_partition_inputs": true
+        }
+      ],
+      "baseline": {
+        "source_sha256": "3517570995a24ee4ecee9efda253b5d58d4c1314581bd4af9d90ebe30eb445ad",
+        "raw_cell_types": {
+          "$lut": 9,
+          "dffeas": 14
+        },
+        "normalized_sha256": "f2d4f4f8dc802c28519c66509469be611d6d2f1464dd011444ffd1b256d27a7f",
+        "normalized_cell_types": {
+          "$adff": 14,
+          "$mux": 14,
+          "$lut": 9
+        },
+        "state_cells": 14,
+        "clock_bits_before_clk2fflogic": [
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ]
+        ],
+        "ports": {
+          "clk": {
+            "direction": "input",
+            "width": 1
+          },
+          "cs": {
+            "direction": "input",
+            "width": 1
+          },
+          "sr_in": {
+            "direction": "input",
+            "width": 1
+          },
+          "gpioout": {
+            "direction": "output",
+            "width": 8
+          },
+          "sr_out": {
+            "direction": "output",
+            "width": 1
+          }
+        },
+        "restricted_primitive_model_domains": {
+          "legacy_sclr_zero": 14
+        }
+      },
+      "rtl": {
+        "source_sha256": [
+          {
+            "path": "D:\\PMUX_20261102_delivery\\relocation r30 all\\cases\\original4\\competition_case\\test3\\test3.v",
+            "sha256": "1551b9212622ccef6019d6e77de2c43dc8c80d267957b55a42121f34a08780e9"
+          }
+        ],
+        "raw_cell_types": {},
+        "normalized_sha256": "c22613e5b49f88ac2574cd0290f3b48718f1aba8525eafa6d2eaee05dd1ccdaa",
+        "normalized_cell_types": {
+          "$dff": 3,
+          "$mux": 9,
+          "$pmux": 3,
+          "$eq": 3
+        },
+        "state_cells": 3,
+        "clock_bits_before_clk2fflogic": [
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ]
+        ],
+        "ports": {
+          "clk": {
+            "direction": "input",
+            "width": 1
+          },
+          "cs": {
+            "direction": "input",
+            "width": 1
+          },
+          "sr_in": {
+            "direction": "input",
+            "width": 1
+          },
+          "gpioout": {
+            "direction": "output",
+            "width": 8
+          },
+          "sr_out": {
+            "direction": "output",
+            "width": 1
+          }
+        }
+      }
+    },
+    {
+      "id": "test4",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "rtl_to_baseline",
+          "config_sha256": "f7b20bf59933c8900a3ad72bd62442b4fc806e815398a3a744f65275e72282c0",
+          "status": "PASS",
+          "result_directory": "rb",
+          "additional_jointly_proved_state_relations": {},
+          "execution": {
+            "returncode": 0,
+            "timed_out": false,
+            "diagnostic_seconds_not_contest_time": 1.3910000000032596
+          },
+          "eqy_raw_status": "PASS",
+          "strategy_statuses": {
+            "strategies\\test4.data_dn\\induction\\status": "PASS"
+          },
+          "proof_outcome": "PASS",
+          "partition_count": 1,
+          "proven_output_bit_counts": {
+            "data_dn": 1,
+            "data_dp": 1,
+            "datain_5bis7": 1,
+            "dataout": 6,
+            "only_5b": 1
+          },
+          "expected_output_bit_counts": {
+            "dataout": 6,
+            "only_5b": 1,
+            "datain_5bis7": 1,
+            "data_dp": 1,
+            "data_dn": 1
+          },
+          "partition_input_names": [
+            "clk",
+            "datain",
+            "ena",
+            "reset_n"
+          ],
+          "only_original_inputs_used_as_partition_inputs": true
+        }
+      ],
+      "baseline": {
+        "source_sha256": "7cce2d2915973730ab3194382f0696a0e7f369bdb4d8dfdffcbc4d6919096714",
+        "raw_cell_types": {
+          "dffeas": 10,
+          "$lut": 28
+        },
+        "normalized_sha256": "7b8bc68ad0d0dbacb4ec479768d71a81fdbf983c964f2ec493a3a6115814ab13",
+        "normalized_cell_types": {
+          "$adff": 10,
+          "$mux": 1,
+          "$lut": 28
+        },
+        "state_cells": 10,
+        "clock_bits_before_clk2fflogic": [
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ]
+        ],
+        "ports": {
+          "clk": {
+            "direction": "input",
+            "width": 1
+          },
+          "reset_n": {
+            "direction": "input",
+            "width": 1
+          },
+          "ena": {
+            "direction": "input",
+            "width": 1
+          },
+          "datain": {
+            "direction": "input",
+            "width": 5
+          },
+          "dataout": {
+            "direction": "output",
+            "width": 6
+          },
+          "only_5b": {
+            "direction": "output",
+            "width": 1
+          },
+          "datain_5bis7": {
+            "direction": "output",
+            "width": 1
+          },
+          "data_dp": {
+            "direction": "output",
+            "width": 1
+          },
+          "data_dn": {
+            "direction": "output",
+            "width": 1
+          }
+        },
+        "restricted_primitive_model_domains": {
+          "legacy_sclr_zero": 10
+        }
+      },
+      "rtl": {
+        "source_sha256": [
+          {
+            "path": "D:\\PMUX_20261102_delivery\\relocation r30 all\\cases\\original4\\competition_case\\test4\\test4.v",
+            "sha256": "c0c5042928bd6bf568e2b7fb2193f2b6db9c4193ba3a5378fc50a331d43422d7"
+          }
+        ],
+        "raw_cell_types": {},
+        "normalized_sha256": "721411d495669a1780510238429ff2992316e36f7e30bef92947877e85bea708",
+        "normalized_cell_types": {
+          "$mux": 35,
+          "$adff": 4,
+          "$dff": 1
+        },
+        "state_cells": 5,
+        "clock_bits_before_clk2fflogic": [
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ]
+        ],
+        "ports": {
+          "clk": {
+            "direction": "input",
+            "width": 1
+          },
+          "reset_n": {
+            "direction": "input",
+            "width": 1
+          },
+          "ena": {
+            "direction": "input",
+            "width": 1
+          },
+          "datain": {
+            "direction": "input",
+            "width": 5
+          },
+          "dataout": {
+            "direction": "output",
+            "width": 6
+          },
+          "only_5b": {
+            "direction": "output",
+            "width": 1
+          },
+          "datain_5bis7": {
+            "direction": "output",
+            "width": 1
+          },
+          "data_dp": {
+            "direction": "output",
+            "width": 1
+          },
+          "data_dn": {
+            "direction": "output",
+            "width": 1
+          }
+        }
+      }
+    },
+    {
+      "id": "pmux_case01_balanced",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "rtl_to_baseline",
+          "config_sha256": "e3ec8257ee8f7cbdbd147497c19ae86ca519d7dfbc4a58dae26a4014b3cb535c",
+          "status": "PASS",
+          "result_directory": "rb",
+          "additional_jointly_proved_state_relations": {},
+          "execution": {
+            "returncode": 0,
+            "timed_out": false,
+            "diagnostic_seconds_not_contest_time": 1.6089999999967404
+          },
+          "eqy_raw_status": "PASS",
+          "strategy_statuses": {
+            "strategies\\pmux_case01_balanced.data_out\\induction\\status": "PASS"
+          },
+          "proof_outcome": "PASS",
+          "partition_count": 1,
+          "proven_output_bit_counts": {
+            "data_out": 12
+          },
+          "expected_output_bit_counts": {
+            "data_out": 12
+          },
+          "partition_input_names": [
+            "clk",
+            "ctrl_in",
+            "data_in",
+            "en",
+            "rst"
+          ],
+          "only_original_inputs_used_as_partition_inputs": true
+        }
+      ],
+      "baseline": {
+        "source_sha256": "fc64d42476707f958db80f3e5a935aed40f22051a2d326937b76247e06087218",
+        "raw_cell_types": {
+          "dffeas": 12,
+          "$lut": 239
+        },
+        "normalized_sha256": "3ee8cc0a0e519ef8c16db960203f0f10dfada023d510fe20fcf97bc9483a49df",
+        "normalized_cell_types": {
+          "$adff": 12,
+          "$mux": 24,
+          "$lut": 239
+        },
+        "state_cells": 12,
+        "clock_bits_before_clk2fflogic": [
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ]
+        ],
+        "ports": {
+          "clk": {
+            "direction": "input",
+            "width": 1
+          },
+          "rst": {
+            "direction": "input",
+            "width": 1
+          },
+          "en": {
+            "direction": "input",
+            "width": 1
+          },
+          "data_in": {
+            "direction": "input",
+            "width": 48
+          },
+          "ctrl_in": {
+            "direction": "input",
+            "width": 16
+          },
+          "data_out": {
+            "direction": "output",
+            "width": 12
+          }
+        },
+        "restricted_primitive_model_domains": {
+          "sclr_with_async_controls_inactive": 12
+        }
+      },
+      "rtl": {
+        "source_sha256": [
+          {
+            "path": "D:\\PMUX_20261102_delivery\\relocation r30 all\\cases\\additional5\\pmux_case01_balanced.v",
+            "sha256": "463263f4b265cbad3b634d69d316cd29e7ea0a62f91ee396dbeeecf7df5c7343"
+          }
+        ],
+        "raw_cell_types": {},
+        "normalized_sha256": "67b810ecbfdcbd965c66f8c6869ad3347bcd8c28867d89d01e81a7bc8cf650c6",
+        "normalized_cell_types": {
+          "$add": 3,
+          "$dff": 1,
+          "$mux": 2,
+          "$pmux": 5,
+          "$eq": 10,
+          "$logic_not": 5,
+          "$sub": 4,
+          "$xor": 4
+        },
+        "state_cells": 1,
+        "clock_bits_before_clk2fflogic": [
+          [
+            2
+          ]
+        ],
+        "ports": {
+          "clk": {
+            "direction": "input",
+            "width": 1
+          },
+          "rst": {
+            "direction": "input",
+            "width": 1
+          },
+          "en": {
+            "direction": "input",
+            "width": 1
+          },
+          "data_in": {
+            "direction": "input",
+            "width": 48
+          },
+          "ctrl_in": {
+            "direction": "input",
+            "width": 16
+          },
+          "data_out": {
+            "direction": "output",
+            "width": 12
+          }
+        }
+      }
+    },
+    {
+      "id": "pmux_case02_pipeline",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "rtl_to_baseline",
+          "config_sha256": "34f7aa2210437264fa9209f4ac2a8d315c1ed996e5219301e46a6f54e4d1fa55",
+          "status": "PASS",
+          "result_directory": "rb",
+          "additional_jointly_proved_state_relations": {
+            "lane[0].mid": 3,
+            "lane[0].left_mid": 3,
+            "lane[0].right_mid": 3,
+            "lane[1].right_mid": 3
+          },
+          "execution": {
+            "returncode": 0,
+            "timed_out": false,
+            "diagnostic_seconds_not_contest_time": 2.094000000040978
+          },
+          "eqy_raw_status": "PASS",
+          "strategy_statuses": {
+            "strategies\\pmux_case02_pipeline.data_out\\induction\\status": "PASS"
+          },
+          "proof_outcome": "PASS",
+          "partition_count": 1,
+          "proven_output_bit_counts": {
+            "data_out": 12,
+            "lane[0].left_mid": 3,
+            "lane[0].mid": 3,
+            "lane[0].right_mid": 3,
+            "lane[1].right_mid": 3
+          },
+          "expected_output_bit_counts": {
+            "data_out": 12,
+            "lane[0].mid": 3,
+            "lane[0].left_mid": 3,
+            "lane[0].right_mid": 3,
+            "lane[1].right_mid": 3
+          },
+          "partition_input_names": [
+            "clk",
+            "ctrl_in",
+            "data_in",
+            "en",
+            "rst"
+          ],
+          "only_original_inputs_used_as_partition_inputs": true
+        }
+      ],
+      "baseline": {
+        "source_sha256": "e42d66ff6f746eb46750fe0cfdfdc6022a724e33efb29d638cc9e6006ca1ebbc",
+        "raw_cell_types": {
+          "dffeas": 24,
+          "$lut": 305
+        },
+        "normalized_sha256": "cc06d2b6ae4b186d19675e696dccefaf84005a0e04bb4d0d1223f6bd2b51fb8c",
+        "normalized_cell_types": {
+          "$adff": 24,
+          "$mux": 72,
+          "$lut": 305
+        },
+        "state_cells": 24,
+        "clock_bits_before_clk2fflogic": [
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ]
+        ],
+        "ports": {
+          "clk": {
+            "direction": "input",
+            "width": 1
+          },
+          "rst": {
+            "direction": "input",
+            "width": 1
+          },
+          "en": {
+            "direction": "input",
+            "width": 1
+          },
+          "data_in": {
+            "direction": "input",
+            "width": 48
+          },
+          "ctrl_in": {
+            "direction": "input",
+            "width": 64
+          },
+          "data_out": {
+            "direction": "output",
+            "width": 12
+          }
+        },
+        "restricted_primitive_model_domains": {
+          "sclr_sload_asdata_with_async_controls_inactive": 24
+        }
+      },
+      "rtl": {
+        "source_sha256": [
+          {
+            "path": "D:\\PMUX_20261102_delivery\\relocation r30 all\\cases\\additional5\\pmux_case02_pipeline.v",
+            "sha256": "8639081b2fb7c446edef52a514d63b49333e444ce21638f03bdee97dc954e0ea"
+          }
+        ],
+        "raw_cell_types": {},
+        "normalized_sha256": "89a73163e4005f030ee058960256ed20e18badbdaaa2774afa1638d438ed94e6",
+        "normalized_cell_types": {
+          "$add": 16,
+          "$dff": 8,
+          "$eq": 48,
+          "$logic_not": 24,
+          "$pmux": 24,
+          "$mux": 16,
+          "$sub": 16,
+          "$xor": 16
+        },
+        "state_cells": 8,
+        "clock_bits_before_clk2fflogic": [
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ]
+        ],
+        "ports": {
+          "clk": {
+            "direction": "input",
+            "width": 1
+          },
+          "rst": {
+            "direction": "input",
+            "width": 1
+          },
+          "en": {
+            "direction": "input",
+            "width": 1
+          },
+          "data_in": {
+            "direction": "input",
+            "width": 48
+          },
+          "ctrl_in": {
+            "direction": "input",
+            "width": 64
+          },
+          "data_out": {
+            "direction": "output",
+            "width": 12
+          }
+        }
+      }
+    },
+    {
+      "id": "pmux_case03_crossbar",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "rtl_to_baseline",
+          "config_sha256": "46512a6f1778499befa6b8e91e2a69be908ba1566f6682ae7c814803c80f124e",
+          "status": "PASS",
+          "result_directory": "rb",
+          "additional_jointly_proved_state_relations": {},
+          "execution": {
+            "returncode": 0,
+            "timed_out": false,
+            "diagnostic_seconds_not_contest_time": 1.6399999999557622
+          },
+          "eqy_raw_status": "PASS",
+          "strategy_statuses": {
+            "strategies\\pmux_case03_crossbar.data_out\\induction\\status": "PASS"
+          },
+          "proof_outcome": "PASS",
+          "partition_count": 1,
+          "proven_output_bit_counts": {
+            "data_out": 10
+          },
+          "expected_output_bit_counts": {
+            "data_out": 10
+          },
+          "partition_input_names": [
+            "clk",
+            "ctrl_in",
+            "data_in",
+            "en",
+            "rst"
+          ],
+          "only_original_inputs_used_as_partition_inputs": true
+        }
+      ],
+      "baseline": {
+        "source_sha256": "a3c89057c01a748cde5941581599bb075600cff67e245bd86075a82b3c083d18",
+        "raw_cell_types": {
+          "dffeas": 10,
+          "$lut": 241
+        },
+        "normalized_sha256": "4fea481126dad1a6f9400223d7630a31a9ed79cebb0f5a2013b375dfc76c47aa",
+        "normalized_cell_types": {
+          "$adff": 10,
+          "$mux": 20,
+          "$lut": 241
+        },
+        "state_cells": 10,
+        "clock_bits_before_clk2fflogic": [
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ]
+        ],
+        "ports": {
+          "clk": {
+            "direction": "input",
+            "width": 1
+          },
+          "rst": {
+            "direction": "input",
+            "width": 1
+          },
+          "en": {
+            "direction": "input",
+            "width": 1
+          },
+          "data_in": {
+            "direction": "input",
+            "width": 40
+          },
+          "ctrl_in": {
+            "direction": "input",
+            "width": 32
+          },
+          "data_out": {
+            "direction": "output",
+            "width": 10
+          }
+        },
+        "restricted_primitive_model_domains": {
+          "sclr_with_async_controls_inactive": 10
+        }
+      },
+      "rtl": {
+        "source_sha256": [
+          {
+            "path": "D:\\PMUX_20261102_delivery\\relocation r30 all\\cases\\additional5\\pmux_case03_crossbar.v",
+            "sha256": "bf1fc3bf6383beb007a69587d77a29ea74fb1fbdf7429fb401c0855a31c05932"
+          }
+        ],
+        "raw_cell_types": {},
+        "normalized_sha256": "7266ed1d526d6af12ad94062aa0eb88de93b9a14249ebd240be16583a108c292",
+        "normalized_cell_types": {
+          "$add": 10,
+          "$and": 2,
+          "$or": 2,
+          "$dff": 2,
+          "$eq": 28,
+          "$logic_not": 10,
+          "$pmux": 10,
+          "$mux": 4,
+          "$sub": 10,
+          "$xor": 8
+        },
+        "state_cells": 2,
+        "clock_bits_before_clk2fflogic": [
+          [
+            2
+          ],
+          [
+            2
+          ]
+        ],
+        "ports": {
+          "clk": {
+            "direction": "input",
+            "width": 1
+          },
+          "rst": {
+            "direction": "input",
+            "width": 1
+          },
+          "en": {
+            "direction": "input",
+            "width": 1
+          },
+          "data_in": {
+            "direction": "input",
+            "width": 40
+          },
+          "ctrl_in": {
+            "direction": "input",
+            "width": 32
+          },
+          "data_out": {
+            "direction": "output",
+            "width": 10
+          }
+        }
+      }
+    },
+    {
+      "id": "pmux_case04_feedback",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "rtl_to_baseline",
+          "config_sha256": "0cbc26992baa0046a69e4edb60e0f9c81dd1bf1043c31a93cebd42b3de80ed7a",
+          "status": "PASS",
+          "result_directory": "rb",
+          "additional_jointly_proved_state_relations": {},
+          "execution": {
+            "returncode": 0,
+            "timed_out": false,
+            "diagnostic_seconds_not_contest_time": 1.625
+          },
+          "eqy_raw_status": "PASS",
+          "strategy_statuses": {
+            "strategies\\pmux_case04_feedback.data_out\\induction\\status": "PASS"
+          },
+          "proof_outcome": "PASS",
+          "partition_count": 1,
+          "proven_output_bit_counts": {
+            "data_out": 16
+          },
+          "expected_output_bit_counts": {
+            "data_out": 16
+          },
+          "partition_input_names": [
+            "clk",
+            "ctrl_in",
+            "data_in",
+            "en",
+            "rst"
+          ],
+          "only_original_inputs_used_as_partition_inputs": true
+        }
+      ],
+      "baseline": {
+        "source_sha256": "ad6d7c8cbf566e9f1564f22ba74d95a178a3ed6502d9eaa7664d0966fd7f533a",
+        "raw_cell_types": {
+          "dffeas": 16,
+          "$lut": 208
+        },
+        "normalized_sha256": "be125aed009a5315b5c63ed6ec3e55cbf66fb93ed3dce7171563c5be7379760f",
+        "normalized_cell_types": {
+          "$adff": 16,
+          "$mux": 16,
+          "$lut": 208
+        },
+        "state_cells": 16,
+        "clock_bits_before_clk2fflogic": [
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ]
+        ],
+        "ports": {
+          "clk": {
+            "direction": "input",
+            "width": 1
+          },
+          "rst": {
+            "direction": "input",
+            "width": 1
+          },
+          "en": {
+            "direction": "input",
+            "width": 1
+          },
+          "data_in": {
+            "direction": "input",
+            "width": 64
+          },
+          "ctrl_in": {
+            "direction": "input",
+            "width": 32
+          },
+          "data_out": {
+            "direction": "output",
+            "width": 16
+          }
+        },
+        "restricted_primitive_model_domains": {
+          "legacy_sclr_zero": 16
+        }
+      },
+      "rtl": {
+        "source_sha256": [
+          {
+            "path": "D:\\PMUX_20261102_delivery\\relocation r30 all\\cases\\additional5\\pmux_case04_feedback.v",
+            "sha256": "d668d258d804674dd1412538e7bce04d4630d02928ffe113413b536e6b9ed70f"
+          }
+        ],
+        "raw_cell_types": {},
+        "normalized_sha256": "75d7da2f32634cb76170447a102ba3e28b151e717c9284b152eaedbb1ca9389a",
+        "normalized_cell_types": {
+          "$add": 6,
+          "$logic_and": 2,
+          "$adff": 2,
+          "$mux": 2,
+          "$pmux": 8,
+          "$eq": 16,
+          "$logic_not": 8,
+          "$sub": 4,
+          "$xor": 4
+        },
+        "state_cells": 2,
+        "clock_bits_before_clk2fflogic": [
+          [
+            2
+          ],
+          [
+            2
+          ]
+        ],
+        "ports": {
+          "clk": {
+            "direction": "input",
+            "width": 1
+          },
+          "rst": {
+            "direction": "input",
+            "width": 1
+          },
+          "en": {
+            "direction": "input",
+            "width": 1
+          },
+          "data_in": {
+            "direction": "input",
+            "width": 64
+          },
+          "ctrl_in": {
+            "direction": "input",
+            "width": 32
+          },
+          "data_out": {
+            "direction": "output",
+            "width": 16
+          }
+        }
+      }
+    },
+    {
+      "id": "pmux_case05_nested",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "rtl_to_baseline",
+          "config_sha256": "8989779b145e09a0332ba2e5e6aac629c4a96babc354949ba20f4a75c4351f9f",
+          "status": "PASS",
+          "result_directory": "rb",
+          "additional_jointly_proved_state_relations": {},
+          "execution": {
+            "returncode": 0,
+            "timed_out": false,
+            "diagnostic_seconds_not_contest_time": 1.6410000000032596
+          },
+          "eqy_raw_status": "PASS",
+          "strategy_statuses": {
+            "strategies\\pmux_case05_nested.data_out\\induction\\status": "PASS"
+          },
+          "proof_outcome": "PASS",
+          "partition_count": 1,
+          "proven_output_bit_counts": {
+            "data_out": 12
+          },
+          "expected_output_bit_counts": {
+            "data_out": 12
+          },
+          "partition_input_names": [
+            "clk",
+            "ctrl_in",
+            "data_in",
+            "en",
+            "rst"
+          ],
+          "only_original_inputs_used_as_partition_inputs": true
+        }
+      ],
+      "baseline": {
+        "source_sha256": "db3e69ecd831e0538987af81ab1fa13bac08a7cce8c34e188e2ce6bd87036e6b",
+        "raw_cell_types": {
+          "dffeas": 12,
+          "$lut": 233
+        },
+        "normalized_sha256": "52c04e988415b8343e93f3848b08670d7ef7ccd9dfe47693fa7d646680fdcaa2",
+        "normalized_cell_types": {
+          "$adff": 12,
+          "$mux": 24,
+          "$lut": 233
+        },
+        "state_cells": 12,
+        "clock_bits_before_clk2fflogic": [
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            2
+          ]
+        ],
+        "ports": {
+          "clk": {
+            "direction": "input",
+            "width": 1
+          },
+          "rst": {
+            "direction": "input",
+            "width": 1
+          },
+          "en": {
+            "direction": "input",
+            "width": 1
+          },
+          "data_in": {
+            "direction": "input",
+            "width": 48
+          },
+          "ctrl_in": {
+            "direction": "input",
+            "width": 16
+          },
+          "data_out": {
+            "direction": "output",
+            "width": 12
+          }
+        },
+        "restricted_primitive_model_domains": {
+          "sclr_with_async_controls_inactive": 12
+        }
+      },
+      "rtl": {
+        "source_sha256": [
+          {
+            "path": "D:\\PMUX_20261102_delivery\\relocation r30 all\\cases\\additional5\\pmux_case05_nested.v",
+            "sha256": "57d64edd3704d9d74407145080a63d06390e4a598c419a948fdea22fb1147f1d"
+          }
+        ],
+        "raw_cell_types": {},
+        "normalized_sha256": "3ae4083434cb539e8fbad63c6b3ed618151f440b0c5dea6c1e30fda3836aaf75",
+        "normalized_cell_types": {
+          "$add": 5,
+          "$and": 1,
+          "$or": 2,
+          "$dff": 1,
+          "$mux": 2,
+          "$pmux": 5,
+          "$eq": 10,
+          "$logic_not": 5,
+          "$sub": 2,
+          "$xor": 4
+        },
+        "state_cells": 1,
+        "clock_bits_before_clk2fflogic": [
+          [
+            2
+          ]
+        ],
+        "ports": {
+          "clk": {
+            "direction": "input",
+            "width": 1
+          },
+          "rst": {
+            "direction": "input",
+            "width": 1
+          },
+          "en": {
+            "direction": "input",
+            "width": 1
+          },
+          "data_in": {
+            "direction": "input",
+            "width": 48
+          },
+          "ctrl_in": {
+            "direction": "input",
+            "width": 16
+          },
+          "data_out": {
+            "direction": "output",
+            "width": 12
+          }
+        }
+      }
+    }
+  ],
+  "all_nine_official_proven": false,
+  "contest_score": null,
+  "all_nine_baseline_proven": true,
+  "all_nine_mapped_pair_proven": false
+}

@@ -1,0 +1,22 @@
+[gold]
+read_rtlil rtl.normalized.il
+[gate]
+read_rtlil baseline.normalized.il
+[script]
+hierarchy -check -top test3
+clk2fflogic
+check -assert
+[match test3]
+nodefault
+gold-match clk
+gold-match cs
+gold-match sr_in
+gold-match gpioout
+gold-match sr_out
+gold-match /sr/
+[collect test3]
+group *
+[strategy induction]
+use sat
+depth 20
+timeout 180

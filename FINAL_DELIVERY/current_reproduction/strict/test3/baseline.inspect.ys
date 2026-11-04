@@ -1,0 +1,3 @@
+read_rtlil baseline.source.il
+hierarchy -check -top test3
+write_json baseline.raw.json
