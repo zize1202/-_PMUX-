@@ -1,0 +1,39 @@
+{
+  "schema": 3,
+  "candidate": "r30_native_sload",
+  "purpose": "STAGING_PREPARATION_NOT_FINAL_RELEASE",
+  "not_final_release": true,
+  "pending_current_deliverables": [
+    "books"
+  ],
+  "binaries": {
+    "baseline": "081efb6a2e35a74e13a4bce93d445badfa17767a73b23c9b265b6d9130678545",
+    "optimized": "ba014dfaaeb62ed54f901a3934698062c246ae743d3be3af36768a5c3fb3bc69"
+  },
+  "abc_sha256": "3d8b4f2e5802682bd74d57acd3b0de292189e983c845880eb3c97b2c94dbe0e4",
+  "measurement_scope": "C145_read_verilog_then_synth_intel_process_lifetime_no_added_stat_or_export",
+  "manifest": "cases/official_manifest.json",
+  "proof_entry": "verification/endpoint_nozinit_runner.py",
+  "proof_contract": "Original RTL logical-zero under synthesis semantics -> actual candidate; no mapped-side zinit. Old default baseline test4 counterexample remains historical; it is not the current proof reference.",
+  "archived_optional_status": {
+    "modelsim": "CURRENT_CANDIDATE_BOUND",
+    "scale": "CURRENT_CANDIDATE_BOUND"
+  },
+  "fresh_rebuild_performed": false,
+  "contest_score": null,
+  "historical_migration_evidence_candidate": "r20_native_priority_grouping",
+  "migration_evidence_candidate": "r20_native_priority_grouping",
+  "migration_evidence_is_current": false,
+  "current_migration_all_verified": false,
+  "migration_does_not_replace_main_measurement": true,
+  "source_rebuild_shell": "PowerShell 7 from calling terminal; startup checked, no fresh rebuild performed by staging",
+  "historical_original_binaries": {
+    "baseline": "42ae7772e6669815fa25dcdfb8efb06c1c0f0d9a0fb81bdcb9ce4eae4af48858",
+    "optimized": "efebff04cac47ccdfefc3317d4de14b7f727123a7499243ab9da35ba79f596d9"
+  },
+  "privacy_derivative": {
+    "scope": "Private identity and build path removal only. Algorithm source and executable code sections unchanged.",
+    "historical_evidence_hashes": "Hashes inside historical reports describe the pre-cleaning originals. Consult PRIVACY_CHANGES.json for the distributed-file mapping.",
+    "original_release_package_sha256": "fdd9c8d42e1497c92e6070af34b7c0fc88cbd5688e44fe24fa6bbfbcbc090334"
+  }
+}
