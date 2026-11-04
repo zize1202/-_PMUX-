@@ -1,0 +1,420 @@
+{
+  "scope": "UNTIMED_CANDIDATE_POSTABC_CAPTURE",
+  "included_in_efficiency": false,
+  "complete": true,
+  "cases": [
+    {
+      "id": "test1",
+      "success": true,
+      "cells": {
+        "lut": 202,
+        "inverter": 2,
+        "dff": 222,
+        "io": 0,
+        "other": 0,
+        "unknown": 0,
+        "total_leaf_cells": 426,
+        "logic_units": 204,
+        "cell_types": {
+          "$not": 2,
+          "cycloneiv_lcell_comb": 202,
+          "dffeas": 222
+        },
+        "unknown_types": {},
+        "top_parameter_defaults_raw": {
+          "CYCLE1": "0001",
+          "CYCLE10": "1010",
+          "CYCLE11": "1011",
+          "CYCLE12": "1100",
+          "CYCLE13": "1101",
+          "CYCLE14": "1110",
+          "CYCLE15": "1111",
+          "CYCLE2": "0010",
+          "CYCLE3": "0011",
+          "CYCLE4": "0100",
+          "CYCLE5": "0101",
+          "CYCLE6": "0110",
+          "CYCLE7": "0111",
+          "CYCLE8": "1000",
+          "CYCLE9": "1001",
+          "START": "0000"
+        },
+        "classification_complete": true,
+        "netlist_sha256": "5aaf071cc5d1a49462ecef01ce2544f6b4c54debd17cb176915293c63ef1f011"
+      },
+      "execution": {
+        "command": [
+          "D:\\PMUX_20261102_delivery\\relocation r30 all\\optimized\\bin\\yosys.exe",
+          "-s",
+          "D:\\PMUX_20261102_delivery\\relocation r30 all\\results\\r20261102_072425_992b5bb8\\capture\\scripts\\test1.ys"
+        ],
+        "returncode": 0,
+        "timed_out": false,
+        "log": "D:\\PMUX_20261102_delivery\\relocation r30 all\\results\\r20261102_072425_992b5bb8\\capture\\test1\\yosys.log"
+      },
+      "actual_abc_invocations": [
+        {
+          "logged_command": "\"D:\\PMUX_20261102_delivery\\relocation r30 all\\baseline\\bin\\yosys-abc.exe\" -s -f <abc-temp-dir>/abc.script 2>&1",
+          "resolved_path": "D:\\PMUX_20261102_delivery\\relocation r30 all\\baseline\\bin\\yosys-abc.exe",
+          "sha256": "3d8b4f2e5802682bd74d57acd3b0de292189e983c845880eb3c97b2c94dbe0e4",
+          "matches_requested_binary_bytes": true
+        }
+      ],
+      "postabc_sha256": "15ce113d94640d04bef30619457bd10f0e419f28d45a2a3905a852bbb05163d4",
+      "full_json_sha256": "5aaf071cc5d1a49462ecef01ce2544f6b4c54debd17cb176915293c63ef1f011"
+    },
+    {
+      "id": "test2",
+      "success": true,
+      "cells": {
+        "lut": 15,
+        "inverter": 0,
+        "dff": 0,
+        "io": 0,
+        "other": 0,
+        "unknown": 0,
+        "total_leaf_cells": 15,
+        "logic_units": 15,
+        "cell_types": {
+          "cycloneiv_lcell_comb": 15
+        },
+        "unknown_types": {},
+        "top_parameter_defaults_raw": {},
+        "classification_complete": true,
+        "netlist_sha256": "5a0581d1c63ed666ea6ae16f9f6dae6cba4372262632b1ae8bfdab1fdc04003a"
+      },
+      "execution": {
+        "command": [
+          "D:\\PMUX_20261102_delivery\\relocation r30 all\\optimized\\bin\\yosys.exe",
+          "-s",
+          "D:\\PMUX_20261102_delivery\\relocation r30 all\\results\\r20261102_072425_992b5bb8\\capture\\scripts\\test2.ys"
+        ],
+        "returncode": 0,
+        "timed_out": false,
+        "log": "D:\\PMUX_20261102_delivery\\relocation r30 all\\results\\r20261102_072425_992b5bb8\\capture\\test2\\yosys.log"
+      },
+      "actual_abc_invocations": [
+        {
+          "logged_command": "\"D:\\PMUX_20261102_delivery\\relocation r30 all\\baseline\\bin\\yosys-abc.exe\" -s -f <abc-temp-dir>/abc.script 2>&1",
+          "resolved_path": "D:\\PMUX_20261102_delivery\\relocation r30 all\\baseline\\bin\\yosys-abc.exe",
+          "sha256": "3d8b4f2e5802682bd74d57acd3b0de292189e983c845880eb3c97b2c94dbe0e4",
+          "matches_requested_binary_bytes": true
+        }
+      ],
+      "postabc_sha256": "8f669a1fe3146f08fe77f405926e620806ee2ffeefb9f2d9d96f4f3f6b703828",
+      "full_json_sha256": "5a0581d1c63ed666ea6ae16f9f6dae6cba4372262632b1ae8bfdab1fdc04003a"
+    },
+    {
+      "id": "test3",
+      "success": true,
+      "cells": {
+        "lut": 8,
+        "inverter": 1,
+        "dff": 14,
+        "io": 0,
+        "other": 0,
+        "unknown": 0,
+        "total_leaf_cells": 23,
+        "logic_units": 9,
+        "cell_types": {
+          "$not": 1,
+          "cycloneiv_lcell_comb": 8,
+          "dffeas": 14
+        },
+        "unknown_types": {},
+        "top_parameter_defaults_raw": {},
+        "classification_complete": true,
+        "netlist_sha256": "10a80a7ac0f4bc2be232191b9de2cb4363967a2187287ef6fab5611231f9f67f"
+      },
+      "execution": {
+        "command": [
+          "D:\\PMUX_20261102_delivery\\relocation r30 all\\optimized\\bin\\yosys.exe",
+          "-s",
+          "D:\\PMUX_20261102_delivery\\relocation r30 all\\results\\r20261102_072425_992b5bb8\\capture\\scripts\\test3.ys"
+        ],
+        "returncode": 0,
+        "timed_out": false,
+        "log": "D:\\PMUX_20261102_delivery\\relocation r30 all\\results\\r20261102_072425_992b5bb8\\capture\\test3\\yosys.log"
+      },
+      "actual_abc_invocations": [
+        {
+          "logged_command": "\"D:\\PMUX_20261102_delivery\\relocation r30 all\\baseline\\bin\\yosys-abc.exe\" -s -f <abc-temp-dir>/abc.script 2>&1",
+          "resolved_path": "D:\\PMUX_20261102_delivery\\relocation r30 all\\baseline\\bin\\yosys-abc.exe",
+          "sha256": "3d8b4f2e5802682bd74d57acd3b0de292189e983c845880eb3c97b2c94dbe0e4",
+          "matches_requested_binary_bytes": true
+        }
+      ],
+      "postabc_sha256": "3517570995a24ee4ecee9efda253b5d58d4c1314581bd4af9d90ebe30eb445ad",
+      "full_json_sha256": "10a80a7ac0f4bc2be232191b9de2cb4363967a2187287ef6fab5611231f9f67f"
+    },
+    {
+      "id": "test4",
+      "success": true,
+      "cells": {
+        "lut": 27,
+        "inverter": 1,
+        "dff": 10,
+        "io": 0,
+        "other": 0,
+        "unknown": 0,
+        "total_leaf_cells": 38,
+        "logic_units": 28,
+        "cell_types": {
+          "$not": 1,
+          "cycloneiv_lcell_comb": 27,
+          "dffeas": 10
+        },
+        "unknown_types": {},
+        "top_parameter_defaults_raw": {},
+        "classification_complete": true,
+        "netlist_sha256": "553807666a3a392dbc67c3cbfc2c808d8984efa70ca77cbba5b8c78e6ef06083"
+      },
+      "execution": {
+        "command": [
+          "D:\\PMUX_20261102_delivery\\relocation r30 all\\optimized\\bin\\yosys.exe",
+          "-s",
+          "D:\\PMUX_20261102_delivery\\relocation r30 all\\results\\r20261102_072425_992b5bb8\\capture\\scripts\\test4.ys"
+        ],
+        "returncode": 0,
+        "timed_out": false,
+        "log": "D:\\PMUX_20261102_delivery\\relocation r30 all\\results\\r20261102_072425_992b5bb8\\capture\\test4\\yosys.log"
+      },
+      "actual_abc_invocations": [
+        {
+          "logged_command": "\"D:\\PMUX_20261102_delivery\\relocation r30 all\\baseline\\bin\\yosys-abc.exe\" -s -f <abc-temp-dir>/abc.script 2>&1",
+          "resolved_path": "D:\\PMUX_20261102_delivery\\relocation r30 all\\baseline\\bin\\yosys-abc.exe",
+          "sha256": "3d8b4f2e5802682bd74d57acd3b0de292189e983c845880eb3c97b2c94dbe0e4",
+          "matches_requested_binary_bytes": true
+        }
+      ],
+      "postabc_sha256": "7cce2d2915973730ab3194382f0696a0e7f369bdb4d8dfdffcbc4d6919096714",
+      "full_json_sha256": "553807666a3a392dbc67c3cbfc2c808d8984efa70ca77cbba5b8c78e6ef06083"
+    },
+    {
+      "id": "pmux_case01_balanced",
+      "success": true,
+      "cells": {
+        "lut": 239,
+        "inverter": 0,
+        "dff": 12,
+        "io": 0,
+        "other": 0,
+        "unknown": 0,
+        "total_leaf_cells": 251,
+        "logic_units": 239,
+        "cell_types": {
+          "cycloneiv_lcell_comb": 239,
+          "dffeas": 12
+        },
+        "unknown_types": {},
+        "top_parameter_defaults_raw": {
+          "LANES": "00000000000000000000000000000001",
+          "WIDTH": "00000000000000000000000000001100"
+        },
+        "classification_complete": true,
+        "netlist_sha256": "c400e57029f95f68b0019b2e81162c65a1717da9ca1619da22310e12d28959b2"
+      },
+      "execution": {
+        "command": [
+          "D:\\PMUX_20261102_delivery\\relocation r30 all\\optimized\\bin\\yosys.exe",
+          "-s",
+          "D:\\PMUX_20261102_delivery\\relocation r30 all\\results\\r20261102_072425_992b5bb8\\capture\\scripts\\pmux_case01_balanced.ys"
+        ],
+        "returncode": 0,
+        "timed_out": false,
+        "log": "D:\\PMUX_20261102_delivery\\relocation r30 all\\results\\r20261102_072425_992b5bb8\\capture\\pmux_case01_balanced\\yosys.log"
+      },
+      "actual_abc_invocations": [
+        {
+          "logged_command": "\"D:\\PMUX_20261102_delivery\\relocation r30 all\\baseline\\bin\\yosys-abc.exe\" -s -f <abc-temp-dir>/abc.script 2>&1",
+          "resolved_path": "D:\\PMUX_20261102_delivery\\relocation r30 all\\baseline\\bin\\yosys-abc.exe",
+          "sha256": "3d8b4f2e5802682bd74d57acd3b0de292189e983c845880eb3c97b2c94dbe0e4",
+          "matches_requested_binary_bytes": true
+        }
+      ],
+      "postabc_sha256": "fc64d42476707f958db80f3e5a935aed40f22051a2d326937b76247e06087218",
+      "full_json_sha256": "c400e57029f95f68b0019b2e81162c65a1717da9ca1619da22310e12d28959b2"
+    },
+    {
+      "id": "pmux_case02_pipeline",
+      "success": true,
+      "cells": {
+        "lut": 305,
+        "inverter": 0,
+        "dff": 24,
+        "io": 0,
+        "other": 0,
+        "unknown": 0,
+        "total_leaf_cells": 329,
+        "logic_units": 305,
+        "cell_types": {
+          "cycloneiv_lcell_comb": 305,
+          "dffeas": 24
+        },
+        "unknown_types": {},
+        "top_parameter_defaults_raw": {
+          "LANES": "00000000000000000000000000000100",
+          "WIDTH": "00000000000000000000000000000011"
+        },
+        "classification_complete": true,
+        "netlist_sha256": "2083df990bd8daf8ad5d6c6e13ae48458c3ee12da1064813bef6e4799158acee"
+      },
+      "execution": {
+        "command": [
+          "D:\\PMUX_20261102_delivery\\relocation r30 all\\optimized\\bin\\yosys.exe",
+          "-s",
+          "D:\\PMUX_20261102_delivery\\relocation r30 all\\results\\r20261102_072425_992b5bb8\\capture\\scripts\\pmux_case02_pipeline.ys"
+        ],
+        "returncode": 0,
+        "timed_out": false,
+        "log": "D:\\PMUX_20261102_delivery\\relocation r30 all\\results\\r20261102_072425_992b5bb8\\capture\\pmux_case02_pipeline\\yosys.log"
+      },
+      "actual_abc_invocations": [
+        {
+          "logged_command": "\"D:\\PMUX_20261102_delivery\\relocation r30 all\\baseline\\bin\\yosys-abc.exe\" -s -f <abc-temp-dir>/abc.script 2>&1",
+          "resolved_path": "D:\\PMUX_20261102_delivery\\relocation r30 all\\baseline\\bin\\yosys-abc.exe",
+          "sha256": "3d8b4f2e5802682bd74d57acd3b0de292189e983c845880eb3c97b2c94dbe0e4",
+          "matches_requested_binary_bytes": true
+        }
+      ],
+      "postabc_sha256": "e42d66ff6f746eb46750fe0cfdfdc6022a724e33efb29d638cc9e6006ca1ebbc",
+      "full_json_sha256": "2083df990bd8daf8ad5d6c6e13ae48458c3ee12da1064813bef6e4799158acee"
+    },
+    {
+      "id": "pmux_case03_crossbar",
+      "success": true,
+      "cells": {
+        "lut": 241,
+        "inverter": 0,
+        "dff": 10,
+        "io": 0,
+        "other": 0,
+        "unknown": 0,
+        "total_leaf_cells": 251,
+        "logic_units": 241,
+        "cell_types": {
+          "cycloneiv_lcell_comb": 241,
+          "dffeas": 10
+        },
+        "unknown_types": {},
+        "top_parameter_defaults_raw": {
+          "LANES": "00000000000000000000000000000010",
+          "WIDTH": "00000000000000000000000000000101"
+        },
+        "classification_complete": true,
+        "netlist_sha256": "98fdf0d2d4107af34c3099ab240ab21ea259d9eecca4e13b546588f3ffcb9da4"
+      },
+      "execution": {
+        "command": [
+          "D:\\PMUX_20261102_delivery\\relocation r30 all\\optimized\\bin\\yosys.exe",
+          "-s",
+          "D:\\PMUX_20261102_delivery\\relocation r30 all\\results\\r20261102_072425_992b5bb8\\capture\\scripts\\pmux_case03_crossbar.ys"
+        ],
+        "returncode": 0,
+        "timed_out": false,
+        "log": "D:\\PMUX_20261102_delivery\\relocation r30 all\\results\\r20261102_072425_992b5bb8\\capture\\pmux_case03_crossbar\\yosys.log"
+      },
+      "actual_abc_invocations": [
+        {
+          "logged_command": "\"D:\\PMUX_20261102_delivery\\relocation r30 all\\baseline\\bin\\yosys-abc.exe\" -s -f <abc-temp-dir>/abc.script 2>&1",
+          "resolved_path": "D:\\PMUX_20261102_delivery\\relocation r30 all\\baseline\\bin\\yosys-abc.exe",
+          "sha256": "3d8b4f2e5802682bd74d57acd3b0de292189e983c845880eb3c97b2c94dbe0e4",
+          "matches_requested_binary_bytes": true
+        }
+      ],
+      "postabc_sha256": "a3c89057c01a748cde5941581599bb075600cff67e245bd86075a82b3c083d18",
+      "full_json_sha256": "98fdf0d2d4107af34c3099ab240ab21ea259d9eecca4e13b546588f3ffcb9da4"
+    },
+    {
+      "id": "pmux_case04_feedback",
+      "success": true,
+      "cells": {
+        "lut": 207,
+        "inverter": 1,
+        "dff": 16,
+        "io": 0,
+        "other": 0,
+        "unknown": 0,
+        "total_leaf_cells": 224,
+        "logic_units": 208,
+        "cell_types": {
+          "$not": 1,
+          "cycloneiv_lcell_comb": 207,
+          "dffeas": 16
+        },
+        "unknown_types": {},
+        "top_parameter_defaults_raw": {
+          "LANES": "00000000000000000000000000000010",
+          "WIDTH": "00000000000000000000000000001000"
+        },
+        "classification_complete": true,
+        "netlist_sha256": "c83e852d1d102fa945621e401a2eb489cf1c27c4daaef8252421e0f834a677da"
+      },
+      "execution": {
+        "command": [
+          "D:\\PMUX_20261102_delivery\\relocation r30 all\\optimized\\bin\\yosys.exe",
+          "-s",
+          "D:\\PMUX_20261102_delivery\\relocation r30 all\\results\\r20261102_072425_992b5bb8\\capture\\scripts\\pmux_case04_feedback.ys"
+        ],
+        "returncode": 0,
+        "timed_out": false,
+        "log": "D:\\PMUX_20261102_delivery\\relocation r30 all\\results\\r20261102_072425_992b5bb8\\capture\\pmux_case04_feedback\\yosys.log"
+      },
+      "actual_abc_invocations": [
+        {
+          "logged_command": "\"D:\\PMUX_20261102_delivery\\relocation r30 all\\baseline\\bin\\yosys-abc.exe\" -s -f <abc-temp-dir>/abc.script 2>&1",
+          "resolved_path": "D:\\PMUX_20261102_delivery\\relocation r30 all\\baseline\\bin\\yosys-abc.exe",
+          "sha256": "3d8b4f2e5802682bd74d57acd3b0de292189e983c845880eb3c97b2c94dbe0e4",
+          "matches_requested_binary_bytes": true
+        }
+      ],
+      "postabc_sha256": "ad6d7c8cbf566e9f1564f22ba74d95a178a3ed6502d9eaa7664d0966fd7f533a",
+      "full_json_sha256": "c83e852d1d102fa945621e401a2eb489cf1c27c4daaef8252421e0f834a677da"
+    },
+    {
+      "id": "pmux_case05_nested",
+      "success": true,
+      "cells": {
+        "lut": 233,
+        "inverter": 0,
+        "dff": 12,
+        "io": 0,
+        "other": 0,
+        "unknown": 0,
+        "total_leaf_cells": 245,
+        "logic_units": 233,
+        "cell_types": {
+          "cycloneiv_lcell_comb": 233,
+          "dffeas": 12
+        },
+        "unknown_types": {},
+        "top_parameter_defaults_raw": {
+          "LANES": "00000000000000000000000000000001",
+          "WIDTH": "00000000000000000000000000001100"
+        },
+        "classification_complete": true,
+        "netlist_sha256": "141e1bcec8f08aac69a6641f9041fa92fe9947adbaa6da2bb88a65133f2f6ae9"
+      },
+      "execution": {
+        "command": [
+          "D:\\PMUX_20261102_delivery\\relocation r30 all\\optimized\\bin\\yosys.exe",
+          "-s",
+          "D:\\PMUX_20261102_delivery\\relocation r30 all\\results\\r20261102_072425_992b5bb8\\capture\\scripts\\pmux_case05_nested.ys"
+        ],
+        "returncode": 0,
+        "timed_out": false,
+        "log": "D:\\PMUX_20261102_delivery\\relocation r30 all\\results\\r20261102_072425_992b5bb8\\capture\\pmux_case05_nested\\yosys.log"
+      },
+      "actual_abc_invocations": [
+        {
+          "logged_command": "\"D:\\PMUX_20261102_delivery\\relocation r30 all\\baseline\\bin\\yosys-abc.exe\" -s -f <abc-temp-dir>/abc.script 2>&1",
+          "resolved_path": "D:\\PMUX_20261102_delivery\\relocation r30 all\\baseline\\bin\\yosys-abc.exe",
+          "sha256": "3d8b4f2e5802682bd74d57acd3b0de292189e983c845880eb3c97b2c94dbe0e4",
+          "matches_requested_binary_bytes": true
+        }
+      ],
+      "postabc_sha256": "db3e69ecd831e0538987af81ab1fa13bac08a7cce8c34e188e2ce6bd87036e6b",
+      "full_json_sha256": "141e1bcec8f08aac69a6641f9041fa92fe9947adbaa6da2bb88a65133f2f6ae9"
+    }
+  ]
+}
