@@ -1,0 +1,166 @@
+{
+  "schema": 1,
+  "official_cases_confirmed": true,
+  "provenance_scope": "Confirmed as official by user; organizer release identity not independently authenticated.",
+  "description": "Original four plus additional five. Source bytes and default parameters unmodified.",
+  "cases": [
+    {
+      "id": "test1",
+      "path": "original4/competition_case/test1/test1.v",
+      "top": "test1",
+      "default_parameters": {
+        "START": 0,
+        "CYCLE1": 1,
+        "CYCLE2": 2,
+        "CYCLE3": 3,
+        "CYCLE4": 4,
+        "CYCLE5": 5,
+        "CYCLE6": 6,
+        "CYCLE7": 7,
+        "CYCLE8": 8,
+        "CYCLE9": 9,
+        "CYCLE10": 10,
+        "CYCLE11": 11,
+        "CYCLE12": 12,
+        "CYCLE13": 13,
+        "CYCLE14": 14,
+        "CYCLE15": 15
+      },
+      "source_sha256": {
+        "test1.v": "2d2dba011b0e8799d0de3790b69b7f01c6eb6ac665c4321b57b0378a4972fd13"
+      },
+      "cohort": "original4",
+      "sequential": true,
+      "rtl_overview": "16-state registered data selection; asynchronous active-high reset.",
+      "provenance": "User supplied as official cases on 2026-11-01; archive D:\\xwechat_files\\archive_account\\msg\\file\\2026-11\\pmux_case(1).rar",
+      "archive_sha256": "f1834959f3bcd406a5bc05afb207f26d858941764d4b946113b72cdc747c93bc"
+    },
+    {
+      "id": "test2",
+      "path": "original4/competition_case/test2/test2.v",
+      "top": "test2",
+      "default_parameters": {},
+      "source_sha256": {
+        "test2.v": "e43c9b437071488551caf3121e227e86f4fe3190751f245beac3b7ecc3fdb146"
+      },
+      "cohort": "original4",
+      "sequential": false,
+      "rtl_overview": "Combinational priority selection. Original explicit sensitivity list omits d/datad; unchanged source. clk is unused.",
+      "provenance": "User supplied as official cases on 2026-11-01; archive D:\\xwechat_files\\archive_account\\msg\\file\\2026-11\\pmux_case(1).rar",
+      "archive_sha256": "f1834959f3bcd406a5bc05afb207f26d858941764d4b946113b72cdc747c93bc"
+    },
+    {
+      "id": "test3",
+      "path": "original4/competition_case/test3/test3.v",
+      "top": "test3",
+      "default_parameters": {},
+      "source_sha256": {
+        "test3.v": "1551b9212622ccef6019d6e77de2c43dc8c80d267957b55a42121f34a08780e9"
+      },
+      "cohort": "original4",
+      "sequential": true,
+      "rtl_overview": "Clocked shift register and GPIO register update, no explicit reset/initialization.",
+      "provenance": "User supplied as official cases on 2026-11-01; archive D:\\xwechat_files\\archive_account\\msg\\file\\2026-11\\pmux_case(1).rar",
+      "archive_sha256": "f1834959f3bcd406a5bc05afb207f26d858941764d4b946113b72cdc747c93bc"
+    },
+    {
+      "id": "test4",
+      "path": "original4/competition_case/test4/test4.v",
+      "top": "test4",
+      "default_parameters": {},
+      "source_sha256": {
+        "test4.v": "c0c5042928bd6bf568e2b7fb2193f2b6db9c4193ba3a5378fc50a331d43422d7"
+      },
+      "cohort": "original4",
+      "sequential": true,
+      "rtl_overview": "Registered 5b-to-6b decode with active-low asynchronous reset. datain_5bis7 is not assigned in reset branch; unchanged source.",
+      "provenance": "User supplied as official cases on 2026-11-01; archive D:\\xwechat_files\\archive_account\\msg\\file\\2026-11\\pmux_case(1).rar",
+      "archive_sha256": "f1834959f3bcd406a5bc05afb207f26d858941764d4b946113b72cdc747c93bc"
+    },
+    {
+      "id": "pmux_case01_balanced",
+      "path": "additional5/pmux_case01_balanced.v",
+      "top": "pmux_case01_balanced",
+      "default_parameters": {
+        "LANES": 1,
+        "WIDTH": 12
+      },
+      "source_sha256": {
+        "pmux_case01_balanced.v": "463263f4b265cbad3b634d69d316cd29e7ea0a62f91ee396dbeeecf7df5c7343"
+      },
+      "cohort": "additional5",
+      "sequential": true,
+      "rtl_overview": "Balanced PMUX network with arithmetic and output q register; synchronous reset.",
+      "provenance": "User supplied as official cases on 2026-11-01; archive D:\\xwechat_files\\archive_account\\msg\\file\\2026-11\\pmux_cases.zip",
+      "archive_sha256": "03a2aaf3c3aeccb50f2633df949fd5d88e8c4bcc0090f81099e5cb21d231fe9e"
+    },
+    {
+      "id": "pmux_case02_pipeline",
+      "path": "additional5/pmux_case02_pipeline.v",
+      "top": "pmux_case02_pipeline",
+      "default_parameters": {
+        "LANES": 4,
+        "WIDTH": 3
+      },
+      "source_sha256": {
+        "pmux_case02_pipeline.v": "8639081b2fb7c446edef52a514d63b49333e444ce21638f03bdee97dc954e0ea"
+      },
+      "cohort": "additional5",
+      "sequential": true,
+      "rtl_overview": "Two register stages (mid/q) and inter-lane coupling; synchronous reset.",
+      "provenance": "User supplied as official cases on 2026-11-01; archive D:\\xwechat_files\\archive_account\\msg\\file\\2026-11\\pmux_cases.zip",
+      "archive_sha256": "03a2aaf3c3aeccb50f2633df949fd5d88e8c4bcc0090f81099e5cb21d231fe9e"
+    },
+    {
+      "id": "pmux_case03_crossbar",
+      "path": "additional5/pmux_case03_crossbar.v",
+      "top": "pmux_case03_crossbar",
+      "default_parameters": {
+        "LANES": 2,
+        "WIDTH": 5
+      },
+      "source_sha256": {
+        "pmux_case03_crossbar.v": "bf1fc3bf6383beb007a69587d77a29ea74fb1fbdf7429fb401c0855a31c05932"
+      },
+      "cohort": "additional5",
+      "sequential": true,
+      "rtl_overview": "Crossbar-style lane selection with q register and feedback; synchronous reset.",
+      "provenance": "User supplied as official cases on 2026-11-01; archive D:\\xwechat_files\\archive_account\\msg\\file\\2026-11\\pmux_cases.zip",
+      "archive_sha256": "03a2aaf3c3aeccb50f2633df949fd5d88e8c4bcc0090f81099e5cb21d231fe9e"
+    },
+    {
+      "id": "pmux_case04_feedback",
+      "path": "additional5/pmux_case04_feedback.v",
+      "top": "pmux_case04_feedback",
+      "default_parameters": {
+        "LANES": 2,
+        "WIDTH": 8
+      },
+      "source_sha256": {
+        "pmux_case04_feedback.v": "d668d258d804674dd1412538e7bce04d4630d02928ffe113413b536e6b9ed70f"
+      },
+      "cohort": "additional5",
+      "sequential": true,
+      "rtl_overview": "Arithmetic feedback and enabled q register; asynchronous active-high reset.",
+      "provenance": "User supplied as official cases on 2026-11-01; archive D:\\xwechat_files\\archive_account\\msg\\file\\2026-11\\pmux_cases.zip",
+      "archive_sha256": "03a2aaf3c3aeccb50f2633df949fd5d88e8c4bcc0090f81099e5cb21d231fe9e"
+    },
+    {
+      "id": "pmux_case05_nested",
+      "path": "additional5/pmux_case05_nested.v",
+      "top": "pmux_case05_nested",
+      "default_parameters": {
+        "LANES": 1,
+        "WIDTH": 12
+      },
+      "source_sha256": {
+        "pmux_case05_nested.v": "57d64edd3704d9d74407145080a63d06390e4a598c419a948fdea22fb1147f1d"
+      },
+      "cohort": "additional5",
+      "sequential": true,
+      "rtl_overview": "Nested selection with q register; synchronous reset.",
+      "provenance": "User supplied as official cases on 2026-11-01; archive D:\\xwechat_files\\archive_account\\msg\\file\\2026-11\\pmux_cases.zip",
+      "archive_sha256": "03a2aaf3c3aeccb50f2633df949fd5d88e8c4bcc0090f81099e5cb21d231fe9e"
+    }
+  ]
+}
