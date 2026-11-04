@@ -1,0 +1,172 @@
+{
+  "main_file": "main.tex",
+  "prepared_text_only": false,
+  "pending_assets": [],
+  "compiled_by_this_script": false,
+  "contest": "2026 FPGA赛道选题二 PMUX结构优化",
+  "template_source": "D:\\PMUX_20261102_delivery\\final\\book_source\\template.docx",
+  "template_sha256": "d15a2aa186f600cb9c234bffd9deff0c4e9b05c569643d8a81d536f66f424f0c",
+  "template_note": "根据用户提供的Word模板重建LaTeX排版，并非主办方发布的原生LaTeX模板。",
+  "content_source": "D:\\PMUX_20261102_delivery\\final\\book_source\\content.py",
+  "content_sha256": "3247f7d7fa3cf656732db5c8d7df429fdd136763e602673b0ed87fd0e7b635a4",
+  "main_sha256": "85733c45d4c8df8ea55043ad3e092d1f30784a14a6d5cd880fb32fd2f5dbd228",
+  "block_count": 245,
+  "block_types": {
+    "title": 1,
+    "h": 20,
+    "p": 133,
+    "table": 20,
+    "sub": 25,
+    "figure": 14,
+    "equation": 18,
+    "code": 3,
+    "reference": 11
+  },
+  "assets": [
+    {
+      "source": "D:\\PMUX_20261102_delivery\\final\\book_source\\word\\media\\image1.png",
+      "destination": "images\\contest_logo.png",
+      "sha256": "787db8fa20de80a88e406e5eb8bc8c3076d71592635851045bb8a8cbfb4aaadc"
+    },
+    {
+      "source": "D:\\PMUX_20261102_delivery\\final\\book_source\\figures\\architecture.png",
+      "destination": "images\\architecture.png",
+      "sha256": "cdeff9e19e96e45e048faaf17799b95d7fca6804a2431d7fd3bdc8b70b16338c"
+    },
+    {
+      "source": "D:\\PMUX_20261102_delivery\\final\\book_source\\figures\\architecture.pdf",
+      "destination": "images\\architecture.pdf",
+      "sha256": "6819cef0f4fd995853f9cee04611b21aef93fd3555265affeeb0aab667924b73"
+    },
+    {
+      "source": "D:\\PMUX_20261102_delivery\\final\\book_source\\figures\\control_recovery.png",
+      "destination": "images\\control_recovery.png",
+      "sha256": "1475fda1c84a83f4a9823e32c4066bfc6f3cd8828fbca25effc559e11a5a607b"
+    },
+    {
+      "source": "D:\\PMUX_20261102_delivery\\final\\book_source\\figures\\control_recovery.pdf",
+      "destination": "images\\control_recovery.pdf",
+      "sha256": "9eda42fa9045ac570db977328061a74b72b38a0bc3d45414fac1dd9008a36213"
+    },
+    {
+      "source": "D:\\PMUX_20261102_delivery\\final\\book_source\\figures\\word_factor.png",
+      "destination": "images\\word_factor.png",
+      "sha256": "4f36fda5ce4b3053c91d2fd6e164ca824bd66ffe10d3219cd5c8ef6bcd1711f7"
+    },
+    {
+      "source": "D:\\PMUX_20261102_delivery\\final\\book_source\\figures\\word_factor.pdf",
+      "destination": "images\\word_factor.pdf",
+      "sha256": "f893d2cd6442580d5a69e0e03e6828dc77c5dab874d1b7303f9f6ed6d73d53af"
+    },
+    {
+      "source": "D:\\PMUX_20261102_delivery\\final\\book_source\\figures\\candidate_flow.png",
+      "destination": "images\\candidate_flow.png",
+      "sha256": "612452bfb689fa3e0e1f2794160b2b287d380c9fba250c6143957a2886c22371"
+    },
+    {
+      "source": "D:\\PMUX_20261102_delivery\\final\\book_source\\figures\\candidate_flow.pdf",
+      "destination": "images\\candidate_flow.pdf",
+      "sha256": "b8e0592a7ebfa451840ad21989bd3ddc74c61d081709124d2697313f5ab753c3"
+    },
+    {
+      "source": "D:\\PMUX_20261102_delivery\\final\\book_source\\figures\\proof_chain.png",
+      "destination": "images\\proof_chain.png",
+      "sha256": "c894a857418b2dcb3c47a1d7328f2494bca39eb555341e9b898fe5c2f95beb3e"
+    },
+    {
+      "source": "D:\\PMUX_20261102_delivery\\final\\book_source\\figures\\proof_chain.pdf",
+      "destination": "images\\proof_chain.pdf",
+      "sha256": "cfd488461b64dc0965cbcc35e68c8f02caca50e6c7f2068bd4d6ffabed65d83f"
+    },
+    {
+      "source": "D:\\PMUX_20261102_delivery\\final\\book_source\\figures\\area_results.png",
+      "destination": "images\\area_results.png",
+      "sha256": "04880d9a01fdd28bbb433086f040df5fd6cbf0d68202218677834407e1215d5f"
+    },
+    {
+      "source": "D:\\PMUX_20261102_delivery\\final\\book_source\\figures\\area_results.pdf",
+      "destination": "images\\area_results.pdf",
+      "sha256": "7928dac600c1b6d5687576a4da2fc42d56cbb202c7c9e5bdac971b6fd904f0a1"
+    },
+    {
+      "source": "D:\\PMUX_20261102_delivery\\final\\book_source\\figures\\performance_results.png",
+      "destination": "images\\performance_results.png",
+      "sha256": "75071646dd635eab9219e1dec511aa8530a316d5415b0de478b3784460ad3a04"
+    },
+    {
+      "source": "D:\\PMUX_20261102_delivery\\final\\book_source\\figures\\performance_results.pdf",
+      "destination": "images\\performance_results.pdf",
+      "sha256": "add8b496e19886d280bb840025f69087009ca5eecc37e0035540bd0a9550560d"
+    },
+    {
+      "source": "D:\\PMUX_20261102_delivery\\final\\book_source\\figures\\modelsim_zero_init.png",
+      "destination": "images\\modelsim_zero_init.png",
+      "sha256": "889a38fc28388533bb3411f541513cd750f76523cc768270db6bb1075f37cc1b"
+    },
+    {
+      "source": "D:\\PMUX_20261102_delivery\\final\\book_source\\figures\\modelsim_zero_init.pdf",
+      "destination": "images\\modelsim_zero_init.pdf",
+      "sha256": "7d21a06fd9c7c565ea4523531f1d6419bec632422f58ebea59b8e94fa31a2312"
+    },
+    {
+      "source": "D:\\PMUX_20261102_delivery\\final\\book_source\\figures\\modelsim_zero_overview.png",
+      "destination": "images\\modelsim_zero_overview.png",
+      "sha256": "6e98d8a28559f25472405e2fe44bc3541cfc1009a647eeb9faaa94a80857ca8c"
+    },
+    {
+      "source": "D:\\PMUX_20261102_delivery\\final\\book_source\\figures\\modelsim_zero_overview.pdf",
+      "destination": "images\\modelsim_zero_overview.pdf",
+      "sha256": "c37c386b1f992bdfeb5f2800a4ddaca6acf5dc350f4c659a991dab1393ff1051"
+    },
+    {
+      "source": "D:\\PMUX_20261102_delivery\\final\\book_source\\figures\\modelsim_zero_detail.png",
+      "destination": "images\\modelsim_zero_detail.png",
+      "sha256": "1d72cc4214e96edbab4ce6a88b5ed51380a628c7093a96d7286afd54fa86c330"
+    },
+    {
+      "source": "D:\\PMUX_20261102_delivery\\final\\book_source\\figures\\modelsim_zero_detail.pdf",
+      "destination": "images\\modelsim_zero_detail.pdf",
+      "sha256": "8addce5cbd6752b591de765a44ade3ce1695179cf775414ab708ac918429416f"
+    },
+    {
+      "source": "D:\\PMUX_20261102_delivery\\final\\book_source\\figures\\modelsim_zero_finish.png",
+      "destination": "images\\modelsim_zero_finish.png",
+      "sha256": "c10178a09db5e13d15d6eb094d00f9a9bd63af6078a7c17795db2e9773f9a18a"
+    },
+    {
+      "source": "D:\\PMUX_20261102_delivery\\final\\book_source\\figures\\modelsim_zero_finish.pdf",
+      "destination": "images\\modelsim_zero_finish.pdf",
+      "sha256": "e204248da62d05e44995c50384b74e8c1532c125c29245bfdeb63e1d6ca98b8c"
+    },
+    {
+      "source": "D:\\PMUX_20261102_delivery\\final\\book_source\\figures\\modelsim_observable.png",
+      "destination": "images\\modelsim_observable.png",
+      "sha256": "793a2381f4801fd3775aaecf0d31f1d4985593bf0ebfb6134710f265b59d9ee0"
+    },
+    {
+      "source": "D:\\PMUX_20261102_delivery\\final\\book_source\\figures\\modelsim_observable.pdf",
+      "destination": "images\\modelsim_observable.pdf",
+      "sha256": "d51c87bc66d5ac95ee464f75a7fcb00f542a8116749bd1ccb7aea3d7853df680"
+    },
+    {
+      "source": "D:\\PMUX_20261102_delivery\\final\\book_source\\figures\\modelsim_sampling_boundary.png",
+      "destination": "images\\modelsim_sampling_boundary.png",
+      "sha256": "d2c4a44abb5f67b97ee8abdea9c2ebc833e795d4d0b5a0c5c314868b71659a7f"
+    },
+    {
+      "source": "D:\\PMUX_20261102_delivery\\final\\book_source\\figures\\modelsim_sampling_boundary.pdf",
+      "destination": "images\\modelsim_sampling_boundary.pdf",
+      "sha256": "0af00883b5cf56ba7a38641e4b5e7649b9cca64ba8d9832e39e661479df9d9ac"
+    },
+    {
+      "source": "D:\\PMUX_20261102_delivery\\final\\book_source\\figures\\modelsim_sload_selection.png",
+      "destination": "images\\modelsim_sload_selection.png",
+      "sha256": "f390f2f67f1c7902ca7c7a32247a970141c5007d241ee4660976b0c4749927c2"
+    },
+    {
+      "source": "D:\\PMUX_20261102_delivery\\final\\book_source\\figures\\modelsim_sload_selection.pdf",
+      "destination": "images\\modelsim_sload_selection.pdf",
+      "sha256": "76da592af15734946f3335f418a3ed0839a06d973db3e5024f5ed73d21ad1b80"
+    }
+  ]
+}
