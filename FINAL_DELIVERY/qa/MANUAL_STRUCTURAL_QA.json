@@ -1,0 +1,14 @@
+{
+  "pages": 4,
+  "missing_text": [],
+  "all_tables_three_line": true,
+  "fonts": {
+    "/BCDEEE+DengXian": true,
+    "/BCDFEE+TimesNewRomanPSMT": true,
+    "/BCDGEE+SimSun": true,
+    "/BCDHEE+TimesNewRomanPS-BoldMT": true,
+    "/BCDIEE+TimesNewRomanPSMT": true
+  },
+  "pdf_sha256": "7915fb2c5930b351ad6b3308ebbaf58d675b64eaf952908bb6b9a38ec0ed7ed8",
+  "status": "PASS"
+}

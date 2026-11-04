@@ -1,0 +1,146 @@
+{
+  "created_utc": "2026-11-01T23:42:34.149700+00:00",
+  "status": "NEEDS_LAYOUT_TIDYUP",
+  "scope": "Read-only visual review of all existing contact sheets and selected existing full-page PNGs; no rerender, source edit, algorithm execution, benchmark, proof or simulation.",
+  "reviewer": "/root/algorithm_next_review",
+  "secondary_reviewer": "/root/algorithm_next_review/latex_tail_visual",
+  "pdf": {
+    "path": "D:\\PMUX_20261102_delivery\\final\\PMUX_R30_ProjectBook\\latex\\main.pdf",
+    "sha256": "4d144e31695105ac6be90dc2963d30c000d09058fda3261a34d81d66cabb7ab4",
+    "bytes": 1361660,
+    "page_count": 39
+  },
+  "contact_sheets_viewed_by_primary": [
+    {
+      "path": "D:\\PMUX_20261102_delivery\\final\\book_source\\render_latex\\contact-01.jpg",
+      "sha256": "a3b04bfee6a8f57f3f0ad30fb3b660e0b5aa09ee057876189610e649aaa292e3"
+    },
+    {
+      "path": "D:\\PMUX_20261102_delivery\\final\\book_source\\render_latex\\contact-07.jpg",
+      "sha256": "db69dfee0b90e62abe7f42c34d6449a21326aeae322051377c1f22de56cd3038"
+    },
+    {
+      "path": "D:\\PMUX_20261102_delivery\\final\\book_source\\render_latex\\contact-13.jpg",
+      "sha256": "cdb5d924553b2227e09d063c09ab3b681817d625808d1001de9e7a260b80ca7a"
+    },
+    {
+      "path": "D:\\PMUX_20261102_delivery\\final\\book_source\\render_latex\\contact-19.jpg",
+      "sha256": "6a26f6d08a0a2db1605cf0d4f91e1947fe1a6052d6e92cf90113a26d7b15ec43"
+    },
+    {
+      "path": "D:\\PMUX_20261102_delivery\\final\\book_source\\render_latex\\contact-25.jpg",
+      "sha256": "28521ccbfb616c682b8502105293fb4e3e7826688ea231762869ad02e14fc5fd"
+    },
+    {
+      "path": "D:\\PMUX_20261102_delivery\\final\\book_source\\render_latex\\contact-31.jpg",
+      "sha256": "76b6d2d5b79945c26d82f3df46a2aa40e72dba722dffa55dabda04c00f825c84"
+    },
+    {
+      "path": "D:\\PMUX_20261102_delivery\\final\\book_source\\render_latex\\contact-37.jpg",
+      "sha256": "0e009b9592af00a9a90b7aed094bd410fdfb602463d6f17c18f49229deee203e"
+    }
+  ],
+  "primary_full_pages_viewed": [
+    4,
+    17,
+    18,
+    34,
+    38,
+    39
+  ],
+  "secondary_contacts_viewed": [
+    25,
+    31,
+    37
+  ],
+  "secondary_full_pages_viewed": [
+    26,
+    28,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39
+  ],
+  "full_page_bindings": [
+    {
+      "page": 4,
+      "path": "D:\\PMUX_20261102_delivery\\final\\book_source\\render_latex\\page-04.png",
+      "sha256": "c2f9d668930189e0dd582286eec62424787b420f9eb5e52e8b8249f7ff6fd58c"
+    },
+    {
+      "page": 17,
+      "path": "D:\\PMUX_20261102_delivery\\final\\book_source\\render_latex\\page-17.png",
+      "sha256": "31b5f9089b52af60761c97d34051630bd81db55580dcd814b15b6300c759c15d"
+    },
+    {
+      "page": 18,
+      "path": "D:\\PMUX_20261102_delivery\\final\\book_source\\render_latex\\page-18.png",
+      "sha256": "f375a5732c071a9e57cab8a0e8b040fdbc3a84e12237e2aae7a653068b81063e"
+    },
+    {
+      "page": 26,
+      "path": "D:\\PMUX_20261102_delivery\\final\\book_source\\render_latex\\page-26.png",
+      "sha256": "730bab943b85e9bfedb173cca46e09f3391c7abe2aafdd610f0702921fef8506"
+    },
+    {
+      "page": 28,
+      "path": "D:\\PMUX_20261102_delivery\\final\\book_source\\render_latex\\page-28.png",
+      "sha256": "982a037ff717b352422459ff7fa698740a1c88bd8a61293d4d4afc752b9fb1fb"
+    },
+    {
+      "page": 34,
+      "path": "D:\\PMUX_20261102_delivery\\final\\book_source\\render_latex\\page-34.png",
+      "sha256": "fd11fe5d7302399139bee7eaa16d70423027a2a75677bcefcf0d5f0dd2d53236"
+    },
+    {
+      "page": 35,
+      "path": "D:\\PMUX_20261102_delivery\\final\\book_source\\render_latex\\page-35.png",
+      "sha256": "774e89f5402c290c43db4e59db16ad25081c25bf438504cda8ca051d38480c42"
+    },
+    {
+      "page": 36,
+      "path": "D:\\PMUX_20261102_delivery\\final\\book_source\\render_latex\\page-36.png",
+      "sha256": "b76f2e4c7db993495c0a26b6021ad308907aa90492b0a94d4e8dd24159dc0888"
+    },
+    {
+      "page": 37,
+      "path": "D:\\PMUX_20261102_delivery\\final\\book_source\\render_latex\\page-37.png",
+      "sha256": "a9f829c24fb0b05532cb96280107b7fb667932e352b3d17f13224a1830ae67a1"
+    },
+    {
+      "page": 38,
+      "path": "D:\\PMUX_20261102_delivery\\final\\book_source\\render_latex\\page-38.png",
+      "sha256": "101b1891124f2f32956e2da1b36991d0ab0a8169cc1863a80bd7552565a18458"
+    },
+    {
+      "page": 39,
+      "path": "D:\\PMUX_20261102_delivery\\final\\book_source\\render_latex\\page-39.png",
+      "sha256": "f6e8744bc829f48ad13f08baea4f89102198685a55f4d6b4145c2d994228c946"
+    }
+  ],
+  "observations": {
+    "all_pages_covered_at_contact_scale": true,
+    "clipping_or_overlap_found": false,
+    "three_line_tables_readable": true,
+    "native_equations_readable": true,
+    "section_2_3_8_pages_17_18_19": "Formula and table 3d complete and readable; continuation to page 19 is normal.",
+    "figure_14_page_34": "90 ns and 140 ns windows, all signal names and caption are visible; no crop or overlap.",
+    "tables": "Dense table 2a page 4 and tables 8/9/10b/11/12a/13 remain within margins; no split row was observed.",
+    "references_page_39": "Eleven entries readable with long URLs wrapped within margins; no missing glyphs or clipping found."
+  },
+  "findings": [
+    {
+      "id": "L01",
+      "severity": "layout_minor",
+      "page": 38,
+      "status": "OPEN",
+      "description": "Only section 4.2 and two paragraphs occupy the top roughly 20-25% of the body. About 75% is blank before the references start on the next page.",
+      "text_chars_in_existing_page_index": 265,
+      "recommendation": "Adjust only pagination: place all of Part 4 together on one page while retaining separate references, or allow references to follow section 4.2 if the template permits. Preserve this reviewed PDF and record the revised PDF hash."
+    }
+  ],
+  "source_text_review": "D:/PMUX_20261102_delivery/experiments/delivery_r30/BOOK_TEXT_REVIEW.json",
+  "follow_up": "After the owner changes pagination, review only the changed tail pages plus page count and revised PDF hash. This report does not approve an unseen revision."
+}

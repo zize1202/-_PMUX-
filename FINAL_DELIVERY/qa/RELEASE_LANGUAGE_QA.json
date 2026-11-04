@@ -1,0 +1,22 @@
+{
+  "status": "PASS_TEXT_GATING_ONLY",
+  "candidate": "r30_native_sload",
+  "draft_notice_preserved": true,
+  "in_memory_release_branch_checked": true,
+  "final_internal_workflow_phrases_found": [],
+  "specific_limitations_preserved": true,
+  "missing_evidence_release_branches_rejected": [
+    "modelsim",
+    "candidate_side_normalization_has_zinit",
+    "native_build"
+  ],
+  "source_sha256": {
+    "content.py": "3247f7d7fa3cf656732db5c8d7df429fdd136763e602673b0ed87fd0e7b635a4",
+    "brief_content.py": "b56be4226fe0a8a247d9b7060596675da3dc76d8fa9fde46d297d3f74cbb2129",
+    "requirements.py": "45b84b3437265a6e4eeed58b10248d8ad09995c894f55c79e703731452de3d89",
+    "prepare_text_sources.py": "3d75d02cd528a4d878e66ed523f0a28bae998e178b2ce6798327ee724941c816"
+  },
+  "release_ready_on_disk": true,
+  "configuration_and_evidence_snapshot_not_modified": true,
+  "render_or_synthesis_or_measurement_run": false
+}

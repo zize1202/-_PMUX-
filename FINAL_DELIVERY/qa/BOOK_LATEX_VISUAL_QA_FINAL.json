@@ -1,0 +1,121 @@
+{
+  "created_utc": "2026-11-01T23:53:26.946048+00:00",
+  "status": "PASS",
+  "scope": "Read-only visual follow-up of already rendered final pages 37, 38 and 39. No source edits, rerendering, algorithm tests, proofs, timing or simulations by this reviewer.",
+  "reviewer": "/root/algorithm_next_review",
+  "pdf": {
+    "path": "D:\\PMUX_20261102_delivery\\final\\PMUX_R30_ProjectBook\\latex\\main.pdf",
+    "sha256": "3166d2a1afc1a108cba8c7d6b60ab5c35de0430fcc9b37e6da8cde1c187066d3",
+    "bytes": 1361622,
+    "page_count": 39
+  },
+  "prior_review": {
+    "path": "D:\\PMUX_20261102_delivery\\experiments\\delivery_r30\\BOOK_LATEX_VISUAL_QA.json",
+    "sha256": "0f4a0bf004f03bbf45c4b1599351e7f7edb00a6a2567f2b5a103deea3ae0fc80",
+    "status_preserved": "NEEDS_LAYOUT_TIDYUP",
+    "prior_pdf_preserved": "D:\\PMUX_20261102_delivery\\final\\book_source\\qa_before_pagination\\main.pdf",
+    "prior_pdf_sha256": "4d144e31695105ac6be90dc2963d30c000d09058fda3261a34d81d66cabb7ab4"
+  },
+  "source_text_review": {
+    "path": "D:\\PMUX_20261102_delivery\\experiments\\delivery_r30\\BOOK_TEXT_REVIEW.json",
+    "sha256": "305aec228d0af3e150ed794a05ceea4c177bb015cc111df7e1517722a3e4e841",
+    "four_reviewed_sources_unchanged": [
+      {
+        "path": "D:\\PMUX_20261102_delivery\\final\\book_source\\method_hardware_sload.py",
+        "sha256": "99f215555d69a2d3ec084965bd18be01c7d795e38695724e5a40b3ee53d92b4a",
+        "unchanged": true
+      },
+      {
+        "path": "D:\\PMUX_20261102_delivery\\final\\book_source\\content.py",
+        "sha256": "3247f7d7fa3cf656732db5c8d7df429fdd136763e602673b0ed87fd0e7b635a4",
+        "unchanged": true
+      },
+      {
+        "path": "D:\\PMUX_20261102_delivery\\final\\book_source\\prepared_text\\项目书共同正文.txt",
+        "sha256": "a57c6fc45d3ed07f9341f18dbda79d3e764d9456ea518391cf1dda7fb2f5abc4",
+        "unchanged": true
+      },
+      {
+        "path": "D:\\PMUX_20261102_delivery\\final\\book_source\\evidence_snapshot.json",
+        "sha256": "25b8d11526cc7462e284175edd2cbe6b772442a4fba1a9ec3f21ffaf28c9e333",
+        "unchanged": true
+      }
+    ]
+  },
+  "full_pages_visually_checked": [
+    {
+      "page": 37,
+      "path": "D:\\PMUX_20261102_delivery\\final\\book_source\\render_latex_final\\page-37.png",
+      "sha256": "b42c8baa01cfb67df05f47ce1693d33b985b2a021a222ed66bf7b24dbab73e09"
+    },
+    {
+      "page": 38,
+      "path": "D:\\PMUX_20261102_delivery\\final\\book_source\\render_latex_final\\page-38.png",
+      "sha256": "6fd28af3fc81bb8eeee419e5b07298145200bf6c9db1c94cbb014e052222935a"
+    },
+    {
+      "page": 39,
+      "path": "D:\\PMUX_20261102_delivery\\final\\book_source\\render_latex_final\\page-39.png",
+      "sha256": "f6e8744bc829f48ad13f08baea4f89102198685a55f4d6b4145c2d994228c946"
+    }
+  ],
+  "unchanged_rendered_pages_by_exact_png_sha256": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    39
+  ],
+  "changed_rendered_pages": [
+    37,
+    38
+  ],
+  "resolved_findings": [
+    {
+      "id": "L01",
+      "prior_page": 38,
+      "status": "RESOLVED",
+      "owner_change": "Pagination only: Part 4 starts on a new page.",
+      "visual_result": "Page 38 now contains Part 4 heading and both sections 4.1 and 4.2 as a coherent page, removing the isolated two-paragraph short page. Page 37 ends with the complete table 13. References remain complete on page 39."
+    }
+  ],
+  "remaining_visual_findings": [],
+  "observations": {
+    "page_37": "Table 13 and preceding paragraphs fully visible; normal bottom space at a section end; no clipping or overlap.",
+    "page_38": "Both summary sections readable with consistent spacing; no orphan short section or overflow.",
+    "page_39": "References unchanged, readable, wrapped within margins.",
+    "whole_document_coverage": "All 39 pages were covered by the original contact review. Pages 1-36 and 39 have byte-identical final PNGs; only changed pages 37-38 required new detailed visual review."
+  }
+}

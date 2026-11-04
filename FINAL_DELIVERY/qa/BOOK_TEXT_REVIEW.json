@@ -1,0 +1,212 @@
+{
+  "created_utc": "2026-11-01T23:36:54.494539+00:00",
+  "status": "PASS",
+  "reviewer": "/root/algorithm_next_review",
+  "scope": "Independent read-only technical and evidence-bound prose review of final R30 manuscript sources; not a fresh algorithm, proof, benchmark, simulation, or PDF layout execution.",
+  "independent_of_manuscript_author": true,
+  "manuscript_or_production_source_edited_by_reviewer": false,
+  "new_tests_or_simulations_run_for_review": false,
+  "final_source_root": "D:\\PMUX_20261102_delivery\\final\\book_source",
+  "reviewed_source_files": {
+    "method_hardware_sload.py": {
+      "path": "D:\\PMUX_20261102_delivery\\final\\book_source\\method_hardware_sload.py",
+      "sha256": "99f215555d69a2d3ec084965bd18be01c7d795e38695724e5a40b3ee53d92b4a"
+    },
+    "content.py": {
+      "path": "D:\\PMUX_20261102_delivery\\final\\book_source\\content.py",
+      "sha256": "3247f7d7fa3cf656732db5c8d7df429fdd136763e602673b0ed87fd0e7b635a4"
+    },
+    "prepared_text/项目书共同正文.txt": {
+      "path": "D:\\PMUX_20261102_delivery\\final\\book_source\\prepared_text\\项目书共同正文.txt",
+      "sha256": "a57c6fc45d3ed07f9341f18dbda79d3e764d9456ea518391cf1dda7fb2f5abc4"
+    },
+    "evidence_snapshot.json": {
+      "path": "D:\\PMUX_20261102_delivery\\final\\book_source\\evidence_snapshot.json",
+      "sha256": "25b8d11526cc7462e284175edd2cbe6b772442a4fba1a9ec3f21ffaf28c9e333"
+    }
+  },
+  "resolved_findings": [
+    {
+      "id": "F01",
+      "original_problem": "PI was described as a whole port and all slices as rejected. The actual guard permits a word of distinct direct PI bits, including bits across ports; only FF.Q requires a whole ordered Q word.",
+      "resolution": "Source and rendered common text now distinguish direct PI bits from whole FF.Q.",
+      "status": "FIXED"
+    },
+    {
+      "id": "F02",
+      "original_problem": "The r23 Python Store alias and PowerShell 5.1 startup errors were attached to the current r30 All paragraph.",
+      "resolution": "Current r30 preparation-only header and wave ZIP-set errors are named separately; r23 errors are explicitly historical. No All retry is claimed.",
+      "status": "FIXED"
+    },
+    {
+      "id": "F03",
+      "original_problem": "Table 13 said six current figures.",
+      "resolution": "The current hardware_sload branch and generated common text say seven figures. All seven hashes match actual frozen r30 image sources.",
+      "status": "FIXED"
+    },
+    {
+      "id": "F04",
+      "original_problem": "The vendor probe phrase could be read as 64 one-bit Q prestates.",
+      "resolution": "Changed to 2 Q prestates times 32 five-bit control/data combinations, totaling 64 tuples.",
+      "status": "FIXED"
+    }
+  ],
+  "unresolved_material_findings": [],
+  "bound_evidence": {
+    "performance": {
+      "path": "D:\\PMUX_20261102_delivery\\experiments\\performance_v3\\r30_run01\\report.json",
+      "sha256": "b212991f2b3aed02f022ba7519f0721baa2a2ef4150bf940a1bd46fa6484a015",
+      "matches_snapshot": true
+    },
+    "proof": {
+      "path": "D:\\PMUX_20261102_delivery\\experiments\\r30_strict_no_candidate_zinit\\report.json",
+      "sha256": "62982f048a74e4e74e78f98ef6e1f38d99780c2c29392d07495409dea32ceff7",
+      "matches_snapshot": true
+    },
+    "binding": {
+      "path": "D:\\PMUX_20261102_delivery\\experiments\\r30_binding_v3.json",
+      "sha256": "f68580fcb67e1ecdb0b8d373fe9623c4068e06453073de4890ddac02e58aa40c",
+      "matches_snapshot": true
+    },
+    "current_migration_all_qa": {
+      "path": "D:\\PMUX_20261102_delivery\\experiments\\delivery_r30\\RELOCATION_R30_ALL_AUDIT.json",
+      "sha256": "514c67ad3dff78a6faccc9cdf506b4bbefb730ca3fa595676614fd41e5e59b25",
+      "matches_snapshot": true
+    },
+    "supplemental_scale": {
+      "path": "D:\\PMUX_20261102_delivery\\experiments\\scale_r30\\SCALE_STATUS.json",
+      "sha256": "78b0c056d10d797b08464f3443eb09b6754bf9af5769a4d20eb07a79d94d5042",
+      "matches_snapshot": true
+    },
+    "vendor_ff_report": {
+      "path": "D:\\PMUX_20261102_delivery\\research\\r30_vendor_ff\\run_001\\report.json",
+      "sha256": "63e1125a4326398b83a446b6a8f461a47aabdf61dd6edfcb5b3cee5f7b04105a",
+      "matches_snapshot": true
+    },
+    "vendor_ff_independent_audit": {
+      "path": "D:\\PMUX_20261102_delivery\\research\\r30_vendor_ff\\INDEPENDENT_AUDIT.json",
+      "sha256": "e0961bb000ddbea2b402a98a3f9a509580ae875891c40451f74a9471cfc8ffdd",
+      "matches_snapshot": true
+    },
+    "vendor_ff_package_audit": {
+      "path": "D:\\PMUX_20261102_delivery\\research\\r30_vendor_ff\\PACKAGE_AUDIT.json",
+      "sha256": "d9e156de9d0f25779b6b5eb3cfe1d53dea82ccb7dfae29d9e457fa16788153a5",
+      "matches_snapshot": true
+    },
+    "vendor_probe_report_json": {
+      "path": "D:\\PMUX_20261102_delivery\\research\\vendor_dffeas_probe\\run_002\\report.json",
+      "sha256": "b219c1fbfeb7d8b22b71fce377aa8522a698202422353ccc16f4ed95fb84d2d0",
+      "matches_snapshot": true
+    }
+  },
+  "checked_claims": {
+    "priority": "Normal binary device domain: ENA hold > SCLR zero > SLOAD ASDATA > D. Legacy dynamic CLRN domain is kept separate.",
+    "models": "Historical r29 SCLR domain remains historical; current restricted SLOAD domain, 53 validator checks, 10-free-bit state SAT, and low/high induction are separately described. No arbitrary four-state or manufacturer formal-model claim.",
+    "formal": "All nine source logical-zero to actual candidate proofs PASS, candidate has no zinit or setundef normalization, each uses one joint partition and only original free inputs.",
+    "official_area_pairs": {
+      "test1": [
+        288,
+        204
+      ],
+      "test2": [
+        25,
+        15
+      ],
+      "test3": [
+        13,
+        9
+      ],
+      "test4": [
+        36,
+        28
+      ],
+      "balanced": [
+        426,
+        239
+      ],
+      "pipeline": [
+        450,
+        305
+      ],
+      "crossbar": [
+        408,
+        241
+      ],
+      "feedback": [
+        368,
+        208
+      ],
+      "nested": [
+        413,
+        233
+      ]
+    },
+    "official_unweighted_mean_percent": 36.25224711365656,
+    "main_table8_and_table9": "Each displayed case row was read against original r30_run01 reports and matched rounding; no relocation values substituted.",
+    "main_max_time_ratio": 1.015894399199683,
+    "main_max_memory_ratio": 0.9965590259396506,
+    "main_environment": "Baseline/input/common ABC on C; optimized program on D; outputs and child TEMP/TMP on D. Original batch explicitly disclosed.",
+    "relocation_environment": "Separate All has both programs and inputs on D. Not pooled with or substituted for original main batch.",
+    "relocation_timed_processes": 28,
+    "relocation_rechecks": 0,
+    "relocation_max_time_ratio": 0.9856614105855029,
+    "relocation_max_memory_ratio": 1.0104020241776779,
+    "relocation_indexed_files": 5157,
+    "relocation_archive_mappings": 5154,
+    "relocation_proof_files": 443,
+    "scale": "Actual mapped leaf count 957 to 653, logic 894 to 593, FF 63 to 60. One <=1000-domain wrapper; 4 free clocks; not an official tenth case or universal bound proof. Same-wrapper r29 to r30 logic 598 to 593, not an 18-LUT extrapolation.",
+    "sload_figure": "90 ns: ENA1 SCLR0 SLOAD0 D1 ASDATA0 Q0->1; 140 ns: ENA1 SCLR0 SLOAD1 D1 ASDATA0 Q1->0. Actual ff_7 and prior FF.Q ASDATA connection checked against SIGNAL_MATCH and selected_edges.csv. SLOAD PNG visually inspected.",
+    "seven_figures": "Every final source PNG matches its actual r30 source hash; seven are restricted-model VCD figures, not relabeled vendor-library figures.",
+    "vendor_supplement": "New vendor DFFEAS finite functional run has all nine PASS, 40684 samples, 643 reference-plus-candidate initial FF Q checks, and CSV bytes identical to frozen r30. LUT truth-table expressions remain local; no SDF, full vendor-cell netlist, or vendor formal proof is claimed.",
+    "old_vendor_probe": "Original probe report remains ERROR; 642 finite observations with zero behavior mismatches and isolated-copy cache refresh explanation remain separately preserved.",
+    "limits": "No universal optimality, arbitrary-initial-state equivalence, full-score guarantee, or placement/routing physical-fit claim."
+  },
+  "seven_figure_bindings": [
+    {
+      "book": "D:\\PMUX_20261102_delivery\\final\\book_source\\figures\\modelsim_zero_init.png",
+      "r30_actual_source": "D:\\PMUX_20261102_delivery\\research\\r30_modelsim\\initialization_figure\\test4_logical_zero.png",
+      "sha256": "889a38fc28388533bb3411f541513cd750f76523cc768270db6bb1075f37cc1b",
+      "byte_identical": true
+    },
+    {
+      "book": "D:\\PMUX_20261102_delivery\\final\\book_source\\figures\\modelsim_zero_overview.png",
+      "r30_actual_source": "D:\\PMUX_20261102_delivery\\research\\r30_modelsim\\balanced_figures\\overview.png",
+      "sha256": "6e98d8a28559f25472405e2fe44bc3541cfc1009a647eeb9faaa94a80857ca8c",
+      "byte_identical": true
+    },
+    {
+      "book": "D:\\PMUX_20261102_delivery\\final\\book_source\\figures\\modelsim_zero_detail.png",
+      "r30_actual_source": "D:\\PMUX_20261102_delivery\\research\\r30_modelsim\\balanced_figures\\detail.png",
+      "sha256": "1d72cc4214e96edbab4ce6a88b5ed51380a628c7093a96d7286afd54fa86c330",
+      "byte_identical": true
+    },
+    {
+      "book": "D:\\PMUX_20261102_delivery\\final\\book_source\\figures\\modelsim_zero_finish.png",
+      "r30_actual_source": "D:\\PMUX_20261102_delivery\\research\\r30_modelsim\\balanced_figures\\end.png",
+      "sha256": "c10178a09db5e13d15d6eb094d00f9a9bd63af6078a7c17795db2e9773f9a18a",
+      "byte_identical": true
+    },
+    {
+      "book": "D:\\PMUX_20261102_delivery\\final\\book_source\\figures\\modelsim_observable.png",
+      "r30_actual_source": "D:\\PMUX_20261102_delivery\\research\\r30_modelsim\\test3_observable_figure\\test3_observable.png",
+      "sha256": "793a2381f4801fd3775aaecf0d31f1d4985593bf0ebfb6134710f265b59d9ee0",
+      "byte_identical": true
+    },
+    {
+      "book": "D:\\PMUX_20261102_delivery\\final\\book_source\\figures\\modelsim_sampling_boundary.png",
+      "r30_actual_source": "D:\\PMUX_20261102_delivery\\research\\r30_modelsim\\pipeline_boundary_figure\\pipeline_sampling_boundary.png",
+      "sha256": "d2c4a44abb5f67b97ee8abdea9c2ebc833e795d4d0b5a0c5c314868b71659a7f",
+      "byte_identical": true
+    },
+    {
+      "book": "D:\\PMUX_20261102_delivery\\final\\book_source\\figures\\modelsim_sload_selection.png",
+      "r30_actual_source": "D:\\PMUX_20261102_delivery\\research\\r30_modelsim\\sload_selection_figure\\sload_selection.png",
+      "sha256": "f390f2f67f1c7902ca7c7a32247a970141c5007d241ee4660976b0c4749927c2",
+      "byte_identical": true
+    }
+  ],
+  "remaining_delivery_checks": [
+    "The manuscript owner performs final rendered DOCX/PDF layout QA.",
+    "Any final package must separately audit unchanged pre-existing 5157 indexed files and distinguish new documentation/supplemental evidence; this prose review does not replace that package audit."
+  ]
+}

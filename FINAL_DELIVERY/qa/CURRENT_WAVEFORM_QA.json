@@ -1,0 +1,134 @@
+{
+  "candidate": "r30_native_sload",
+  "source": "real ModelSim VCD, not GUI screenshot",
+  "status": "PASS_CHECKPOINT_ASSET_BINDING",
+  "cases": [
+    {
+      "case": "test4",
+      "csv_samples_verified": 6,
+      "csv_samples_total": 4092,
+      "sample_scope": "prelude",
+      "selected_outputs_match_csv": true,
+      "vcd_sha256": "9fa79d5e2abd679d6f6f7a2138248078c7f146d457860aec17c85a9733d49882",
+      "csv_sha256": "a97273bd9bbc76d27310292793989c76bfc600c847a3fe371741ee42cf8b3d5c"
+    },
+    {
+      "case": "pmux_case01_balanced",
+      "csv_samples_verified": 4442,
+      "csv_samples_total": 4442,
+      "sample_scope": "all",
+      "selected_outputs_match_csv": true,
+      "vcd_sha256": "e0c4c55b8f9efeafe26e5e041d13a3ba87a89f0a0413617cf8ffa065236a445c",
+      "csv_sha256": "837c44908e1dfd9684fa6a2f7f05a633c6419107438a53028c5be70da9d6ac00"
+    }
+  ],
+  "assets": [
+    {
+      "source": "D:\\PMUX_20261102_delivery\\research\\r30_modelsim\\initialization_figure\\test4_logical_zero.png",
+      "target": "D:\\PMUX_20261102_delivery\\final\\book_source\\figures\\modelsim_zero_init.png",
+      "sha256": "889a38fc28388533bb3411f541513cd750f76523cc768270db6bb1075f37cc1b"
+    },
+    {
+      "source": "D:\\PMUX_20261102_delivery\\research\\r30_modelsim\\initialization_figure\\test4_logical_zero.svg",
+      "target": "D:\\PMUX_20261102_delivery\\final\\book_source\\figures\\modelsim_zero_init.svg",
+      "sha256": "5e8df43603544c6f78ca9163d41eba04c05d75833de4bd011df7b184fff68739"
+    },
+    {
+      "source": "D:\\PMUX_20261102_delivery\\research\\r30_modelsim\\initialization_figure\\test4_logical_zero.pdf",
+      "target": "D:\\PMUX_20261102_delivery\\final\\book_source\\figures\\modelsim_zero_init.pdf",
+      "sha256": "7d21a06fd9c7c565ea4523531f1d6419bec632422f58ebea59b8e94fa31a2312"
+    },
+    {
+      "source": "D:\\PMUX_20261102_delivery\\research\\r30_modelsim\\balanced_figures\\detail.png",
+      "target": "D:\\PMUX_20261102_delivery\\final\\book_source\\figures\\modelsim_zero_detail.png",
+      "sha256": "1d72cc4214e96edbab4ce6a88b5ed51380a628c7093a96d7286afd54fa86c330"
+    },
+    {
+      "source": "D:\\PMUX_20261102_delivery\\research\\r30_modelsim\\balanced_figures\\detail.svg",
+      "target": "D:\\PMUX_20261102_delivery\\final\\book_source\\figures\\modelsim_zero_detail.svg",
+      "sha256": "b99a25d7652d099486658c755f66434b9c889ed934d30b9ed66a49fb18968352"
+    },
+    {
+      "source": "D:\\PMUX_20261102_delivery\\research\\r30_modelsim\\balanced_figures\\detail.pdf",
+      "target": "D:\\PMUX_20261102_delivery\\final\\book_source\\figures\\modelsim_zero_detail.pdf",
+      "sha256": "8addce5cbd6752b591de765a44ade3ce1695179cf775414ab708ac918429416f"
+    },
+    {
+      "source": "D:\\PMUX_20261102_delivery\\research\\r30_modelsim\\balanced_figures\\end.png",
+      "target": "D:\\PMUX_20261102_delivery\\final\\book_source\\figures\\modelsim_zero_finish.png",
+      "sha256": "c10178a09db5e13d15d6eb094d00f9a9bd63af6078a7c17795db2e9773f9a18a"
+    },
+    {
+      "source": "D:\\PMUX_20261102_delivery\\research\\r30_modelsim\\balanced_figures\\end.svg",
+      "target": "D:\\PMUX_20261102_delivery\\final\\book_source\\figures\\modelsim_zero_finish.svg",
+      "sha256": "fc9969b8572d2e3dd81c16267c03c05de24c6aff20f0cb2550abcfd5cefd5a13"
+    },
+    {
+      "source": "D:\\PMUX_20261102_delivery\\research\\r30_modelsim\\balanced_figures\\end.pdf",
+      "target": "D:\\PMUX_20261102_delivery\\final\\book_source\\figures\\modelsim_zero_finish.pdf",
+      "sha256": "e204248da62d05e44995c50384b74e8c1532c125c29245bfdeb63e1d6ca98b8c"
+    },
+    {
+      "source": "D:\\PMUX_20261102_delivery\\research\\r30_modelsim\\test3_observable_figure\\test3_observable.png",
+      "target": "D:\\PMUX_20261102_delivery\\final\\book_source\\figures\\modelsim_observable.png",
+      "sha256": "793a2381f4801fd3775aaecf0d31f1d4985593bf0ebfb6134710f265b59d9ee0"
+    },
+    {
+      "source": "D:\\PMUX_20261102_delivery\\research\\r30_modelsim\\test3_observable_figure\\test3_observable.svg",
+      "target": "D:\\PMUX_20261102_delivery\\final\\book_source\\figures\\modelsim_observable.svg",
+      "sha256": "32743d38a7f9447929dc646003ad24ffd173e4b359f65e497f53978387b707eb"
+    },
+    {
+      "source": "D:\\PMUX_20261102_delivery\\research\\r30_modelsim\\test3_observable_figure\\test3_observable.pdf",
+      "target": "D:\\PMUX_20261102_delivery\\final\\book_source\\figures\\modelsim_observable.pdf",
+      "sha256": "d51c87bc66d5ac95ee464f75a7fcb00f542a8116749bd1ccb7aea3d7853df680"
+    },
+    {
+      "source": "D:\\PMUX_20261102_delivery\\research\\r30_modelsim\\balanced_figures\\overview.png",
+      "target": "D:\\PMUX_20261102_delivery\\final\\book_source\\figures\\modelsim_zero_overview.png",
+      "sha256": "6e98d8a28559f25472405e2fe44bc3541cfc1009a647eeb9faaa94a80857ca8c"
+    },
+    {
+      "source": "D:\\PMUX_20261102_delivery\\research\\r30_modelsim\\balanced_figures\\overview.svg",
+      "target": "D:\\PMUX_20261102_delivery\\final\\book_source\\figures\\modelsim_zero_overview.svg",
+      "sha256": "631deb75e6f8b946abebbc695dcab60118d82a34ad2d21fb542ba249886a95e1"
+    },
+    {
+      "source": "D:\\PMUX_20261102_delivery\\research\\r30_modelsim\\balanced_figures\\overview.pdf",
+      "target": "D:\\PMUX_20261102_delivery\\final\\book_source\\figures\\modelsim_zero_overview.pdf",
+      "sha256": "c37c386b1f992bdfeb5f2800a4ddaca6acf5dc350f4c659a991dab1393ff1051"
+    },
+    {
+      "source": "D:\\PMUX_20261102_delivery\\research\\r30_modelsim\\pipeline_boundary_figure\\pipeline_sampling_boundary.png",
+      "target": "D:\\PMUX_20261102_delivery\\final\\book_source\\figures\\modelsim_sampling_boundary.png",
+      "sha256": "d2c4a44abb5f67b97ee8abdea9c2ebc833e795d4d0b5a0c5c314868b71659a7f"
+    },
+    {
+      "source": "D:\\PMUX_20261102_delivery\\research\\r30_modelsim\\pipeline_boundary_figure\\pipeline_sampling_boundary.svg",
+      "target": "D:\\PMUX_20261102_delivery\\final\\book_source\\figures\\modelsim_sampling_boundary.svg",
+      "sha256": "a3f15bf73f053099b5dcab446f07020c419651eb4970347117bbc0fb318e9b13"
+    },
+    {
+      "source": "D:\\PMUX_20261102_delivery\\research\\r30_modelsim\\pipeline_boundary_figure\\pipeline_sampling_boundary.pdf",
+      "target": "D:\\PMUX_20261102_delivery\\final\\book_source\\figures\\modelsim_sampling_boundary.pdf",
+      "sha256": "0af00883b5cf56ba7a38641e4b5e7649b9cca64ba8d9832e39e661479df9d9ac"
+    },
+    {
+      "source": "D:\\PMUX_20261102_delivery\\research\\r30_modelsim\\sload_selection_figure\\sload_selection.png",
+      "target": "D:\\PMUX_20261102_delivery\\final\\book_source\\figures\\modelsim_sload_selection.png",
+      "sha256": "f390f2f67f1c7902ca7c7a32247a970141c5007d241ee4660976b0c4749927c2"
+    },
+    {
+      "source": "D:\\PMUX_20261102_delivery\\research\\r30_modelsim\\sload_selection_figure\\sload_selection.svg",
+      "target": "D:\\PMUX_20261102_delivery\\final\\book_source\\figures\\modelsim_sload_selection.svg",
+      "sha256": "8d56cbcb530c30a0f9ee9d65ac5c07e6e276f7b2a85f223d8b1850323cd29aef"
+    },
+    {
+      "source": "D:\\PMUX_20261102_delivery\\research\\r30_modelsim\\sload_selection_figure\\sload_selection.pdf",
+      "target": "D:\\PMUX_20261102_delivery\\final\\book_source\\figures\\modelsim_sload_selection.pdf",
+      "sha256": "76da592af15734946f3335f418a3ed0839a06d973db3e5024f5ed73d21ad1b80"
+    }
+  ],
+  "rendered_new_figures": false,
+  "same_timestamp_policy": "last VCD record at timestamp; pass/fail at CSV samples"
+}

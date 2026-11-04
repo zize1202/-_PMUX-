@@ -1,0 +1,67 @@
+{
+  "tables": 20,
+  "figures": 14,
+  "equations": 18,
+  "references": 11,
+  "word_limits": {
+    "摘要": {
+      "count": 592,
+      "limit": 800
+    },
+    "主要创新点": {
+      "count": 324,
+      "limit": 400
+    }
+  },
+  "pdfs": [
+    {
+      "kind": "word",
+      "pages": 43,
+      "missing_text": [],
+      "fonts": {
+        "/BCDEEE+DengXian": true,
+        "/BCDFEE+TimesNewRomanPSMT": true,
+        "/BCDGEE+SimSun": true,
+        "/BCDHEE+DengXian-Bold": true,
+        "/BCDIEE+TimesNewRomanPS-BoldMT": true,
+        "/BCDJEE+TimesNewRomanPS-BoldMT": true,
+        "/BCDKEE+DengXian-Light": true,
+        "/BCDLEE+CambriaMath": true,
+        "/BCDMEE+TimesNewRomanPSMT": true
+      },
+      "sha256": "aaf03efe2a3fafa0463d03784b50fd3ced164b034d7f22e2a4705cf9a1b3c14a"
+    },
+    {
+      "kind": "latex",
+      "pages": 39,
+      "missing_text": [],
+      "fonts": {
+        "/IHAIZV+LMRoman12-Bold-Identity-H": true,
+        "/BZIVMZ+FandolHei-Bold-Identity-H": true,
+        "/IXFAWU+FandolSong-Regular-Identity-H": true,
+        "/TQTHRL+LMRoman12-Regular-Identity-H": true,
+        "/PVTTLK+CMSY10": true,
+        "/YEUUOC+LMRoman10-Regular-Identity-H": true,
+        "/AKHCZK+FandolSong-Bold-Identity-H": true,
+        "/VDVGTR+LMRoman10-Bold-Identity-H": true,
+        "/JAGKKY+CMMI12": true,
+        "/NOMARO+CMMI8": true,
+        "/KPXLOM+CMR12": true,
+        "/CAFSZL+LMRoman8-Regular-Identity-H": true,
+        "/UTACNV+CMR8": true,
+        "/FZDNHS+CMEX10": true,
+        "/DZGKAF+CMMI6": true,
+        "/GJMHKB+CMSY8": true,
+        "/NITCSQ+CMSY7": true,
+        "/DDIEWW+LMMono10-Regular-Identity-H": true,
+        "/FKPJSN+LMMono12-Regular-Identity-H": true
+      },
+      "sha256": "3166d2a1afc1a108cba8c7d6b60ab5c35de0430fcc9b37e6da8cde1c187066d3"
+    }
+  ],
+  "all_tables_three_line": true,
+  "docx_sha256": "a13042c97ca87df954861f0d154d983b969650e1add3b387a8a43c8da0a6d860",
+  "latex_warnings": [],
+  "unexpected_controls": [],
+  "status": "PASS"
+}

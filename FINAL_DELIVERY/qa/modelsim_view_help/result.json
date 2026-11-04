@@ -1,0 +1,15 @@
+{
+  "created_utc": "2026-11-01T23:40:51.684501+00:00",
+  "scope": "read-only existing WLF help for manual, no simulation run",
+  "argv": [
+    "D:/Downloads/win64/vsim.exe",
+    "-c",
+    "-modelsimini",
+    "modelsim.ini",
+    "-view",
+    "D:/PMUX_20261102_delivery/research/r30_modelsim/test4/simulation.wlf",
+    "-do",
+    "puts {WLF_READONLY_BEGIN}; dataset list; examine -radix unsigned /zero_test4_tb/checked; examine -radix unsigned /zero_test4_tb/failed; examine -radix unsigned /zero_test4_tb/finished; puts {WLF_READONLY_END}; quit -code 0 -f"
+  ],
+  "exit_code": 0
+}

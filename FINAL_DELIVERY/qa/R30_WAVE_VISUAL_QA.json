@@ -1,0 +1,44 @@
+{
+  "candidate": "r30_native_sload",
+  "status": "PASS_VISUAL_REVIEW",
+  "review_scope": "Seven individual PNGs displayed and read; current labels, traces, captions and finite-sample limits checked. Full book layout not yet rendered.",
+  "files": [
+    {
+      "path": "D:\\PMUX_20261102_delivery\\research\\r30_modelsim\\initialization_figure\\test4_logical_zero.png",
+      "sha256": "889a38fc28388533bb3411f541513cd750f76523cc768270db6bb1075f37cc1b"
+    },
+    {
+      "path": "D:\\PMUX_20261102_delivery\\research\\r30_modelsim\\balanced_figures\\overview.png",
+      "sha256": "6e98d8a28559f25472405e2fe44bc3541cfc1009a647eeb9faaa94a80857ca8c"
+    },
+    {
+      "path": "D:\\PMUX_20261102_delivery\\research\\r30_modelsim\\balanced_figures\\detail.png",
+      "sha256": "1d72cc4214e96edbab4ce6a88b5ed51380a628c7093a96d7286afd54fa86c330"
+    },
+    {
+      "path": "D:\\PMUX_20261102_delivery\\research\\r30_modelsim\\balanced_figures\\end.png",
+      "sha256": "c10178a09db5e13d15d6eb094d00f9a9bd63af6078a7c17795db2e9773f9a18a"
+    },
+    {
+      "path": "D:\\PMUX_20261102_delivery\\research\\r30_modelsim\\test3_observable_figure\\test3_observable.png",
+      "sha256": "793a2381f4801fd3775aaecf0d31f1d4985593bf0ebfb6134710f265b59d9ee0"
+    },
+    {
+      "path": "D:\\PMUX_20261102_delivery\\research\\r30_modelsim\\pipeline_boundary_figure\\pipeline_sampling_boundary.png",
+      "sha256": "d2c4a44abb5f67b97ee8abdea9c2ebc833e795d4d0b5a0c5c314868b71659a7f"
+    },
+    {
+      "path": "D:\\PMUX_20261102_delivery\\research\\r30_modelsim\\sload_selection_figure\\sload_selection.png",
+      "sha256": "f390f2f67f1c7902ca7c7a32247a970141c5007d241ee4660976b0c4749927c2"
+    }
+  ],
+  "new_sload_selected_edges_ns": [
+    90,
+    140
+  ],
+  "actual_pre_edge_values": "D=1, ASDATA=0 at both; SLOAD=0 then1; Q0to1 then1to0",
+  "pipeline_hold_window_ns": 3630,
+  "pipeline_disabled_d_difference_edges": 242,
+  "snapshot_is_not_GUI_capture": true,
+  "full_document_layout_review": false
+}

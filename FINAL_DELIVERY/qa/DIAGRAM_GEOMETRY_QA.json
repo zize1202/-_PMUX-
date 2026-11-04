@@ -1,0 +1,179 @@
+[
+  {
+    "width_mm": 144,
+    "height_mm": 132,
+    "dpi": 400,
+    "pixels": [
+      2267,
+      2078
+    ],
+    "outside_canvas": [],
+    "node_text_overflow": [],
+    "embedded_fonts": {
+      "/DFIMHP+MicrosoftYaHei": true,
+      "/HBGWOI+MicrosoftYaHei-Bold": true
+    },
+    "text": [
+      "原始RTL → proc",
+      "同一外部脚本；源文件与默认参数保持",
+      "opt_pmux -init-zero",
+      "未指定时钟状态声明为0；显式0/1保持",
+      "原生顺序优化 → coarse",
+      "wreduce → peepopt → opt_clean",
+      "opt_pmux 词级结构优化",
+      "共享控制、运算、选择与小ROM",
+      "cmp2lut → 后续综合 → ABC9",
+      "统一后端；两臂实际ABC哈希一致",
+      "资源与效率分别绑定",
+      "ABC9后实际证明端点"
+    ],
+    "files": {
+      "png": "cdeff9e19e96e45e048faaf17799b95d7fca6804a2431d7fd3bdc8b70b16338c",
+      "pdf": "f2f7e8ff0cf6ca4838a247213334428c5c55a6833686f68d4b252edbbdb7d0fe",
+      "svg": "7027ba92c3235505e5a4794289c3e6f81f3cd48d3574cd38b62ae3c51f4e3b95"
+    }
+  },
+  {
+    "width_mm": 144,
+    "height_mm": 90,
+    "dpi": 400,
+    "pixels": [
+      2267,
+      1417
+    ],
+    "outside_canvas": [],
+    "node_text_overflow": [],
+    "embedded_fonts": {
+      "/DFIMHP+MicrosoftYaHei": true,
+      "/HBGWOI+MicrosoftYaHei-Bold": true
+    },
+    "text": [
+      "精确译码回收",
+      "优先MUX链",
+      "≤6个控制位",
+      "最多64种赋值",
+      "逐项求值选择函数",
+      "默认或唯一有效分支",
+      "建立共享数据树",
+      "显式X/Z叶保持",
+      "原优先级链",
+      "保持分支先后关系",
+      "构造剩余有效掩码",
+      "此前均未命中",
+      "共享掩码与输出组合",
+      "保留默认分支",
+      "无法确认语义或超出结构预算 → 保留原结构"
+    ],
+    "files": {
+      "png": "1475fda1c84a83f4a9823e32c4066bfc6f3cd8828fbca25effc559e11a5a607b",
+      "pdf": "903644324f873a5d73c1b2e8b6931cfc02d8925be6c223059dd21f22c644e214",
+      "svg": "96e230560a7eec55d03c07d48432ae4043f5663cf7d8d4f079e37215db6753d0"
+    }
+  },
+  {
+    "width_mm": 144,
+    "height_mm": 88,
+    "dpi": 400,
+    "pixels": [
+      2267,
+      1385
+    ],
+    "outside_canvas": [],
+    "node_text_overflow": [],
+    "embedded_fonts": {
+      "/DFIMHP+MicrosoftYaHei": true,
+      "/HBGWOI+MicrosoftYaHei-Bold": true
+    },
+    "text": [
+      "变换前：分支分别计算",
+      "变换后：共享一次运算",
+      "X + V0",
+      "X + V1",
+      "MUX(s)",
+      "Y",
+      "MUX(s, V0, V1)",
+      "X + 所选V",
+      "Y",
+      "条件：默认分支、位宽、符号与消费者关系均保持"
+    ],
+    "files": {
+      "png": "4f36fda5ce4b3053c91d2fd6e164ca824bd66ffe10d3219cd5c8ef6bcd1711f7",
+      "pdf": "f83087b64646986f25f2beacb67d8be5670c93764a6953c02b182865767e31e7",
+      "svg": "9acbcc7c149c36623ff2a83f7e8e1571d6a1311f1d427bd4f8f085043c66907f"
+    }
+  },
+  {
+    "width_mm": 144,
+    "height_mm": 106,
+    "dpi": 400,
+    "pixels": [
+      2267,
+      1669
+    ],
+    "outside_canvas": [],
+    "node_text_overflow": [],
+    "embedded_fonts": {
+      "/DFIMHP+MicrosoftYaHei": true,
+      "/HBGWOI+MicrosoftYaHei-Bold": true
+    },
+    "text": [
+      "1  通用结构扫描与预算",
+      "无用例名特判；不适用时保守退出",
+      "2  有界小ROM精确共享",
+      "余因子 / 残差修正；32地址校验",
+      "3  三位XOR / ADD / SUB共享传递链",
+      "匹配签名；互斥且可达；原状态保持",
+      "4  多层数据通路与双输出bank",
+      "逐项检查共享条件，保留不适用结构",
+      "5  全字资源共享 → 闭合DAG",
+      "消费者与保护属性检查",
+      "6  后DAG互斥复核与私有算术共享",
+      "最多256项；不沿用未经重证的互斥",
+      "7  分支常量传播 → 采样边界重述",
+      "保持复位优先：新EN = EN OR SRST",
+      "8  Cyclone IV硬件同步清零",
+      "已知初态逐位编码；ENA优先于SCLR",
+      "9  优先链处理 → PMUX控制恢复",
+      "完整条件与默认分支保持",
+      "10  采样域数据简化与公共译码共享",
+      "先证使能与完整消费者；两计划同提交"
+    ],
+    "files": {
+      "png": "3e151d8387c3f1aee663da6e41b94d303af078a5928c766e314238b9acd37155",
+      "pdf": "fe89f09a42bc76292fbf983214abae28170fdc3d1ace96b59c1d16a72cf81971",
+      "svg": "ac0a7e764c919179822b94a8925f028a7830ec2c56a75600461ea59aa2f3a827"
+    }
+  },
+  {
+    "width_mm": 144,
+    "height_mm": 119,
+    "dpi": 400,
+    "pixels": [
+      2267,
+      1874
+    ],
+    "outside_canvas": [],
+    "node_text_overflow": [],
+    "embedded_fonts": {
+      "/DFIMHP+MicrosoftYaHei": true,
+      "/HBGWOI+MicrosoftYaHei-Bold": true
+    },
+    "text": [
+      "原始RTL + 明确逻辑零初态契约",
+      "显式0/1保持；clock / reset / enable输入自由",
+      "源侧形式参考",
+      "逻辑0约束；完整状态语义",
+      "实际候选端点",
+      "默认综合；无证明侧补初值",
+      "完整EQY：全部输出与状态关系共同证明",
+      "实际端点哈希 = 捕获端点；生产资源绑定",
+      "9例源逻辑零初态 → 当前候选 PASS",
+      "面积与效率另用原默认基线；不声称旧物理全0端点等价"
+    ],
+    "files": {
+      "png": "c894a857418b2dcb3c47a1d7328f2494bca39eb555341e9b898fe5c2f95beb3e",
+      "pdf": "797949fac83340f0bd2daf7e1c8d349faab20d45828bc2093e18ddeabd4abeb9",
+      "svg": "4001f55f408a9654d6a9d1b963606808875655cd9985ed064c5bf617249909a6"
+    }
+  }
+]

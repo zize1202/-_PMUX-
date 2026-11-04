@@ -1,0 +1,53 @@
+{
+  "status": "PASS",
+  "reviewed_utc": "2026-11-01T23:51:40.986300+00:00",
+  "review_method": "All-page contact sheets visually inspected; key new method/formula/table and figure14 pages enlarged. Manual final page enlarged after removing a dangling last sentence.",
+  "documents": [
+    {
+      "name": "PMUX结构优化与等价验证系统_项目书.pdf",
+      "pages": 43,
+      "sha256": "aaf03efe2a3fafa0463d03784b50fd3ced164b034d7f22e2a4705cf9a1b3c14a"
+    },
+    {
+      "name": "原题要求与当前结果对照.pdf",
+      "pages": 3,
+      "sha256": "dd922f8bb27c6c70760e2086124e370cdffeb97c8e2fb83e1416b24d87f962eb"
+    },
+    {
+      "name": "软件使用手册.pdf",
+      "pages": 4,
+      "sha256": "7915fb2c5930b351ad6b3308ebbaf58d675b64eaf952908bb6b9a38ec0ed7ed8"
+    }
+  ],
+  "checks": {
+    "no_clipped_text_or_overlapping_figures": true,
+    "all_tables_three_line": true,
+    "native_equations_legible": true,
+    "seven_waveforms_match_frozen_r30": true,
+    "references_readable": true,
+    "manual_commands_not_clipped": true,
+    "manual_no_nearly_empty_final_page": true,
+    "brief_three_pages_readable": true
+  },
+  "layout_note": "Large mechanism figures are kept intact with their captions; some preceding-page whitespace is retained to preserve figure readability.",
+  "modelsim_manual": {
+    "wlf_relative_path": "verified_core/evidence/modelsim/test4/simulation.wlf",
+    "dataset": "simulation",
+    "readonly_counts": [
+      4092,
+      0,
+      1
+    ],
+    "result_sha256": "8fd4fee55b4162d044ee1953b9a2d3c5a6cf5a278b6414c691694fac71b0f799",
+    "view_log_sha256": "191f851605226c472e36d05087a45ae48a3a98ea0d51cb91fe57669d76b55500",
+    "gui_actions_claimed_executed": false,
+    "new_simulation_run": false
+  },
+  "personal_identity_fields": {
+    "school": false,
+    "members": false,
+    "supervisor": false,
+    "project_id": false,
+    "unfilled_placeholders_found": false
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "primary_source": "https://docs.altera.com/api/khub/documents/3srzmTgxxMHVsaxzQUGqXg/content",
+  "title": "Cyclone IV Device Handbook, Volume 1",
+  "document_pages": 268,
+  "edition_cover": "March 2016 / CYIV-5V1-2.2",
+  "chapter_revision": "November 2009",
+  "verified_pdf_pages_zero_based": [
+    33,
+    34
+  ],
+  "printed_pages": [
+    "2–6",
+    "2–7"
+  ],
+  "verification": "Official PDF text opened and independently read via web tool. Screenshot request timed out; no local PDF retained.",
+  "supported_claims": [
+    "Each LAB has two clock enables, one synchronous clear and one synchronous load.",
+    "Synchronous clear/load controls are shared at LAB scope."
+  ],
+  "not_claimed": [
+    "Physical fitting feasibility of the r29 design",
+    "General vendor primitive simulation",
+    "Hardware timing validation"
+  ],
+  "access_date": "2026-11-02"
+}
