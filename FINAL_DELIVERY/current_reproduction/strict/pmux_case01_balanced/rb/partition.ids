@@ -1,0 +1,1 @@
+group pmux_case01_balanced clk ctrl_in data_in data_out en rst

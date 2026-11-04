@@ -1,0 +1,1 @@
+group pmux_case02_pipeline clk ctrl_in data_in data_out en lane[0].left_mid lane[0].mid lane[0].right_mid lane[1].right_mid rst

@@ -1,0 +1,26 @@
+[gold]
+read_rtlil rtl.normalized.il
+[gate]
+read_rtlil baseline.normalized.il
+[script]
+hierarchy -check -top pmux_case02_pipeline
+clk2fflogic
+check -assert
+[match pmux_case02_pipeline]
+nodefault
+gold-match clk
+gold-match rst
+gold-match en
+gold-match data_in
+gold-match ctrl_in
+gold-match data_out
+gold-match /lane\[0\]\.mid/
+gold-match /lane\[0\]\.left_mid/
+gold-match /lane\[0\]\.right_mid/
+gold-match /lane\[1\]\.right_mid/
+[collect pmux_case02_pipeline]
+group *
+[strategy induction]
+use sat
+depth 20
+timeout 180
