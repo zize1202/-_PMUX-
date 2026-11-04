@@ -1,0 +1,615 @@
+{
+  "candidate": "r30_native_sload",
+  "batch": "r20261102_072425_992b5bb8",
+  "createdUTC": "2026-11-01T23:24:25.859269+00:00",
+  "areaMean": 0.3625224711365656,
+  "scope": "C145_read_verilog_then_synth_intel_process_lifetime_no_added_stat_or_export",
+  "rows": [
+    {
+      "id": "test1",
+      "name": "状态寄存选择",
+      "cohort": "original4",
+      "sequential": true,
+      "description": "16-state registered data selection; asynchronous active-high reset.",
+      "parameters": {
+        "START": 0,
+        "CYCLE1": 1,
+        "CYCLE2": 2,
+        "CYCLE3": 3,
+        "CYCLE4": 4,
+        "CYCLE5": 5,
+        "CYCLE6": 6,
+        "CYCLE7": 7,
+        "CYCLE8": 8,
+        "CYCLE9": 9,
+        "CYCLE10": 10,
+        "CYCLE11": 11,
+        "CYCLE12": 12,
+        "CYCLE13": 13,
+        "CYCLE14": 14,
+        "CYCLE15": 15
+      },
+      "baseline": {
+        "lut": 286,
+        "inverter": 2,
+        "dff": 222,
+        "io": 0,
+        "other": 0,
+        "unknown": 0,
+        "total_leaf_cells": 510,
+        "logic_units": 288,
+        "cell_types": {
+          "$not": 2,
+          "cycloneiv_lcell_comb": 286,
+          "dffeas": 222
+        },
+        "unknown_types": {},
+        "top_parameter_defaults_raw": {
+          "CYCLE1": "0001",
+          "CYCLE10": "1010",
+          "CYCLE11": "1011",
+          "CYCLE12": "1100",
+          "CYCLE13": "1101",
+          "CYCLE14": "1110",
+          "CYCLE15": "1111",
+          "CYCLE2": "0010",
+          "CYCLE3": "0011",
+          "CYCLE4": "0100",
+          "CYCLE5": "0101",
+          "CYCLE6": "0110",
+          "CYCLE7": "0111",
+          "CYCLE8": "1000",
+          "CYCLE9": "1001",
+          "START": "0000"
+        },
+        "classification_complete": true,
+        "netlist_sha256": "3719ad0a2ed6e9ece30ff69d32c9e0cff5903df3923263488ed446491cb728b8"
+      },
+      "optimized": {
+        "lut": 202,
+        "inverter": 2,
+        "dff": 222,
+        "io": 0,
+        "other": 0,
+        "unknown": 0,
+        "total_leaf_cells": 426,
+        "logic_units": 204,
+        "cell_types": {
+          "$not": 2,
+          "cycloneiv_lcell_comb": 202,
+          "dffeas": 222
+        },
+        "unknown_types": {},
+        "top_parameter_defaults_raw": {
+          "CYCLE1": "0001",
+          "CYCLE10": "1010",
+          "CYCLE11": "1011",
+          "CYCLE12": "1100",
+          "CYCLE13": "1101",
+          "CYCLE14": "1110",
+          "CYCLE15": "1111",
+          "CYCLE2": "0010",
+          "CYCLE3": "0011",
+          "CYCLE4": "0100",
+          "CYCLE5": "0101",
+          "CYCLE6": "0110",
+          "CYCLE7": "0111",
+          "CYCLE8": "1000",
+          "CYCLE9": "1001",
+          "START": "0000"
+        },
+        "classification_complete": true,
+        "netlist_sha256": "5aaf071cc5d1a49462ecef01ce2544f6b4c54debd17cb176915293c63ef1f011"
+      },
+      "areaReduction": 0.2916666666666667,
+      "timeBaseline": 0.3469582,
+      "timeOptimized": 0.3398859,
+      "memoryBaseline": 21069824,
+      "memoryOptimized": 20422656,
+      "timingBasis": "initial_pair",
+      "pairs": 1,
+      "proof": "PASS",
+      "sourcePath": "original4/competition_case/test1/test1.v"
+    },
+    {
+      "id": "test2",
+      "name": "组合优先选择",
+      "cohort": "original4",
+      "sequential": false,
+      "description": "Combinational priority selection. Original explicit sensitivity list omits d/datad; unchanged source. clk is unused.",
+      "parameters": {},
+      "baseline": {
+        "lut": 25,
+        "inverter": 0,
+        "dff": 0,
+        "io": 0,
+        "other": 0,
+        "unknown": 0,
+        "total_leaf_cells": 25,
+        "logic_units": 25,
+        "cell_types": {
+          "cycloneiv_lcell_comb": 25
+        },
+        "unknown_types": {},
+        "top_parameter_defaults_raw": {},
+        "classification_complete": true,
+        "netlist_sha256": "bbe92976c65bb4587a12cd2bca356c80cc2691005edc2929bb6755551f5411ef"
+      },
+      "optimized": {
+        "lut": 15,
+        "inverter": 0,
+        "dff": 0,
+        "io": 0,
+        "other": 0,
+        "unknown": 0,
+        "total_leaf_cells": 15,
+        "logic_units": 15,
+        "cell_types": {
+          "cycloneiv_lcell_comb": 15
+        },
+        "unknown_types": {},
+        "top_parameter_defaults_raw": {},
+        "classification_complete": true,
+        "netlist_sha256": "5a0581d1c63ed666ea6ae16f9f6dae6cba4372262632b1ae8bfdab1fdc04003a"
+      },
+      "areaReduction": 0.4,
+      "timeBaseline": 0.1889807,
+      "timeOptimized": 0.1842284,
+      "memoryBaseline": 14569472,
+      "memoryOptimized": 14721024,
+      "timingBasis": "initial_pair",
+      "pairs": 1,
+      "proof": "PASS",
+      "sourcePath": "original4/competition_case/test2/test2.v"
+    },
+    {
+      "id": "test3",
+      "name": "移位与 GPIO",
+      "cohort": "original4",
+      "sequential": true,
+      "description": "Clocked shift register and GPIO register update, no explicit reset/initialization.",
+      "parameters": {},
+      "baseline": {
+        "lut": 12,
+        "inverter": 1,
+        "dff": 17,
+        "io": 0,
+        "other": 0,
+        "unknown": 0,
+        "total_leaf_cells": 30,
+        "logic_units": 13,
+        "cell_types": {
+          "$not": 1,
+          "cycloneiv_lcell_comb": 12,
+          "dffeas": 17
+        },
+        "unknown_types": {},
+        "top_parameter_defaults_raw": {},
+        "classification_complete": true,
+        "netlist_sha256": "04d36cd191f0daeb1942939568f673af9e907aa33e1c27591ffc6147d846aad7"
+      },
+      "optimized": {
+        "lut": 8,
+        "inverter": 1,
+        "dff": 14,
+        "io": 0,
+        "other": 0,
+        "unknown": 0,
+        "total_leaf_cells": 23,
+        "logic_units": 9,
+        "cell_types": {
+          "$not": 1,
+          "cycloneiv_lcell_comb": 8,
+          "dffeas": 14
+        },
+        "unknown_types": {},
+        "top_parameter_defaults_raw": {},
+        "classification_complete": true,
+        "netlist_sha256": "10a80a7ac0f4bc2be232191b9de2cb4363967a2187287ef6fab5611231f9f67f"
+      },
+      "areaReduction": 0.3076923076923077,
+      "timeBaseline": 0.204525,
+      "timeOptimized": 0.2015924,
+      "memoryBaseline": 15396864,
+      "memoryOptimized": 15446016,
+      "timingBasis": "initial_pair",
+      "pairs": 1,
+      "proof": "PASS",
+      "sourcePath": "original4/competition_case/test3/test3.v"
+    },
+    {
+      "id": "test4",
+      "name": "5b→6b 译码",
+      "cohort": "original4",
+      "sequential": true,
+      "description": "Registered 5b-to-6b decode with active-low asynchronous reset. datain_5bis7 is not assigned in reset branch; unchanged source.",
+      "parameters": {},
+      "baseline": {
+        "lut": 35,
+        "inverter": 1,
+        "dff": 10,
+        "io": 0,
+        "other": 0,
+        "unknown": 0,
+        "total_leaf_cells": 46,
+        "logic_units": 36,
+        "cell_types": {
+          "$not": 1,
+          "cycloneiv_lcell_comb": 35,
+          "dffeas": 10
+        },
+        "unknown_types": {},
+        "top_parameter_defaults_raw": {},
+        "classification_complete": true,
+        "netlist_sha256": "ccb8f4a48f5b4eb8d91ee325b86af95a165374da76bfb26580314e0996c63cad"
+      },
+      "optimized": {
+        "lut": 27,
+        "inverter": 1,
+        "dff": 10,
+        "io": 0,
+        "other": 0,
+        "unknown": 0,
+        "total_leaf_cells": 38,
+        "logic_units": 28,
+        "cell_types": {
+          "$not": 1,
+          "cycloneiv_lcell_comb": 27,
+          "dffeas": 10
+        },
+        "unknown_types": {},
+        "top_parameter_defaults_raw": {},
+        "classification_complete": true,
+        "netlist_sha256": "553807666a3a392dbc67c3cbfc2c808d8984efa70ca77cbba5b8c78e6ef06083"
+      },
+      "areaReduction": 0.2222222222222222,
+      "timeBaseline": 0.2279757,
+      "timeOptimized": 0.2159009,
+      "memoryBaseline": 16510976,
+      "memoryOptimized": 16490496,
+      "timingBasis": "initial_pair",
+      "pairs": 1,
+      "proof": "PASS",
+      "sourcePath": "original4/competition_case/test4/test4.v"
+    },
+    {
+      "id": "pmux_case01_balanced",
+      "name": "平衡选择树",
+      "cohort": "additional5",
+      "sequential": true,
+      "description": "Balanced PMUX network with arithmetic and output q register; synchronous reset.",
+      "parameters": {
+        "LANES": 1,
+        "WIDTH": 12
+      },
+      "baseline": {
+        "lut": 426,
+        "inverter": 0,
+        "dff": 12,
+        "io": 0,
+        "other": 0,
+        "unknown": 0,
+        "total_leaf_cells": 438,
+        "logic_units": 426,
+        "cell_types": {
+          "cycloneiv_lcell_comb": 426,
+          "dffeas": 12
+        },
+        "unknown_types": {},
+        "top_parameter_defaults_raw": {
+          "LANES": "00000000000000000000000000000001",
+          "WIDTH": "00000000000000000000000000001100"
+        },
+        "classification_complete": true,
+        "netlist_sha256": "87bcede36fca4d92051e5a71842716aee9596f22e41991efc4e3f7b3e7a9e5b1"
+      },
+      "optimized": {
+        "lut": 239,
+        "inverter": 0,
+        "dff": 12,
+        "io": 0,
+        "other": 0,
+        "unknown": 0,
+        "total_leaf_cells": 251,
+        "logic_units": 239,
+        "cell_types": {
+          "cycloneiv_lcell_comb": 239,
+          "dffeas": 12
+        },
+        "unknown_types": {},
+        "top_parameter_defaults_raw": {
+          "LANES": "00000000000000000000000000000001",
+          "WIDTH": "00000000000000000000000000001100"
+        },
+        "classification_complete": true,
+        "netlist_sha256": "c400e57029f95f68b0019b2e81162c65a1717da9ca1619da22310e12d28959b2"
+      },
+      "areaReduction": 0.43896713615023475,
+      "timeBaseline": 0.395799,
+      "timeOptimized": 0.3015344,
+      "memoryBaseline": 23592960,
+      "memoryOptimized": 19443712,
+      "timingBasis": "initial_pair",
+      "pairs": 1,
+      "proof": "PASS",
+      "sourcePath": "additional5/pmux_case01_balanced.v"
+    },
+    {
+      "id": "pmux_case02_pipeline",
+      "name": "流水采样边界",
+      "cohort": "additional5",
+      "sequential": true,
+      "description": "Two register stages (mid/q) and inter-lane coupling; synchronous reset.",
+      "parameters": {
+        "LANES": 4,
+        "WIDTH": 3
+      },
+      "baseline": {
+        "lut": 450,
+        "inverter": 0,
+        "dff": 24,
+        "io": 0,
+        "other": 0,
+        "unknown": 0,
+        "total_leaf_cells": 474,
+        "logic_units": 450,
+        "cell_types": {
+          "cycloneiv_lcell_comb": 450,
+          "dffeas": 24
+        },
+        "unknown_types": {},
+        "top_parameter_defaults_raw": {
+          "LANES": "00000000000000000000000000000100",
+          "WIDTH": "00000000000000000000000000000011"
+        },
+        "classification_complete": true,
+        "netlist_sha256": "c7a33ddf3830aa18687409d21e73e549b2bdc2f8b24f185d32d6a291ee2316a0"
+      },
+      "optimized": {
+        "lut": 305,
+        "inverter": 0,
+        "dff": 24,
+        "io": 0,
+        "other": 0,
+        "unknown": 0,
+        "total_leaf_cells": 329,
+        "logic_units": 305,
+        "cell_types": {
+          "cycloneiv_lcell_comb": 305,
+          "dffeas": 24
+        },
+        "unknown_types": {},
+        "top_parameter_defaults_raw": {
+          "LANES": "00000000000000000000000000000100",
+          "WIDTH": "00000000000000000000000000000011"
+        },
+        "classification_complete": true,
+        "netlist_sha256": "2083df990bd8daf8ad5d6c6e13ae48458c3ee12da1064813bef6e4799158acee"
+      },
+      "areaReduction": 0.32222222222222224,
+      "timeBaseline": 0.4602932,
+      "timeOptimized": 0.4169186,
+      "memoryBaseline": 23515136,
+      "memoryOptimized": 21815296,
+      "timingBasis": "initial_pair",
+      "pairs": 1,
+      "proof": "PASS",
+      "sourcePath": "additional5/pmux_case02_pipeline.v"
+    },
+    {
+      "id": "pmux_case03_crossbar",
+      "name": "交叉数据通路",
+      "cohort": "additional5",
+      "sequential": true,
+      "description": "Crossbar-style lane selection with q register and feedback; synchronous reset.",
+      "parameters": {
+        "LANES": 2,
+        "WIDTH": 5
+      },
+      "baseline": {
+        "lut": 408,
+        "inverter": 0,
+        "dff": 10,
+        "io": 0,
+        "other": 0,
+        "unknown": 0,
+        "total_leaf_cells": 418,
+        "logic_units": 408,
+        "cell_types": {
+          "cycloneiv_lcell_comb": 408,
+          "dffeas": 10
+        },
+        "unknown_types": {},
+        "top_parameter_defaults_raw": {
+          "LANES": "00000000000000000000000000000010",
+          "WIDTH": "00000000000000000000000000000101"
+        },
+        "classification_complete": true,
+        "netlist_sha256": "0e6bd06a37156bc35ad92f3907fd848f20bbde8c40f0e2d36b4bd2fb96ff5e02"
+      },
+      "optimized": {
+        "lut": 241,
+        "inverter": 0,
+        "dff": 10,
+        "io": 0,
+        "other": 0,
+        "unknown": 0,
+        "total_leaf_cells": 251,
+        "logic_units": 241,
+        "cell_types": {
+          "cycloneiv_lcell_comb": 241,
+          "dffeas": 10
+        },
+        "unknown_types": {},
+        "top_parameter_defaults_raw": {
+          "LANES": "00000000000000000000000000000010",
+          "WIDTH": "00000000000000000000000000000101"
+        },
+        "classification_complete": true,
+        "netlist_sha256": "98fdf0d2d4107af34c3099ab240ab21ea259d9eecca4e13b546588f3ffcb9da4"
+      },
+      "areaReduction": 0.40931372549019607,
+      "timeBaseline": 0.4338571,
+      "timeOptimized": 0.3423043,
+      "memoryBaseline": 22679552,
+      "memoryOptimized": 20160512,
+      "timingBasis": "initial_pair",
+      "pairs": 1,
+      "proof": "PASS",
+      "sourcePath": "additional5/pmux_case03_crossbar.v"
+    },
+    {
+      "id": "pmux_case04_feedback",
+      "name": "反馈寄存结构",
+      "cohort": "additional5",
+      "sequential": true,
+      "description": "Arithmetic feedback and enabled q register; asynchronous active-high reset.",
+      "parameters": {
+        "LANES": 2,
+        "WIDTH": 8
+      },
+      "baseline": {
+        "lut": 367,
+        "inverter": 1,
+        "dff": 16,
+        "io": 0,
+        "other": 0,
+        "unknown": 0,
+        "total_leaf_cells": 384,
+        "logic_units": 368,
+        "cell_types": {
+          "$not": 1,
+          "cycloneiv_lcell_comb": 367,
+          "dffeas": 16
+        },
+        "unknown_types": {},
+        "top_parameter_defaults_raw": {
+          "LANES": "00000000000000000000000000000010",
+          "WIDTH": "00000000000000000000000000001000"
+        },
+        "classification_complete": true,
+        "netlist_sha256": "c29ffdd6211e5a3469aa06678e754e4609b2c313100c200d94befa92c0de78b9"
+      },
+      "optimized": {
+        "lut": 207,
+        "inverter": 1,
+        "dff": 16,
+        "io": 0,
+        "other": 0,
+        "unknown": 0,
+        "total_leaf_cells": 224,
+        "logic_units": 208,
+        "cell_types": {
+          "$not": 1,
+          "cycloneiv_lcell_comb": 207,
+          "dffeas": 16
+        },
+        "unknown_types": {},
+        "top_parameter_defaults_raw": {
+          "LANES": "00000000000000000000000000000010",
+          "WIDTH": "00000000000000000000000000001000"
+        },
+        "classification_complete": true,
+        "netlist_sha256": "c83e852d1d102fa945621e401a2eb489cf1c27c4daaef8252421e0f834a677da"
+      },
+      "areaReduction": 0.43478260869565216,
+      "timeBaseline": 0.3955775,
+      "timeOptimized": 0.3663223,
+      "memoryBaseline": 22106112,
+      "memoryOptimized": 19910656,
+      "timingBasis": "initial_pair",
+      "pairs": 1,
+      "proof": "PASS",
+      "sourcePath": "additional5/pmux_case04_feedback.v"
+    },
+    {
+      "id": "pmux_case05_nested",
+      "name": "嵌套选择结构",
+      "cohort": "additional5",
+      "sequential": true,
+      "description": "Nested selection with q register; synchronous reset.",
+      "parameters": {
+        "LANES": 1,
+        "WIDTH": 12
+      },
+      "baseline": {
+        "lut": 413,
+        "inverter": 0,
+        "dff": 12,
+        "io": 0,
+        "other": 0,
+        "unknown": 0,
+        "total_leaf_cells": 425,
+        "logic_units": 413,
+        "cell_types": {
+          "cycloneiv_lcell_comb": 413,
+          "dffeas": 12
+        },
+        "unknown_types": {},
+        "top_parameter_defaults_raw": {
+          "LANES": "00000000000000000000000000000001",
+          "WIDTH": "00000000000000000000000000001100"
+        },
+        "classification_complete": true,
+        "netlist_sha256": "cb6220fa3570518520ed1c63df3ca87d7b4101bbf38221c3a1636534d7f11de0"
+      },
+      "optimized": {
+        "lut": 233,
+        "inverter": 0,
+        "dff": 12,
+        "io": 0,
+        "other": 0,
+        "unknown": 0,
+        "total_leaf_cells": 245,
+        "logic_units": 233,
+        "cell_types": {
+          "cycloneiv_lcell_comb": 233,
+          "dffeas": 12
+        },
+        "unknown_types": {},
+        "top_parameter_defaults_raw": {
+          "LANES": "00000000000000000000000000000001",
+          "WIDTH": "00000000000000000000000000001100"
+        },
+        "classification_complete": true,
+        "netlist_sha256": "141e1bcec8f08aac69a6641f9041fa92fe9947adbaa6da2bb88a65133f2f6ae9"
+      },
+      "areaReduction": 0.4358353510895884,
+      "timeBaseline": 0.4157351,
+      "timeOptimized": 0.3430872,
+      "memoryBaseline": 22515712,
+      "memoryOptimized": 20705280,
+      "timingBasis": "initial_pair",
+      "pairs": 1,
+      "proof": "PASS",
+      "sourcePath": "additional5/pmux_case05_nested.v"
+    }
+  ],
+  "sources": [
+    {
+      "path": "FINAL_DELIVERY/current_reproduction/measure/report.json",
+      "sha256": "253335bc3a29ebd5306f2409bd265c2c3679dc16b361a0f859b190e810143230"
+    },
+    {
+      "path": "FINAL_DELIVERY/current_reproduction/strict/report.json",
+      "sha256": "a3d61f43dea1871d600a5c276920b1246865e392ee302eed095c329032ab289e"
+    },
+    {
+      "path": "FINAL_DELIVERY/current_reproduction/report.json",
+      "sha256": "246bbf499136279d5d09a6ca4d2edfe55e94f971cc07983d0358087581b9a0f2"
+    },
+    {
+      "path": "verified_core/source/optimized_intel/opt_pmux.cc",
+      "sha256": "125cffdcaa5dd541f69bdbd425ea83024498c33223abba3913489063ab6b3afc"
+    },
+    {
+      "path": "verified_core/source/optimized_intel/pmux_priority_grouping.h",
+      "sha256": "5cf537efe474744550d393c78dca3b5b0b6d0d7f85a53037ca5fd0c68031fde2"
+    },
+    {
+      "path": "verified_core/source/optimized_intel/pmux_resource_share.h",
+      "sha256": "8523e7bc523a8a7bf8af7c96f4d98e5552a968474d00a04f9d68fe924ce48bf3"
+    }
+  ],
+  "referenceContract": "Yosys read_verilog/proc synthesis semantics; source unspecified FF logical zero; explicit values preserved; no candidate proof repair; no original RTL event-list simulation claim."
+}
