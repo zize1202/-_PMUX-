@@ -1,0 +1,53 @@
+{
+  "arm": "baseline",
+  "case_id": "test1",
+  "label": "warmup_03",
+  "valid": true,
+  "script_sha256": "527dc63cab8035f1740f1f78abbb4afa19fbd0d5909116e26b3040c26a54e7d8",
+  "timed_script_sha256": "527dc63cab8035f1740f1f78abbb4afa19fbd0d5909116e26b3040c26a54e7d8",
+  "binary_sha256": "42ae7772e6669815fa25dcdfb8efb06c1c0f0d9a0fb81bdcb9ce4eae4af48858",
+  "abc_sha256": "3d8b4f2e5802682bd74d57acd3b0de292189e983c845880eb3c97b2c94dbe0e4",
+  "source_sha256": {
+    "D:\\PMUX_20261102_delivery\\relocation r30 all\\cases\\original4\\competition_case\\test1\\test1.v": "2d2dba011b0e8799d0de3790b69b7f01c6eb6ac665c4321b57b0378a4972fd13"
+  },
+  "techlib_sha256": "1bc0b1a8f7d481728d1462693723308604c1608a654be0890b5adf5150ada8d2",
+  "command": [
+    "D:\\PMUX_20261102_delivery\\relocation r30 all\\baseline\\bin\\yosys.exe",
+    "-s",
+    "D:\\PMUX_20261102_delivery\\relocation r30 all\\results\\r20261102_072425_992b5bb8\\measure\\scripts\\test1.timed.ys"
+  ],
+  "command_sha256": "8586c88206bebfcf6aca711091f397cecc8d831e125fc2715dafedc583412d9a",
+  "log": "D:\\PMUX_20261102_delivery\\relocation r30 all\\results\\r20261102_072425_992b5bb8\\measure\\warmup_03\\test1\\baseline\\yosys.log",
+  "included_in_efficiency": false,
+  "execution_scope": "two_command_synthesis_lifetime",
+  "pid": 50492,
+  "exit_code": 0,
+  "timed_out": false,
+  "wall_seconds": 0.3376868,
+  "peak_working_set_bytes": 21225472,
+  "host_observed_seconds_diagnostic": 0.3468605999951251,
+  "successful_peak_counter_reads": 64,
+  "final_peak_counter_read_ok": true,
+  "final_peak_counter_read_error": 0,
+  "measurement_valid": true,
+  "actual_abc_invocations": [
+    {
+      "logged_command": "\"<yosys-exe-dir>/yosys-abc.exe\" -s -f <abc-temp-dir>/abc.script 2>&1",
+      "resolved_path": "D:\\PMUX_20261102_delivery\\relocation r30 all\\baseline\\bin\\yosys-abc.exe",
+      "sha256": "3d8b4f2e5802682bd74d57acd3b0de292189e983c845880eb3c97b2c94dbe0e4",
+      "matches_requested_binary_bytes": true
+    }
+  ],
+  "timed_stat_inventory": {
+    "top": "test1",
+    "total_direct_cells": 510,
+    "cell_types": {
+      "$not": 2,
+      "cycloneiv_lcell_comb": 286,
+      "dffeas": 222
+    },
+    "inventory_sha256": "3c78ef7808492d7f937402ef080006f50a9bfe7ad109607e9e67a631ca8daad6",
+    "basis": "synth_intel_builtin_stat_direct_top_instances",
+    "log_sha256": "fd77e40f2194dc2d74cb19f524849ba74493d8cc6e062a782353a4ed284f27a2"
+  }
+}
