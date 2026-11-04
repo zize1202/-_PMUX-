@@ -1,0 +1,65 @@
+{
+  "arm": "optimized",
+  "case_id": "pmux_case01_balanced",
+  "label": "untimed_area",
+  "valid": true,
+  "script_sha256": "70bcbc783685b77db16b32ed12652f7776d2a35a25f9f4284dfdf0dee2390c74",
+  "timed_script_sha256": "e947d9d958b97d62bdd50b957842ee5f25053298416e4f50f2c4be485fe25de7",
+  "binary_sha256": "efebff04cac47ccdfefc3317d4de14b7f727123a7499243ab9da35ba79f596d9",
+  "abc_sha256": "3d8b4f2e5802682bd74d57acd3b0de292189e983c845880eb3c97b2c94dbe0e4",
+  "source_sha256": {
+    "D:\\PMUX_20261102_delivery\\relocation r30 all\\cases\\additional5\\pmux_case01_balanced.v": "463263f4b265cbad3b634d69d316cd29e7ea0a62f91ee396dbeeecf7df5c7343"
+  },
+  "techlib_sha256": "1bc0b1a8f7d481728d1462693723308604c1608a654be0890b5adf5150ada8d2",
+  "command": [
+    "D:\\PMUX_20261102_delivery\\relocation r30 all\\optimized\\bin\\yosys.exe",
+    "-s",
+    "D:\\PMUX_20261102_delivery\\relocation r30 all\\results\\r20261102_072425_992b5bb8\\measure\\scripts\\pmux_case01_balanced.untimed_area.ys"
+  ],
+  "command_sha256": "9e37f97703348744811c721ac46d256fbe762046316c95c9b69f3033484ec9a9",
+  "log": "D:\\PMUX_20261102_delivery\\relocation r30 all\\results\\r20261102_072425_992b5bb8\\measure\\untimed_area\\pmux_case01_balanced\\optimized\\yosys.log",
+  "included_in_efficiency": false,
+  "execution_scope": "untimed_area_reexecution",
+  "exit_code": 0,
+  "actual_abc_invocations": [
+    {
+      "logged_command": "\"D:\\PMUX_20261102_delivery\\relocation r30 all\\baseline\\bin\\yosys-abc.exe\" -s -f <abc-temp-dir>/abc.script 2>&1",
+      "resolved_path": "D:\\PMUX_20261102_delivery\\relocation r30 all\\baseline\\bin\\yosys-abc.exe",
+      "sha256": "3d8b4f2e5802682bd74d57acd3b0de292189e983c845880eb3c97b2c94dbe0e4",
+      "matches_requested_binary_bytes": true
+    }
+  ],
+  "capture_stat_inventory": {
+    "top": "pmux_case01_balanced",
+    "total_direct_cells": 251,
+    "cell_types": {
+      "cycloneiv_lcell_comb": 239,
+      "dffeas": 12
+    },
+    "inventory_sha256": "0889a56aca75ee8ff7eb2cc2b872683de0713a0c312e8a88ed856affa9c880fb",
+    "basis": "synth_intel_builtin_stat_direct_top_instances",
+    "log_sha256": "ee25fd25bcfd293e021d7807ce3c7ec42c7f3db01ef3ead65e4f901cbdcbc224"
+  },
+  "netlist": "D:\\PMUX_20261102_delivery\\relocation r30 all\\results\\r20261102_072425_992b5bb8\\measure\\untimed_area\\pmux_case01_balanced\\optimized\\mapped.netlist.json",
+  "cells": {
+    "lut": 239,
+    "inverter": 0,
+    "dff": 12,
+    "io": 0,
+    "other": 0,
+    "unknown": 0,
+    "total_leaf_cells": 251,
+    "logic_units": 239,
+    "cell_types": {
+      "cycloneiv_lcell_comb": 239,
+      "dffeas": 12
+    },
+    "unknown_types": {},
+    "top_parameter_defaults_raw": {
+      "LANES": "00000000000000000000000000000001",
+      "WIDTH": "00000000000000000000000000001100"
+    },
+    "classification_complete": true,
+    "netlist_sha256": "c400e57029f95f68b0019b2e81162c65a1717da9ca1619da22310e12d28959b2"
+  }
+}

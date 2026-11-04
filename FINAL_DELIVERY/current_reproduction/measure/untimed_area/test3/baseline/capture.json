@@ -1,0 +1,64 @@
+{
+  "arm": "baseline",
+  "case_id": "test3",
+  "label": "untimed_area",
+  "valid": true,
+  "script_sha256": "f00f68422eda7b0638d78c0a7e8aa18a3a8e10544e0209955d483315e752d227",
+  "timed_script_sha256": "f92d070b3a22a023711cb1f85a5951962856546e9f41f6f41928ddcd4961aee8",
+  "binary_sha256": "42ae7772e6669815fa25dcdfb8efb06c1c0f0d9a0fb81bdcb9ce4eae4af48858",
+  "abc_sha256": "3d8b4f2e5802682bd74d57acd3b0de292189e983c845880eb3c97b2c94dbe0e4",
+  "source_sha256": {
+    "D:\\PMUX_20261102_delivery\\relocation r30 all\\cases\\original4\\competition_case\\test3\\test3.v": "1551b9212622ccef6019d6e77de2c43dc8c80d267957b55a42121f34a08780e9"
+  },
+  "techlib_sha256": "1bc0b1a8f7d481728d1462693723308604c1608a654be0890b5adf5150ada8d2",
+  "command": [
+    "D:\\PMUX_20261102_delivery\\relocation r30 all\\baseline\\bin\\yosys.exe",
+    "-s",
+    "D:\\PMUX_20261102_delivery\\relocation r30 all\\results\\r20261102_072425_992b5bb8\\measure\\scripts\\test3.untimed_area.ys"
+  ],
+  "command_sha256": "707c46697628a7fac7c1d8b630911e407fc572bbf287e39dd459cb0f60921f90",
+  "log": "D:\\PMUX_20261102_delivery\\relocation r30 all\\results\\r20261102_072425_992b5bb8\\measure\\untimed_area\\test3\\baseline\\yosys.log",
+  "included_in_efficiency": false,
+  "execution_scope": "untimed_area_reexecution",
+  "exit_code": 0,
+  "actual_abc_invocations": [
+    {
+      "logged_command": "\"<yosys-exe-dir>/yosys-abc.exe\" -s -f <abc-temp-dir>/abc.script 2>&1",
+      "resolved_path": "D:\\PMUX_20261102_delivery\\relocation r30 all\\baseline\\bin\\yosys-abc.exe",
+      "sha256": "3d8b4f2e5802682bd74d57acd3b0de292189e983c845880eb3c97b2c94dbe0e4",
+      "matches_requested_binary_bytes": true
+    }
+  ],
+  "capture_stat_inventory": {
+    "top": "test3",
+    "total_direct_cells": 30,
+    "cell_types": {
+      "$not": 1,
+      "cycloneiv_lcell_comb": 12,
+      "dffeas": 17
+    },
+    "inventory_sha256": "8b42fbfe521fb5a0a5d634159eaa3c4f01aae9004fc49ea3bb8bc77c3af4f4e7",
+    "basis": "synth_intel_builtin_stat_direct_top_instances",
+    "log_sha256": "a95ba032a11fd1514ca277b23a84da4df8e30aad42d6835bbe37d9ef7587808e"
+  },
+  "netlist": "D:\\PMUX_20261102_delivery\\relocation r30 all\\results\\r20261102_072425_992b5bb8\\measure\\untimed_area\\test3\\baseline\\mapped.netlist.json",
+  "cells": {
+    "lut": 12,
+    "inverter": 1,
+    "dff": 17,
+    "io": 0,
+    "other": 0,
+    "unknown": 0,
+    "total_leaf_cells": 30,
+    "logic_units": 13,
+    "cell_types": {
+      "$not": 1,
+      "cycloneiv_lcell_comb": 12,
+      "dffeas": 17
+    },
+    "unknown_types": {},
+    "top_parameter_defaults_raw": {},
+    "classification_complete": true,
+    "netlist_sha256": "04d36cd191f0daeb1942939568f673af9e907aa33e1c27591ffc6147d846aad7"
+  }
+}
