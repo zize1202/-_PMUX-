@@ -1,0 +1,814 @@
+{
+  "schema": 3,
+  "candidate": "r30_native_sload",
+  "mode": "All",
+  "complete": true,
+  "success": true,
+  "contest_score": null,
+  "official_nine_run": true,
+  "stages": [
+    {
+      "stage": "v3_measurement",
+      "report": "measure/report.json",
+      "sha256": "fc7afc21cce25ac9c18dbc6b3f36d5e3e1fb5dd38ba4c2ec5b8d90a1e65ded0c"
+    },
+    {
+      "stage": "untimed_postabc_capture",
+      "report": "capture/report.json"
+    },
+    {
+      "stage": "direct_source_zero_eqy",
+      "report": "strict/report.json"
+    }
+  ],
+  "scope": "C145 two-command lifecycle timing, separate untimed area capture, candidate postABC capture, then direct source-zero EQY.",
+  "all_local_objective_checks_pass": true,
+  "reference_contract": "Yosys read_verilog/proc synthesis semantics; source unspecified FF logical zero; explicit values preserved; no candidate proof repair; no original RTL event-list simulation claim.",
+  "proof_workspace": {
+    "execution_directory": "D:\\PMUX_20261102_delivery\\proof_tmp\\q73753efee40d\\p",
+    "archive_directory": "D:\\PMUX_20261102_delivery\\relocation r30 all\\results\\r20261102_072425_992b5bb8\\strict",
+    "path_preflight": {
+      "status": "PASS",
+      "limit_utf16_units_exclusive": 240,
+      "max_units_with_reserve": 205,
+      "basis": "Bound official public/state identifiers and archived EQY partition names; raw unnormalized strategy references plus 8-character reserve.",
+      "checked_paths": [
+        {
+          "kind": "raw_strategy_partition_reference",
+          "path": "D:\\PMUX_20261102_delivery\\proof_tmp\\q73753efee40d\\p\\test1\\rb\\strategies\\test1.I0\\induction\\..\\..\\..\\partitions\\test1.I0.sv",
+          "utf16_units": 122,
+          "reserve": 8
+        },
+        {
+          "kind": "raw_strategy_partition_reference",
+          "path": "D:\\PMUX_20261102_delivery\\proof_tmp\\q73753efee40d\\p\\test1\\rb\\strategies\\test1.I1\\induction\\..\\..\\..\\partitions\\test1.I1.sv",
+          "utf16_units": 122,
+          "reserve": 8
+        },
+        {
+          "kind": "raw_strategy_partition_reference",
+          "path": "D:\\PMUX_20261102_delivery\\proof_tmp\\q73753efee40d\\p\\test1\\rb\\strategies\\test1.I2\\induction\\..\\..\\..\\partitions\\test1.I2.sv",
+          "utf16_units": 122,
+          "reserve": 8
+        },
+        {
+          "kind": "raw_strategy_partition_reference",
+          "path": "D:\\PMUX_20261102_delivery\\proof_tmp\\q73753efee40d\\p\\test1\\rb\\strategies\\test1.I3\\induction\\..\\..\\..\\partitions\\test1.I3.sv",
+          "utf16_units": 122,
+          "reserve": 8
+        },
+        {
+          "kind": "raw_strategy_partition_reference",
+          "path": "D:\\PMUX_20261102_delivery\\proof_tmp\\q73753efee40d\\p\\test1\\rb\\strategies\\test1.I4\\induction\\..\\..\\..\\partitions\\test1.I4.sv",
+          "utf16_units": 122,
+          "reserve": 8
+        },
+        {
+          "kind": "raw_strategy_partition_reference",
+          "path": "D:\\PMUX_20261102_delivery\\proof_tmp\\q73753efee40d\\p\\test1\\rb\\strategies\\test1.I5\\induction\\..\\..\\..\\partitions\\test1.I5.sv",
+          "utf16_units": 122,
+          "reserve": 8
+        },
+        {
+          "kind": "raw_strategy_partition_reference",
+          "path": "D:\\PMUX_20261102_delivery\\proof_tmp\\q73753efee40d\\p\\test1\\rb\\strategies\\test1.I6\\induction\\..\\..\\..\\partitions\\test1.I6.sv",
+          "utf16_units": 122,
+          "reserve": 8
+        },
+        {
+          "kind": "raw_strategy_partition_reference",
+          "path": "D:\\PMUX_20261102_delivery\\proof_tmp\\q73753efee40d\\p\\test1\\rb\\strategies\\test1.I7\\induction\\..\\..\\..\\partitions\\test1.I7.sv",
+          "utf16_units": 122,
+          "reserve": 8
+        },
+        {
+          "kind": "raw_strategy_partition_reference",
+          "path": "D:\\PMUX_20261102_delivery\\proof_tmp\\q73753efee40d\\p\\test1\\rb\\strategies\\test1.Q0\\induction\\..\\..\\..\\partitions\\test1.Q0.sv",
+          "utf16_units": 122,
+          "reserve": 8
+        },
+        {
+          "kind": "raw_strategy_partition_reference",
+          "path": "D:\\PMUX_20261102_delivery\\proof_tmp\\q73753efee40d\\p\\test1\\rb\\strategies\\test1.Q1\\induction\\..\\..\\..\\partitions\\test1.Q1.sv",
+          "utf16_units": 122,
+          "reserve": 8
+        },
+        {
+          "kind": "raw_strategy_partition_reference",
+          "path": "D:\\PMUX_20261102_delivery\\proof_tmp\\q73753efee40d\\p\\test1\\rb\\strategies\\test1.Q2\\induction\\..\\..\\..\\partitions\\test1.Q2.sv",
+          "utf16_units": 122,
+          "reserve": 8
+        },
+        {
+          "kind": "raw_strategy_partition_reference",
+          "path": "D:\\PMUX_20261102_delivery\\proof_tmp\\q73753efee40d\\p\\test1\\rb\\strategies\\test1.Q3\\induction\\..\\..\\..\\partitions\\test1.Q3.sv",
+          "utf16_units": 122,
+          "reserve": 8
+        },
+        {
+          "kind": "raw_strategy_partition_reference",
+          "path": "D:\\PMUX_20261102_delivery\\proof_tmp\\q73753efee40d\\p\\test1\\rb\\strategies\\test1.Q4\\induction\\..\\..\\..\\partitions\\test1.Q4.sv",
+          "utf16_units": 122,
+          "reserve": 8
+        },
+        {
+          "kind": "raw_strategy_partition_reference",
+          "path": "D:\\PMUX_20261102_delivery\\proof_tmp\\q73753efee40d\\p\\test1\\rb\\strategies\\test1.Q5\\induction\\..\\..\\..\\partitions\\test1.Q5.sv",
+          "utf16_units": 122,
+          "reserve": 8
+        },
+        {
+          "kind": "raw_strategy_partition_reference",
+          "path": "D:\\PMUX_20261102_delivery\\proof_tmp\\q73753efee40d\\p\\test1\\rb\\strategies\\test1.Q6\\induction\\..\\..\\..\\partitions\\test1.Q6.sv",
+          "utf16_units": 122,
+          "reserve": 8
+        },
+        {
+          "kind": "raw_strategy_partition_reference",
+          "path": "D:\\PMUX_20261102_delivery\\proof_tmp\\q73753efee40d\\p\\test1\\rb\\strategies\\test1.Q7\\induction\\..\\..\\..\\partitions\\test1.Q7.sv",
+          "utf16_units": 122,
+          "reserve": 8
+        },
+        {
+          "kind": "raw_strategy_partition_reference",
+          "path": "D:\\PMUX_20261102_delivery\\proof_tmp\\q73753efee40d\\p\\test1\\rb\\strategies\\test1.clock\\induction\\..\\..\\..\\partitions\\test1.clock.sv",
+          "utf16_units": 128,
+          "reserve": 8
+        },
+        {
+          "kind": "raw_strategy_partition_reference",
+          "path": "D:\\PMUX_20261102_delivery\\proof_tmp\\q73753efee40d\\p\\test1\\rb\\strategies\\test1.i0\\induction\\..\\..\\..\\partitions\\test1.i0.sv",
+          "utf16_units": 122,
+          "reserve": 8
+        },
+        {
+          "kind": "raw_strategy_partition_reference",
+          "path": "D:\\PMUX_20261102_delivery\\proof_tmp\\q73753efee40d\\p\\test1\\rb\\strategies\\test1.i1\\induction\\..\\..\\..\\partitions\\test1.i1.sv",
+          "utf16_units": 122,
+          "reserve": 8
+        },
+        {
+          "kind": "raw_strategy_partition_reference",
+          "path": "D:\\PMUX_20261102_delivery\\proof_tmp\\q73753efee40d\\p\\test1\\rb\\strategies\\test1.i2\\induction\\..\\..\\..\\partitions\\test1.i2.sv",
+          "utf16_units": 122,
+          "reserve": 8
+        },
+        {
+          "kind": "raw_strategy_partition_reference",
+          "path": "D:\\PMUX_20261102_delivery\\proof_tmp\\q73753efee40d\\p\\test1\\rb\\strategies\\test1.i3\\induction\\..\\..\\..\\partitions\\test1.i3.sv",
+          "utf16_units": 122,
+          "reserve": 8
+        },
+        {
+          "kind": "raw_strategy_partition_reference",
+          "path": "D:\\PMUX_20261102_delivery\\proof_tmp\\q73753efee40d\\p\\test1\\rb\\strategies\\test1.i4\\induction\\..\\..\\..\\partitions\\test1.i4.sv",
+          "utf16_units": 122,
+          "reserve": 8
+        },
+        {
+          "kind": "raw_strategy_partition_reference",
+          "path": "D:\\PMUX_20261102_delivery\\proof_tmp\\q73753efee40d\\p\\test1\\rb\\strategies\\test1.i5\\induction\\..\\..\\..\\partitions\\test1.i5.sv",
+          "utf16_units": 122,
+          "reserve": 8
+        },
+        {
+          "kind": "raw_strategy_partition_reference",
+          "path": "D:\\PMUX_20261102_delivery\\proof_tmp\\q73753efee40d\\p\\test1\\rb\\strategies\\test1.i6\\induction\\..\\..\\..\\partitions\\test1.i6.sv",
+          "utf16_units": 122,
+          "reserve": 8
+        },
+        {
+          "kind": "raw_strategy_partition_reference",
+          "path": "D:\\PMUX_20261102_delivery\\proof_tmp\\q73753efee40d\\p\\test1\\rb\\strategies\\test1.i7\\induction\\..\\..\\..\\partitions\\test1.i7.sv",
+          "utf16_units": 122,
+          "reserve": 8
+        },
+        {
+          "kind": "raw_strategy_partition_reference",
+          "path": "D:\\PMUX_20261102_delivery\\proof_tmp\\q73753efee40d\\p\\test1\\rb\\strategies\\test1.inter0007_out\\induction\\..\\..\\..\\partitions\\test1.inter0007_out.sv",
+          "utf16_units": 144,
+          "reserve": 8
+        },
+        {
+          "kind": "raw_strategy_partition_reference",
+          "path": "D:\\PMUX_20261102_delivery\\proof_tmp\\q73753efee40d\\p\\test1\\rb\\strategies\\test1.inter0008_out\\induction\\..\\..\\..\\partitions\\test1.inter0008_out.sv",
+          "utf16_units": 144,
+          "reserve": 8
+        },
+        {
+          "kind": "raw_strategy_partition_reference",
+          "path": "D:\\PMUX_20261102_delivery\\proof_tmp\\q73753efee40d\\p\\test1\\rb\\strategies\\test1.inter0009_out\\induction\\..\\..\\..\\partitions\\test1.inter0009_out.sv",
+          "utf16_units": 144,
+          "reserve": 8
+        },
+        {
+          "kind": "raw_strategy_partition_reference",
+          "path": "D:\\PMUX_20261102_delivery\\proof_tmp\\q73753efee40d\\p\\test1\\rb\\strategies\\test1.por6_out\\induction\\..\\..\\..\\partitions\\test1.por6_out.sv",
+          "utf16_units": 134,
+          "reserve": 8
+        },
+        {
+          "kind": "raw_strategy_partition_reference",
+          "path": "D:\\PMUX_20261102_delivery\\proof_tmp\\q73753efee40d\\p\\test1\\rb\\strategies\\test1.q0\\induction\\..\\..\\..\\partitions\\test1.q0.sv",
+          "utf16_units": 122,
+          "reserve": 8
+        },
+        {
+          "kind": "raw_strategy_partition_reference",
+          "path": "D:\\PMUX_20261102_delivery\\proof_tmp\\q73753efee40d\\p\\test1\\rb\\strategies\\test1.q1\\induction\\..\\..\\..\\partitions\\test1.q1.sv",
+          "utf16_units": 122,
+          "reserve": 8
+        },
+        {
+          "kind": "raw_strategy_partition_reference",
+          "path": "D:\\PMUX_20261102_delivery\\proof_tmp\\q73753efee40d\\p\\test1\\rb\\strategies\\test1.q2\\induction\\..\\..\\..\\partitions\\test1.q2.sv",
+          "utf16_units": 122,
+          "reserve": 8
+        },
+        {
+          "kind": "raw_strategy_partition_reference",
+          "path": "D:\\PMUX_20261102_delivery\\proof_tmp\\q73753efee40d\\p\\test1\\rb\\strategies\\test1.q3\\induction\\..\\..\\..\\partitions\\test1.q3.sv",
+          "utf16_units": 122,
+          "reserve": 8
+        },
+        {
+          "kind": "raw_strategy_partition_reference",
+          "path": "D:\\PMUX_20261102_delivery\\proof_tmp\\q73753efee40d\\p\\test1\\rb\\strategies\\test1.q4\\induction\\..\\..\\..\\partitions\\test1.q4.sv",
+          "utf16_units": 122,
+          "reserve": 8
+        },
+        {
+          "kind": "raw_strategy_partition_reference",
+          "path": "D:\\PMUX_20261102_delivery\\proof_tmp\\q73753efee40d\\p\\test1\\rb\\strategies\\test1.q5\\induction\\..\\..\\..\\partitions\\test1.q5.sv",
+          "utf16_units": 122,
+          "reserve": 8
+        },
+        {
+          "kind": "raw_strategy_partition_reference",
+          "path": "D:\\PMUX_20261102_delivery\\proof_tmp\\q73753efee40d\\p\\test1\\rb\\strategies\\test1.q6\\induction\\..\\..\\..\\partitions\\test1.q6.sv",
+          "utf16_units": 122,
+          "reserve": 8
+        },
+        {
+          "kind": "raw_strategy_partition_reference",
+          "path": "D:\\PMUX_20261102_delivery\\proof_tmp\\q73753efee40d\\p\\test1\\rb\\strategies\\test1.q7\\induction\\..\\..\\..\\partitions\\test1.q7.sv",
+          "utf16_units": 122,
+          "reserve": 8
+        },
+        {
+          "kind": "raw_strategy_partition_reference",
+          "path": "D:\\PMUX_20261102_delivery\\proof_tmp\\q73753efee40d\\p\\test1\\rb\\strategies\\test1.reset\\induction\\..\\..\\..\\partitions\\test1.reset.sv",
+          "utf16_units": 128,
+          "reserve": 8
+        },
+        {
+          "kind": "raw_strategy_partition_reference",
+          "path": "D:\\PMUX_20261102_delivery\\proof_tmp\\q73753efee40d\\p\\test1\\rb\\strategies\\test1.state\\induction\\..\\..\\..\\partitions\\test1.state.sv",
+          "utf16_units": 128,
+          "reserve": 8
+        },
+        {
+          "kind": "raw_strategy_partition_reference",
+          "path": "D:\\PMUX_20261102_delivery\\proof_tmp\\q73753efee40d\\p\\test1\\rb\\strategies\\test1.valid\\induction\\..\\..\\..\\partitions\\test1.valid.sv",
+          "utf16_units": 128,
+          "reserve": 8
+        },
+        {
+          "kind": "raw_strategy_partition_reference",
+          "path": "D:\\PMUX_20261102_delivery\\proof_tmp\\q73753efee40d\\p\\test2\\rb\\strategies\\test2.a\\induction\\..\\..\\..\\partitions\\test2.a.sv",
+          "utf16_units": 120,
+          "reserve": 8
+        },
+        {
+          "kind": "raw_strategy_partition_reference",
+          "path": "D:\\PMUX_20261102_delivery\\proof_tmp\\q73753efee40d\\p\\test2\\rb\\strategies\\test2.b\\induction\\..\\..\\..\\partitions\\test2.b.sv",
+          "utf16_units": 120,
+          "reserve": 8
+        },
+        {
+          "kind": "raw_strategy_partition_reference",
+          "path": "D:\\PMUX_20261102_delivery\\proof_tmp\\q73753efee40d\\p\\test2\\rb\\strategies\\test2.c\\induction\\..\\..\\..\\partitions\\test2.c.sv",
+          "utf16_units": 120,
+          "reserve": 8
+        },
+        {
+          "kind": "raw_strategy_partition_reference",
+          "path": "D:\\PMUX_20261102_delivery\\proof_tmp\\q73753efee40d\\p\\test2\\rb\\strategies\\test2.clk\\induction\\..\\..\\..\\partitions\\test2.clk.sv",
+          "utf16_units": 124,
+          "reserve": 8
+        },
+        {
+          "kind": "raw_strategy_partition_reference",
+          "path": "D:\\PMUX_20261102_delivery\\proof_tmp\\q73753efee40d\\p\\test2\\rb\\strategies\\test2.d\\induction\\..\\..\\..\\partitions\\test2.d.sv",
+          "utf16_units": 120,
+          "reserve": 8
+        },
+        {
+          "kind": "raw_strategy_partition_reference",
+          "path": "D:\\PMUX_20261102_delivery\\proof_tmp\\q73753efee40d\\p\\test2\\rb\\strategies\\test2.dataa\\induction\\..\\..\\..\\partitions\\test2.dataa.sv",
+          "utf16_units": 128,
+          "reserve": 8
+        },
+        {
+          "kind": "raw_strategy_partition_reference",
+          "path": "D:\\PMUX_20261102_delivery\\proof_tmp\\q73753efee40d\\p\\test2\\rb\\strategies\\test2.datab\\induction\\..\\..\\..\\partitions\\test2.datab.sv",
+          "utf16_units": 128,
+          "reserve": 8
+        },
+        {
+          "kind": "raw_strategy_partition_reference",
+          "path": "D:\\PMUX_20261102_delivery\\proof_tmp\\q73753efee40d\\p\\test2\\rb\\strategies\\test2.datac\\induction\\..\\..\\..\\partitions\\test2.datac.sv",
+          "utf16_units": 128,
+          "reserve": 8
+        },
+        {
+          "kind": "raw_strategy_partition_reference",
+          "path": "D:\\PMUX_20261102_delivery\\proof_tmp\\q73753efee40d\\p\\test2\\rb\\strategies\\test2.datad\\induction\\..\\..\\..\\partitions\\test2.datad.sv",
+          "utf16_units": 128,
+          "reserve": 8
+        },
+        {
+          "kind": "raw_strategy_partition_reference",
+          "path": "D:\\PMUX_20261102_delivery\\proof_tmp\\q73753efee40d\\p\\test2\\rb\\strategies\\test2.out\\induction\\..\\..\\..\\partitions\\test2.out.sv",
+          "utf16_units": 124,
+          "reserve": 8
+        },
+        {
+          "kind": "raw_strategy_partition_reference",
+          "path": "D:\\PMUX_20261102_delivery\\proof_tmp\\q73753efee40d\\p\\test3\\rb\\strategies\\test3.clk\\induction\\..\\..\\..\\partitions\\test3.clk.sv",
+          "utf16_units": 124,
+          "reserve": 8
+        },
+        {
+          "kind": "raw_strategy_partition_reference",
+          "path": "D:\\PMUX_20261102_delivery\\proof_tmp\\q73753efee40d\\p\\test3\\rb\\strategies\\test3.cs\\induction\\..\\..\\..\\partitions\\test3.cs.sv",
+          "utf16_units": 122,
+          "reserve": 8
+        },
+        {
+          "kind": "raw_strategy_partition_reference",
+          "path": "D:\\PMUX_20261102_delivery\\proof_tmp\\q73753efee40d\\p\\test3\\rb\\strategies\\test3.gpioout\\induction\\..\\..\\..\\partitions\\test3.gpioout.sv",
+          "utf16_units": 132,
+          "reserve": 8
+        },
+        {
+          "kind": "raw_strategy_partition_reference",
+          "path": "D:\\PMUX_20261102_delivery\\proof_tmp\\q73753efee40d\\p\\test3\\rb\\strategies\\test3.sr\\induction\\..\\..\\..\\partitions\\test3.sr.sv",
+          "utf16_units": 122,
+          "reserve": 8
+        },
+        {
+          "kind": "raw_strategy_partition_reference",
+          "path": "D:\\PMUX_20261102_delivery\\proof_tmp\\q73753efee40d\\p\\test3\\rb\\strategies\\test3.sr_in\\induction\\..\\..\\..\\partitions\\test3.sr_in.sv",
+          "utf16_units": 128,
+          "reserve": 8
+        },
+        {
+          "kind": "raw_strategy_partition_reference",
+          "path": "D:\\PMUX_20261102_delivery\\proof_tmp\\q73753efee40d\\p\\test3\\rb\\strategies\\test3.sr_out\\induction\\..\\..\\..\\partitions\\test3.sr_out.sv",
+          "utf16_units": 130,
+          "reserve": 8
+        },
+        {
+          "kind": "raw_strategy_partition_reference",
+          "path": "D:\\PMUX_20261102_delivery\\proof_tmp\\q73753efee40d\\p\\test4\\rb\\strategies\\test4.clk\\induction\\..\\..\\..\\partitions\\test4.clk.sv",
+          "utf16_units": 124,
+          "reserve": 8
+        },
+        {
+          "kind": "raw_strategy_partition_reference",
+          "path": "D:\\PMUX_20261102_delivery\\proof_tmp\\q73753efee40d\\p\\test4\\rb\\strategies\\test4.data_dn\\induction\\..\\..\\..\\partitions\\test4.data_dn.sv",
+          "utf16_units": 132,
+          "reserve": 8
+        },
+        {
+          "kind": "raw_strategy_partition_reference",
+          "path": "D:\\PMUX_20261102_delivery\\proof_tmp\\q73753efee40d\\p\\test4\\rb\\strategies\\test4.data_dp\\induction\\..\\..\\..\\partitions\\test4.data_dp.sv",
+          "utf16_units": 132,
+          "reserve": 8
+        },
+        {
+          "kind": "raw_strategy_partition_reference",
+          "path": "D:\\PMUX_20261102_delivery\\proof_tmp\\q73753efee40d\\p\\test4\\rb\\strategies\\test4.datain\\induction\\..\\..\\..\\partitions\\test4.datain.sv",
+          "utf16_units": 130,
+          "reserve": 8
+        },
+        {
+          "kind": "raw_strategy_partition_reference",
+          "path": "D:\\PMUX_20261102_delivery\\proof_tmp\\q73753efee40d\\p\\test4\\rb\\strategies\\test4.datain_5bis7\\induction\\..\\..\\..\\partitions\\test4.datain_5bis7.sv",
+          "utf16_units": 142,
+          "reserve": 8
+        },
+        {
+          "kind": "raw_strategy_partition_reference",
+          "path": "D:\\PMUX_20261102_delivery\\proof_tmp\\q73753efee40d\\p\\test4\\rb\\strategies\\test4.dataout\\induction\\..\\..\\..\\partitions\\test4.dataout.sv",
+          "utf16_units": 132,
+          "reserve": 8
+        },
+        {
+          "kind": "raw_strategy_partition_reference",
+          "path": "D:\\PMUX_20261102_delivery\\proof_tmp\\q73753efee40d\\p\\test4\\rb\\strategies\\test4.ena\\induction\\..\\..\\..\\partitions\\test4.ena.sv",
+          "utf16_units": 124,
+          "reserve": 8
+        },
+        {
+          "kind": "raw_strategy_partition_reference",
+          "path": "D:\\PMUX_20261102_delivery\\proof_tmp\\q73753efee40d\\p\\test4\\rb\\strategies\\test4.only_5b\\induction\\..\\..\\..\\partitions\\test4.only_5b.sv",
+          "utf16_units": 132,
+          "reserve": 8
+        },
+        {
+          "kind": "raw_strategy_partition_reference",
+          "path": "D:\\PMUX_20261102_delivery\\proof_tmp\\q73753efee40d\\p\\test4\\rb\\strategies\\test4.reset_n\\induction\\..\\..\\..\\partitions\\test4.reset_n.sv",
+          "utf16_units": 132,
+          "reserve": 8
+        },
+        {
+          "kind": "raw_strategy_partition_reference",
+          "path": "D:\\PMUX_20261102_delivery\\proof_tmp\\q73753efee40d\\p\\pmux_case01_balanced\\rb\\strategies\\pmux_case01_balanced.clk\\induction\\..\\..\\..\\partitions\\pmux_case01_balanced.clk.sv",
+          "utf16_units": 169,
+          "reserve": 8
+        },
+        {
+          "kind": "raw_strategy_partition_reference",
+          "path": "D:\\PMUX_20261102_delivery\\proof_tmp\\q73753efee40d\\p\\pmux_case01_balanced\\rb\\strategies\\pmux_case01_balanced.ctrl_in\\induction\\..\\..\\..\\partitions\\pmux_case01_balanced.ctrl_in.sv",
+          "utf16_units": 177,
+          "reserve": 8
+        },
+        {
+          "kind": "raw_strategy_partition_reference",
+          "path": "D:\\PMUX_20261102_delivery\\proof_tmp\\q73753efee40d\\p\\pmux_case01_balanced\\rb\\strategies\\pmux_case01_balanced.data_in\\induction\\..\\..\\..\\partitions\\pmux_case01_balanced.data_in.sv",
+          "utf16_units": 177,
+          "reserve": 8
+        },
+        {
+          "kind": "raw_strategy_partition_reference",
+          "path": "D:\\PMUX_20261102_delivery\\proof_tmp\\q73753efee40d\\p\\pmux_case01_balanced\\rb\\strategies\\pmux_case01_balanced.data_out\\induction\\..\\..\\..\\partitions\\pmux_case01_balanced.data_out.sv",
+          "utf16_units": 179,
+          "reserve": 8
+        },
+        {
+          "kind": "raw_strategy_partition_reference",
+          "path": "D:\\PMUX_20261102_delivery\\proof_tmp\\q73753efee40d\\p\\pmux_case01_balanced\\rb\\strategies\\pmux_case01_balanced.en\\induction\\..\\..\\..\\partitions\\pmux_case01_balanced.en.sv",
+          "utf16_units": 167,
+          "reserve": 8
+        },
+        {
+          "kind": "raw_strategy_partition_reference",
+          "path": "D:\\PMUX_20261102_delivery\\proof_tmp\\q73753efee40d\\p\\pmux_case01_balanced\\rb\\strategies\\pmux_case01_balanced.rst\\induction\\..\\..\\..\\partitions\\pmux_case01_balanced.rst.sv",
+          "utf16_units": 169,
+          "reserve": 8
+        },
+        {
+          "kind": "raw_strategy_partition_reference",
+          "path": "D:\\PMUX_20261102_delivery\\proof_tmp\\q73753efee40d\\p\\pmux_case02_pipeline\\rb\\strategies\\pmux_case02_pipeline.clk\\induction\\..\\..\\..\\partitions\\pmux_case02_pipeline.clk.sv",
+          "utf16_units": 169,
+          "reserve": 8
+        },
+        {
+          "kind": "raw_strategy_partition_reference",
+          "path": "D:\\PMUX_20261102_delivery\\proof_tmp\\q73753efee40d\\p\\pmux_case02_pipeline\\rb\\strategies\\pmux_case02_pipeline.ctrl_in\\induction\\..\\..\\..\\partitions\\pmux_case02_pipeline.ctrl_in.sv",
+          "utf16_units": 177,
+          "reserve": 8
+        },
+        {
+          "kind": "raw_strategy_partition_reference",
+          "path": "D:\\PMUX_20261102_delivery\\proof_tmp\\q73753efee40d\\p\\pmux_case02_pipeline\\rb\\strategies\\pmux_case02_pipeline.data_in\\induction\\..\\..\\..\\partitions\\pmux_case02_pipeline.data_in.sv",
+          "utf16_units": 177,
+          "reserve": 8
+        },
+        {
+          "kind": "raw_strategy_partition_reference",
+          "path": "D:\\PMUX_20261102_delivery\\proof_tmp\\q73753efee40d\\p\\pmux_case02_pipeline\\rb\\strategies\\pmux_case02_pipeline.data_out\\induction\\..\\..\\..\\partitions\\pmux_case02_pipeline.data_out.sv",
+          "utf16_units": 179,
+          "reserve": 8
+        },
+        {
+          "kind": "raw_strategy_partition_reference",
+          "path": "D:\\PMUX_20261102_delivery\\proof_tmp\\q73753efee40d\\p\\pmux_case02_pipeline\\rb\\strategies\\pmux_case02_pipeline.en\\induction\\..\\..\\..\\partitions\\pmux_case02_pipeline.en.sv",
+          "utf16_units": 167,
+          "reserve": 8
+        },
+        {
+          "kind": "raw_strategy_partition_reference",
+          "path": "D:\\PMUX_20261102_delivery\\proof_tmp\\q73753efee40d\\p\\pmux_case02_pipeline\\rb\\strategies\\pmux_case02_pipeline.lane[0].left_mid\\induction\\..\\..\\..\\partitions\\pmux_case02_pipeline.lane[0].left_mid.sv",
+          "utf16_units": 195,
+          "reserve": 8
+        },
+        {
+          "kind": "raw_strategy_partition_reference",
+          "path": "D:\\PMUX_20261102_delivery\\proof_tmp\\q73753efee40d\\p\\pmux_case02_pipeline\\rb\\strategies\\pmux_case02_pipeline.lane[0].mid\\induction\\..\\..\\..\\partitions\\pmux_case02_pipeline.lane[0].mid.sv",
+          "utf16_units": 185,
+          "reserve": 8
+        },
+        {
+          "kind": "raw_strategy_partition_reference",
+          "path": "D:\\PMUX_20261102_delivery\\proof_tmp\\q73753efee40d\\p\\pmux_case02_pipeline\\rb\\strategies\\pmux_case02_pipeline.lane[0].right_mid\\induction\\..\\..\\..\\partitions\\pmux_case02_pipeline.lane[0].right_mid.sv",
+          "utf16_units": 197,
+          "reserve": 8
+        },
+        {
+          "kind": "raw_strategy_partition_reference",
+          "path": "D:\\PMUX_20261102_delivery\\proof_tmp\\q73753efee40d\\p\\pmux_case02_pipeline\\rb\\strategies\\pmux_case02_pipeline.lane[1].right_mid\\induction\\..\\..\\..\\partitions\\pmux_case02_pipeline.lane[1].right_mid.sv",
+          "utf16_units": 197,
+          "reserve": 8
+        },
+        {
+          "kind": "raw_strategy_partition_reference",
+          "path": "D:\\PMUX_20261102_delivery\\proof_tmp\\q73753efee40d\\p\\pmux_case02_pipeline\\rb\\strategies\\pmux_case02_pipeline.rst\\induction\\..\\..\\..\\partitions\\pmux_case02_pipeline.rst.sv",
+          "utf16_units": 169,
+          "reserve": 8
+        },
+        {
+          "kind": "raw_strategy_partition_reference",
+          "path": "D:\\PMUX_20261102_delivery\\proof_tmp\\q73753efee40d\\p\\pmux_case03_crossbar\\rb\\strategies\\pmux_case03_crossbar.clk\\induction\\..\\..\\..\\partitions\\pmux_case03_crossbar.clk.sv",
+          "utf16_units": 169,
+          "reserve": 8
+        },
+        {
+          "kind": "raw_strategy_partition_reference",
+          "path": "D:\\PMUX_20261102_delivery\\proof_tmp\\q73753efee40d\\p\\pmux_case03_crossbar\\rb\\strategies\\pmux_case03_crossbar.ctrl_in\\induction\\..\\..\\..\\partitions\\pmux_case03_crossbar.ctrl_in.sv",
+          "utf16_units": 177,
+          "reserve": 8
+        },
+        {
+          "kind": "raw_strategy_partition_reference",
+          "path": "D:\\PMUX_20261102_delivery\\proof_tmp\\q73753efee40d\\p\\pmux_case03_crossbar\\rb\\strategies\\pmux_case03_crossbar.data_in\\induction\\..\\..\\..\\partitions\\pmux_case03_crossbar.data_in.sv",
+          "utf16_units": 177,
+          "reserve": 8
+        },
+        {
+          "kind": "raw_strategy_partition_reference",
+          "path": "D:\\PMUX_20261102_delivery\\proof_tmp\\q73753efee40d\\p\\pmux_case03_crossbar\\rb\\strategies\\pmux_case03_crossbar.data_out\\induction\\..\\..\\..\\partitions\\pmux_case03_crossbar.data_out.sv",
+          "utf16_units": 179,
+          "reserve": 8
+        },
+        {
+          "kind": "raw_strategy_partition_reference",
+          "path": "D:\\PMUX_20261102_delivery\\proof_tmp\\q73753efee40d\\p\\pmux_case03_crossbar\\rb\\strategies\\pmux_case03_crossbar.en\\induction\\..\\..\\..\\partitions\\pmux_case03_crossbar.en.sv",
+          "utf16_units": 167,
+          "reserve": 8
+        },
+        {
+          "kind": "raw_strategy_partition_reference",
+          "path": "D:\\PMUX_20261102_delivery\\proof_tmp\\q73753efee40d\\p\\pmux_case03_crossbar\\rb\\strategies\\pmux_case03_crossbar.rst\\induction\\..\\..\\..\\partitions\\pmux_case03_crossbar.rst.sv",
+          "utf16_units": 169,
+          "reserve": 8
+        },
+        {
+          "kind": "raw_strategy_partition_reference",
+          "path": "D:\\PMUX_20261102_delivery\\proof_tmp\\q73753efee40d\\p\\pmux_case04_feedback\\rb\\strategies\\pmux_case04_feedback.clk\\induction\\..\\..\\..\\partitions\\pmux_case04_feedback.clk.sv",
+          "utf16_units": 169,
+          "reserve": 8
+        },
+        {
+          "kind": "raw_strategy_partition_reference",
+          "path": "D:\\PMUX_20261102_delivery\\proof_tmp\\q73753efee40d\\p\\pmux_case04_feedback\\rb\\strategies\\pmux_case04_feedback.ctrl_in\\induction\\..\\..\\..\\partitions\\pmux_case04_feedback.ctrl_in.sv",
+          "utf16_units": 177,
+          "reserve": 8
+        },
+        {
+          "kind": "raw_strategy_partition_reference",
+          "path": "D:\\PMUX_20261102_delivery\\proof_tmp\\q73753efee40d\\p\\pmux_case04_feedback\\rb\\strategies\\pmux_case04_feedback.data_in\\induction\\..\\..\\..\\partitions\\pmux_case04_feedback.data_in.sv",
+          "utf16_units": 177,
+          "reserve": 8
+        },
+        {
+          "kind": "raw_strategy_partition_reference",
+          "path": "D:\\PMUX_20261102_delivery\\proof_tmp\\q73753efee40d\\p\\pmux_case04_feedback\\rb\\strategies\\pmux_case04_feedback.data_out\\induction\\..\\..\\..\\partitions\\pmux_case04_feedback.data_out.sv",
+          "utf16_units": 179,
+          "reserve": 8
+        },
+        {
+          "kind": "raw_strategy_partition_reference",
+          "path": "D:\\PMUX_20261102_delivery\\proof_tmp\\q73753efee40d\\p\\pmux_case04_feedback\\rb\\strategies\\pmux_case04_feedback.en\\induction\\..\\..\\..\\partitions\\pmux_case04_feedback.en.sv",
+          "utf16_units": 167,
+          "reserve": 8
+        },
+        {
+          "kind": "raw_strategy_partition_reference",
+          "path": "D:\\PMUX_20261102_delivery\\proof_tmp\\q73753efee40d\\p\\pmux_case04_feedback\\rb\\strategies\\pmux_case04_feedback.rst\\induction\\..\\..\\..\\partitions\\pmux_case04_feedback.rst.sv",
+          "utf16_units": 169,
+          "reserve": 8
+        },
+        {
+          "kind": "raw_strategy_partition_reference",
+          "path": "D:\\PMUX_20261102_delivery\\proof_tmp\\q73753efee40d\\p\\pmux_case05_nested\\rb\\strategies\\pmux_case05_nested.clk\\induction\\..\\..\\..\\partitions\\pmux_case05_nested.clk.sv",
+          "utf16_units": 163,
+          "reserve": 8
+        },
+        {
+          "kind": "raw_strategy_partition_reference",
+          "path": "D:\\PMUX_20261102_delivery\\proof_tmp\\q73753efee40d\\p\\pmux_case05_nested\\rb\\strategies\\pmux_case05_nested.ctrl_in\\induction\\..\\..\\..\\partitions\\pmux_case05_nested.ctrl_in.sv",
+          "utf16_units": 171,
+          "reserve": 8
+        },
+        {
+          "kind": "raw_strategy_partition_reference",
+          "path": "D:\\PMUX_20261102_delivery\\proof_tmp\\q73753efee40d\\p\\pmux_case05_nested\\rb\\strategies\\pmux_case05_nested.data_in\\induction\\..\\..\\..\\partitions\\pmux_case05_nested.data_in.sv",
+          "utf16_units": 171,
+          "reserve": 8
+        },
+        {
+          "kind": "raw_strategy_partition_reference",
+          "path": "D:\\PMUX_20261102_delivery\\proof_tmp\\q73753efee40d\\p\\pmux_case05_nested\\rb\\strategies\\pmux_case05_nested.data_out\\induction\\..\\..\\..\\partitions\\pmux_case05_nested.data_out.sv",
+          "utf16_units": 173,
+          "reserve": 8
+        },
+        {
+          "kind": "raw_strategy_partition_reference",
+          "path": "D:\\PMUX_20261102_delivery\\proof_tmp\\q73753efee40d\\p\\pmux_case05_nested\\rb\\strategies\\pmux_case05_nested.en\\induction\\..\\..\\..\\partitions\\pmux_case05_nested.en.sv",
+          "utf16_units": 161,
+          "reserve": 8
+        },
+        {
+          "kind": "raw_strategy_partition_reference",
+          "path": "D:\\PMUX_20261102_delivery\\proof_tmp\\q73753efee40d\\p\\pmux_case05_nested\\rb\\strategies\\pmux_case05_nested.rst\\induction\\..\\..\\..\\partitions\\pmux_case05_nested.rst.sv",
+          "utf16_units": 163,
+          "reserve": 8
+        },
+        {
+          "kind": "external_input_or_tool",
+          "path": "D:\\PMUX_20261102_delivery\\relocation r30 all\\cases\\official_manifest.json",
+          "utf16_units": 73,
+          "reserve": 0
+        },
+        {
+          "kind": "external_input_or_tool",
+          "path": "C:\\Users\\local\\Documents\\Build\\2026-09-27\\workspace3\\work\\toolchain\\oss-cad-suite\\bin\\yosys.exe",
+          "utf16_units": 95,
+          "reserve": 0
+        },
+        {
+          "kind": "external_input_or_tool",
+          "path": "C:\\Users\\local\\Documents\\Build\\2026-09-27\\workspace3\\work\\toolchain\\oss-cad-suite\\bin\\eqy-script.py",
+          "utf16_units": 99,
+          "reserve": 0
+        },
+        {
+          "kind": "external_input_or_tool",
+          "path": "C:\\Users\\local\\Documents\\Build\\2026-09-27\\workspace3\\work\\v4_native\\compiler_native\\w64devkit\\bin\\sh.exe",
+          "utf16_units": 104,
+          "reserve": 0
+        },
+        {
+          "kind": "external_input_or_tool",
+          "path": "D:\\PMUX_20261102_delivery\\relocation r30 all\\verification\\endpoint_nozinit_runner.py",
+          "utf16_units": 84,
+          "reserve": 0
+        },
+        {
+          "kind": "external_input_or_tool",
+          "path": "D:\\PMUX_20261102_delivery\\relocation r30 all\\cases\\original4\\competition_case\\test1\\test1.v",
+          "utf16_units": 91,
+          "reserve": 0
+        },
+        {
+          "kind": "external_input_or_tool",
+          "path": "D:\\PMUX_20261102_delivery\\relocation r30 all\\cases\\original4\\competition_case\\test2\\test2.v",
+          "utf16_units": 91,
+          "reserve": 0
+        },
+        {
+          "kind": "external_input_or_tool",
+          "path": "D:\\PMUX_20261102_delivery\\relocation r30 all\\cases\\original4\\competition_case\\test3\\test3.v",
+          "utf16_units": 91,
+          "reserve": 0
+        },
+        {
+          "kind": "external_input_or_tool",
+          "path": "D:\\PMUX_20261102_delivery\\relocation r30 all\\cases\\original4\\competition_case\\test4\\test4.v",
+          "utf16_units": 91,
+          "reserve": 0
+        },
+        {
+          "kind": "external_input_or_tool",
+          "path": "D:\\PMUX_20261102_delivery\\relocation r30 all\\cases\\additional5\\pmux_case01_balanced.v",
+          "utf16_units": 85,
+          "reserve": 0
+        },
+        {
+          "kind": "external_input_or_tool",
+          "path": "D:\\PMUX_20261102_delivery\\relocation r30 all\\cases\\additional5\\pmux_case02_pipeline.v",
+          "utf16_units": 85,
+          "reserve": 0
+        },
+        {
+          "kind": "external_input_or_tool",
+          "path": "D:\\PMUX_20261102_delivery\\relocation r30 all\\cases\\additional5\\pmux_case03_crossbar.v",
+          "utf16_units": 85,
+          "reserve": 0
+        },
+        {
+          "kind": "external_input_or_tool",
+          "path": "D:\\PMUX_20261102_delivery\\relocation r30 all\\cases\\additional5\\pmux_case04_feedback.v",
+          "utf16_units": 85,
+          "reserve": 0
+        },
+        {
+          "kind": "external_input_or_tool",
+          "path": "D:\\PMUX_20261102_delivery\\relocation r30 all\\cases\\additional5\\pmux_case05_nested.v",
+          "utf16_units": 83,
+          "reserve": 0
+        },
+        {
+          "kind": "external_input_or_tool",
+          "path": "D:\\PMUX_20261102_delivery\\relocation r30 all\\results\\r20261102_072425_992b5bb8\\capture\\test1\\post_abc9.il",
+          "utf16_units": 105,
+          "reserve": 0
+        },
+        {
+          "kind": "external_input_or_tool",
+          "path": "D:\\PMUX_20261102_delivery\\relocation r30 all\\results\\r20261102_072425_992b5bb8\\capture\\test2\\post_abc9.il",
+          "utf16_units": 105,
+          "reserve": 0
+        },
+        {
+          "kind": "external_input_or_tool",
+          "path": "D:\\PMUX_20261102_delivery\\relocation r30 all\\results\\r20261102_072425_992b5bb8\\capture\\test3\\post_abc9.il",
+          "utf16_units": 105,
+          "reserve": 0
+        },
+        {
+          "kind": "external_input_or_tool",
+          "path": "D:\\PMUX_20261102_delivery\\relocation r30 all\\results\\r20261102_072425_992b5bb8\\capture\\test4\\post_abc9.il",
+          "utf16_units": 105,
+          "reserve": 0
+        },
+        {
+          "kind": "external_input_or_tool",
+          "path": "D:\\PMUX_20261102_delivery\\relocation r30 all\\results\\r20261102_072425_992b5bb8\\capture\\pmux_case01_balanced\\post_abc9.il",
+          "utf16_units": 120,
+          "reserve": 0
+        },
+        {
+          "kind": "external_input_or_tool",
+          "path": "D:\\PMUX_20261102_delivery\\relocation r30 all\\results\\r20261102_072425_992b5bb8\\capture\\pmux_case02_pipeline\\post_abc9.il",
+          "utf16_units": 120,
+          "reserve": 0
+        },
+        {
+          "kind": "external_input_or_tool",
+          "path": "D:\\PMUX_20261102_delivery\\relocation r30 all\\results\\r20261102_072425_992b5bb8\\capture\\pmux_case03_crossbar\\post_abc9.il",
+          "utf16_units": 120,
+          "reserve": 0
+        },
+        {
+          "kind": "external_input_or_tool",
+          "path": "D:\\PMUX_20261102_delivery\\relocation r30 all\\results\\r20261102_072425_992b5bb8\\capture\\pmux_case04_feedback\\post_abc9.il",
+          "utf16_units": 120,
+          "reserve": 0
+        },
+        {
+          "kind": "external_input_or_tool",
+          "path": "D:\\PMUX_20261102_delivery\\relocation r30 all\\results\\r20261102_072425_992b5bb8\\capture\\pmux_case05_nested\\post_abc9.il",
+          "utf16_units": 118,
+          "reserve": 0
+        }
+      ]
+    },
+    "original_workspace_retained": true,
+    "execution": {
+      "command": [
+        "C:\\Users\\local\\.cache\\build-runtimes\\build-primary-runtime\\dependencies\\python\\python.exe",
+        "D:\\PMUX_20261102_delivery\\relocation r30 all\\verification\\endpoint_nozinit_runner.py",
+        "--manifest",
+        "D:\\PMUX_20261102_delivery\\relocation r30 all\\cases\\official_manifest.json",
+        "--suite",
+        "C:\\Users\\local\\Documents\\Build\\2026-09-27\\workspace3\\work\\toolchain\\oss-cad-suite",
+        "--shell-bin",
+        "C:\\Users\\local\\Documents\\Build\\2026-09-27\\workspace3\\work\\v4_native\\compiler_native\\w64devkit\\bin",
+        "--baseline-dir",
+        "D:\\PMUX_20261102_delivery\\relocation r30 all\\results\\r20261102_072425_992b5bb8\\capture",
+        "--baseline-only",
+        "--state-invariants",
+        "--execute",
+        "--depth",
+        "20",
+        "--timeout",
+        "180",
+        "--out",
+        "D:\\PMUX_20261102_delivery\\proof_tmp\\q73753efee40d\\p"
+      ],
+      "returncode": 0,
+      "timed_out": false,
+      "log": "D:\\PMUX_20261102_delivery\\relocation r30 all\\results\\r20261102_072425_992b5bb8\\strict.console.log"
+    },
+    "archive_index": "strict.archive.json",
+    "archive_index_sha256": "490dd04aed92522149a62f0b3a397ad34569285c0a966ea4101247d541b5b216",
+    "archived_file_count": 443
+  },
+  "area_and_efficiency_pass": true,
+  "mean_area_reduction": 0.3625224711365656,
+  "strict": {
+    "selected_cases": 9,
+    "all_selected_pass": true,
+    "all_nine_source_logical_zero_to_candidate_pass": true,
+    "role_note": "Runner baseline slot contains actual candidate; not original area baseline.",
+    "candidate_side_zinit": false,
+    "proof_report": "D:\\PMUX_20261102_delivery\\relocation r30 all\\results\\r20261102_072425_992b5bb8\\strict\\report.json",
+    "proof_report_sha256": "c2bb33e4a53cf90137b525dc68706d6001db48266d7f1232fb34736bf9648274"
+  },
+  "exit_code": 0,
+  "success_means": "Requested operations completed; All/Measure additionally require objective thresholds for exit code 0."
+}

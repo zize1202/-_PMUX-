@@ -1,0 +1,9 @@
+test1: PASS
+test2: PASS
+test3: PASS
+test4: PASS
+pmux_case01_balanced: PASS
+pmux_case02_pipeline: PASS
+pmux_case03_crossbar: PASS
+pmux_case04_feedback: PASS
+pmux_case05_nested: PASS
