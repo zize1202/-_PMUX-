@@ -1,0 +1,1706 @@
+{
+  "status": "PASS",
+  "started_utc": "2026-11-01T23:29:26.486257+00:00",
+  "scope": "Vendor DFFEAS re-test only. LUTs remain the exact exported truth-table logic. No SDF or full vendor-cell timing simulation.",
+  "source_checkpoint": "D:\\PMUX_20261102_delivery\\research\\r30_modelsim",
+  "candidate_label": "r30_native_sload",
+  "source_report_sha256": "eede8d015f7bdca6ca084e18bea1ed82bfd456c5885b10048da4ad81d0c947ed",
+  "source_manifest_sha256": "be1cf5d196cb6c6e6adc579a9f88124be595f03efc5d410f3b856e1d485748c4",
+  "source_checkpoint_status_sha256": "11a5e89d57313b1d1a07a6bf99c707b5bab596dc33d444729ec0879c25f11227",
+  "interface_probe_report_sha256": "a4bb8208409250b3dba7a5d57e4cb093146e75eba735a439da73d18b3c0f061d",
+  "adapter": "Only add devclrn=devpor=1 for normal device operation. Existing actual is_wysiwyg, power_up, and all original ten pins including SCLR/SLOAD/ASDATA preserved. No external RTL input/reset/clock fixed or modified.",
+  "compiled_local_dffeas": false,
+  "runner_sha256": "a030650ac308dc69d94968144632fd0d37950a6c6de86216fd6786b74687aa6c",
+  "vendor_library": "D:\\Downloads\\modelsim_ae\\altera\\verilog\\altera",
+  "vendor_metadata": "QuartusII11.0Build157SJ; Model Technology; original _info OV;L;6.6d;45",
+  "library_before": {
+    "@p@r@i@m_@g@d@f@f_@h@i@g@h/_primary.dat": {
+      "sha256": "4c3030d287d4071318db9033b88c78561c9b2d64351ec2724e386ad250f1c0d5",
+      "bytes": 1325
+    },
+    "@p@r@i@m_@g@d@f@f_@h@i@g@h/_primary.dbs": {
+      "sha256": "7d7475ab20e21b45c1ce97e66f28d8b5bfbd062eaa36fce804760b6dc3659450",
+      "bytes": 156
+    },
+    "@p@r@i@m_@g@d@f@f_@h@i@g@h/_primary.vhd": {
+      "sha256": "7a5c5fdb53931e53a090173da6f6cdc551135c79f8a2fd099e15f84ed35fff3c",
+      "bytes": 181
+    },
+    "@p@r@i@m_@g@d@f@f_@l@o@w/_primary.dat": {
+      "sha256": "218a38bd5b93ba827c14271ef5874495bf2a219aca6be6ed65e62e388031aae0",
+      "bytes": 1324
+    },
+    "@p@r@i@m_@g@d@f@f_@l@o@w/_primary.dbs": {
+      "sha256": "89f1bb28b6ad3d1523735511007c7df1d2466620fdabc9689ebcbcc69571860d",
+      "bytes": 155
+    },
+    "@p@r@i@m_@g@d@f@f_@l@o@w/_primary.vhd": {
+      "sha256": "8b760e191e42fcf6a15d76a6e1964692f7cab964a6ad2667e4e0e5d855e5df52",
+      "bytes": 179
+    },
+    "@t@r@i/_primary.dat": {
+      "sha256": "3162879c909e00ef5b55c5bf3dd69e3e352948048f332173931491954e593bd2",
+      "bytes": 184
+    },
+    "@t@r@i/_primary.dbs": {
+      "sha256": "e794bb57b0fa0288de386ae31f10024e4e9ad85189901042eb33f363db3a7432",
+      "bytes": 399
+    },
+    "@t@r@i/_primary.vhd": {
+      "sha256": "52f14636304b8936e605041ee6f1acc04104e44c3f1dcb5d693d30a746896935",
+      "bytes": 215
+    },
+    "_info": {
+      "sha256": "588e343a08017d6340bfeb8911104ab2d3ca20ad619b1bb52bef28672269c52a",
+      "bytes": 5540
+    },
+    "_vmake": {
+      "sha256": "20967baa115584b66667e61a6a0b4ea8761523664ea32d01c0771570c36c8a1f",
+      "bytes": 26
+    },
+    "alt_bidir_buf/_primary.dat": {
+      "sha256": "9e4e81893655af82aea81c65e72b6537adca31256302c5fab111aaeca5b399ff",
+      "bytes": 906
+    },
+    "alt_bidir_buf/_primary.dbs": {
+      "sha256": "0082f12e10912f7135b2f5f3b8513964af22b1152b9548e3a11a2a870ac8696a",
+      "bytes": 1201
+    },
+    "alt_bidir_buf/_primary.vhd": {
+      "sha256": "198b59e7d54d05f1302f746414638c7e679f96fc845331ef9391cddeb1032771",
+      "bytes": 763
+    },
+    "alt_bidir_diff/_primary.dat": {
+      "sha256": "3f3104d63c772771b8c0e06332c63ecfac49a5e5a8bc39116c3e66f5ce32bc1c",
+      "bytes": 1122
+    },
+    "alt_bidir_diff/_primary.dbs": {
+      "sha256": "185602fb27650b3ac38c2cd8d62cf34a59b77e61090c0098c19a77f1edd57886",
+      "bytes": 1537
+    },
+    "alt_bidir_diff/_primary.vhd": {
+      "sha256": "f4c1ca62448b262fa6406872a25f8b21d544d240c0b72545fd29aff80bc1cd65",
+      "bytes": 808
+    },
+    "alt_inbuf/_primary.dat": {
+      "sha256": "f8a63d98c5aa1f8a2a8b062005f8b662df2d7a281498dab1db73ee790c00eba6",
+      "bytes": 334
+    },
+    "alt_inbuf/_primary.dbs": {
+      "sha256": "801584d6bf2389358eda41ec5e7c4a1dadcfd8cb3ea7c3671f4b47fe03ce3516",
+      "bytes": 517
+    },
+    "alt_inbuf/_primary.vhd": {
+      "sha256": "516424148521da5a9f81cf3bbc94249896ea493896f86f6af4b9aaaf89077c48",
+      "bytes": 479
+    },
+    "alt_inbuf_diff/_primary.dat": {
+      "sha256": "02685a5917adcec704e883d8347911cc36b4c9500664bbce7bf636eb58920ffa",
+      "bytes": 647
+    },
+    "alt_inbuf_diff/_primary.dbs": {
+      "sha256": "db5c2bb9556bc65e552eeeee368022f966807246d52e998e8fc25222f4408c2e",
+      "bytes": 922
+    },
+    "alt_inbuf_diff/_primary.vhd": {
+      "sha256": "129c46a6cc247116068893bf32848f018e058d660febdd32d64c2bdb81ac07a1",
+      "bytes": 537
+    },
+    "alt_iobuf/_primary.dat": {
+      "sha256": "1c07b400dd74404ae68194df41080976cc80261c6a7ed9c68fd2cee8433fe76e",
+      "bytes": 639
+    },
+    "alt_iobuf/_primary.dbs": {
+      "sha256": "59a70f2402e21212ddc361dd293666147cca4d8f179268e0712aca75eb1af139",
+      "bytes": 997
+    },
+    "alt_iobuf/_primary.vhd": {
+      "sha256": "d645c053f86f92389933fbdca7b52ea3dfcdc928eecdcdd995c3a7dab1a6663b",
+      "bytes": 838
+    },
+    "alt_iobuf_diff/_primary.dat": {
+      "sha256": "a2f5ab6dcd044f36e3640364508e261e1f6dfb1ea3f91dc29244e90dce3c0acb",
+      "bytes": 1046
+    },
+    "alt_iobuf_diff/_primary.dbs": {
+      "sha256": "158f3a6e3c981b35737e0a1fcc061cc4702678791b8eca2d8804054a3cadb377",
+      "bytes": 1505
+    },
+    "alt_iobuf_diff/_primary.vhd": {
+      "sha256": "84514b15894e02caa65ec98c04cfac068c2d7158517c547ce62c5fb272491db0",
+      "bytes": 851
+    },
+    "alt_outbuf/_primary.dat": {
+      "sha256": "cb4e307c869be4faf95b1a508f976e520d9b5664ba5fc73d4e17f9aa75d8259c",
+      "bytes": 459
+    },
+    "alt_outbuf/_primary.dbs": {
+      "sha256": "37af17ed05079221b87974d8ee361775be7b91307a44c0b935b9d6556fed3b70",
+      "bytes": 657
+    },
+    "alt_outbuf/_primary.vhd": {
+      "sha256": "b1070d21851b3190f6332ce529bb88b9a38336273b6a0769c79fcf2827a8e1b7",
+      "bytes": 662
+    },
+    "alt_outbuf_diff/_primary.dat": {
+      "sha256": "340c58e489dd9fb95ca53deb9014ee199b3833642e762344f0127107f19eacf8",
+      "bytes": 474
+    },
+    "alt_outbuf_diff/_primary.dbs": {
+      "sha256": "2b84906b9efe72c6d1dc99614a82d852a2ea366289ea2299dcfb4e673a4d3712",
+      "bytes": 763
+    },
+    "alt_outbuf_diff/_primary.vhd": {
+      "sha256": "a21554005e06c4843644d7e598eb11f910b42b7c0cbff5f8e445d3eea445e220",
+      "bytes": 675
+    },
+    "alt_outbuf_tri/_primary.dat": {
+      "sha256": "2ad353fd1f6cebfe9ce22d4f4111725086ce9632f12afe71c215070c01352e09",
+      "bytes": 489
+    },
+    "alt_outbuf_tri/_primary.dbs": {
+      "sha256": "2a07cfa0d4312e39983554aaddd2ab498ef24a03fa889c72fcfce4413f180be5",
+      "bytes": 740
+    },
+    "alt_outbuf_tri/_primary.vhd": {
+      "sha256": "f1e86efef2f9770bdb609f2685c1300a40b8e8e243c04e7bf1769af87b99a7ed",
+      "bytes": 717
+    },
+    "alt_outbuf_tri_diff/_primary.dat": {
+      "sha256": "573d0a8ae4cc47a9d0658274f9579887b627303341de20c8fb3876dea5283c90",
+      "bytes": 513
+    },
+    "alt_outbuf_tri_diff/_primary.dbs": {
+      "sha256": "db2dc7f60c023295bc9e6ce15c163f036007dd38fb3936acc1e9cda2c6a524d2",
+      "bytes": 886
+    },
+    "alt_outbuf_tri_diff/_primary.vhd": {
+      "sha256": "702452f4b95ad5fa76836d4949bdc2e5101c1b95459de28a8ae0de9217494330",
+      "bytes": 730
+    },
+    "carry/_primary.dat": {
+      "sha256": "72fa7e1b1493ae39e416507c2c2e49e6289cb9fb9659238e25e7e4795c3e9017",
+      "bytes": 160
+    },
+    "carry/_primary.dbs": {
+      "sha256": "4cb4c62da85d4cbfa8e384ad83fd89c32f94f903d9c85a77798f9dc83cc25f33",
+      "bytes": 321
+    },
+    "carry/_primary.vhd": {
+      "sha256": "d14fb52df13dd8f8bd210214515e4e087e0f5950d671282eb7e2799b9a4557eb",
+      "bytes": 172
+    },
+    "carry_sum/_primary.dat": {
+      "sha256": "60c976f0e0bfa605003c77e472a2f9e58fb02807d88951ab744db748263c72a1",
+      "bytes": 217
+    },
+    "carry_sum/_primary.dbs": {
+      "sha256": "01a9715475d6abdfbe889805cc9fdaf6f838f1ed9614b2569d4ce23018e47244",
+      "bytes": 503
+    },
+    "carry_sum/_primary.vhd": {
+      "sha256": "be16ec47acc12055822a97c195587df655f4e72e4e1de48673ee33b8a278fdc2",
+      "bytes": 266
+    },
+    "cascade/_primary.dat": {
+      "sha256": "1019dd09a6ed5cbc8979ded9fb4ce5607b3637258aa1c7636b4393262c4adb30",
+      "bytes": 162
+    },
+    "cascade/_primary.dbs": {
+      "sha256": "c38aa2894a49b777fe332f96ca572120dcb6b6c438ebad5993279fc0ac2eca0a",
+      "bytes": 323
+    },
+    "cascade/_primary.vhd": {
+      "sha256": "af3d18f3f648905886551f707894f24ccd683abc535254f35f697ccd3f08aad3",
+      "bytes": 176
+    },
+    "clklock/_primary.dat": {
+      "sha256": "701e6bf80680f10c1851a97a949400dc8c3e176df872f43d6745c345e32595b4",
+      "bytes": 5808
+    },
+    "clklock/_primary.dbs": {
+      "sha256": "4d26d4cd0d7b92cf54f21db32b8701775312153ebc1e7aa84d5bb2f001d2467b",
+      "bytes": 10353
+    },
+    "clklock/_primary.vhd": {
+      "sha256": "e3bea0eb0009c1c7f97c98a53f11abc6189849f67607893bcdd6cd6fe36ba950",
+      "bytes": 363
+    },
+    "dff/_primary.dat": {
+      "sha256": "cbd79bf3d3898070f02c48682e15fea5133003dff9ddafa3a2c028a67eb4f4b2",
+      "bytes": 356
+    },
+    "dff/_primary.dbs": {
+      "sha256": "88b1e4ba421a2f452b2870316ea95821ec21be689fb8a7714e19d361b20caa5a",
+      "bytes": 598
+    },
+    "dff/_primary.vhd": {
+      "sha256": "8e7d4af6de6dbeb040d1257c53451a40f9cc4e20df5ea72c2c4b9f54be7544d4",
+      "bytes": 297
+    },
+    "dffe/_primary.dat": {
+      "sha256": "b2d778fff97ef33181c4f8e3e605595d38896fd39bf7039c18c7febb059cbf35",
+      "bytes": 362
+    },
+    "dffe/_primary.dbs": {
+      "sha256": "e2bb2ebd88308e3bdb62ea2d56cb8ca9b98b58e5f18a7094102c97ab55dd8799",
+      "bytes": 693
+    },
+    "dffe/_primary.vhd": {
+      "sha256": "4027911fe03f5f6ebf7b5e5e98003e27ef8e17081619f8a36b5f447e277eda21",
+      "bytes": 342
+    },
+    "dffea/_primary.dat": {
+      "sha256": "c559fbb4fe4a36c508e7f8189648a32e992c0d7d47917d4a76884c90df218810",
+      "bytes": 474
+    },
+    "dffea/_primary.dbs": {
+      "sha256": "5800c7bc66820125df03979fa6926dcd772ee76bf10c05d53af5547c162389b6",
+      "bytes": 1131
+    },
+    "dffea/_primary.vhd": {
+      "sha256": "1088abe4b011662950ea08c4773cfc22afd6a1ebafd72713a421c5153dd8d7ec",
+      "bytes": 430
+    },
+    "dffeas/_primary.dat": {
+      "sha256": "6a5443f42566256376ca23f3687d8851a665795ff9c29ef3496643080feec8f0",
+      "bytes": 1832
+    },
+    "dffeas/_primary.dbs": {
+      "sha256": "3e63b78103f3c7ad698bb46768d2d15533f8c20c3527b0eae50dea7e517580ca",
+      "bytes": 5016
+    },
+    "dffeas/_primary.vhd": {
+      "sha256": "28748e34fd23a122f28a21cb843e4594549115ee631bf894c5c5841312afeb16",
+      "bytes": 809
+    },
+    "dlatch/_primary.dat": {
+      "sha256": "6df9d6291e9b82aa281b5953d01dbd7e7693ae8795162e6cbfceb73ce0c2de1d",
+      "bytes": 393
+    },
+    "dlatch/_primary.dbs": {
+      "sha256": "38e25b1cb3c5995632287a5352b86acdb0b71fce10187a3c800a99fb0d6e766a",
+      "bytes": 836
+    },
+    "dlatch/_primary.vhd": {
+      "sha256": "d5d974470848324687b0f0de4ab3fd1ce36ec4c9379ec6331ddbe5ecfac1459c",
+      "bytes": 303
+    },
+    "exp/_primary.dat": {
+      "sha256": "9bca5b2a5cebb16d92c45f7d0b0fd44af820fa87acac601dc30a454f8930002d",
+      "bytes": 160
+    },
+    "exp/_primary.dbs": {
+      "sha256": "fe5edeb14882e1f22c8b2735fdc7164db329c8e19cee3e8ec66076f93ced0fbf",
+      "bytes": 319
+    },
+    "exp/_primary.vhd": {
+      "sha256": "85bf7ea630f3caa678410a27a565f2eca799c1e57d270a075bc267e2303ee48e",
+      "bytes": 168
+    },
+    "global/_primary.dat": {
+      "sha256": "3e370c3fcd7d5fb2909ed9df269c8b7f90336026fe6d3666c72a3d279f1cd403",
+      "bytes": 161
+    },
+    "global/_primary.dbs": {
+      "sha256": "e3e46bd49d4ebb226ba0e549f9252ae372d1a3aecc339049d8658f80a85da186",
+      "bytes": 322
+    },
+    "global/_primary.vhd": {
+      "sha256": "43b502dd81e87869f2209094666869879141c22c767a3e6db58e820eb5dc735b",
+      "bytes": 174
+    },
+    "jkff/_primary.dat": {
+      "sha256": "f2ccb4611d32fa2dd6c2d51a88d0d7600ce122f14c515fa0c27c6d1ae3c432f7",
+      "bytes": 305
+    },
+    "jkff/_primary.dbs": {
+      "sha256": "3d072d9ef8cd3269ac88baa4746dbafd80ac46ea426c6ca0310986163aab5990",
+      "bytes": 672
+    },
+    "jkff/_primary.vhd": {
+      "sha256": "6fbdb47d138e46de98643f23bc6567232a7c19944be5237221ac1dc9545813f8",
+      "bytes": 342
+    },
+    "jkffe/_primary.dat": {
+      "sha256": "490441c14640d8179c35d44c34e94cb93de56f4181eb96f24d233e469ecfa24a",
+      "bytes": 311
+    },
+    "jkffe/_primary.dbs": {
+      "sha256": "f193e215dc7c5ae1f192236f37bd0fec41af40776a7691b095fa49e0abde38d6",
+      "bytes": 767
+    },
+    "jkffe/_primary.vhd": {
+      "sha256": "e625a8a10d6acb9f59a93a21ef69d34721c62a70bbdf5553971624d3b05e6c1d",
+      "bytes": 387
+    },
+    "latch/_primary.dat": {
+      "sha256": "cf1204b83adffc70abef80a1ab0a275b930946d42612e2aa8ff872ecc73dd4dd",
+      "bytes": 243
+    },
+    "latch/_primary.dbs": {
+      "sha256": "7ff0fe4df5277bb4ac7aa239644c16ca7236c8a9ac8d157572b2625baa065328",
+      "bytes": 552
+    },
+    "latch/_primary.vhd": {
+      "sha256": "8670b0f7f20620b97634b712c23b283d19b5989dd55ed84d8cb8263f32ccbbaa",
+      "bytes": 215
+    },
+    "lut_input/_primary.dat": {
+      "sha256": "6db44bd772fa8cb584228e9c19bf4702962aa417dab929f7a6674f72cc399260",
+      "bytes": 164
+    },
+    "lut_input/_primary.dbs": {
+      "sha256": "508871c78b2076df9f73ff409a3e9c3e2a81012bd3b53f64fbbc2147c26db500",
+      "bytes": 326
+    },
+    "lut_input/_primary.vhd": {
+      "sha256": "661ae390871cd3fa1b8648fa0bce28b3eca8aeb8c793685d8bc550b9cd6790a6",
+      "bytes": 180
+    },
+    "lut_output/_primary.dat": {
+      "sha256": "70d16adb957c4a7f169d06a5a36ff137ffc18bccbe0351e8cb9ecf886216b072",
+      "bytes": 165
+    },
+    "lut_output/_primary.dbs": {
+      "sha256": "067e4a5eb182a18f884671140596c00d6d41ad25052aa3cd075bd99cf6390be6",
+      "bytes": 327
+    },
+    "lut_output/_primary.vhd": {
+      "sha256": "b090a3b0a58320a0eebcb7dbf6e52a0578ffc949c2fc5e6b148f807c23088296",
+      "bytes": 182
+    },
+    "opndrn/_primary.dat": {
+      "sha256": "5852679edf8a4c95fe09d740610540ed8d4fedec7a8625d477bb2e1faaa61a8c",
+      "bytes": 170
+    },
+    "opndrn/_primary.dbs": {
+      "sha256": "64d5d0daec184f88b1748431502cbfe6bf11deed28a2bac9bcc8e02a095ca31f",
+      "bytes": 360
+    },
+    "opndrn/_primary.vhd": {
+      "sha256": "eb212a6303994a3778c0fadf7ea84cdf45b9930325f92b3c18e6dd070ad3375c",
+      "bytes": 174
+    },
+    "prim_gdff/_primary.dat": {
+      "sha256": "0e1e474a73f6d3a1c544f21c1f71e2bcaf4b3f086d1c9b397cf33d5647ebe468",
+      "bytes": 733
+    },
+    "prim_gdff/_primary.dbs": {
+      "sha256": "0da315d7d63362b0e946709176786123f50d0f5ff0d01f2c3be826b128084ab8",
+      "bytes": 1507
+    },
+    "prim_gdff/_primary.vhd": {
+      "sha256": "289fb771e808efc6961c51a265f982c2a8698af1b328b5ef9747b4d2d0d1ca50",
+      "bytes": 524
+    },
+    "prim_gjkff/_primary.dat": {
+      "sha256": "6241a143388b94a783903967ae56440b8a065b0f381fc312672f7068dd125b8f",
+      "bytes": 609
+    },
+    "prim_gjkff/_primary.dbs": {
+      "sha256": "9f75f1bf287d54c0a62d0a37fd20c95ec6e006738a4c68d893b54e6769fdadbf",
+      "bytes": 1311
+    },
+    "prim_gjkff/_primary.vhd": {
+      "sha256": "03adf58dba4cf3360b36bea6d522a5b0934cde05ea0ec1920040110542b3f067",
+      "bytes": 397
+    },
+    "prim_gsrff/_primary.dat": {
+      "sha256": "aebd88be6e0a02666e0a9657698378ac7fce69096cb45ff41e6a552118f7a616",
+      "bytes": 609
+    },
+    "prim_gsrff/_primary.dbs": {
+      "sha256": "62a2f4cf4a5a568cc328606e4ad06dd857fc348076087d49bd196cabb861c535",
+      "bytes": 1311
+    },
+    "prim_gsrff/_primary.vhd": {
+      "sha256": "e2476bf0bf31027e54b2ce3e791106f2e3bee6a8efa2e0ab472b519a951658b4",
+      "bytes": 397
+    },
+    "prim_gtff/_primary.dat": {
+      "sha256": "601adf5c8cb454a4792f160fec1b0a914e4af4b035222b5976256eb96a5fe9b4",
+      "bytes": 554
+    },
+    "prim_gtff/_primary.dbs": {
+      "sha256": "5a1af512237800f9a9b574877a0b2f0016ccf951b8300f24ddeb6717628d056e",
+      "bytes": 1039
+    },
+    "prim_gtff/_primary.vhd": {
+      "sha256": "8d65697265459989170ce116f91766933d3ad4375d2e9d7a8c2f3451f2f0c2b7",
+      "bytes": 352
+    },
+    "row_global/_primary.dat": {
+      "sha256": "dc8578ce3de6d001650c613d9d021df7988d0a5bf42c30c86358457c776a9065",
+      "bytes": 165
+    },
+    "row_global/_primary.dbs": {
+      "sha256": "38f7430b1e805d65e8463fdc5e84b5fa9d6d16051646fa626f70263d9b7d4c88",
+      "bytes": 326
+    },
+    "row_global/_primary.vhd": {
+      "sha256": "ea59b77ed7df0dcce6c804ed72eb736d9d0e6515be20aac744d5573509fa04b5",
+      "bytes": 182
+    },
+    "soft/_primary.dat": {
+      "sha256": "563f57a837e8a1b646ad4f18611689f5115edc34c13544d522fd6c581bce6021",
+      "bytes": 159
+    },
+    "soft/_primary.dbs": {
+      "sha256": "53790038e40b9959b44c5e740ae9fcf6f7d01ea0965fdb089514ebf78a2a89cc",
+      "bytes": 320
+    },
+    "soft/_primary.vhd": {
+      "sha256": "428ff5b9fd344808aec4814a13b36b9d4c77c8794497a406ab855e7f4750de01",
+      "bytes": 170
+    },
+    "srff/_primary.dat": {
+      "sha256": "9131e3d944d3cf113415e5f03578e41ba5b532469863c46a8b99a0e7cbfc8d93",
+      "bytes": 305
+    },
+    "srff/_primary.dbs": {
+      "sha256": "61ae8889b4173f8e237fa5f7482f43d32f902a208d2f9bb2a3288002b1eee0ed",
+      "bytes": 672
+    },
+    "srff/_primary.vhd": {
+      "sha256": "0fe6ff3c197482ae3f5dae241a3fb1e21334c1f986ff63abc88d9e4a59097d60",
+      "bytes": 342
+    },
+    "srffe/_primary.dat": {
+      "sha256": "88e7742add73ed9f1809ea7bb9de5eca15a47d34168df35d609bc45b9e655315",
+      "bytes": 311
+    },
+    "srffe/_primary.dbs": {
+      "sha256": "712de1bb62195f6ae1e015ecdf7d91174d0a53c6035209dc7ca7916c3709c3ad",
+      "bytes": 767
+    },
+    "srffe/_primary.vhd": {
+      "sha256": "9aba8067c35e31123d197dc611e187ddb3c0de808bbe0cb10a8fec6f6cd306fb",
+      "bytes": 387
+    },
+    "tff/_primary.dat": {
+      "sha256": "d3026f8ee55c6108e1d2147bccc14678dea786e9165a2810a38183cf077a8b9b",
+      "bytes": 286
+    },
+    "tff/_primary.dbs": {
+      "sha256": "a6570ebc3296a7be09766321c08b12b349de9fb394f4add72b7b14bf1f99d323",
+      "bytes": 598
+    },
+    "tff/_primary.vhd": {
+      "sha256": "a06dddab58da3badccc55175e06bd14c676138ff42e4116fff9d571151da8094",
+      "bytes": 297
+    },
+    "tffe/_primary.dat": {
+      "sha256": "394bda2757b6f49b0f407608395b9fcc41b6f512d69c1c3fbe7ed48ff65d5d3d",
+      "bytes": 292
+    },
+    "tffe/_primary.dbs": {
+      "sha256": "76b4d7c9070821dd3bc2096161be64ca6d1512f78f755acdc729c0b24510f586",
+      "bytes": 693
+    },
+    "tffe/_primary.vhd": {
+      "sha256": "c344d81529fa82fa9b8a69e1d63887d1e229b83244c9a2f4f1cb5c41ef57fd84",
+      "bytes": 342
+    }
+  },
+  "toolchain": {
+    "vlib.exe": {
+      "path": "D:\\Downloads\\win64\\vlib.exe",
+      "sha256": "1e4a779645f4bb3b6148eb5651a67dc99dbe10c3f0643ebd46d9ac395c624981"
+    },
+    "vlog.exe": {
+      "path": "D:\\Downloads\\win64\\vlog.exe",
+      "sha256": "eb698cd632ce581c740ff71b0b46a2c11c97f7f16324a8c80ef9b23d3df7c032"
+    },
+    "vsim.exe": {
+      "path": "D:\\Downloads\\win64\\vsim.exe",
+      "sha256": "5c86643a26185f232b8d635eb6eb248741c5737a5120b918517ba2b6389240ad"
+    }
+  },
+  "base_ini_sha256": "4567e91368c69e8d15d8b1b18aa0d5e3cb26ffcbe53c15f399f95f623c37117d",
+  "cases": [
+    {
+      "id": "test3",
+      "status": "PASS",
+      "commands": [
+        {
+          "argv": [
+            "D:\\Downloads\\win64\\vlib.exe",
+            "work"
+          ],
+          "returncode": 0,
+          "wall_seconds_diagnostic_only": 0.0779999999795109,
+          "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "argv": [
+            "D:\\Downloads\\win64\\vlog.exe",
+            "-modelsimini",
+            "modelsim.ini",
+            "-sv",
+            "-work",
+            "work",
+            "reference.v",
+            "candidate.v",
+            "testbench.sv"
+          ],
+          "returncode": 0,
+          "wall_seconds_diagnostic_only": 0.125,
+          "log_sha256": "dcf9474a4c218749bb2d71f63a4181fb93207ea81cbfac9a04b02d93c900e5fc"
+        },
+        {
+          "argv": [
+            "D:\\Downloads\\win64\\vsim.exe",
+            "-modelsimini",
+            "modelsim.ini",
+            "-c",
+            "-novopt",
+            "-t",
+            "1ps",
+            "-L",
+            "altera",
+            "-wlf",
+            "simulation.wlf",
+            "work.zero_test3_tb",
+            "-do",
+            "run.do"
+          ],
+          "returncode": 0,
+          "wall_seconds_diagnostic_only": 3.4060000000172295,
+          "log_sha256": "156c7c229f86680f55352f41521fddbeb1e0c133aa15fa8b7f0c21ac1bc2c388"
+        }
+      ],
+      "loaded_vendor_units": [
+        "PRIM_GDFF_LOW",
+        "dffeas"
+      ],
+      "local_dffeas_loaded": false,
+      "ff_instances": 31,
+      "tcl_final": {
+        "failed": 0,
+        "finished": 1,
+        "checked": 4064,
+        "contract_failed": 0
+      },
+      "checked": 4064,
+      "failed_samples": 0,
+      "unknown_samples": 0,
+      "contract_failed_samples": 0,
+      "csv_sha256": "ca4f0d45954d8dffecfe02dc1e556e1348706d16f3e26e01ebb9d62ab225a491",
+      "identical_frozen_sample_trace": true,
+      "initial_q_values_compared": 31,
+      "all_initial_q_match": true
+    },
+    {
+      "id": "test1",
+      "status": "PASS",
+      "commands": [
+        {
+          "argv": [
+            "D:\\Downloads\\win64\\vlib.exe",
+            "work"
+          ],
+          "returncode": 0,
+          "wall_seconds_diagnostic_only": 0.061999999976251274,
+          "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "argv": [
+            "D:\\Downloads\\win64\\vlog.exe",
+            "-modelsimini",
+            "modelsim.ini",
+            "-sv",
+            "-work",
+            "work",
+            "reference.v",
+            "candidate.v",
+            "testbench.sv"
+          ],
+          "returncode": 0,
+          "wall_seconds_diagnostic_only": 0.125,
+          "log_sha256": "ae3b940bac954c8e6ae93770f2f2a3a3545180e10e6c2f9ab0e7b76f4f16e8c5"
+        },
+        {
+          "argv": [
+            "D:\\Downloads\\win64\\vsim.exe",
+            "-modelsimini",
+            "modelsim.ini",
+            "-c",
+            "-novopt",
+            "-t",
+            "1ps",
+            "-L",
+            "altera",
+            "-wlf",
+            "simulation.wlf",
+            "work.zero_test1_tb",
+            "-do",
+            "run.do"
+          ],
+          "returncode": 0,
+          "wall_seconds_diagnostic_only": 3.73499999998603,
+          "log_sha256": "537adc60415a0356aad8b8b997cd42117ecfa15eb69673c3c1ee92ffec193222"
+        }
+      ],
+      "loaded_vendor_units": [
+        "PRIM_GDFF_LOW",
+        "dffeas"
+      ],
+      "local_dffeas_loaded": false,
+      "ff_instances": 444,
+      "tcl_final": {
+        "failed": 0,
+        "finished": 1,
+        "checked": 5594,
+        "contract_failed": 0
+      },
+      "checked": 5594,
+      "failed_samples": 0,
+      "unknown_samples": 0,
+      "contract_failed_samples": 0,
+      "csv_sha256": "c8d75347368e832230bc849580e63f8276f4b562bb34e5499c03bccc0209530d",
+      "identical_frozen_sample_trace": true,
+      "initial_q_values_compared": 444,
+      "all_initial_q_match": true
+    },
+    {
+      "id": "test2",
+      "status": "PASS",
+      "commands": [
+        {
+          "argv": [
+            "D:\\Downloads\\win64\\vlib.exe",
+            "work"
+          ],
+          "returncode": 0,
+          "wall_seconds_diagnostic_only": 0.061999999976251274,
+          "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "argv": [
+            "D:\\Downloads\\win64\\vlog.exe",
+            "-modelsimini",
+            "modelsim.ini",
+            "-sv",
+            "-work",
+            "work",
+            "reference.v",
+            "candidate.v",
+            "testbench.sv"
+          ],
+          "returncode": 0,
+          "wall_seconds_diagnostic_only": 0.07800000003771856,
+          "log_sha256": "ce4661136585493e5edd882057bbcbad57dfdc331de02a6693ff26c25169dbed"
+        },
+        {
+          "argv": [
+            "D:\\Downloads\\win64\\vsim.exe",
+            "-modelsimini",
+            "modelsim.ini",
+            "-c",
+            "-novopt",
+            "-t",
+            "1ps",
+            "-L",
+            "altera",
+            "-wlf",
+            "simulation.wlf",
+            "work.zero_test2_tb",
+            "-do",
+            "run.do"
+          ],
+          "returncode": 0,
+          "wall_seconds_diagnostic_only": 2.655999999959022,
+          "log_sha256": "a7d2ebe80eabcdbb49d46ebb5150fbe226a0ba3120dfd56d914faa70b54fc9b0"
+        }
+      ],
+      "loaded_vendor_units": [],
+      "local_dffeas_loaded": false,
+      "ff_instances": 0,
+      "tcl_final": {
+        "failed": 0,
+        "finished": 1,
+        "checked": 4196,
+        "contract_failed": 0
+      },
+      "checked": 4196,
+      "failed_samples": 0,
+      "unknown_samples": 0,
+      "contract_failed_samples": 0,
+      "csv_sha256": "07d3bb8d788f97b9c46351a52aab2f0937d2360e055c10d721f9935a896c1572",
+      "identical_frozen_sample_trace": true,
+      "initial_q_values_compared": 0,
+      "all_initial_q_match": true
+    },
+    {
+      "id": "test4",
+      "status": "PASS",
+      "commands": [
+        {
+          "argv": [
+            "D:\\Downloads\\win64\\vlib.exe",
+            "work"
+          ],
+          "returncode": 0,
+          "wall_seconds_diagnostic_only": 0.06300000002374873,
+          "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "argv": [
+            "D:\\Downloads\\win64\\vlog.exe",
+            "-modelsimini",
+            "modelsim.ini",
+            "-sv",
+            "-work",
+            "work",
+            "reference.v",
+            "candidate.v",
+            "testbench.sv"
+          ],
+          "returncode": 0,
+          "wall_seconds_diagnostic_only": 0.0779999999795109,
+          "log_sha256": "406998f6fb5c655176d6f31f7b466ae0df1ca0d0114d2d3daf8174c44ec164a1"
+        },
+        {
+          "argv": [
+            "D:\\Downloads\\win64\\vsim.exe",
+            "-modelsimini",
+            "modelsim.ini",
+            "-c",
+            "-novopt",
+            "-t",
+            "1ps",
+            "-L",
+            "altera",
+            "-wlf",
+            "simulation.wlf",
+            "work.zero_test4_tb",
+            "-do",
+            "run.do"
+          ],
+          "returncode": 0,
+          "wall_seconds_diagnostic_only": 2.827999999979511,
+          "log_sha256": "3e4d040d4fa2acc929b7316f8ff4836521bf73234edd96d3718d8b0576db860c"
+        }
+      ],
+      "loaded_vendor_units": [
+        "PRIM_GDFF_HIGH",
+        "PRIM_GDFF_LOW",
+        "dffeas"
+      ],
+      "local_dffeas_loaded": false,
+      "ff_instances": 20,
+      "tcl_final": {
+        "failed": 0,
+        "finished": 1,
+        "checked": 4092,
+        "contract_failed": 0
+      },
+      "checked": 4092,
+      "failed_samples": 0,
+      "unknown_samples": 0,
+      "contract_failed_samples": 0,
+      "csv_sha256": "a97273bd9bbc76d27310292793989c76bfc600c847a3fe371741ee42cf8b3d5c",
+      "identical_frozen_sample_trace": true,
+      "initial_q_values_compared": 20,
+      "all_initial_q_match": true
+    },
+    {
+      "id": "pmux_case01_balanced",
+      "status": "PASS",
+      "commands": [
+        {
+          "argv": [
+            "D:\\Downloads\\win64\\vlib.exe",
+            "work"
+          ],
+          "returncode": 0,
+          "wall_seconds_diagnostic_only": 0.06299999996554106,
+          "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "argv": [
+            "D:\\Downloads\\win64\\vlog.exe",
+            "-modelsimini",
+            "modelsim.ini",
+            "-sv",
+            "-work",
+            "work",
+            "reference.v",
+            "candidate.v",
+            "testbench.sv"
+          ],
+          "returncode": 0,
+          "wall_seconds_diagnostic_only": 0.09299999999348074,
+          "log_sha256": "37b11679e8ac4920079525a6ace98459ebfcf6915474aa1c39284d52d7d5d6f9"
+        },
+        {
+          "argv": [
+            "D:\\Downloads\\win64\\vsim.exe",
+            "-modelsimini",
+            "modelsim.ini",
+            "-c",
+            "-novopt",
+            "-t",
+            "1ps",
+            "-L",
+            "altera",
+            "-wlf",
+            "simulation.wlf",
+            "work.zero_pmux_case01_balanced_tb",
+            "-do",
+            "run.do"
+          ],
+          "returncode": 0,
+          "wall_seconds_diagnostic_only": 3.1880000000237487,
+          "log_sha256": "c19d7493f44d71f60d9f261ff26687a935c53c82a1aa5e39c747602c3598b137"
+        }
+      ],
+      "loaded_vendor_units": [
+        "PRIM_GDFF_LOW",
+        "dffeas"
+      ],
+      "local_dffeas_loaded": false,
+      "ff_instances": 24,
+      "tcl_final": {
+        "failed": 0,
+        "finished": 1,
+        "checked": 4442,
+        "contract_failed": 0
+      },
+      "checked": 4442,
+      "failed_samples": 0,
+      "unknown_samples": 0,
+      "contract_failed_samples": 0,
+      "csv_sha256": "837c44908e1dfd9684fa6a2f7f05a633c6419107438a53028c5be70da9d6ac00",
+      "identical_frozen_sample_trace": true,
+      "initial_q_values_compared": 24,
+      "all_initial_q_match": true
+    },
+    {
+      "id": "pmux_case02_pipeline",
+      "status": "PASS",
+      "commands": [
+        {
+          "argv": [
+            "D:\\Downloads\\win64\\vlib.exe",
+            "work"
+          ],
+          "returncode": 0,
+          "wall_seconds_diagnostic_only": 0.06300000002374873,
+          "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "argv": [
+            "D:\\Downloads\\win64\\vlog.exe",
+            "-modelsimini",
+            "modelsim.ini",
+            "-sv",
+            "-work",
+            "work",
+            "reference.v",
+            "candidate.v",
+            "testbench.sv"
+          ],
+          "returncode": 0,
+          "wall_seconds_diagnostic_only": 0.09299999999348074,
+          "log_sha256": "25b1e0aeeb2c362b4fa46f41ce17b3308c13bc51d7b783f7aebdd0416a1d34dd"
+        },
+        {
+          "argv": [
+            "D:\\Downloads\\win64\\vsim.exe",
+            "-modelsimini",
+            "modelsim.ini",
+            "-c",
+            "-novopt",
+            "-t",
+            "1ps",
+            "-L",
+            "altera",
+            "-wlf",
+            "simulation.wlf",
+            "work.zero_pmux_case02_pipeline_tb",
+            "-do",
+            "run.do"
+          ],
+          "returncode": 0,
+          "wall_seconds_diagnostic_only": 2.9839999999967404,
+          "log_sha256": "760d898525c1d40263bed5a76dea40782c9cbcd5dffd34244197249b9ef2bbeb"
+        }
+      ],
+      "loaded_vendor_units": [
+        "PRIM_GDFF_LOW",
+        "dffeas"
+      ],
+      "local_dffeas_loaded": false,
+      "ff_instances": 48,
+      "tcl_final": {
+        "failed": 0,
+        "finished": 1,
+        "checked": 4730,
+        "contract_failed": 0
+      },
+      "checked": 4730,
+      "failed_samples": 0,
+      "unknown_samples": 0,
+      "contract_failed_samples": 0,
+      "csv_sha256": "61386f107dc310cda053c69e57f8abf5a94af071d5eb7ba793f7b9ff1946c6cb",
+      "identical_frozen_sample_trace": true,
+      "initial_q_values_compared": 48,
+      "all_initial_q_match": true
+    },
+    {
+      "id": "pmux_case03_crossbar",
+      "status": "PASS",
+      "commands": [
+        {
+          "argv": [
+            "D:\\Downloads\\win64\\vlib.exe",
+            "work"
+          ],
+          "returncode": 0,
+          "wall_seconds_diagnostic_only": 0.061999999976251274,
+          "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "argv": [
+            "D:\\Downloads\\win64\\vlog.exe",
+            "-modelsimini",
+            "modelsim.ini",
+            "-sv",
+            "-work",
+            "work",
+            "reference.v",
+            "candidate.v",
+            "testbench.sv"
+          ],
+          "returncode": 0,
+          "wall_seconds_diagnostic_only": 0.09399999998277053,
+          "log_sha256": "9bb3390fab531ed6bb4aefff03f364200b9c31369a40aa8ab60629c32fc322a2"
+        },
+        {
+          "argv": [
+            "D:\\Downloads\\win64\\vsim.exe",
+            "-modelsimini",
+            "modelsim.ini",
+            "-c",
+            "-novopt",
+            "-t",
+            "1ps",
+            "-L",
+            "altera",
+            "-wlf",
+            "simulation.wlf",
+            "work.zero_pmux_case03_crossbar_tb",
+            "-do",
+            "run.do"
+          ],
+          "returncode": 0,
+          "wall_seconds_diagnostic_only": 2.89000000001397,
+          "log_sha256": "b7c8de7b6a5467cfd06f778f1f03d0cc1ec63b9a771169d4964e330462e7c8ac"
+        }
+      ],
+      "loaded_vendor_units": [
+        "PRIM_GDFF_LOW",
+        "dffeas"
+      ],
+      "local_dffeas_loaded": false,
+      "ff_instances": 20,
+      "tcl_final": {
+        "failed": 0,
+        "finished": 1,
+        "checked": 4490,
+        "contract_failed": 0
+      },
+      "checked": 4490,
+      "failed_samples": 0,
+      "unknown_samples": 0,
+      "contract_failed_samples": 0,
+      "csv_sha256": "1df5cc3b1e1f8f2f6e444bdc7a7102408460a2029527f8b109551479eb0209ab",
+      "identical_frozen_sample_trace": true,
+      "initial_q_values_compared": 20,
+      "all_initial_q_match": true
+    },
+    {
+      "id": "pmux_case04_feedback",
+      "status": "PASS",
+      "commands": [
+        {
+          "argv": [
+            "D:\\Downloads\\win64\\vlib.exe",
+            "work"
+          ],
+          "returncode": 0,
+          "wall_seconds_diagnostic_only": 0.061999999976251274,
+          "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "argv": [
+            "D:\\Downloads\\win64\\vlog.exe",
+            "-modelsimini",
+            "modelsim.ini",
+            "-sv",
+            "-work",
+            "work",
+            "reference.v",
+            "candidate.v",
+            "testbench.sv"
+          ],
+          "returncode": 0,
+          "wall_seconds_diagnostic_only": 0.09399999998277053,
+          "log_sha256": "2e97d2b3265018e64aa0465583a149ec6437f125a569a6680c44baf79a6af0a7"
+        },
+        {
+          "argv": [
+            "D:\\Downloads\\win64\\vsim.exe",
+            "-modelsimini",
+            "modelsim.ini",
+            "-c",
+            "-novopt",
+            "-t",
+            "1ps",
+            "-L",
+            "altera",
+            "-wlf",
+            "simulation.wlf",
+            "work.zero_pmux_case04_feedback_tb",
+            "-do",
+            "run.do"
+          ],
+          "returncode": 0,
+          "wall_seconds_diagnostic_only": 2.9060000000172295,
+          "log_sha256": "04439b6f314422db02bd1e87a4308768653a1f076a913d6621986780844d72c5"
+        }
+      ],
+      "loaded_vendor_units": [
+        "PRIM_GDFF_LOW",
+        "dffeas"
+      ],
+      "local_dffeas_loaded": false,
+      "ff_instances": 32,
+      "tcl_final": {
+        "failed": 0,
+        "finished": 1,
+        "checked": 4634,
+        "contract_failed": 0
+      },
+      "checked": 4634,
+      "failed_samples": 0,
+      "unknown_samples": 0,
+      "contract_failed_samples": 0,
+      "csv_sha256": "3217d86c1c82a0918731faf71ae30ea19725b4e98de7dd47a479f917b55218fb",
+      "identical_frozen_sample_trace": true,
+      "initial_q_values_compared": 32,
+      "all_initial_q_match": true
+    },
+    {
+      "id": "pmux_case05_nested",
+      "status": "PASS",
+      "commands": [
+        {
+          "argv": [
+            "D:\\Downloads\\win64\\vlib.exe",
+            "work"
+          ],
+          "returncode": 0,
+          "wall_seconds_diagnostic_only": 0.061999999976251274,
+          "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "argv": [
+            "D:\\Downloads\\win64\\vlog.exe",
+            "-modelsimini",
+            "modelsim.ini",
+            "-sv",
+            "-work",
+            "work",
+            "reference.v",
+            "candidate.v",
+            "testbench.sv"
+          ],
+          "returncode": 0,
+          "wall_seconds_diagnostic_only": 0.09399999998277053,
+          "log_sha256": "779ec5a570ff1a57224ac0edf2b7b111fc386a70c8b95b1d58cbf663981889e4"
+        },
+        {
+          "argv": [
+            "D:\\Downloads\\win64\\vsim.exe",
+            "-modelsimini",
+            "modelsim.ini",
+            "-c",
+            "-novopt",
+            "-t",
+            "1ps",
+            "-L",
+            "altera",
+            "-wlf",
+            "simulation.wlf",
+            "work.zero_pmux_case05_nested_tb",
+            "-do",
+            "run.do"
+          ],
+          "returncode": 0,
+          "wall_seconds_diagnostic_only": 3.1560000000172295,
+          "log_sha256": "666ed3700351af9a39c05a25bb60eef95652102bf5a26be105be048ec23d5c96"
+        }
+      ],
+      "loaded_vendor_units": [
+        "PRIM_GDFF_LOW",
+        "dffeas"
+      ],
+      "local_dffeas_loaded": false,
+      "ff_instances": 24,
+      "tcl_final": {
+        "failed": 0,
+        "finished": 1,
+        "checked": 4442,
+        "contract_failed": 0
+      },
+      "checked": 4442,
+      "failed_samples": 0,
+      "unknown_samples": 0,
+      "contract_failed_samples": 0,
+      "csv_sha256": "2d258ba771b9ef1253d8e6e9ff90f3021595d19df40ecfd0399f17efca8b05f6",
+      "identical_frozen_sample_trace": true,
+      "initial_q_values_compared": 24,
+      "all_initial_q_match": true
+    }
+  ],
+  "complete": true,
+  "total_checked": 40684,
+  "all_nine_pass": true,
+  "original_library_unchanged": true,
+  "base_ini_unchanged": true,
+  "cache_audit": {
+    "passed": true,
+    "changed_original_files": [
+      "_info"
+    ],
+    "added_files": [
+      "@p@r@i@m_@g@d@f@f_@h@i@g@h/verilog.asm64",
+      "@p@r@i@m_@g@d@f@f_@h@i@g@h/verilog.rw64",
+      "@p@r@i@m_@g@d@f@f_@l@o@w/verilog.asm64",
+      "@p@r@i@m_@g@d@f@f_@l@o@w/verilog.rw64",
+      "dffeas/verilog.asm64",
+      "dffeas/verilog.rw64"
+    ],
+    "removed_files": [],
+    "original_ir_unchanged": true,
+    "after": {
+      "@p@r@i@m_@g@d@f@f_@h@i@g@h/_primary.dat": {
+        "sha256": "4c3030d287d4071318db9033b88c78561c9b2d64351ec2724e386ad250f1c0d5",
+        "bytes": 1325
+      },
+      "@p@r@i@m_@g@d@f@f_@h@i@g@h/_primary.dbs": {
+        "sha256": "7d7475ab20e21b45c1ce97e66f28d8b5bfbd062eaa36fce804760b6dc3659450",
+        "bytes": 156
+      },
+      "@p@r@i@m_@g@d@f@f_@h@i@g@h/_primary.vhd": {
+        "sha256": "7a5c5fdb53931e53a090173da6f6cdc551135c79f8a2fd099e15f84ed35fff3c",
+        "bytes": 181
+      },
+      "@p@r@i@m_@g@d@f@f_@h@i@g@h/verilog.asm64": {
+        "sha256": "caa5307d44133e6f23832a349bb0dabb0cdc17eb650f8c87251c29759e80a848",
+        "bytes": 3296
+      },
+      "@p@r@i@m_@g@d@f@f_@h@i@g@h/verilog.rw64": {
+        "sha256": "eb3305d58ae676106c588b59ba46d055a09abfa3dd65f694e9c7d01ff1664f1a",
+        "bytes": 64
+      },
+      "@p@r@i@m_@g@d@f@f_@l@o@w/_primary.dat": {
+        "sha256": "218a38bd5b93ba827c14271ef5874495bf2a219aca6be6ed65e62e388031aae0",
+        "bytes": 1324
+      },
+      "@p@r@i@m_@g@d@f@f_@l@o@w/_primary.dbs": {
+        "sha256": "89f1bb28b6ad3d1523735511007c7df1d2466620fdabc9689ebcbcc69571860d",
+        "bytes": 155
+      },
+      "@p@r@i@m_@g@d@f@f_@l@o@w/_primary.vhd": {
+        "sha256": "8b760e191e42fcf6a15d76a6e1964692f7cab964a6ad2667e4e0e5d855e5df52",
+        "bytes": 179
+      },
+      "@p@r@i@m_@g@d@f@f_@l@o@w/verilog.asm64": {
+        "sha256": "de78f4010ad3c98d0c33b1c90bf3d4b4454356c4b71f5cf86dec0d2b5b0616d3",
+        "bytes": 3296
+      },
+      "@p@r@i@m_@g@d@f@f_@l@o@w/verilog.rw64": {
+        "sha256": "eb3305d58ae676106c588b59ba46d055a09abfa3dd65f694e9c7d01ff1664f1a",
+        "bytes": 64
+      },
+      "@t@r@i/_primary.dat": {
+        "sha256": "3162879c909e00ef5b55c5bf3dd69e3e352948048f332173931491954e593bd2",
+        "bytes": 184
+      },
+      "@t@r@i/_primary.dbs": {
+        "sha256": "e794bb57b0fa0288de386ae31f10024e4e9ad85189901042eb33f363db3a7432",
+        "bytes": 399
+      },
+      "@t@r@i/_primary.vhd": {
+        "sha256": "52f14636304b8936e605041ee6f1acc04104e44c3f1dcb5d693d30a746896935",
+        "bytes": 215
+      },
+      "_info": {
+        "sha256": "b0de3e95d589bd76275dc429b401ffbfb1f8680e5477cd2792e01af1c143b7ff",
+        "bytes": 5520
+      },
+      "_vmake": {
+        "sha256": "20967baa115584b66667e61a6a0b4ea8761523664ea32d01c0771570c36c8a1f",
+        "bytes": 26
+      },
+      "alt_bidir_buf/_primary.dat": {
+        "sha256": "9e4e81893655af82aea81c65e72b6537adca31256302c5fab111aaeca5b399ff",
+        "bytes": 906
+      },
+      "alt_bidir_buf/_primary.dbs": {
+        "sha256": "0082f12e10912f7135b2f5f3b8513964af22b1152b9548e3a11a2a870ac8696a",
+        "bytes": 1201
+      },
+      "alt_bidir_buf/_primary.vhd": {
+        "sha256": "198b59e7d54d05f1302f746414638c7e679f96fc845331ef9391cddeb1032771",
+        "bytes": 763
+      },
+      "alt_bidir_diff/_primary.dat": {
+        "sha256": "3f3104d63c772771b8c0e06332c63ecfac49a5e5a8bc39116c3e66f5ce32bc1c",
+        "bytes": 1122
+      },
+      "alt_bidir_diff/_primary.dbs": {
+        "sha256": "185602fb27650b3ac38c2cd8d62cf34a59b77e61090c0098c19a77f1edd57886",
+        "bytes": 1537
+      },
+      "alt_bidir_diff/_primary.vhd": {
+        "sha256": "f4c1ca62448b262fa6406872a25f8b21d544d240c0b72545fd29aff80bc1cd65",
+        "bytes": 808
+      },
+      "alt_inbuf/_primary.dat": {
+        "sha256": "f8a63d98c5aa1f8a2a8b062005f8b662df2d7a281498dab1db73ee790c00eba6",
+        "bytes": 334
+      },
+      "alt_inbuf/_primary.dbs": {
+        "sha256": "801584d6bf2389358eda41ec5e7c4a1dadcfd8cb3ea7c3671f4b47fe03ce3516",
+        "bytes": 517
+      },
+      "alt_inbuf/_primary.vhd": {
+        "sha256": "516424148521da5a9f81cf3bbc94249896ea493896f86f6af4b9aaaf89077c48",
+        "bytes": 479
+      },
+      "alt_inbuf_diff/_primary.dat": {
+        "sha256": "02685a5917adcec704e883d8347911cc36b4c9500664bbce7bf636eb58920ffa",
+        "bytes": 647
+      },
+      "alt_inbuf_diff/_primary.dbs": {
+        "sha256": "db5c2bb9556bc65e552eeeee368022f966807246d52e998e8fc25222f4408c2e",
+        "bytes": 922
+      },
+      "alt_inbuf_diff/_primary.vhd": {
+        "sha256": "129c46a6cc247116068893bf32848f018e058d660febdd32d64c2bdb81ac07a1",
+        "bytes": 537
+      },
+      "alt_iobuf/_primary.dat": {
+        "sha256": "1c07b400dd74404ae68194df41080976cc80261c6a7ed9c68fd2cee8433fe76e",
+        "bytes": 639
+      },
+      "alt_iobuf/_primary.dbs": {
+        "sha256": "59a70f2402e21212ddc361dd293666147cca4d8f179268e0712aca75eb1af139",
+        "bytes": 997
+      },
+      "alt_iobuf/_primary.vhd": {
+        "sha256": "d645c053f86f92389933fbdca7b52ea3dfcdc928eecdcdd995c3a7dab1a6663b",
+        "bytes": 838
+      },
+      "alt_iobuf_diff/_primary.dat": {
+        "sha256": "a2f5ab6dcd044f36e3640364508e261e1f6dfb1ea3f91dc29244e90dce3c0acb",
+        "bytes": 1046
+      },
+      "alt_iobuf_diff/_primary.dbs": {
+        "sha256": "158f3a6e3c981b35737e0a1fcc061cc4702678791b8eca2d8804054a3cadb377",
+        "bytes": 1505
+      },
+      "alt_iobuf_diff/_primary.vhd": {
+        "sha256": "84514b15894e02caa65ec98c04cfac068c2d7158517c547ce62c5fb272491db0",
+        "bytes": 851
+      },
+      "alt_outbuf/_primary.dat": {
+        "sha256": "cb4e307c869be4faf95b1a508f976e520d9b5664ba5fc73d4e17f9aa75d8259c",
+        "bytes": 459
+      },
+      "alt_outbuf/_primary.dbs": {
+        "sha256": "37af17ed05079221b87974d8ee361775be7b91307a44c0b935b9d6556fed3b70",
+        "bytes": 657
+      },
+      "alt_outbuf/_primary.vhd": {
+        "sha256": "b1070d21851b3190f6332ce529bb88b9a38336273b6a0769c79fcf2827a8e1b7",
+        "bytes": 662
+      },
+      "alt_outbuf_diff/_primary.dat": {
+        "sha256": "340c58e489dd9fb95ca53deb9014ee199b3833642e762344f0127107f19eacf8",
+        "bytes": 474
+      },
+      "alt_outbuf_diff/_primary.dbs": {
+        "sha256": "2b84906b9efe72c6d1dc99614a82d852a2ea366289ea2299dcfb4e673a4d3712",
+        "bytes": 763
+      },
+      "alt_outbuf_diff/_primary.vhd": {
+        "sha256": "a21554005e06c4843644d7e598eb11f910b42b7c0cbff5f8e445d3eea445e220",
+        "bytes": 675
+      },
+      "alt_outbuf_tri/_primary.dat": {
+        "sha256": "2ad353fd1f6cebfe9ce22d4f4111725086ce9632f12afe71c215070c01352e09",
+        "bytes": 489
+      },
+      "alt_outbuf_tri/_primary.dbs": {
+        "sha256": "2a07cfa0d4312e39983554aaddd2ab498ef24a03fa889c72fcfce4413f180be5",
+        "bytes": 740
+      },
+      "alt_outbuf_tri/_primary.vhd": {
+        "sha256": "f1e86efef2f9770bdb609f2685c1300a40b8e8e243c04e7bf1769af87b99a7ed",
+        "bytes": 717
+      },
+      "alt_outbuf_tri_diff/_primary.dat": {
+        "sha256": "573d0a8ae4cc47a9d0658274f9579887b627303341de20c8fb3876dea5283c90",
+        "bytes": 513
+      },
+      "alt_outbuf_tri_diff/_primary.dbs": {
+        "sha256": "db2dc7f60c023295bc9e6ce15c163f036007dd38fb3936acc1e9cda2c6a524d2",
+        "bytes": 886
+      },
+      "alt_outbuf_tri_diff/_primary.vhd": {
+        "sha256": "702452f4b95ad5fa76836d4949bdc2e5101c1b95459de28a8ae0de9217494330",
+        "bytes": 730
+      },
+      "carry/_primary.dat": {
+        "sha256": "72fa7e1b1493ae39e416507c2c2e49e6289cb9fb9659238e25e7e4795c3e9017",
+        "bytes": 160
+      },
+      "carry/_primary.dbs": {
+        "sha256": "4cb4c62da85d4cbfa8e384ad83fd89c32f94f903d9c85a77798f9dc83cc25f33",
+        "bytes": 321
+      },
+      "carry/_primary.vhd": {
+        "sha256": "d14fb52df13dd8f8bd210214515e4e087e0f5950d671282eb7e2799b9a4557eb",
+        "bytes": 172
+      },
+      "carry_sum/_primary.dat": {
+        "sha256": "60c976f0e0bfa605003c77e472a2f9e58fb02807d88951ab744db748263c72a1",
+        "bytes": 217
+      },
+      "carry_sum/_primary.dbs": {
+        "sha256": "01a9715475d6abdfbe889805cc9fdaf6f838f1ed9614b2569d4ce23018e47244",
+        "bytes": 503
+      },
+      "carry_sum/_primary.vhd": {
+        "sha256": "be16ec47acc12055822a97c195587df655f4e72e4e1de48673ee33b8a278fdc2",
+        "bytes": 266
+      },
+      "cascade/_primary.dat": {
+        "sha256": "1019dd09a6ed5cbc8979ded9fb4ce5607b3637258aa1c7636b4393262c4adb30",
+        "bytes": 162
+      },
+      "cascade/_primary.dbs": {
+        "sha256": "c38aa2894a49b777fe332f96ca572120dcb6b6c438ebad5993279fc0ac2eca0a",
+        "bytes": 323
+      },
+      "cascade/_primary.vhd": {
+        "sha256": "af3d18f3f648905886551f707894f24ccd683abc535254f35f697ccd3f08aad3",
+        "bytes": 176
+      },
+      "clklock/_primary.dat": {
+        "sha256": "701e6bf80680f10c1851a97a949400dc8c3e176df872f43d6745c345e32595b4",
+        "bytes": 5808
+      },
+      "clklock/_primary.dbs": {
+        "sha256": "4d26d4cd0d7b92cf54f21db32b8701775312153ebc1e7aa84d5bb2f001d2467b",
+        "bytes": 10353
+      },
+      "clklock/_primary.vhd": {
+        "sha256": "e3bea0eb0009c1c7f97c98a53f11abc6189849f67607893bcdd6cd6fe36ba950",
+        "bytes": 363
+      },
+      "dff/_primary.dat": {
+        "sha256": "cbd79bf3d3898070f02c48682e15fea5133003dff9ddafa3a2c028a67eb4f4b2",
+        "bytes": 356
+      },
+      "dff/_primary.dbs": {
+        "sha256": "88b1e4ba421a2f452b2870316ea95821ec21be689fb8a7714e19d361b20caa5a",
+        "bytes": 598
+      },
+      "dff/_primary.vhd": {
+        "sha256": "8e7d4af6de6dbeb040d1257c53451a40f9cc4e20df5ea72c2c4b9f54be7544d4",
+        "bytes": 297
+      },
+      "dffe/_primary.dat": {
+        "sha256": "b2d778fff97ef33181c4f8e3e605595d38896fd39bf7039c18c7febb059cbf35",
+        "bytes": 362
+      },
+      "dffe/_primary.dbs": {
+        "sha256": "e2bb2ebd88308e3bdb62ea2d56cb8ca9b98b58e5f18a7094102c97ab55dd8799",
+        "bytes": 693
+      },
+      "dffe/_primary.vhd": {
+        "sha256": "4027911fe03f5f6ebf7b5e5e98003e27ef8e17081619f8a36b5f447e277eda21",
+        "bytes": 342
+      },
+      "dffea/_primary.dat": {
+        "sha256": "c559fbb4fe4a36c508e7f8189648a32e992c0d7d47917d4a76884c90df218810",
+        "bytes": 474
+      },
+      "dffea/_primary.dbs": {
+        "sha256": "5800c7bc66820125df03979fa6926dcd772ee76bf10c05d53af5547c162389b6",
+        "bytes": 1131
+      },
+      "dffea/_primary.vhd": {
+        "sha256": "1088abe4b011662950ea08c4773cfc22afd6a1ebafd72713a421c5153dd8d7ec",
+        "bytes": 430
+      },
+      "dffeas/_primary.dat": {
+        "sha256": "6a5443f42566256376ca23f3687d8851a665795ff9c29ef3496643080feec8f0",
+        "bytes": 1832
+      },
+      "dffeas/_primary.dbs": {
+        "sha256": "3e63b78103f3c7ad698bb46768d2d15533f8c20c3527b0eae50dea7e517580ca",
+        "bytes": 5016
+      },
+      "dffeas/_primary.vhd": {
+        "sha256": "28748e34fd23a122f28a21cb843e4594549115ee631bf894c5c5841312afeb16",
+        "bytes": 809
+      },
+      "dffeas/verilog.asm64": {
+        "sha256": "847302713731635c046db25009fdd0086549ed533eae9e036beb1a179de9f04f",
+        "bytes": 76208
+      },
+      "dffeas/verilog.rw64": {
+        "sha256": "b139760be51fe328e6f1c825a68912f50a77cf80b77e12b6b3fd194b8a989403",
+        "bytes": 2422
+      },
+      "dlatch/_primary.dat": {
+        "sha256": "6df9d6291e9b82aa281b5953d01dbd7e7693ae8795162e6cbfceb73ce0c2de1d",
+        "bytes": 393
+      },
+      "dlatch/_primary.dbs": {
+        "sha256": "38e25b1cb3c5995632287a5352b86acdb0b71fce10187a3c800a99fb0d6e766a",
+        "bytes": 836
+      },
+      "dlatch/_primary.vhd": {
+        "sha256": "d5d974470848324687b0f0de4ab3fd1ce36ec4c9379ec6331ddbe5ecfac1459c",
+        "bytes": 303
+      },
+      "exp/_primary.dat": {
+        "sha256": "9bca5b2a5cebb16d92c45f7d0b0fd44af820fa87acac601dc30a454f8930002d",
+        "bytes": 160
+      },
+      "exp/_primary.dbs": {
+        "sha256": "fe5edeb14882e1f22c8b2735fdc7164db329c8e19cee3e8ec66076f93ced0fbf",
+        "bytes": 319
+      },
+      "exp/_primary.vhd": {
+        "sha256": "85bf7ea630f3caa678410a27a565f2eca799c1e57d270a075bc267e2303ee48e",
+        "bytes": 168
+      },
+      "global/_primary.dat": {
+        "sha256": "3e370c3fcd7d5fb2909ed9df269c8b7f90336026fe6d3666c72a3d279f1cd403",
+        "bytes": 161
+      },
+      "global/_primary.dbs": {
+        "sha256": "e3e46bd49d4ebb226ba0e549f9252ae372d1a3aecc339049d8658f80a85da186",
+        "bytes": 322
+      },
+      "global/_primary.vhd": {
+        "sha256": "43b502dd81e87869f2209094666869879141c22c767a3e6db58e820eb5dc735b",
+        "bytes": 174
+      },
+      "jkff/_primary.dat": {
+        "sha256": "f2ccb4611d32fa2dd6c2d51a88d0d7600ce122f14c515fa0c27c6d1ae3c432f7",
+        "bytes": 305
+      },
+      "jkff/_primary.dbs": {
+        "sha256": "3d072d9ef8cd3269ac88baa4746dbafd80ac46ea426c6ca0310986163aab5990",
+        "bytes": 672
+      },
+      "jkff/_primary.vhd": {
+        "sha256": "6fbdb47d138e46de98643f23bc6567232a7c19944be5237221ac1dc9545813f8",
+        "bytes": 342
+      },
+      "jkffe/_primary.dat": {
+        "sha256": "490441c14640d8179c35d44c34e94cb93de56f4181eb96f24d233e469ecfa24a",
+        "bytes": 311
+      },
+      "jkffe/_primary.dbs": {
+        "sha256": "f193e215dc7c5ae1f192236f37bd0fec41af40776a7691b095fa49e0abde38d6",
+        "bytes": 767
+      },
+      "jkffe/_primary.vhd": {
+        "sha256": "e625a8a10d6acb9f59a93a21ef69d34721c62a70bbdf5553971624d3b05e6c1d",
+        "bytes": 387
+      },
+      "latch/_primary.dat": {
+        "sha256": "cf1204b83adffc70abef80a1ab0a275b930946d42612e2aa8ff872ecc73dd4dd",
+        "bytes": 243
+      },
+      "latch/_primary.dbs": {
+        "sha256": "7ff0fe4df5277bb4ac7aa239644c16ca7236c8a9ac8d157572b2625baa065328",
+        "bytes": 552
+      },
+      "latch/_primary.vhd": {
+        "sha256": "8670b0f7f20620b97634b712c23b283d19b5989dd55ed84d8cb8263f32ccbbaa",
+        "bytes": 215
+      },
+      "lut_input/_primary.dat": {
+        "sha256": "6db44bd772fa8cb584228e9c19bf4702962aa417dab929f7a6674f72cc399260",
+        "bytes": 164
+      },
+      "lut_input/_primary.dbs": {
+        "sha256": "508871c78b2076df9f73ff409a3e9c3e2a81012bd3b53f64fbbc2147c26db500",
+        "bytes": 326
+      },
+      "lut_input/_primary.vhd": {
+        "sha256": "661ae390871cd3fa1b8648fa0bce28b3eca8aeb8c793685d8bc550b9cd6790a6",
+        "bytes": 180
+      },
+      "lut_output/_primary.dat": {
+        "sha256": "70d16adb957c4a7f169d06a5a36ff137ffc18bccbe0351e8cb9ecf886216b072",
+        "bytes": 165
+      },
+      "lut_output/_primary.dbs": {
+        "sha256": "067e4a5eb182a18f884671140596c00d6d41ad25052aa3cd075bd99cf6390be6",
+        "bytes": 327
+      },
+      "lut_output/_primary.vhd": {
+        "sha256": "b090a3b0a58320a0eebcb7dbf6e52a0578ffc949c2fc5e6b148f807c23088296",
+        "bytes": 182
+      },
+      "opndrn/_primary.dat": {
+        "sha256": "5852679edf8a4c95fe09d740610540ed8d4fedec7a8625d477bb2e1faaa61a8c",
+        "bytes": 170
+      },
+      "opndrn/_primary.dbs": {
+        "sha256": "64d5d0daec184f88b1748431502cbfe6bf11deed28a2bac9bcc8e02a095ca31f",
+        "bytes": 360
+      },
+      "opndrn/_primary.vhd": {
+        "sha256": "eb212a6303994a3778c0fadf7ea84cdf45b9930325f92b3c18e6dd070ad3375c",
+        "bytes": 174
+      },
+      "prim_gdff/_primary.dat": {
+        "sha256": "0e1e474a73f6d3a1c544f21c1f71e2bcaf4b3f086d1c9b397cf33d5647ebe468",
+        "bytes": 733
+      },
+      "prim_gdff/_primary.dbs": {
+        "sha256": "0da315d7d63362b0e946709176786123f50d0f5ff0d01f2c3be826b128084ab8",
+        "bytes": 1507
+      },
+      "prim_gdff/_primary.vhd": {
+        "sha256": "289fb771e808efc6961c51a265f982c2a8698af1b328b5ef9747b4d2d0d1ca50",
+        "bytes": 524
+      },
+      "prim_gjkff/_primary.dat": {
+        "sha256": "6241a143388b94a783903967ae56440b8a065b0f381fc312672f7068dd125b8f",
+        "bytes": 609
+      },
+      "prim_gjkff/_primary.dbs": {
+        "sha256": "9f75f1bf287d54c0a62d0a37fd20c95ec6e006738a4c68d893b54e6769fdadbf",
+        "bytes": 1311
+      },
+      "prim_gjkff/_primary.vhd": {
+        "sha256": "03adf58dba4cf3360b36bea6d522a5b0934cde05ea0ec1920040110542b3f067",
+        "bytes": 397
+      },
+      "prim_gsrff/_primary.dat": {
+        "sha256": "aebd88be6e0a02666e0a9657698378ac7fce69096cb45ff41e6a552118f7a616",
+        "bytes": 609
+      },
+      "prim_gsrff/_primary.dbs": {
+        "sha256": "62a2f4cf4a5a568cc328606e4ad06dd857fc348076087d49bd196cabb861c535",
+        "bytes": 1311
+      },
+      "prim_gsrff/_primary.vhd": {
+        "sha256": "e2476bf0bf31027e54b2ce3e791106f2e3bee6a8efa2e0ab472b519a951658b4",
+        "bytes": 397
+      },
+      "prim_gtff/_primary.dat": {
+        "sha256": "601adf5c8cb454a4792f160fec1b0a914e4af4b035222b5976256eb96a5fe9b4",
+        "bytes": 554
+      },
+      "prim_gtff/_primary.dbs": {
+        "sha256": "5a1af512237800f9a9b574877a0b2f0016ccf951b8300f24ddeb6717628d056e",
+        "bytes": 1039
+      },
+      "prim_gtff/_primary.vhd": {
+        "sha256": "8d65697265459989170ce116f91766933d3ad4375d2e9d7a8c2f3451f2f0c2b7",
+        "bytes": 352
+      },
+      "row_global/_primary.dat": {
+        "sha256": "dc8578ce3de6d001650c613d9d021df7988d0a5bf42c30c86358457c776a9065",
+        "bytes": 165
+      },
+      "row_global/_primary.dbs": {
+        "sha256": "38f7430b1e805d65e8463fdc5e84b5fa9d6d16051646fa626f70263d9b7d4c88",
+        "bytes": 326
+      },
+      "row_global/_primary.vhd": {
+        "sha256": "ea59b77ed7df0dcce6c804ed72eb736d9d0e6515be20aac744d5573509fa04b5",
+        "bytes": 182
+      },
+      "soft/_primary.dat": {
+        "sha256": "563f57a837e8a1b646ad4f18611689f5115edc34c13544d522fd6c581bce6021",
+        "bytes": 159
+      },
+      "soft/_primary.dbs": {
+        "sha256": "53790038e40b9959b44c5e740ae9fcf6f7d01ea0965fdb089514ebf78a2a89cc",
+        "bytes": 320
+      },
+      "soft/_primary.vhd": {
+        "sha256": "428ff5b9fd344808aec4814a13b36b9d4c77c8794497a406ab855e7f4750de01",
+        "bytes": 170
+      },
+      "srff/_primary.dat": {
+        "sha256": "9131e3d944d3cf113415e5f03578e41ba5b532469863c46a8b99a0e7cbfc8d93",
+        "bytes": 305
+      },
+      "srff/_primary.dbs": {
+        "sha256": "61ae8889b4173f8e237fa5f7482f43d32f902a208d2f9bb2a3288002b1eee0ed",
+        "bytes": 672
+      },
+      "srff/_primary.vhd": {
+        "sha256": "0fe6ff3c197482ae3f5dae241a3fb1e21334c1f986ff63abc88d9e4a59097d60",
+        "bytes": 342
+      },
+      "srffe/_primary.dat": {
+        "sha256": "88e7742add73ed9f1809ea7bb9de5eca15a47d34168df35d609bc45b9e655315",
+        "bytes": 311
+      },
+      "srffe/_primary.dbs": {
+        "sha256": "712de1bb62195f6ae1e015ecdf7d91174d0a53c6035209dc7ca7916c3709c3ad",
+        "bytes": 767
+      },
+      "srffe/_primary.vhd": {
+        "sha256": "9aba8067c35e31123d197dc611e187ddb3c0de808bbe0cb10a8fec6f6cd306fb",
+        "bytes": 387
+      },
+      "tff/_primary.dat": {
+        "sha256": "d3026f8ee55c6108e1d2147bccc14678dea786e9165a2810a38183cf077a8b9b",
+        "bytes": 286
+      },
+      "tff/_primary.dbs": {
+        "sha256": "a6570ebc3296a7be09766321c08b12b349de9fb394f4add72b7b14bf1f99d323",
+        "bytes": 598
+      },
+      "tff/_primary.vhd": {
+        "sha256": "a06dddab58da3badccc55175e06bd14c676138ff42e4116fff9d571151da8094",
+        "bytes": 297
+      },
+      "tffe/_primary.dat": {
+        "sha256": "394bda2757b6f49b0f407608395b9fcc41b6f512d69c1c3fbe7ed48ff65d5d3d",
+        "bytes": 292
+      },
+      "tffe/_primary.dbs": {
+        "sha256": "76b4d7c9070821dd3bc2096161be64ca6d1512f78f755acdc729c0b24510f586",
+        "bytes": 693
+      },
+      "tffe/_primary.vhd": {
+        "sha256": "c344d81529fa82fa9b8a69e1d63887d1e229b83244c9a2f4f1cb5c41ef57fd84",
+        "bytes": 342
+      }
+    }
+  },
+  "frozen_checkpoint_unchanged": true,
+  "ended_utc": "2026-11-01T23:29:58.263896+00:00"
+}

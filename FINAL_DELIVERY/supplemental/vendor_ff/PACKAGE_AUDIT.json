@@ -1,0 +1,18 @@
+{
+  "created_utc": "2026-11-01T23:32:28.746568+00:00",
+  "passed": true,
+  "read_only_after_freeze": true,
+  "manifest_files_verified": 186,
+  "zip_entries": 187,
+  "zip_bytes": 17499227,
+  "zip_sha256": "b50f7a19d9433bf22168c8fa30a8c16372e4e767cf4c3581d7ec36a52aabf446",
+  "manifest_sha256": "711204ef480a335d7f8cd1ffa2005f64d6e05cf194fd54078ec7b0bf5dc159f3",
+  "report_sha256": "63e1125a4326398b83a446b6a8f461a47aabdf61dd6edfcb5b3cee5f7b04105a",
+  "audit_sha256": "e0961bb000ddbea2b402a98a3f9a509580ae875891c40451f74a9471cfc8ffdd",
+  "all_nine_fresh_vendor_checks": 40684,
+  "actual_ff_time_zero_values_verified": 643,
+  "original_vendor_files_unchanged": 122,
+  "original_vendor_ir_unchanged": true,
+  "no_vendor_binary_libraries_in_zip": true,
+  "prior_seven_figure_archive_unchanged": true
+}

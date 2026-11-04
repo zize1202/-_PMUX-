@@ -1,0 +1,88 @@
+{
+  "created_utc": "2026-11-01T23:30:17.045381+00:00",
+  "passed": true,
+  "scope": "Separate read-only checker and regex VCD parser; not an independent human reviewer. Vendor FF finite-sample re-test only.",
+  "run_report_sha256": "63e1125a4326398b83a446b6a8f461a47aabdf61dd6edfcb5b3cee5f7b04105a",
+  "auditor_sha256": "60c4a606a5c91fc6baff47d74aa62b437ede2424c058be447d0e3fad666d2fe7",
+  "cases": [
+    {
+      "id": "test3",
+      "checked": 4064,
+      "identical_frozen_csv": true,
+      "ff_initial_values_reparsed": 31,
+      "all_actual_design_pins_and_parameters_preserved": true,
+      "passed": true
+    },
+    {
+      "id": "test1",
+      "checked": 5594,
+      "identical_frozen_csv": true,
+      "ff_initial_values_reparsed": 444,
+      "all_actual_design_pins_and_parameters_preserved": true,
+      "passed": true
+    },
+    {
+      "id": "test2",
+      "checked": 4196,
+      "identical_frozen_csv": true,
+      "ff_initial_values_reparsed": 0,
+      "all_actual_design_pins_and_parameters_preserved": true,
+      "passed": true
+    },
+    {
+      "id": "test4",
+      "checked": 4092,
+      "identical_frozen_csv": true,
+      "ff_initial_values_reparsed": 20,
+      "all_actual_design_pins_and_parameters_preserved": true,
+      "passed": true
+    },
+    {
+      "id": "pmux_case01_balanced",
+      "checked": 4442,
+      "identical_frozen_csv": true,
+      "ff_initial_values_reparsed": 24,
+      "all_actual_design_pins_and_parameters_preserved": true,
+      "passed": true
+    },
+    {
+      "id": "pmux_case02_pipeline",
+      "checked": 4730,
+      "identical_frozen_csv": true,
+      "ff_initial_values_reparsed": 48,
+      "all_actual_design_pins_and_parameters_preserved": true,
+      "passed": true
+    },
+    {
+      "id": "pmux_case03_crossbar",
+      "checked": 4490,
+      "identical_frozen_csv": true,
+      "ff_initial_values_reparsed": 20,
+      "all_actual_design_pins_and_parameters_preserved": true,
+      "passed": true
+    },
+    {
+      "id": "pmux_case04_feedback",
+      "checked": 4634,
+      "identical_frozen_csv": true,
+      "ff_initial_values_reparsed": 32,
+      "all_actual_design_pins_and_parameters_preserved": true,
+      "passed": true
+    },
+    {
+      "id": "pmux_case05_nested",
+      "checked": 4442,
+      "identical_frozen_csv": true,
+      "ff_initial_values_reparsed": 24,
+      "all_actual_design_pins_and_parameters_preserved": true,
+      "passed": true
+    }
+  ],
+  "total_checked": 40684,
+  "total_initial_ff_q_verified": 643,
+  "original_vendor_files_verified": 122,
+  "all_original_ir_unchanged": true,
+  "global_ini_unchanged": true,
+  "frozen_r30_files_verified": 364,
+  "original_probe_error_preserved_sha256": "b219c1fbfeb7d8b22b71fce377aa8522a698202422353ccc16f4ed95fb84d2d0"
+}
