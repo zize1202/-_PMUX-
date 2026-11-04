@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "status": "REPACKAGED_WITH_UNCHANGED_CORE",
+  "candidate": "r30_native_sload",
+  "created_utc": "2026-11-01T23:54:07.422351+00:00",
+  "core": {
+    "prefix": "verified_core/",
+    "indexed_files": 5157,
+    "index": "verified_core/PACKAGE_FILES.json",
+    "index_sha256": "ab69067c89c08343591001441daa737e1aa4fa1a415fad59586f841467542919",
+    "unchanged_from_reproduced_all": false,
+    "historical_pending_fields": "Preserved snapshot metadata; final documents are complete under FINAL_DELIVERY.",
+    "historical_original_index_sha256": "ee5826f867040189be497d0302871351ea13a87025e2051e3861b5ec74dccccd",
+    "algorithm_and_executable_code_sections_unchanged": true,
+    "historical_evidence_hashes_retained": true
+  },
+  "documents": {
+    "word_pages": 43,
+    "latex_pages": 39,
+    "requirements_comparison_pages": 3,
+    "manual_pages": 4,
+    "location": "FINAL_DELIVERY/project_book/",
+    "current_copy_status": "Generated document copies removed; source packages retained"
+  },
+  "objective_results": {
+    "mean_area_reduction_percent": 36.25224711365656,
+    "total_area": [
+      2427,
+      1482
+    ],
+    "all_individual_at_least_20_percent": true,
+    "official9_strict_source_zero_no_candidate_zinit": "PASS",
+    "main_measurement": "r30_run01",
+    "current_relocation_all": "r20261102_072425_992b5bb8",
+    "batches_not_combined": true
+  },
+  "reproduction_audit_sha256": "514c67ad3dff78a6faccc9cdf506b4bbefb730ca3fa595676614fd41e5e59b25",
+  "vendor_ff_supplement": {
+    "effective_samples": 40684,
+    "initial_ff_instances_both_sides": 643,
+    "seven_figures_source": "Earlier frozen restricted-model actual ModelSim VCD; not relabelled vendor figures",
+    "zip_sha256": "4482c139038ddc50fd3ff5a5964ae4e386a10b088cf7c65890508a934a50dc78"
+  },
+  "additions_index": "FINAL_ADDITIONS.json",
+  "additions_index_sha256": "e7d1e0a28e6464da3f40dbbae791eb729813be9bd76e0d9855520682ad0307d8",
+  "limits": [
+    "Source logical-zero contract with explicit initial values retained; not arbitrary-initial-state universal equivalence.",
+    "Original default-baseline test4 strict-zero counterexample and historical errors preserved.",
+    "Finite ModelSim/vendor-FF checks do not establish SDF timing or full vendor gate-level simulation.",
+    "Official undisclosed dirty patch and C149.1 interpretation remain explicit limitations.",
+    "Subjective document/defense scoring remains with judges."
+  ],
+  "original_status": "FINAL_RELEASE",
+  "original_vendor_ff_zip_sha256": "b50f7a19d9433bf22168c8fa30a8c16372e4e767cf4c3581d7ec36a52aabf446",
+  "repackaging": {
+    "date": "2026-11-04",
+    "core_identical_to_user_zip": true,
+    "visualization": "visualization/index.html",
+    "comment_free_reference": "comment_free_source/",
+    "documents": "Generated copies removed; source archives and LaTeX inputs retained. Original documents fields below are historical metadata."
+  }
+}
