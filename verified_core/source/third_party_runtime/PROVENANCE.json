@@ -1,0 +1,44 @@
+{
+  "binary_distribution": "OSS CAD Suite Windows x64 20260927",
+  "binary_source": "https://github.com/YosysHQ/oss-cad-suite-build/releases/tag/2026-09-27",
+  "abc_source_commit_from_original_license": "4ac8a4738f2b67488bf801e3a0aa166f44581247",
+  "runtime_sha256": {
+    "yosys-abc.exe": "3d8b4f2e5802682bd74d57acd3b0de292189e983c845880eb3c97b2c94dbe0e4",
+    "libgcc_s_seh-1.dll": "8601abde8bcffd435233865553ea9f4175e6b07cc0e8c9d08f50ecebab98b019",
+    "libwinpthread-1.dll": "ccbd0ad81d6fed75e076670710643ad02d3c390179866ad3e1fe6b9ef7bc92c2",
+    "libstdc++-6.dll": "29e4a7219d914fcdf296c07951280dd77bc284f0ad3eae052da32ac05264858e",
+    "libreadline8.dll": "9a8b0f17791a91aa419d35d26d4bfea668b1163492fd65a98ae8431eac16bae9",
+    "libtermcap-0.dll": "400a4452231d5de692fa8c1a4000eb013f6cf99a836764f5b37eefc503e9671c"
+  },
+  "copied_notice_sources": {
+    "LICENSE.abc": {
+      "copied_from": "C:\\Users\\local\\Documents\\Build\\2026-09-27\\workspace3\\work\\toolchain\\oss-cad-suite\\license\\LICENSE.abc",
+      "sha256": "bad096e6bca26e3c30e3052631f43596e1b0165a8e6931135222f4889da2062e"
+    },
+    "OSS_CAD_SUITE_VERSION.txt": {
+      "copied_from": "C:\\Users\\local\\Documents\\Build\\2026-09-27\\workspace3\\work\\toolchain\\oss-cad-suite\\VERSION",
+      "sha256": "7d244d5a0b6647b563360e8d3471d0e71bb8b7a945e3de861df78edc2a1c2231"
+    },
+    "GCC-COPYING3.txt": {
+      "copied_from": "C:\\Users\\local\\.cache\\build-runtimes\\build-primary-runtime\\dependencies\\native\\git\\mingw64\\share\\licenses\\gcc-libs\\COPYING3",
+      "sha256": "8ceb4b9ee5adedde47b31e975c1d90c73ad27b6b165a1dcd80c7c545eb65b903"
+    },
+    "GCC-COPYING.RUNTIME.txt": {
+      "copied_from": "C:\\Users\\local\\.cache\\build-runtimes\\build-primary-runtime\\dependencies\\native\\git\\mingw64\\share\\licenses\\gcc-libs\\COPYING.RUNTIME",
+      "sha256": "9d6b43ce4d8de0c878bf16b54d8e7a10d9bd42b75178153e3af6a815bdc90f74"
+    },
+    "GCC-LICENSE-README.txt": {
+      "copied_from": "C:\\Users\\local\\.cache\\build-runtimes\\build-primary-runtime\\dependencies\\native\\git\\mingw64\\share\\licenses\\gcc-libs\\README",
+      "sha256": "33400d067fa3e2bd670a0868dcdb60c9486e8f559b675cf9ff1ff55d4e0d06ab"
+    },
+    "WINPTHREAD-COPYING.txt": {
+      "copied_from": "C:\\Users\\local\\.cache\\build-runtimes\\build-primary-runtime\\dependencies\\native\\git\\mingw64\\share\\licenses\\libwinpthread\\COPYING",
+      "sha256": "63263614cdd29f2f93cba85e992f041b31f9fc7b4033692f31269489a8a1b177"
+    },
+    "MinGW-w64-runtime-notices.txt": {
+      "copied_from": "C:\\Users\\local\\Documents\\Build\\2026-09-27\\workspace3\\work\\v4_native\\compiler_native\\w64devkit\\COPYING.MinGW-w64-runtime.txt",
+      "sha256": "ecff91ddb5799c8b79a4bdb576921b9c3e2989783fd1944527e8eb9b41a5ff5f"
+    }
+  },
+  "scope": "LICENSE.abc is copied verbatim from the exact OSS distribution. GCC/Winpthread/MinGW texts are separately identified local upstream notice copies, not claimed to be notices extracted from each exact DLL build. No separate readline/termcap notice was found in the available OSS license directory; no unverified license assignment is made."
+}

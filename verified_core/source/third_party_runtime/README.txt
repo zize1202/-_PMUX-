@@ -1,0 +1,1 @@
+本目录可随包原样复制。ABC及5个DLL均来自已使用的OSS CAD Suite Windows x64 20260927，未修改；准确哈希见PROVENANCE.json。LICENSE.abc为该发行包原发文本，并记录ABC提交4ac8a4738f2b67488bf801e3a0aa166f44581247。GCC、Winpthread与MinGW文本来自所标明的本机发行资料，作为相关上游告示保留，不冒充从每个具体DLL提取的许可证。本机OSS license目录没有单列readline/termcap告示，本次未补造或猜测其授权。完整原始Yosys及5个源码子模块的许可证均保留在离线源码归档中，索引为LICENSE_INDEX.json。

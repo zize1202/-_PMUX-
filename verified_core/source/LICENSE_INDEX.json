@@ -1,0 +1,13 @@
+[
+  "COPYING",
+  "libs/cxxopts/LICENSE",
+  "libs/fmt/LICENSE",
+  "libs/minisat/LICENSE",
+  "libs/symfpu/LICENSE",
+  "libs/symfpu/LICENSE-BSD",
+  "libs/symfpu/LICENSE-GPL3",
+  "libs/tomlplusplus/LICENSE",
+  "libs/fmt/doc/LICENSE-exception",
+  "libs/tomlplusplus/docs/images/badge-license-MIT.svg",
+  "tests/verilog/func_task_arg_copying.ys"
+]

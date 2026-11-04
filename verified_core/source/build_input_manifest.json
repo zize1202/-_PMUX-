@@ -1,0 +1,46 @@
+{
+  "commit": "d0e71cfb7bcafe2b437f3edc1789b69e99ecd55a",
+  "optimized_intel_sha256": {
+    "CMakeLists.txt": "c2e92a04a93931a7587897994297bd21a4a2e7c69de661def75800285ff0f865",
+    "opt_pmux.cc": "125cffdcaa5dd541f69bdbd425ea83024498c33223abba3913489063ab6b3afc",
+    "pmux_branch_constants.h": "f60e2e252606ca38ba2545f543f7757218b79e356db080c88bc9d5a95efdc59e",
+    "pmux_cycloneiv_sclr.h": "73dd2949985177b59292be9b41cfd9517844a5fbabae9e42a3d4c79f843cc12d",
+    "pmux_cycloneiv_sload.h": "f8706c1daf9de4694ae329adcfc6e92472266c53b5aa8ae651832151778f4fd6",
+    "pmux_guard_truth.h": "1785ca61444157084c39028a752af9bb74e55e19e565db94b2f5dcc8506bc28f",
+    "pmux_init_zero.h": "f9f2ecba8acbd75fa2c51db7f1c41272a673d908d70f715f11ef709f112bf512",
+    "pmux_observable_decode.h": "a9188ae56ce866373dd4f3c669f66d89d677c8fc468b19eaf0652a75e38335e2",
+    "pmux_preserve_zero_state.h": "f605cc1af2f01d3f6722c59fcb5c2d352635f0c25ff5f389cc73a81409f73e52",
+    "pmux_priority_grouping.h": "5cf537efe474744550d393c78dca3b5b0b6d0d7f85a53037ca5fd0c68031fde2",
+    "pmux_resource_share.h": "8523e7bc523a8a7bf8af7c96f4d98e5552a968474d00a04f9d68fe924ce48bf3",
+    "pmux_rom_residual.h": "d1235807609ee9bb3cf5fdbc57ad3ad5bf611140064290e614413d98a0c2a341",
+    "pmux_sdffe_boundary.h": "fa63e79a455b436004dc0b8d21d30ff4ad6b0c73720ce0fcc6e358e8008697a4",
+    "pmux_share_banks.h": "d4266e6e746801e59a63fe0eef9beac4f590cd6264f705f0154902c56ce69363",
+    "pmux_share_banks_v2.h": "64cb5d9b2ee49299d669077f1944de5a935e72338fb79a331f9e731ad870c5d3",
+    "pmux_share_carry3.h": "74dcd10a2901c681a047ed8aaa72041bced5c30f70fe4b35ba5fba7091036efa",
+    "pmux_share_cone.h": "c783e67a54d97b1829b29fc8e6ccd70469e5ee479a41f095819fadbf559a5399",
+    "pmux_share_dag.h": "9f6d8d7ee55d6ead65d71cdcdc07d32004b870fb08f1ef75083f3f552ad637d3",
+    "pmux_small_rom.h": "163cbf159c503749653bf2bdfd6ca467d59da001330ea04c63bdd448fa5213ac",
+    "synth_intel.cc": "0dd7527a59b4d876ec5339e48c2d5137db0bf42e1fc4846f0d1259f6cb69a805"
+  },
+  "arms": {
+    "baseline": {
+      "runtime_sha256": {
+        "yosys-abc.exe": "3d8b4f2e5802682bd74d57acd3b0de292189e983c845880eb3c97b2c94dbe0e4",
+        "libgcc_s_seh-1.dll": "8601abde8bcffd435233865553ea9f4175e6b07cc0e8c9d08f50ecebab98b019",
+        "libwinpthread-1.dll": "ccbd0ad81d6fed75e076670710643ad02d3c390179866ad3e1fe6b9ef7bc92c2",
+        "libstdc++-6.dll": "29e4a7219d914fcdf296c07951280dd77bc284f0ad3eae052da32ac05264858e",
+        "libreadline8.dll": "9a8b0f17791a91aa419d35d26d4bfea668b1163492fd65a98ae8431eac16bae9",
+        "libtermcap-0.dll": "400a4452231d5de692fa8c1a4000eb013f6cf99a836764f5b37eefc503e9671c"
+      }
+    }
+  },
+  "tool_versions": {
+    "gcc": "16.2.0",
+    "cmake": "4.4.3",
+    "flex": "2.6.4",
+    "bison": "3.8.2",
+    "python": "3.12.14"
+  },
+  "script_validation": "Copied existing build script; current overlay hashes updated. New isolated rebuild not executed by staging.",
+  "candidate": "r30_native_sload"
+}
