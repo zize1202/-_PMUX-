@@ -1,0 +1,52 @@
+{
+  "arm": "baseline",
+  "case_id": "pmux_case03_crossbar",
+  "label": "initial",
+  "valid": true,
+  "script_sha256": "0cb039146a8de8c8f97722824e663eda2608d3bb263a7c1c66c0c49a8bf2242a",
+  "timed_script_sha256": "0cb039146a8de8c8f97722824e663eda2608d3bb263a7c1c66c0c49a8bf2242a",
+  "binary_sha256": "42ae7772e6669815fa25dcdfb8efb06c1c0f0d9a0fb81bdcb9ce4eae4af48858",
+  "abc_sha256": "3d8b4f2e5802682bd74d57acd3b0de292189e983c845880eb3c97b2c94dbe0e4",
+  "source_sha256": {
+    "D:\\PMUX_20261102_delivery\\relocation r30 all\\cases\\additional5\\pmux_case03_crossbar.v": "bf1fc3bf6383beb007a69587d77a29ea74fb1fbdf7429fb401c0855a31c05932"
+  },
+  "techlib_sha256": "1bc0b1a8f7d481728d1462693723308604c1608a654be0890b5adf5150ada8d2",
+  "command": [
+    "D:\\PMUX_20261102_delivery\\relocation r30 all\\baseline\\bin\\yosys.exe",
+    "-s",
+    "D:\\PMUX_20261102_delivery\\relocation r30 all\\results\\r20261102_072425_992b5bb8\\measure\\scripts\\pmux_case03_crossbar.timed.ys"
+  ],
+  "command_sha256": "b8ba59b773b159c6865f73aec5efc91fbd411e97c3a441186524356dc1ed01b9",
+  "log": "D:\\PMUX_20261102_delivery\\relocation r30 all\\results\\r20261102_072425_992b5bb8\\measure\\initial\\pmux_case03_crossbar\\baseline\\yosys.log",
+  "included_in_efficiency": true,
+  "execution_scope": "two_command_synthesis_lifetime",
+  "pid": 27504,
+  "exit_code": 0,
+  "timed_out": false,
+  "wall_seconds": 0.4338571,
+  "peak_working_set_bytes": 22679552,
+  "host_observed_seconds_diagnostic": 0.4429688000236638,
+  "successful_peak_counter_reads": 82,
+  "final_peak_counter_read_ok": true,
+  "final_peak_counter_read_error": 0,
+  "measurement_valid": true,
+  "actual_abc_invocations": [
+    {
+      "logged_command": "\"<yosys-exe-dir>/yosys-abc.exe\" -s -f <abc-temp-dir>/abc.script 2>&1",
+      "resolved_path": "D:\\PMUX_20261102_delivery\\relocation r30 all\\baseline\\bin\\yosys-abc.exe",
+      "sha256": "3d8b4f2e5802682bd74d57acd3b0de292189e983c845880eb3c97b2c94dbe0e4",
+      "matches_requested_binary_bytes": true
+    }
+  ],
+  "timed_stat_inventory": {
+    "top": "pmux_case03_crossbar",
+    "total_direct_cells": 418,
+    "cell_types": {
+      "cycloneiv_lcell_comb": 408,
+      "dffeas": 10
+    },
+    "inventory_sha256": "f3737d933b08a6df06f874fc20472215568c19892a91340989fb9eec3e424fa6",
+    "basis": "synth_intel_builtin_stat_direct_top_instances",
+    "log_sha256": "0603970573c13e0eb2db78211000e335bae9fd8342a87e2e708a550c2936de3f"
+  }
+}

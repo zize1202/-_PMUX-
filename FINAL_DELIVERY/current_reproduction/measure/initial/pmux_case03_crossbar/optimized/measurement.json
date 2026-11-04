@@ -1,0 +1,52 @@
+{
+  "arm": "optimized",
+  "case_id": "pmux_case03_crossbar",
+  "label": "initial",
+  "valid": true,
+  "script_sha256": "0cb039146a8de8c8f97722824e663eda2608d3bb263a7c1c66c0c49a8bf2242a",
+  "timed_script_sha256": "0cb039146a8de8c8f97722824e663eda2608d3bb263a7c1c66c0c49a8bf2242a",
+  "binary_sha256": "efebff04cac47ccdfefc3317d4de14b7f727123a7499243ab9da35ba79f596d9",
+  "abc_sha256": "3d8b4f2e5802682bd74d57acd3b0de292189e983c845880eb3c97b2c94dbe0e4",
+  "source_sha256": {
+    "D:\\PMUX_20261102_delivery\\relocation r30 all\\cases\\additional5\\pmux_case03_crossbar.v": "bf1fc3bf6383beb007a69587d77a29ea74fb1fbdf7429fb401c0855a31c05932"
+  },
+  "techlib_sha256": "1bc0b1a8f7d481728d1462693723308604c1608a654be0890b5adf5150ada8d2",
+  "command": [
+    "D:\\PMUX_20261102_delivery\\relocation r30 all\\optimized\\bin\\yosys.exe",
+    "-s",
+    "D:\\PMUX_20261102_delivery\\relocation r30 all\\results\\r20261102_072425_992b5bb8\\measure\\scripts\\pmux_case03_crossbar.timed.ys"
+  ],
+  "command_sha256": "a56d1ae33bdab4b857ff74a8dc87b8d24717eb0c9198f11c407c10fb819687e0",
+  "log": "D:\\PMUX_20261102_delivery\\relocation r30 all\\results\\r20261102_072425_992b5bb8\\measure\\initial\\pmux_case03_crossbar\\optimized\\yosys.log",
+  "included_in_efficiency": true,
+  "execution_scope": "two_command_synthesis_lifetime",
+  "pid": 9172,
+  "exit_code": 0,
+  "timed_out": false,
+  "wall_seconds": 0.3423043,
+  "peak_working_set_bytes": 20160512,
+  "host_observed_seconds_diagnostic": 0.3497483999817632,
+  "successful_peak_counter_reads": 65,
+  "final_peak_counter_read_ok": true,
+  "final_peak_counter_read_error": 0,
+  "measurement_valid": true,
+  "actual_abc_invocations": [
+    {
+      "logged_command": "\"D:\\PMUX_20261102_delivery\\relocation r30 all\\baseline\\bin\\yosys-abc.exe\" -s -f <abc-temp-dir>/abc.script 2>&1",
+      "resolved_path": "D:\\PMUX_20261102_delivery\\relocation r30 all\\baseline\\bin\\yosys-abc.exe",
+      "sha256": "3d8b4f2e5802682bd74d57acd3b0de292189e983c845880eb3c97b2c94dbe0e4",
+      "matches_requested_binary_bytes": true
+    }
+  ],
+  "timed_stat_inventory": {
+    "top": "pmux_case03_crossbar",
+    "total_direct_cells": 251,
+    "cell_types": {
+      "cycloneiv_lcell_comb": 241,
+      "dffeas": 10
+    },
+    "inventory_sha256": "344e9696d045394d0fd9383cf2cc2d506e6695e16c6cfe034486934108699e71",
+    "basis": "synth_intel_builtin_stat_direct_top_instances",
+    "log_sha256": "220b589f4f671dfd6e1689f54e23df42203faca92ab99ccd10c5afd2193ca403"
+  }
+}

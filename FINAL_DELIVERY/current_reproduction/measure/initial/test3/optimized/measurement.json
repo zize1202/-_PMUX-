@@ -1,0 +1,53 @@
+{
+  "arm": "optimized",
+  "case_id": "test3",
+  "label": "initial",
+  "valid": true,
+  "script_sha256": "f92d070b3a22a023711cb1f85a5951962856546e9f41f6f41928ddcd4961aee8",
+  "timed_script_sha256": "f92d070b3a22a023711cb1f85a5951962856546e9f41f6f41928ddcd4961aee8",
+  "binary_sha256": "efebff04cac47ccdfefc3317d4de14b7f727123a7499243ab9da35ba79f596d9",
+  "abc_sha256": "3d8b4f2e5802682bd74d57acd3b0de292189e983c845880eb3c97b2c94dbe0e4",
+  "source_sha256": {
+    "D:\\PMUX_20261102_delivery\\relocation r30 all\\cases\\original4\\competition_case\\test3\\test3.v": "1551b9212622ccef6019d6e77de2c43dc8c80d267957b55a42121f34a08780e9"
+  },
+  "techlib_sha256": "1bc0b1a8f7d481728d1462693723308604c1608a654be0890b5adf5150ada8d2",
+  "command": [
+    "D:\\PMUX_20261102_delivery\\relocation r30 all\\optimized\\bin\\yosys.exe",
+    "-s",
+    "D:\\PMUX_20261102_delivery\\relocation r30 all\\results\\r20261102_072425_992b5bb8\\measure\\scripts\\test3.timed.ys"
+  ],
+  "command_sha256": "887da349ebdb08f238e6dc783f516caa3984dadfad0fed667a08c538c2e26527",
+  "log": "D:\\PMUX_20261102_delivery\\relocation r30 all\\results\\r20261102_072425_992b5bb8\\measure\\initial\\test3\\optimized\\yosys.log",
+  "included_in_efficiency": true,
+  "execution_scope": "two_command_synthesis_lifetime",
+  "pid": 14196,
+  "exit_code": 0,
+  "timed_out": false,
+  "wall_seconds": 0.2015924,
+  "peak_working_set_bytes": 15446016,
+  "host_observed_seconds_diagnostic": 0.21078090002993122,
+  "successful_peak_counter_reads": 39,
+  "final_peak_counter_read_ok": true,
+  "final_peak_counter_read_error": 0,
+  "measurement_valid": true,
+  "actual_abc_invocations": [
+    {
+      "logged_command": "\"D:\\PMUX_20261102_delivery\\relocation r30 all\\baseline\\bin\\yosys-abc.exe\" -s -f <abc-temp-dir>/abc.script 2>&1",
+      "resolved_path": "D:\\PMUX_20261102_delivery\\relocation r30 all\\baseline\\bin\\yosys-abc.exe",
+      "sha256": "3d8b4f2e5802682bd74d57acd3b0de292189e983c845880eb3c97b2c94dbe0e4",
+      "matches_requested_binary_bytes": true
+    }
+  ],
+  "timed_stat_inventory": {
+    "top": "test3",
+    "total_direct_cells": 23,
+    "cell_types": {
+      "$not": 1,
+      "cycloneiv_lcell_comb": 8,
+      "dffeas": 14
+    },
+    "inventory_sha256": "b0571ea5124202101d83bb3681fadc4ed815a7f535ee98f344ebfc590c8de26e",
+    "basis": "synth_intel_builtin_stat_direct_top_instances",
+    "log_sha256": "5f5337a59452e847c9605257777809896e70c8ba3ee5e4a5c26aa1d495680182"
+  }
+}

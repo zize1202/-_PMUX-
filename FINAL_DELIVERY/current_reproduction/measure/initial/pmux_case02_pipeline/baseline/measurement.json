@@ -1,0 +1,52 @@
+{
+  "arm": "baseline",
+  "case_id": "pmux_case02_pipeline",
+  "label": "initial",
+  "valid": true,
+  "script_sha256": "afdb6c37c717053b4f0a19a4cffda46c03bef8aefcbd77f5004b643a2398d833",
+  "timed_script_sha256": "afdb6c37c717053b4f0a19a4cffda46c03bef8aefcbd77f5004b643a2398d833",
+  "binary_sha256": "42ae7772e6669815fa25dcdfb8efb06c1c0f0d9a0fb81bdcb9ce4eae4af48858",
+  "abc_sha256": "3d8b4f2e5802682bd74d57acd3b0de292189e983c845880eb3c97b2c94dbe0e4",
+  "source_sha256": {
+    "D:\\PMUX_20261102_delivery\\relocation r30 all\\cases\\additional5\\pmux_case02_pipeline.v": "8639081b2fb7c446edef52a514d63b49333e444ce21638f03bdee97dc954e0ea"
+  },
+  "techlib_sha256": "1bc0b1a8f7d481728d1462693723308604c1608a654be0890b5adf5150ada8d2",
+  "command": [
+    "D:\\PMUX_20261102_delivery\\relocation r30 all\\baseline\\bin\\yosys.exe",
+    "-s",
+    "D:\\PMUX_20261102_delivery\\relocation r30 all\\results\\r20261102_072425_992b5bb8\\measure\\scripts\\pmux_case02_pipeline.timed.ys"
+  ],
+  "command_sha256": "87f6f655d0f5cda42ab0bc479cd43d532b949c96d3191986b47bd6add0636a31",
+  "log": "D:\\PMUX_20261102_delivery\\relocation r30 all\\results\\r20261102_072425_992b5bb8\\measure\\initial\\pmux_case02_pipeline\\baseline\\yosys.log",
+  "included_in_efficiency": true,
+  "execution_scope": "two_command_synthesis_lifetime",
+  "pid": 21936,
+  "exit_code": 0,
+  "timed_out": false,
+  "wall_seconds": 0.4602932,
+  "peak_working_set_bytes": 23515136,
+  "host_observed_seconds_diagnostic": 0.4668960000271909,
+  "successful_peak_counter_reads": 87,
+  "final_peak_counter_read_ok": true,
+  "final_peak_counter_read_error": 0,
+  "measurement_valid": true,
+  "actual_abc_invocations": [
+    {
+      "logged_command": "\"<yosys-exe-dir>/yosys-abc.exe\" -s -f <abc-temp-dir>/abc.script 2>&1",
+      "resolved_path": "D:\\PMUX_20261102_delivery\\relocation r30 all\\baseline\\bin\\yosys-abc.exe",
+      "sha256": "3d8b4f2e5802682bd74d57acd3b0de292189e983c845880eb3c97b2c94dbe0e4",
+      "matches_requested_binary_bytes": true
+    }
+  ],
+  "timed_stat_inventory": {
+    "top": "pmux_case02_pipeline",
+    "total_direct_cells": 474,
+    "cell_types": {
+      "cycloneiv_lcell_comb": 450,
+      "dffeas": 24
+    },
+    "inventory_sha256": "429503a89eb6882e658a1ae3d6510db8278260892c88be7fa1cfb03ceae50102",
+    "basis": "synth_intel_builtin_stat_direct_top_instances",
+    "log_sha256": "f474d6e97a255336487f18bdfadb7089d82186a313199d710d59582597d62b04"
+  }
+}
