@@ -1,0 +1,68 @@
+
+ /----------------------------------------------------------------------------\
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |  Copyright (C) 2012 - 2026  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |  Distributed under an ISC-like license, type "license" to see terms        |
+ \----------------------------------------------------------------------------/
+ Yosys 0.69+154 (git sha1 30d62572e-dirty, Release, GNU /usr/bin/x86_64-w64-mingw32-g++ 15.2.1)
+
+-- Executing script file `rb/gold.ys' --
+
+1. Executing RTLIL frontend.
+Input filename: rtl.normalized.il
+
+2. Executing HIERARCHY pass (managing design hierarchy).
+
+2.1. Analyzing design hierarchy..
+Top module:  \test1
+
+2.2. Analyzing design hierarchy..
+Top module:  \test1
+Removed 0 unused modules.
+
+3. Executing CLK2FFLOGIC pass (convert clocked FFs to generic $ff cells).
+
+3.1. Executing PEEPOPT pass (run peephole optimizers).
+Replacing test1.$procdff$465 ($dff): CLK=\clock, D=$auto$rtlil.cc:3369:Mux$464, Q=\q7
+Replacing test1.$procdff$372 ($dff): CLK=\clock, D=$auto$rtlil.cc:3369:Mux$371, Q=\por6
+Replacing test1.$procdff$367 ($adff): CLK=\clock, D=$0\state[3:0], Q=\state
+Replacing test1.$procdff$375 ($adff): CLK=\clock, D=$auto$rtlil.cc:3283:Xor$475, Q=$auto$ff.cc:792:flip_bits$473
+Replacing test1.$procdff$380 ($dff): CLK=\clock, D=$auto$rtlil.cc:3369:Mux$379, Q=\inter0008
+Replacing test1.$procdff$385 ($dff): CLK=\clock, D=$auto$rtlil.cc:3369:Mux$384, Q=\inter0009
+Replacing test1.$procdff$390 ($dff): CLK=\clock, D=$auto$rtlil.cc:3369:Mux$389, Q=\i0
+Replacing test1.$procdff$395 ($dff): CLK=\clock, D=$auto$rtlil.cc:3369:Mux$394, Q=\i1
+Replacing test1.$procdff$400 ($dff): CLK=\clock, D=$auto$rtlil.cc:3369:Mux$399, Q=\i2
+Replacing test1.$procdff$405 ($dff): CLK=\clock, D=$auto$rtlil.cc:3369:Mux$404, Q=\i3
+Replacing test1.$procdff$410 ($dff): CLK=\clock, D=$auto$rtlil.cc:3369:Mux$409, Q=\i4
+Replacing test1.$procdff$415 ($dff): CLK=\clock, D=$auto$rtlil.cc:3369:Mux$414, Q=\i5
+Replacing test1.$procdff$420 ($dff): CLK=\clock, D=$auto$rtlil.cc:3369:Mux$419, Q=\i6
+Replacing test1.$procdff$425 ($dff): CLK=\clock, D=$auto$rtlil.cc:3369:Mux$424, Q=\i7
+Replacing test1.$procdff$430 ($dff): CLK=\clock, D=$auto$rtlil.cc:3369:Mux$429, Q=\q0
+Replacing test1.$procdff$435 ($dff): CLK=\clock, D=$auto$rtlil.cc:3369:Mux$434, Q=\q1
+Replacing test1.$procdff$440 ($dff): CLK=\clock, D=$auto$rtlil.cc:3369:Mux$439, Q=\q2
+Replacing test1.$procdff$445 ($dff): CLK=\clock, D=$auto$rtlil.cc:3369:Mux$444, Q=\q3
+Replacing test1.$procdff$450 ($dff): CLK=\clock, D=$auto$rtlil.cc:3369:Mux$449, Q=\q4
+Replacing test1.$procdff$455 ($dff): CLK=\clock, D=$auto$rtlil.cc:3369:Mux$454, Q=\q5
+Replacing test1.$procdff$460 ($dff): CLK=\clock, D=$auto$rtlil.cc:3369:Mux$459, Q=\q6
+
+4. Executing CHECK pass (checking for obvious problems).
+Checking module test1...
+Found and reported 0 problems.
+
+5. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \test1..
+Removed 0 unused cells and 21 unused wires.
+<suppressed ~1 debug messages>
+
+6. Executing CHECK pass (checking for obvious problems).
+Checking module test1...
+Found and reported 0 problems.
+
+7. Executing SETUNDEF pass (replace undef values with defined constants).
+
+8. Executing RTLIL backend.
+Output filename: rb/gold.il
+
+End of script. Logfile hash: a87334747c
+Yosys 0.69+154 (git sha1 30d62572e-dirty, Release, GNU /usr/bin/x86_64-w64-mingw32-g++ 15.2.1)
+Time spent: 11% 2x write_rtlil (0 sec), 11% 2x read_rtlil (0 sec), ...
