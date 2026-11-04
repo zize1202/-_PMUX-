@@ -1,0 +1,20 @@
+# [test2] gold-match clk
+test2 clk clk
+# [test2] gold-match a
+test2 a a
+# [test2] gold-match b
+test2 b b
+# [test2] gold-match c
+test2 c c
+# [test2] gold-match d
+test2 d d
+# [test2] gold-match dataa
+test2 dataa dataa
+# [test2] gold-match datab
+test2 datab datab
+# [test2] gold-match datac
+test2 datac datac
+# [test2] gold-match datad
+test2 datad datad
+# [test2] gold-match out
+test2 out out

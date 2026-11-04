@@ -1,0 +1,8 @@
+read_rtlil baseline.normalized.il
+hierarchy -check -top test1
+clk2fflogic
+check -assert
+opt_clean
+check -initdrv
+setundef -undriven -undef
+write_rtlil rb/gate.il
