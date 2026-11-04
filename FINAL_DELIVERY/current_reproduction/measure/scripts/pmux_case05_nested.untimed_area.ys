@@ -1,0 +1,3 @@
+read_verilog "D:/PMUX_20261102_delivery/relocation r30 all/cases/additional5/pmux_case05_nested.v"
+synth_intel -family cycloneiv -top pmux_case05_nested
+write_json mapped.netlist.json

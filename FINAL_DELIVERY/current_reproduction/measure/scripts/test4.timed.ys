@@ -1,0 +1,2 @@
+read_verilog "D:/PMUX_20261102_delivery/relocation r30 all/cases/original4/competition_case/test4/test4.v"
+synth_intel -family cycloneiv -top test4
