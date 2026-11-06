@@ -1,0 +1,6 @@
+read_verilog "D:/PMUX_R30_clean/verified_core/cases/additional5/pmux_case05_nested.v"
+synth_intel -family cycloneiv -top pmux_case05_nested -run begin:map_cells
+write_rtlil post_abc9.il
+write_json post_abc9.json
+synth_intel -family cycloneiv -top pmux_case05_nested -run map_cells:
+write_json mapped.netlist.json

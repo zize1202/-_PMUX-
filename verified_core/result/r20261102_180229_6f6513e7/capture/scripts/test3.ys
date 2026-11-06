@@ -1,0 +1,6 @@
+read_verilog "D:/PMUX_R30_clean/verified_core/cases/original4/competition_case/test3/test3.v"
+synth_intel -family cycloneiv -top test3 -run begin:map_cells
+write_rtlil post_abc9.il
+write_json post_abc9.json
+synth_intel -family cycloneiv -top test3 -run map_cells:
+write_json mapped.netlist.json
